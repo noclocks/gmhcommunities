@@ -1,0 +1,67 @@
+{
+  "$id": "#entrata.status.getStatus.request.body",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$comment": "https://gmhcommunities.entrata.com/api/v1/documentation/getStatus",
+  "title": "Entrata getStatus Request Body Schema",
+  "description": "Entrata API Status Endpoint, getStatus Method Request Body JSON Schema",
+  "type": "object",
+  "required": [
+    "auth",
+    "requestId",
+    "method"
+  ],
+  "properties": {
+    "auth": {
+      "$id": "#entrata.request.body/auth",
+      "title": "Auth",
+      "description": "Authentication object",
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "basic"
+        }
+      }
+    },
+    "requestId": {
+      "$id": "#status.getStatus.request/requestId",
+      "title": "Request ID",
+      "description": "ID for the request",
+      "type": "integer",
+      "example": 15,
+      "default": 15,
+      "minimum": 1
+    },
+    "method": {
+      "$id": "#status.getStatus.request/method",
+      "title": "Method",
+      "description": "Method object containing method name and version",
+      "type": "object",
+      "required": [
+        "name",
+        "version"
+      ],
+      "properties": {
+        "name": {
+          "title": "Name",
+          "description": "Name of the method",
+          "type": "string",
+          "const": "getStatus",
+          "example": "getStatus",
+          "default": "getStatus"
+        },
+        "version": {
+          "type": "string",
+          "title": "Version",
+          "description": "Version of the method",
+          "const": "r1",
+          "example": "r1",
+          "default": "r1"
+        }
+      }
+    }
+  }
+}

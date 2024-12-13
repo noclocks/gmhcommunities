@@ -1,0 +1,21 @@
+property_id,property_name,parking_type,required,included,amount
+739085,1047 Commonwealth Avenue,Surface,FALSE,FALSE,0
+739085,1047 Commonwealth Avenue,Reserved,FALSE,FALSE,275
+739085,1047 Commonwealth Avenue,Covered,FALSE,FALSE,0
+739085,1047 Commonwealth Avenue,Garage,FALSE,FALSE,175
+739085,1047 Commonwealth Avenue,Other,FALSE,FALSE,0
+Boylston,1330 Boylston,Surface,FALSE,FALSE,0
+Boylston,1330 Boylston,Reserved,FALSE,FALSE,0
+Boylston,1330 Boylston,Covered,FALSE,FALSE,0
+Boylston,1330 Boylston,Garage,FALSE,FALSE,405
+Boylston,1330 Boylston,Other,FALSE,FALSE,0
+bower,Bower,Surface,FALSE,FALSE,0
+bower,Bower,Reserved,FALSE,FALSE,0
+bower,Bower,Covered,FALSE,FALSE,0
+bower,Bower,Garage,FALSE,FALSE,0
+bower,Bower,Other,FALSE,FALSE,0
+vanness,Van Ness,Surface,FALSE,FALSE,0
+vanness,Van Ness,Reserved,FALSE,FALSE,0
+vanness,Van Ness,Covered,FALSE,FALSE,0
+vanness,Van Ness,Garage,FALSE,FALSE,0
+vanness,Van Ness,Other,FALSE,FALSE,0

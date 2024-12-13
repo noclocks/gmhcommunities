@@ -1,0 +1,132 @@
+You're tasked with developing a Shiny application for a leasing market survey. This app should use the `bslib` package to create a sleek and modern interface with a `page_navbar` layout that includes a sidebar and multiple navigation menus and panels.
+
+Here’s how to structure it:
+
+1. **Application Structure:**
+    - The app should be designed with top-level functions:
+      - `app_ui()`
+      - `app_server()`
+    - The `app_ui()` function should set up the main layout with navigation and sidebar.
+    - The `app_server()` function should handle the server logic and be modularized.
+
+2. **Sidebar Components:**
+   - Information about the logged-in user.
+   - An accordion labeled "Filters" with an icon containing global filters:
+     - `Portfolio`: A `shinyWidgets::pickerInput` for selecting property portfolios.
+     - `Property`: A `shinyWidgets::pickerInput` for selecting properties, dynamically adjusting based on the chosen portfolio, with subtext indicating the total number of beds.
+     - `Leasing Period`: Use `shinyWidgets::airDatepickerInput` that allows selection of a leasing period. This input should represent a week from Monday to Sunday based on the selected date, defaulting to the current week's leasing period.
+
+3. **Navigation Structure:**
+   - Menus and Panels:
+     - Dashboard
+     - Summary
+     - Data (menu): Portfolios, Properties, Leasing
+     - Reports
+     - Market Survey (w/ sub-tabs): Property Summary, Leasing Summary, Short Term Leases, Fees, Amenities, Utilities, Parking, Notes, Review
+     - Survey Insights (w/ sub-tabs): Overview, Data, History, Comparison, Rates, SWOT Analysis
+
+4. **Modules:**
+   - Create layout modules:
+     - `mod_title_ui/server`
+     - `mod_sidebar_ui/server`
+     - `mod_header_ui/server`
+     - `mod_footer_ui/server`
+   - Create primary tab modules:
+     - `mod_dashboard_ui/server`
+     - `mod_summary_ui/server`
+     - `mod_portfolios_ui/server`
+     - `mod_properties_ui/server`
+     - `mod_leasing_ui/server`
+     - `mod_reports_ui/server`
+     - `mod_market_survey_ui/server`
+     - `mod_survey_insights_ui/server`
+
+The app should use `bsicons` for icons and ensure a modern interface.
+
+Please start by setting up the R folder with the necessary files/modules and the app's basic navigation structure and sidebar with the appropriate filters and sections
+
+```r
+library(shiny)
+library(bslib)
+library(shinyWidgets)
+library(bsicons)
+
+# Define the UI for the application
+app_ui &lt;- function() {
+  navbarPage(
+    title = "Leasing Market Survey",
+    id = "main_navbar",
+    theme = bslib::bs_theme(version = 4, bootswatch = "flatly"),
+    tabPanel(title = "Dashboard", icon = bsicons::icon("house"), mod_dashboard_ui("dashboard")),
+    tabPanel(title = "Summary", icon = bsicons::icon("graph"), mod_summary_ui("summary")),
+    navbarMenu(
+      title = "Data",
+      icon = bsicons::icon("database"),
+      tabPanel(title = "Portfolios", mod_portfolios_ui("portfolios")),
+      tabPanel(title = "Properties", mod_properties_ui("properties")),
+      tabPanel(title = "Leasing", mod_leasing_ui("leasing"))
+    ),
+    tabPanel(title = "Reports", icon = bsicons::icon("file-alt"), mod_reports_ui("reports")),
+    navbarMenu(
+      title = "Market Survey", icon = bsicons::icon("survey"),
+      tabPanel(title = "Property Summary", mod_market_survey_ui("property_summary")),
+      tabPanel(title = "Leasing Summary", mod_market_survey_ui("leasing_summary")),
+      tabPanel(title = "Short Term Leases", mod_market_survey_ui("short_term_leases")),
+      tabPanel(title = "Fees", mod_market_survey_ui("fees")),
+      tabPanel(title = "Amenities", mod_market_survey_ui("amenities")),
+      tabPanel(title = "Utilities", mod_market_survey_ui("utilities")),
+      tabPanel(title = "Parking", mod_market_survey_ui("parking")),
+      tabPanel(title = "Notes", mod_market_survey_ui("notes")),
+      tabPanel(title = "Review", mod_market_survey_ui("review"))
+    ),
+    navbarMenu(
+      title = "Survey Insights", icon = bsicons::icon("insights"),
+      tabPanel(title = "Overview", mod_survey_insights_ui("overview")),
+      tabPanel(title = "Data", mod_survey_insights_ui("data")),
+      tabPanel(title = "History", mod_survey_insights_ui("history")),
+      tabPanel(title = "Comparison", mod_survey_insights_ui("comparison")),
+      tabPanel(title = "Rates", mod_survey_insights_ui("rates")),
+      tabPanel(title = "SWOT Analysis", mod_survey_insights_ui("swot"))
+    ),
+    sidebar_layout(
+      sidebar_panel(
+        textOutput("user_info"),
+        shinyWidgets::bs4Accordion(
+          id = "filter_accordion",
+          shinyWidgets::accordionItem(
+            title = "Filters", icon = bsicons::icon("filter"),
+            shinyWidgets::pickerInput("portfolio", "Portfolio", choices = NULL),
+            shinyWidgets::pickerInput(
+              "property", "Property", choices = NULL, 
+              options = list(subtext = "Total beds")
+            ),
+            shinyWidgets::airDatepickerInput("leasing_period", "Leasing Period", value = Sys.Date(), range = TRUE, autoclose = TRUE)
+          )
+        )
+      ),
+      main_panel(textOutput("main_content"))
+    )
+  )
+}
+
+# Define the server logic for the application
+app_server &lt;- function(input, output, session) {
+  # Server logic for global filters
+  callModule(mod_sidebar_server, "sidebar")
+  
+  # Server logic for each tab module
+  callModule(mod_dashboard_server, "dashboard")
+  callModule(mod_summary_server, "summary")
+  callModule(mod_portfolios_server, "portfolios")
+  callModule(mod_properties_server, "properties")
+  callModule(mod_leasing_server, "leasing")
+  callModule(mod_reports_server, "reports")
+  callModule(mod_market_survey_server, "market_survey")
+  callModule(mod_survey_insights_server, "survey_insights")
+}
+
+# Create Shiny app with UI and server
+shinyApp(ui = app_ui, server = app_server)
+```
+
+This skeleton sets up the basic navigation structure and sidebar as per the requirements. Each of the modules (`mod_*_ui` and `mod_*_server`) is a placeholder for where you can further define your module-specific UI and server logic.

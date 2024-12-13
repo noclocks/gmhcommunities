@@ -1,0 +1,122 @@
+# ! JUST READ - don't change the content of this file
+# Question structure extracted from survey.html
+property_name:
+  type: text
+  label: Property Name
+property_website:
+  type: text
+  label: Property Website
+property_address:
+  type: text
+  label: Property Address
+property_phone_number:
+  type: text
+  label: Property Phone Number
+property_developer:
+  type: text
+  label: Property Developer
+property_manager:
+  type: text
+  label: Property Manager
+property_owner:
+  type: text
+  label: Property Owner
+property_type:
+  type: mc
+  label: Property Type
+  options:
+    Student: '0'
+    Conventional: '1'
+    Affordable: '2'
+    Innovative: '3'
+property_status:
+  type: mc
+  label: Property Status
+  options:
+    Operational: '0'
+    New Construction: '1'
+    Undergoing Renovations: '2'
+product_type:
+  type: mc
+  label: Product Type
+  options:
+    High-Rise: '0'
+    Mid-Rise: '1'
+    Wrap: '2'
+    Garden: '3'
+    Cottage: '4'
+    SFR: '5'
+property_rating:
+  type: numeric
+  label: Property Rating
+comp_status:
+  type: mc
+  label: Comp Status
+  options:
+    Subject Property: '0'
+    Tier 1: '1'
+    Tier 2: '2'
+year_built:
+  type: numeric
+  label: Year Built
+year_last_renovated:
+  type: numeric
+  label: Year Last Renovated
+most_recent_sale_date:
+  type: date
+  label: Most Recent Sale Date
+distance_to_campus:
+  type: numeric
+  label: Distance to Campus
+reporting_cycle:
+  type: mc
+  label: Reporting Cycle
+  options:
+    Saturday-Friday: Saturday-Friday
+    Sunday-Monday: Sunday-Monday
+    Monday-Sunday: Monday-Sunday
+lease_launch_date:
+  type: date
+  label: Lease Launch Date
+renewal_launch_date:
+  type: date
+  label: Renewal Launch Date
+current_occupancy:
+  type: numeric
+  label: Current Occupancy
+prior_year_occupancy:
+  type: numeric
+  label: Prior Year Occupancy
+current_pre_lease:
+  type: numeric
+  label: Current Pre-Lease
+prior_year_pre_lease:
+  type: numeric
+  label: Prior Year Pre-Lease
+total_renewals:
+  type: numeric
+  label: Total Renewals
+total_new_leases:
+  type: numeric
+  label: Total New Leases
+total_weekly_leases:
+  type: numeric
+  label: Total Weekly Leases
+total_weekly_traffic:
+  type: numeric
+  label: Total Weekly Traffic
+current_incentive:
+  type: mc
+  label: Current Incentive
+  options:
+    Gift Card: Gift Card
+    Monthly Concession: Monthly Concession
+    One-Time Concession: One-Time Concession
+    None: None
+incentive_amount:
+  type: numeric
+  label: Incentive Amount
+data_last_updated:
+  type: date
+  label: Data Last Updated
+

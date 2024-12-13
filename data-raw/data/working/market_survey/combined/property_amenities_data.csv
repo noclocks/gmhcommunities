@@ -1,0 +1,125 @@
+property_id,property_name,amenity,availability
+739085,1047 Commonwealth Avenue,university_shuttle,FALSE
+739085,1047 Commonwealth Avenue,private_shuttle,FALSE
+739085,1047 Commonwealth Avenue,limited_access_gates,FALSE
+739085,1047 Commonwealth Avenue,fitness_center,TRUE
+739085,1047 Commonwealth Avenue,computer_lounge,TRUE
+739085,1047 Commonwealth Avenue,game_room,TRUE
+739085,1047 Commonwealth Avenue,spray_tanning,FALSE
+739085,1047 Commonwealth Avenue,uv_tanning,FALSE
+739085,1047 Commonwealth Avenue,pool,FALSE
+739085,1047 Commonwealth Avenue,hot_tub,FALSE
+739085,1047 Commonwealth Avenue,x24hr_package_system,TRUE
+739085,1047 Commonwealth Avenue,ev_charging_stations,FALSE
+739085,1047 Commonwealth Avenue,car_sharing_services,FALSE
+739085,1047 Commonwealth Avenue,smart_vending,TRUE
+739085,1047 Commonwealth Avenue,mini_market,FALSE
+739085,1047 Commonwealth Avenue,movie_theatre,FALSE
+739085,1047 Commonwealth Avenue,co_working_study_spaces,TRUE
+739085,1047 Commonwealth Avenue,free_printing,TRUE
+739085,1047 Commonwealth Avenue,coffee_bar,TRUE
+739085,1047 Commonwealth Avenue,retail,TRUE
+739085,1047 Commonwealth Avenue,sauna_spa,FALSE
+739085,1047 Commonwealth Avenue,cycling_yoga_studio,FALSE
+739085,1047 Commonwealth Avenue,rentable_guest_suite,FALSE
+739085,1047 Commonwealth Avenue,wellness_classes,FALSE
+739085,1047 Commonwealth Avenue,x24hr_concierge,FALSE
+739085,1047 Commonwealth Avenue,outdoor_grill_area,TRUE
+739085,1047 Commonwealth Avenue,sand_volleyball_court,FALSE
+739085,1047 Commonwealth Avenue,basketball_court,FALSE
+739085,1047 Commonwealth Avenue,pets_allowed,FALSE
+739085,1047 Commonwealth Avenue,dog_wash,FALSE
+739085,1047 Commonwealth Avenue,dog_park,FALSE
+boylston,1330 Boylston,university_shuttle,FALSE
+boylston,1330 Boylston,private_shuttle,FALSE
+boylston,1330 Boylston,limited_access_gates,TRUE
+boylston,1330 Boylston,fitness_center,TRUE
+boylston,1330 Boylston,computer_lounge,FALSE
+boylston,1330 Boylston,game_room,FALSE
+boylston,1330 Boylston,spray_tanning,FALSE
+boylston,1330 Boylston,uv_tanning,FALSE
+boylston,1330 Boylston,pool,TRUE
+boylston,1330 Boylston,hot_tub,FALSE
+boylston,1330 Boylston,x24hr_package_system,TRUE
+boylston,1330 Boylston,ev_charging_stations,TRUE
+boylston,1330 Boylston,car_sharing_services,TRUE
+boylston,1330 Boylston,smart_vending,FALSE
+boylston,1330 Boylston,mini_market,FALSE
+boylston,1330 Boylston,movie_theatre,FALSE
+boylston,1330 Boylston,co_working_study_spaces,FALSE
+boylston,1330 Boylston,free_printing,FALSE
+boylston,1330 Boylston,coffee_bar,FALSE
+boylston,1330 Boylston,retail,FALSE
+boylston,1330 Boylston,sauna_spa,FALSE
+boylston,1330 Boylston,cycling_yoga_studio,FALSE
+boylston,1330 Boylston,rentable_guest_suite,FALSE
+boylston,1330 Boylston,wellness_classes,FALSE
+boylston,1330 Boylston,x24hr_concierge,TRUE
+boylston,1330 Boylston,outdoor_grill_area,FALSE
+boylston,1330 Boylston,sand_volleyball_court,FALSE
+boylston,1330 Boylston,basketball_court,FALSE
+boylston,1330 Boylston,pets_allowed,TRUE
+boylston,1330 Boylston,dog_wash,TRUE
+boylston,1330 Boylston,dog_park,FALSE
+bower,Bower,university_shuttle,FALSE
+bower,Bower,private_shuttle,FALSE
+bower,Bower,limited_access_gates,TRUE
+bower,Bower,fitness_center,TRUE
+bower,Bower,computer_lounge,FALSE
+bower,Bower,game_room,TRUE
+bower,Bower,spray_tanning,FALSE
+bower,Bower,uv_tanning,FALSE
+bower,Bower,pool,TRUE
+bower,Bower,hot_tub,FALSE
+bower,Bower,x24hr_package_system,TRUE
+bower,Bower,ev_charging_stations,TRUE
+bower,Bower,car_sharing_services,FALSE
+bower,Bower,smart_vending,FALSE
+bower,Bower,mini_market,FALSE
+bower,Bower,movie_theatre,FALSE
+bower,Bower,co_working_study_spaces,TRUE
+bower,Bower,free_printing,FALSE
+bower,Bower,coffee_bar,FALSE
+bower,Bower,retail,TRUE
+bower,Bower,sauna_spa,FALSE
+bower,Bower,cycling_yoga_studio,TRUE
+bower,Bower,rentable_guest_suite,FALSE
+bower,Bower,wellness_classes,FALSE
+bower,Bower,x24hr_concierge,FALSE
+bower,Bower,outdoor_grill_area,TRUE
+bower,Bower,sand_volleyball_court,FALSE
+bower,Bower,basketball_court,FALSE
+bower,Bower,pets_allowed,TRUE
+bower,Bower,dog_wash,TRUE
+bower,Bower,dog_park,TRUE
+vanness,Van Ness,university_shuttle,FALSE
+vanness,Van Ness,private_shuttle,FALSE
+vanness,Van Ness,limited_access_gates,TRUE
+vanness,Van Ness,fitness_center,TRUE
+vanness,Van Ness,computer_lounge,FALSE
+vanness,Van Ness,game_room,TRUE
+vanness,Van Ness,spray_tanning,FALSE
+vanness,Van Ness,uv_tanning,FALSE
+vanness,Van Ness,pool,FALSE
+vanness,Van Ness,hot_tub,FALSE
+vanness,Van Ness,x24hr_package_system,TRUE
+vanness,Van Ness,ev_charging_stations,FALSE
+vanness,Van Ness,car_sharing_services,FALSE
+vanness,Van Ness,smart_vending,FALSE
+vanness,Van Ness,mini_market,FALSE
+vanness,Van Ness,movie_theatre,FALSE
+vanness,Van Ness,co_working_study_spaces,FALSE
+vanness,Van Ness,free_printing,FALSE
+vanness,Van Ness,coffee_bar,FALSE
+vanness,Van Ness,retail,TRUE
+vanness,Van Ness,sauna_spa,FALSE
+vanness,Van Ness,cycling_yoga_studio,FALSE
+vanness,Van Ness,rentable_guest_suite,FALSE
+vanness,Van Ness,wellness_classes,FALSE
+vanness,Van Ness,x24hr_concierge,FALSE
+vanness,Van Ness,outdoor_grill_area,FALSE
+vanness,Van Ness,sand_volleyball_court,FALSE
+vanness,Van Ness,basketball_court,FALSE
+vanness,Van Ness,pets_allowed,TRUE
+vanness,Van Ness,dog_wash,TRUE
+vanness,Van Ness,dog_park,FALSE

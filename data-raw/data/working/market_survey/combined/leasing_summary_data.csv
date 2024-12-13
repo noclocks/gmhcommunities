@@ -1,0 +1,5 @@
+property_id,property_name,leasing_week,reporting_cycle,lease_launch_date,renewal_launch_date,current_occupancy,last_year_occupancy,current_pre_lease,last_year_pre_lease,total_renewals,total_new_leases,total_leases_weekly,traffic_weekly,current_incentive,incentive_amount,data_last_updated,leasing_week_start
+739085,1047 Commonwealth Avenue,2024-12-01,Saturday-Friday,2023-11-27,2023-10-23,0.9945,0.9945,0.388,0.388,51,20,0,58,None,0,2024-02-22,2024-12-01
+boylston,1330 Boylston,2024-12-01,Monday-Sunday,NA,NA,0.95,0.95,0.965,0.965,0,0,0,6,None,0,2024-02-12,2024-12-01
+bower,Bower,2024-12-01,Monday-Sunday,NA,NA,0.95,0.95,0.93,0.93,0,0,0,2,None,0,2024-02-16,2024-12-01
+vanness,Van Ness,2024-12-01,Monday-Sunday,NA,NA,0.936,0.936,0.924,0.924,0,0,0,5,None,0,2024-02-22,2024-12-01

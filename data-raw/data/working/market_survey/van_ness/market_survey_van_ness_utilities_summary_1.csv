@@ -1,0 +1,4 @@
+utility,all_inclusive,cap,allowance,amount,per_unit_bed,property_id,property_name,leasing_week
+Electricity,No,No,No,14,Per Bed,vanness,Van Ness,2024-12-01
+Gas,Yes,No,No,0,Per Bed,vanness,Van Ness,2024-12-01
+Water,No,No,No,0,Per Bed,vanness,Van Ness,2024-12-01

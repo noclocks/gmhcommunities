@@ -1,0 +1,200 @@
+openapi: 3.0.0
+info:
+  title: .\data\getProperties-gmhcommunities.entrata.com.har Mitmproxy2Swagger
+  version: 1.0.0
+servers:
+- url: https://gmhcommunities.entrata.com/api/v1
+  description: The default server
+paths:
+  /properties:
+    post:
+      operationId: getFloorPlans
+      summary: POST properties getFloorPlans
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: object
+                    properties:
+                      requestId:
+                        type: string
+                      code:
+                        type: number
+                      result:
+                        type: object
+                        properties:
+                          FloorPlans:
+                            type: object
+                            properties:
+                              FloorPlan:
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    Identification:
+                                      type: object
+                                      properties:
+                                        '@attributes':
+                                          type: object
+                                          properties:
+                                            IDRank:
+                                              type: string
+                                            IDScopeType:
+                                              type: string
+                                            IDType:
+                                              type: string
+                                        IDValue:
+                                          type: number
+                                    Name:
+                                      type: string
+                                    PropertyId:
+                                      type: number
+                                    FloorplanGroups:
+                                      type: object
+                                      properties:
+                                        FloorplanGroup:
+                                          type: object
+                                          properties:
+                                            '146':
+                                              type: object
+                                              properties:
+                                                '@attributes':
+                                                  type: object
+                                                  properties:
+                                                    id:
+                                                      type: number
+                                                    name:
+                                                      type: string
+                                            '149':
+                                              type: object
+                                              properties:
+                                                '@attributes':
+                                                  type: object
+                                                  properties:
+                                                    id:
+                                                      type: number
+                                                    name:
+                                                      type: string
+                                    Comment:
+                                      type: string
+                                    UnitCount:
+                                      type: string
+                                    UnitsAvailable:
+                                      type: string
+                                    UnitTypes:
+                                      type: object
+                                      properties:
+                                        UnitType:
+                                          type: array
+                                          items:
+                                            type: object
+                                            properties:
+                                              '@attributes':
+                                                type: object
+                                                properties:
+                                                  Id:
+                                                    type: number
+                                              '@value':
+                                                type: string
+                                    IsDisabled:
+                                      type: number
+                                    Room:
+                                      type: array
+                                      items:
+                                        type: object
+                                        properties:
+                                          '@attributes':
+                                            type: object
+                                            properties:
+                                              RoomType:
+                                                type: string
+                                          Count:
+                                            type: number
+                                    SquareFeet:
+                                      type: object
+                                      properties:
+                                        '@attributes':
+                                          type: object
+                                          properties:
+                                            Max:
+                                              type: number
+                                            Min:
+                                              type: number
+                                    MarketRent:
+                                      type: object
+                                      properties:
+                                        '@attributes':
+                                          type: object
+                                          properties:
+                                            Max:
+                                              type: number
+                                            Min:
+                                              type: number
+                                    File:
+                                      type: array
+                                      items:
+                                        type: object
+                                        properties:
+                                          FileType:
+                                            type: string
+                                          '@attributes':
+                                            type: object
+                                            properties:
+                                              FileID:
+                                                type: number
+                                              Active:
+                                                type: string
+                                          Description:
+                                            type: string
+                                          Name:
+                                            type: string
+                                          Caption:
+                                            type: string
+                                          Format:
+                                            type: string
+                                          Width:
+                                            type: string
+                                          Height:
+                                            type: string
+                                          Src:
+                                            type: string
+                                          IsDefault:
+                                            type: number
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                auth:
+                  type: object
+                  properties:
+                    type:
+                      type: string
+                requestId:
+                  type: number
+                method:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    version:
+                      type: string
+                    params:
+                      type: object
+                      properties:
+                        propertyId:
+                          type: string
+                        usePropertyPreferences:
+                          type: string
+                        includeDisabledFloorplans:
+                          type: string
+x-path-templates:
+# Remove the ignore: prefix to generate an endpoint with its URL
+# Lines that are closer to the top take precedence, the matching is greedy
+  []

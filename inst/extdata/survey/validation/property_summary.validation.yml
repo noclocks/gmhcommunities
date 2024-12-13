@@ -1,0 +1,25 @@
+variables:
+  address_regex: "\\b\\d+\\s+[A-Za-z\\s]+(?:Street|St|Avenue|Ave|Road|Rd|Boulevard|Blvd)(?:\\s+(?:Apartment|Apt|Unit|#)\\s+\\d+)?,\\s*[A-Za-z\\s]+,\\s*[A-Z]{2},?\\s*\\d{5}(?:-\\d{4})?"
+  phone_regex: "^(?:\\(?[0-9]{3}\\)?[-. ]?[0-9]{3}[-. ]?[0-9]{4})$"
+  property_types:
+    - Student
+    - Conventional
+    - Affordable
+    - Innovative
+
+property_summary:
+  property_name:
+    - !expr shinyvalidate::sv_required(message = "Property Name is required.")
+  property_website:
+    - !expr shinyvalidate::sv_optional()
+    - !expr shinyvalidate::sv_url(message = "Property Website must be a valid URL.")
+  property_address:
+    - !expr shinyvalidate::sv_required(message = "Property Address is required.")
+    - !expr shinyvalidate::sv_regex(pattern = address_regex, message = "Enter a valid address.")
+  property_phone_number:
+    - !expr shinyvalidate::sv_optional()
+    - !expr shinyvalidate::sv_regex(pattern = phone_regex, message = "Enter a valid phone number.")
+  property_type:
+    - !expr shinyvalidate::sv_in_set(property_types, message = "Please select a valid property type.")
+    - !expr shinyvalidate::sv_required(message = "Property Type is required.")
+

@@ -1,0 +1,88 @@
+---
+format: html
+barcolor: '#4CAF50'
+barposition: top
+echo: false
+warning: false
+theme: default
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(quarto)
+library(kableExtra)
+library(surveydown)
+```
+
+::: {#welcome .sd-page}
+
+![](https://mma.prnewswire.com/media/2150945/GMH__box_only__NAVY_01__002_Logo.jpg)
+
+## GMH Communities Leasing Markey Survey
+
+Welcome to the GMH Communities Leasing Market Survey! Please take a few minutes to complete the survey. Your feedback is important to us.
+
+```{r}
+surveydown::sd_next(next_page = 'property_summary', label = 'Start Survey')
+```
+
+:::
+
+::: {#property_summary .sd-page}
+
+## Property Summary
+
+Please provide the following information about the property you are leasing.
+
+```{r property_summary_inputs_data}
+source("data/01_property_summary.R")
+```
+
+```{r property_summary_inputs, echo=FALSE}
+shiny::tagList(
+  property_summary_questions
+)
+```
+
+```{r property_summary_next_page}
+surveydown::sd_next(next_page = 'leasing_summary')
+```
+
+:::
+
+::: {#leasing_summary .sd-page}
+
+## Leasing Summary
+
+Please provide the following information about the leasing status of the property.
+
+```{r leasing_summary_inputs_data}
+source("data/02_leasing_summary.R")
+```
+
+```{r leasing_summary_inputs, echo=FALSE}
+shiny::tagList(
+  leasing_summary_questions
+)
+```
+
+```{r leasing_summary_next_page}
+surveydown::sd_next(next_page = 'end')
+```
+
+:::
+
+::: {#end .sd-page}
+
+## End of Survey
+
+Thank you for completing the GMH Communities Leasing Market Survey!
+
+```{r}
+# surveydown::sd_redirect(
+#   id = "end",
+# )
+surveydown::sd_close("Exit Survey")
+```
+
+:::

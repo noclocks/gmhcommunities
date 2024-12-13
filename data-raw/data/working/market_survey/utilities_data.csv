@@ -1,0 +1,33 @@
+property_id,property_name,utility_name,utility_amount,utility_category,per,included,capped,allowance
+739085,1047 Commonwealth Avenue,Electricity,25,main,Per Unit,FALSE,FALSE,FALSE
+739085,1047 Commonwealth Avenue,Gas,0,main,Per Bed,TRUE,FALSE,FALSE
+739085,1047 Commonwealth Avenue,Water,0,main,Per Bed,TRUE,FALSE,FALSE
+739085,1047 Commonwealth Avenue,Cable/Satellite,0,other,Per Bed,FALSE,FALSE,FALSE
+739085,1047 Commonwealth Avenue,Internet,0,other,Per Bed,TRUE,FALSE,FALSE
+739085,1047 Commonwealth Avenue,Recycling,0,other,Per Bed,TRUE,FALSE,FALSE
+739085,1047 Commonwealth Avenue,Trash Service,0,other,Per Bed,TRUE,FALSE,FALSE
+739085,1047 Commonwealth Avenue,Valet Trash,0,other,Per Bed,FALSE,FALSE,FALSE
+bower,Bower,Electricity,14,main,Per Unit,FALSE,FALSE,FALSE
+bower,Bower,Gas,0,main,Per Unit,FALSE,FALSE,FALSE
+bower,Bower,Water,0,main,Per Unit,FALSE,FALSE,FALSE
+bower,Bower,Cable/Satellite,0,other,Per Unit,TRUE,FALSE,FALSE
+bower,Bower,Internet,0,other,Per Unit,FALSE,FALSE,FALSE
+bower,Bower,Recycling,0,other,Per Unit,TRUE,FALSE,FALSE
+bower,Bower,Trash Service,0,other,Per Unit,TRUE,FALSE,FALSE
+bower,Bower,Valet Trash,0,other,Per Unit,FALSE,FALSE,FALSE
+boylston,1330 Boylston,Electricity,14,main,Per Bed,FALSE,FALSE,FALSE
+boylston,1330 Boylston,Gas,0,main,Per Bed,FALSE,FALSE,FALSE
+boylston,1330 Boylston,Water,0,main,Per Bed,FALSE,FALSE,FALSE
+boylston,1330 Boylston,Cable/Satellite,0,other,Per Bed,TRUE,FALSE,FALSE
+boylston,1330 Boylston,Internet,0,other,Per Bed,FALSE,FALSE,FALSE
+boylston,1330 Boylston,Recycling,0,other,Per Bed,TRUE,FALSE,FALSE
+boylston,1330 Boylston,Trash Service,0,other,Per Bed,TRUE,FALSE,FALSE
+boylston,1330 Boylston,Valet Trash,0,other,Per Bed,FALSE,FALSE,FALSE
+vanness,Van Ness,Electricity,14,main,Per Bed,FALSE,FALSE,FALSE
+vanness,Van Ness,Gas,0,main,Per Bed,TRUE,FALSE,FALSE
+vanness,Van Ness,Water,0,main,Per Bed,FALSE,FALSE,FALSE
+vanness,Van Ness,Cable/Satellite,0,other,Per Bed,TRUE,FALSE,FALSE
+vanness,Van Ness,Internet,0,other,Per Bed,FALSE,FALSE,FALSE
+vanness,Van Ness,Recycling,0,other,Per Bed,TRUE,FALSE,FALSE
+vanness,Van Ness,Trash Service,0,other,Per Bed,TRUE,FALSE,FALSE
+vanness,Van Ness,Valet Trash,0,other,Per Bed,FALSE,FALSE,FALSE

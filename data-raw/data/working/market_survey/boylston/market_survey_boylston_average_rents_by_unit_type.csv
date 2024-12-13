@@ -1,0 +1,9 @@
+unit_type,count,sf_per_bed,available,market_rent_per_bed,market_rent_per_sf,concessions_gift_card,concessions_one_time_rent,concessions_monthly_rent,effective_rent_per_bed,effective_rent_per_sf,bundled_rent_per_bed,bundled_rent_per_sf,property_id,property_name,leasing_week
+Studio,0,0,NA,0,0,0,0,0,0,0,0,0,Boylston,1330 Boylston,2024-12-01
+1 Bedroom,146,856.3561643835617,Yes,4148.068493150685,4.8943333863556475,0,0,0,4148.068493150685,4.8943333863556475,4148.068493150685,4.8943333863556475,Boylston,1330 Boylston,2024-12-01
+2 Bedroom,54,1313.3333333333333,Yes,5883.333333333333,4.498666756193761,0,0,0,5883.333333333333,4.498666756193761,5883.333333333333,4.498666756193761,Boylston,1330 Boylston,2024-12-01
+3 Bedroom,0,0,NA,0,0,0,0,0,0,0,0,0,Boylston,1330 Boylston,2024-12-01
+4 Bedroom,0,0,NA,0,0,0,0,0,0,0,0,0,Boylston,1330 Boylston,2024-12-01
+5 Bedroom,0,0,NA,0,0,0,0,0,0,0,0,0,Boylston,1330 Boylston,2024-12-01
+6 Bedroom,0,0,NA,0,0,0,0,0,0,0,0,0,Boylston,1330 Boylston,2024-12-01
+Property Average,200,979.74,Yes,4616.59,4.787503396211938,0,0,0,4616.59,4.787503396211938,4616.59,4.787503396211938,Boylston,1330 Boylston,2024-12-01

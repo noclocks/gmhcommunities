@@ -1,0 +1,706 @@
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+                {
+                  "AddressType": "Mailing",
+                  "Address": "708 South 6th Street",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                }
+              ]
+            },
+            "PostMonths": {
+              "ArPostMonth": "11/2024",
+              "ApPostMonth": "11/2024",
+              "GlPostMonth": "11/2024"
+            },
+            "PropertyHours": {
+              "OfficeHours": {
+                "OfficeHour": [
+                  {
+                    "Day": "Monday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "6:00 PM"
+                  },
+                  {
+                    "Day": "Sunday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "12:00 PM",
+                    "CloseTime": "4:00 PM"
+                  },
+                  {
+                    "Day": "Saturday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "4:00 PM"
+                  },
+                  {
+                    "Day": "Tuesday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "6:00 PM"
+                  },
+                  {
+                    "Day": "Wednesday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "6:00 PM"
+                  },
+                  {
+                    "Day": "Thursday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "6:00 PM"
+                  },
+                  {
+                    "Day": "Friday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "6:00 PM"
+                  }
+                ]
+              }
+            },
+            "IsDisabled": 0,
+            "IsFeaturedProperty": 0,
+            "SpaceOptions": {
+              "SpaceOption": [
+                {
+                  "Id": "2",
+                  "Name": "Private"
+                },
+                {
+                  "Id": "3",
+                  "Name": "Shared"
+                },
+                {
+                  "Id": "22",
+                  "Name": "Per Bedroom"
+                }
+              ]
+            },
+            "LeaseTerms": {
+              "LeaseTerm": [
+                {
+                  "Id": 11037,
+                  "Name": "2021 Fall Semester",
+                  "TermMonths": 5,
+                  "IsProspect": true,
+                  "IsRenewal": true
+                },
+                {
+                  "Id": 11004,
+                  "Name": "2020/2021 6 Month Lease",
+                  "TermMonths": 5,
+                  "IsProspect": true,
+                  "IsRenewal": false
+                },
+                {
+                  "Id": 11008,
+                  "Name": "2020 Fall Semester",
+                  "TermMonths": 5,
+                  "IsProspect": true,
+                  "IsRenewal": true
+                },
+                {
+                  "Id": 11009,
+                  "Name": "Spring Semester 2021",
+                  "TermMonths": 5,
+                  "IsProspect": true,
+                  "IsRenewal": true
+                },
+                {
+                  "Id": 11096,
+                  "Name": "2021/2022 6 Month Lease",
+                  "TermMonths": 6,
+                  "IsProspect": true,
+                  "IsRenewal": true
+                },
+                {
+                  "Id": 11005,
+                  "Name": "2020/2021 9 Month Lease",
+                  "TermMonths": 10,
+                  "IsProspect": true,
+                  "IsRenewal": false
+                },
+                {
+                  "Id": 11121,
+                  "Name": "2022/2023",
+                  "TermMonths": 12,
+                  "IsProspect": true,
+                  "IsRenewal": true
+                },
+                {
+                  "Id": 11909,
+                  "Name": "Annual",
+                  "TermMonths": 12,
+                  "IsProspect": true,
+                  "IsRenewal": true,
+                  "LeaseStartWindows": {
+                    "LeaseStartWindow": [
+                      {
+                        "Id": 9861,
+                        "WindowStartDate": "08/15/2025",
+                        "WindowEndDate": "07/30/2026"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Id": 11458,
+                  "Name": "Transfer 2024/2025",
+                  "TermMonths": 12,
+                  "IsProspect": false,
+                  "IsRenewal": true,
+                  "LeaseStartWindows": {
+                    "LeaseStartWindow": [
+                      {
+                        "Id": 9335,
+                        "WindowStartDate": "08/16/2024",
+                        "WindowEndDate": "07/30/2025"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Id": 10894,
+                  "Name": "Immediate Move In 2020/2021",
+                  "TermMonths": 12,
+                  "IsProspect": true,
+                  "IsRenewal": true
+                },
+                {
+                  "Id": 11910,
+                  "Name": "MOMI",
+                  "TermMonths": 12,
+                  "IsProspect": false,
+                  "IsRenewal": true,
+                  "LeaseStartWindows": {
+                    "LeaseStartWindow": [
+                      {
+                        "Id": 9865,
+                        "WindowStartDate": "08/15/2025",
+                        "WindowEndDate": "07/30/2026"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Id": 11020,
+                  "Name": "Immediate Move-In 2021/2022",
+                  "TermMonths": 12,
+                  "IsProspect": true,
+                  "IsRenewal": true
+                },
+                {
+                  "Id": 11457,
+                  "Name": "2024/2025",
+                  "TermMonths": 12,
+                  "IsProspect": true,
+                  "IsRenewal": true,
+                  "LeaseStartWindows": {
+                    "LeaseStartWindow": [
+                      {
+                        "Id": 9331,
+                        "WindowStartDate": "08/16/2024",
+                        "WindowEndDate": "07/30/2025"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Id": 11199,
+                  "Name": "2023/2024",
+                  "TermMonths": 12,
+                  "IsProspect": true,
+                  "IsRenewal": true
+                },
+                {
+                  "Id": 10891,
+                  "Name": "2019/2020",
+                  "TermMonths": 13,
+                  "IsProspect": true,
+                  "IsRenewal": true
+                }
+              ]
+            }
+          },
+          {
+            "PropertyID": 1115679,
+            "MarketingName": "ANOVA uCity Square",
+            "Type": "Apartment",
+            "webSite": "https://www.anovaucity.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "3700 Lancaster Avenue",
+              "City": "Philadelphia",
+              "State": "PA",
+              "PostalCode": "19104",
+              "Country": "US",
+              "Email": "info@anovaucity.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "3700 Lancaster Avenue",
+                  "City": "Philadelphia",
+                  "StateCode": "PA",
+                  "PostalCode": "19104",
+                  "Country": "US"
+                }
+              ]
+            },
+            "PostMonths": {
+              "ArPostMonth": "12/2024",
+              "ApPostMonth": "12/2024",
+              "GlPostMonth": "12/2024"
+            },
+            "PropertyHours": {
+              "OfficeHours": {
+                "OfficeHour": [
+                  {
+                    "Day": "Monday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "6:00 PM"
+                  },
+                  {
+                    "Day": "Tuesday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "6:00 PM"
+                  },
+                  {
+                    "Day": "Wednesday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "6:00 PM"
+                  },
+                  {
+                    "Day": "Thursday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "6:00 PM"
+                  },
+                  {
+                    "Day": "Friday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "6:00 PM"
+                  },
+                  {
+                    "Day": "Saturday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "4:00 PM"
+                  },
+                  {
+                    "Day": "Sunday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "12:00 PM",
+                    "CloseTime": "4:00 PM"
+                  }
+                ]
+              }
+            },
+            "IsDisabled": 0,
+            "IsFeaturedProperty": 0,
+            "SpaceOptions": {
+              "SpaceOption": [
+                {
+                  "Id": "1",
+                  "Name": "Conventional"
+                }
+              ]
+            }
+          },
+          {
+            "PropertyID": 1161867,
+            "MarketingName": "Courts at Spring Mill Station",
+            "Type": "Apartment",
+            "YearBuilt": "2014",
+            "LongDescription": "Welcome home to The Courts at Spring Mill Station. Our brand new contemporary and comfortable apartments in Conshohocken are intuitively designed for style, functionality, convenience and historic charm, with inviting open-concept floor plans, abundant amenities, scenic views and garage parking. Close to transportation, shopping, restaurants and outdoor activities, our controlled access community is ideal for families, couples and individuals who appreciate a maintenance-free lifestyle in an upscale community with all the comforts of home and more.\r\nLocated on Hector Street in Conshohocken, The Courts at Spring Mill Station are just steps from the train to Center City in Philadelphia and other local attractions. We are also adjacent to the scenic Schuylkill Trail with views of the Schuylkill River. Walk to area bars, restaurants and shopping. Perfect your swing at the area's championship Golf Courses. Or stay right at home and take advantage of our clubroom, fitness center and resort-style swimming pool. \r\nFind the space that suites your lifestyle at The Courts at Spring Mill Station. We offer one and two bedroom apartments and lofts and apartments with dens, all designed to maximize space, storage and comfort. Experience contemporary living with open floor plans, granite countertops, stainless steel appliances and stacked washer/dryer. Energy efficient oversized windows allow natural light to flow while you take in scenic views of the Schuylkill River, landscaped courtyards or resort-like pool. As part of our goal to become LEED certified, The Courts at Spring Mill Station also feature energy and water efficient appliances and smoke-free buildings.\r\nGet the most out of living at the Courts at Spring Mill Station. We offer activities for every age and interest. Relax in our large clubroom with games, high definition TVs and a fireplace. Pick up the pace in our fitness center, indoor basketball and volleyball courts or yoga and Pilates studio. Barbecue by the pool or gather in our dining area or Wi-Fi café. And remember, when you do venture out, the SEPTA Spring Mill Station with trains to Center City is just steps away.",
+            "webSite": "https://www.courtsatspringmill.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1101 E. Hector Street, #104",
+              "City": "Conshohocken",
+              "State": "PA",
+              "PostalCode": "19428",
+              "Country": "US",
+              "Email": "info@courtsatspringmill.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1101 E. Hector Street, #104",
+                  "City": "Conshohocken",
+                  "StateCode": "PA",
+                  "PostalCode": "19428",
+                  "Country": "US"
+                }
+              ]
+            },
+            "PostMonths": {
+              "ArPostMonth": "12/2024",
+              "ApPostMonth": "12/2024",
+              "GlPostMonth": "12/2024"
+            },
+            "PropertyHours": {
+              "OfficeHours": {
+                "OfficeHour": [
+                  {
+                    "Day": "Monday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "8:30 AM",
+                    "CloseTime": "5:00 PM"
+                  },
+                  {
+                    "Day": "Tuesday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "8:30 AM",
+                    "CloseTime": "5:00 PM"
+                  },
+                  {
+                    "Day": "Wednesday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "8:30 AM",
+                    "CloseTime": "5:00 PM"
+                  },
+                  {
+                    "Day": "Thursday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "8:30 AM",
+                    "CloseTime": "5:00 PM"
+                  },
+                  {
+                    "Day": "Friday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "8:30 AM",
+                    "CloseTime": "5:00 PM"
+                  },
+                  {
+                    "Day": "Saturday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "9:00 AM",
+                    "CloseTime": "4:00 PM"
+                  }
+                ]
+              },
+              "PoolHours": {
+                "PoolHour": [
+                  {
+                    "Day": "Monday",
+                    "OpenTime": "11:00 AM",
+                    "CloseTime": "7:00 PM"
+                  },
+                  {
+                    "Day": "Tuesday",
+                    "OpenTime": "11:00 AM",
+                    "CloseTime": "7:00 PM"
+                  },
+                  {
+                    "Day": "Wednesday",
+                    "OpenTime": "11:00 AM",
+                    "CloseTime": "7:00 PM"
+                  },
+                  {
+                    "Day": "Thursday",
+                    "OpenTime": "11:00 AM",
+                    "CloseTime": "7:00 PM"
+                  },
+                  {
+                    "Day": "Friday",
+                    "OpenTime": "11:00 AM",
+                    "CloseTime": "7:00 PM"
+                  },
+                  {
+                    "Day": "Saturday",
+                    "OpenTime": "11:00 AM",
+                    "CloseTime": "7:00 PM"
+                  },
+                  {
+                    "Day": "Sunday",
+                    "OpenTime": "11:00 AM",
+                    "CloseTime": "7:00 PM"
+                  }
+                ]
+              }
+            },
+            "IsDisabled": 0,
+            "IsFeaturedProperty": 0,
+            "SpaceOptions": {
+              "SpaceOption": [
+                {
+                  "Id": "1",
+                  "Name": "Conventional"
+                }
+              ]
+            }
+          },
+          {
+            "PropertyID": 577897,
+            "MarketingName": "Station Nine",
+            "Type": "Apartment",
+            "YearBuilt": "2004",
+            "ShortDescription": "Modern, Loft-Style Luxury Apartments in Durham, NC",
+            "LongDescription": "Welcome to Station Nine, a premier apartment community, located in the heart of Ninth Street District, offering a true urban-living feel through our luxury apartments in Durham, NC! Our 1- and 2-bedroom apartments feature both open-concept and loft floor plans, giving you even bigger opportunities to make the place your own. Spacious interiors and modern design touches blend together with world-class amenities, including warm hardwood flooring, vaulted ceilings, large windows for lots of natural lighting, premium materials and finishes like granite counter tops, stainless steel appliances, an in-home washer and dryer, and private patio or balcony spaces so you can enjoy your natural surroundings at your leisure. As a resident, you'll also be able to relax by the resort-style pool, stay healthy in the fitness center, relax in the courtyards with friends, or grab a boost of energy from the coffee bar. Regardless of your lifestyle or living situation, Station Nine offers pet-friendly apartments with enough space and personality to keep you satisfied. We feel confident that you'll find your new home at Station Nine!",
+            "webSite": "https://www.stationnine.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "2211 Hillsborough Rd",
+              "City": "Durham",
+              "State": "NC",
+              "PostalCode": "27705",
+              "Country": "US",
+              "Email": "leasing@stationnine.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "2211 Hillsborough Rd",
+                  "City": "Durham",
+                  "StateCode": "NC",
+                  "PostalCode": "27705",
+                  "Country": "US"
+                }
+              ]
+            },
+            "Phone": {
+              "PhoneNumber": "9192863800",
+              "@attributes": {
+                "PhoneType": "primary"
+              },
+              "PhoneDescription": "Primary"
+            },
+            "PostMonths": {
+              "ArPostMonth": "12/2024",
+              "ApPostMonth": "12/2024",
+              "GlPostMonth": "12/2024"
+            },
+            "PropertyHours": {
+              "OfficeHours": {
+                "OfficeHour": [
+                  {
+                    "Day": "Monday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "6:00 PM"
+                  },
+                  {
+                    "Day": "Tuesday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "6:00 PM"
+                  },
+                  {
+                    "Day": "Thursday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "6:00 PM"
+                  },
+                  {
+                    "Day": "Friday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "6:00 PM"
+                  },
+                  {
+                    "Day": "Wednesday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "6:00 PM"
+                  },
+                  {
+                    "Day": "Saturday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "4:00 PM"
+                  }
+                ]
+              },
+              "PoolHours": {
+                "PoolHour": [
+                  {
+                    "Day": "Monday",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "9:00 PM"
+                  },
+                  {
+                    "Day": "Tuesday",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "9:00 PM"
+                  },
+                  {
+                    "Day": "Wednesday",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "9:00 PM"
+                  },
+                  {
+                    "Day": "Thursday",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "9:00 PM"
+                  },
+                  {
+                    "Day": "Friday",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "9:00 PM"
+                  },
+                  {
+                    "Day": "Saturday",
+                    "OpenTime": "10:00 AM",
+                    "CloseTime": "9:00 PM"
+                  },
+                  {
+                    "Day": "Sunday",
+                    "OpenTime": "12:00 AM",
+                    "CloseTime": "9:00 PM"
+                  }
+                ]
+              }
+            },
+            "IsDisabled": 0,
+            "IsFeaturedProperty": 0,
+            "SpaceOptions": {
+              "SpaceOption": [
+                {
+                  "Id": "1",
+                  "Name": "Conventional"
+                }
+              ]
+            }
+          },
+          {
+            "PropertyID": 1197886,
+            "MarketingName": "The Caswell at Runnymeade",
+            "Type": "Apartment",
+            "YearBuilt": "2023",
+            "webSite": "https://www.thecaswellresidences.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1000 Bluebird View",
+              "City": "Newtown Square",
+              "State": "PA",
+              "PostalCode": "19073",
+              "Country": "US",
+              "Email": "info@thecaswellresidences.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1000 Bluebird View",
+                  "City": "Newtown Square",
+                  "StateCode": "PA",
+                  "PostalCode": "19073",
+                  "Country": "US"
+                }
+              ]
+            },
+            "PostMonths": {
+              "ArPostMonth": "11/2024",
+              "ApPostMonth": "11/2024",
+              "GlPostMonth": "11/2024"
+            },
+            "PropertyHours": {
+              "OfficeHours": {
+                "OfficeHour": [
+                  {
+                    "Day": "Saturday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "9:00 AM",
+                    "CloseTime": "5:00 PM"
+                  },
+                  {
+                    "Day": "Monday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "9:00 AM",
+                    "CloseTime": "5:30 PM"
+                  },
+                  {
+                    "Day": "Tuesday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "9:00 AM",
+                    "CloseTime": "5:30 PM"
+                  },
+                  {
+                    "Day": "Wednesday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "9:00 AM",
+                    "CloseTime": "5:30 PM"
+                  },
+                  {
+                    "Day": "Thursday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "9:00 AM",
+                    "CloseTime": "5:30 PM"
+                  },
+                  {
+                    "Day": "Friday",
+                    "AvailabilityType": "Open",
+                    "OpenTime": "9:00 AM",
+                    "CloseTime": "5:30 PM"
+                  }
+                ]
+              }
+            },
+            "IsDisabled": 0,
+            "IsFeaturedProperty": 0,
+            "SpaceOptions": {
+              "SpaceOption": [
+                {
+                  "Id": "1",
+                  "Name": "Conventional"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+utility,included,amount,per_unit_bed,property_id,property_name,leasing_week
+Cable/Satellite,Yes,0,Per Unit,bower,Bower,2024-12-01
+Internet,No,0,Per Unit,bower,Bower,2024-12-01
+Trash Service,Yes,0,Per Unit,bower,Bower,2024-12-01
+Valet Trash,No,0,Per Unit,bower,Bower,2024-12-01
+Recycling,Yes,0,Per Unit,bower,Bower,2024-12-01

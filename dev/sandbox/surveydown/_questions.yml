@@ -1,0 +1,210 @@
+property_summary:
+  property_name:
+    input_id: "property_name"
+    order: 1
+    db_table: "mkt.property_summary"
+    db_column: "property_name"
+    label: "Property Name"
+    input_type: !expr shinyWidgets::textInputIcon
+    required: true
+    default: "1047 Commonwealth"
+    placeholder: "Enter property name"
+    options: NULL
+    icon: !expr bsicons::bs_icon("building")
+    help: "Enter the name of the property."
+    validation: !expr validate_entrata_property_name
+
+  property_website:
+    id: "property_website"
+    label: "Property Website"
+    type: text
+    required: true
+    default: "https://www.1047commonwealth.com"
+    placeholder: "Enter property website"
+    icon: "globe"
+    help: "Enter the website of the property."
+
+  property_address:
+    id: "property_address"
+    label: "Property Address"
+    type: text
+    required: true
+    default: "1047 Commonwealth Ave, Boston, MA 02215"
+    placeholder: "Enter property address"
+    icon: "map-marker"
+    help: "Enter the address of the property."
+
+  property_phone_number:
+    id: "property_phone_number"
+    label: "Property Phone Number"
+    type: text
+    required: true
+    default: "617-500-6482"
+    placeholder: "Enter property phone number"
+    icon: "phone"
+    help: "Enter the phone number of the property."
+
+  property_developer:
+    id: "property_developer"
+    label: "Property Developer"
+    type: text
+    required: true
+    default: "BPDA"
+    placeholder: "Enter property developer"
+    icon: "user-tie"
+    help: "Enter the developer of the property."
+
+  property_manager:
+    id: "property_manager"
+    label: "Property Manager"
+    type: text
+    required: true
+    default: "GMH Communities"
+    placeholder: "Enter property manager"
+    icon: "user-tie"
+    help: "Enter the manager of the property."
+
+  property_owner:
+    id: "property_owner"
+    label: "Property Owner"
+    type: text
+    required: true
+    default: "AGC + GMH Communities"
+    placeholder: "Enter property owner"
+    icon: "user-tie"
+    help: "Enter the owner of the property."
+
+  property_type:
+    id: "property_type"
+    label: "Property Type"
+    type: mc
+    required: true
+    default: "Student"
+    options:
+      - "Student"
+      - "Conventional"
+      - "Affordable"
+      - "Innovative"
+    icon: "building"
+    help: "Select the type of the property."
+
+  property_status:
+    id: "property_status"
+    label: "Property Status"
+    type: mc
+    required: true
+    default: "Operational"
+    options:
+      - "Operational"
+      - "New Construction"
+      - "Undergoing Renovations"
+    icon: "building"
+    help: "Select the status of the property."
+
+  product_type:
+    id: "product_type"
+    label: "Product Type"
+    type: mc
+    required: true
+    default: "Mid-Rise"
+    options:
+      - "Mid-Rise"
+      - "High-Rise"
+      - "Wrap"
+      - "Garden"
+      - "Cottage"
+      - "SFR"
+    icon: "building"
+    help: "Select the type of the product."
+
+  property_rating:
+    id: "property_rating"
+    label: "Property Rating"
+    type: numeric
+    required: true
+    default: 2
+    min: 1
+    max: 5
+    step: 0.5
+    icon: "star"
+    help: "Rate the property from 1 to 5."
+
+  comp_status:
+    id: "comp_status"
+    label: "Comp Status"
+    type: mc
+    required: true
+    default: "Subject Property"
+    options:
+      - "Subject Property"
+      - "Tier 1"
+      - "Tier 2"
+    icon: "building"
+    help: "Select the status of the comp."
+
+  year_built:
+    id: "year_built"
+    label: "Year Built"
+    type: numeric
+    required: true
+    default: 2017
+    min: 1900
+    max: 2025
+    step: 1
+    icon: "calendar"
+    help: "Enter the year the property was built."
+
+  year_renovated:
+    id: "year_renovated"
+    label: "Year Renovated"
+    type: numeric
+    required: true
+    default: 2020
+    min: 1900
+    max: 2025
+    step: 1
+    icon: "calendar"
+    help: "Enter the year the property was renovated."
+
+  most_recent_sale:
+    id: "most_recent_sale"
+    label: "Most Recent Sale"
+    type: date
+    required: true
+    default: "2024-01-29"
+    icon: "calendar"
+    help: "Enter the date of the most recent sale."
+
+  distance_from_campus:
+    id: "distance_from_campus"
+    label: "Distance from Campus"
+    type: numeric
+    required: true
+    default: 0.1
+    min: 0
+    max: 100
+    step: 0.1
+    icon: "map-marker"
+    help: "Enter the distance from the campus in miles."
+
+leasing_summary:
+  reporting_cycle:
+    id: "reporting_cycle"
+    label: "Reporting Cycle"
+    type: mc
+    input: !expr shinyWidgets::pickerInput
+    input_args:
+      inputId: "reporting_cycle"
+      label: !expr icon_text(bsicons::bs_icon("calendar"), "Reporting Cycle")
+      choices: c("Saturday-Friday", "Sunday-Monday", "Monday-Sunday")
+      selected: "Saturday-Friday"
+      multiple: FALSE
+      options: !expr shinyWidgets::pickerOptions(actionsBox = FALSE, liveSearch = FALSE)
+    required: true
+    default: "Saturday-Friday"
+    options:
+      - "Saturday-Friday"
+      - "Sunday-Monday"
+      - "Monday-Sunday"
+    icon: !expr bsicons::bs_icon("calendar")
+    help: "Select the reporting cycle."

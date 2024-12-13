@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Properties</name>
+    <Style id="icon-1899-1A237E-normal">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-1A237E-highlight">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-1A237E">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-1A237E-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-1A237E-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>1047 Commonwealth Avenue</name>
+      <address>1047 Commonwealth Avenue, Boston, MA 02215, US</address>
+      <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iB9F9Vm3Twqs0HuzkszV_bwujzty0FR2hZQEJ1kxSkHgLxjKDr4DmZrroF8lG5c56q-QNNZEjHS0oKFLhn7s1de0YFCfZNhFzYdBKk-6rQpAv2GrqtRuwF3Fvta-dvLNGq6RpLIOaYJEiSCjUwrUxeQrQiXIWt2SEwNrIFNh6BNwyRbZCdaFgg-SGLCNqlHnqPEJo2mb9Om88EDOAlSVzFWQFqYW7pm8VUlR3zzRkOfrwG6bg5AkIy8L3g?authuser=0&fife=s16383" height="200" width="auto" /><br><br>Property ID: 739085<br>Property Type: Student<br>Property Website: https://1047commonwealthavenue.prospectportal.com/<br>Property Email: info@1047commonwealth.com<br>Property Description Short: <br>Property Description Long: <br>Is Disabled: FALSE<br>Is Featured: FALSE<br>Parent Property Id: <br>Year Built: <br>Address Street: 1047 Commonwealth Avenue<br>Address City: Boston<br>Address State: MA<br>Address Zip: 2215<br>Address Country: US<br>Property Ar Post Month: 09/2024<br>Property Ap Post Month: 09/2024<br>Property Gl Post Month: 09/2024<br>Property Email Mailto: info@1047commonwealth.com<br>Address Full: 1047 Commonwealth Avenue, Boston, MA 02215, US<br>Gmaps Url: https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1047%20Commonwealth%20Avenue,%20Boston,%20MA%2002215,%20US<br>Gmaps Iframe: <iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1047%20Commonwealth%20Avenue,%20Boston,%20MA%2002215,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></description>
+      <styleUrl>#icon-1899-1A237E</styleUrl>
+      <ExtendedData>
+        <Data name="Property ID">
+          <value>739085.0</value>
+        </Data>
+        <Data name="Property Type">
+          <value>Student</value>
+        </Data>
+        <Data name="Property Website">
+          <value>https://1047commonwealthavenue.prospectportal.com/</value>
+        </Data>
+        <Data name="Property Email">
+          <value>info@1047commonwealth.com</value>
+        </Data>
+        <Data name="Property Description Short">
+          <value/>
+        </Data>
+        <Data name="Property Description Long">
+          <value/>
+        </Data>
+        <Data name="Is Disabled">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Is Featured">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Parent Property Id">
+          <value/>
+        </Data>
+        <Data name="Year Built">
+          <value/>
+        </Data>
+        <Data name="Address Street">
+          <value>1047 Commonwealth Avenue</value>
+        </Data>
+        <Data name="Address City">
+          <value>Boston</value>
+        </Data>
+        <Data name="Address State">
+          <value>MA</value>
+        </Data>
+        <Data name="Address Zip">
+          <value>2215.0</value>
+        </Data>
+        <Data name="Address Country">
+          <value>US</value>
+        </Data>
+        <Data name="Property Ar Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Ap Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Gl Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Email Mailto">
+          <value>info@1047commonwealth.com</value>
+        </Data>
+        <Data name="Address Full">
+          <value>1047 Commonwealth Avenue, Boston, MA 02215, US</value>
+        </Data>
+        <Data name="Gmaps Url">
+          <value><![CDATA[https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1047%20Commonwealth%20Avenue,%20Boston,%20MA%2002215,%20US]]></value>
+        </Data>
+        <Data name="Gmaps Iframe">
+          <value><![CDATA[<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1047%20Commonwealth%20Avenue,%20Boston,%20MA%2002215,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></value>
+        </Data>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iB9F9Vm3Twqs0HuzkszV_bwujzty0FR2hZQEJ1kxSkHgLxjKDr4DmZrroF8lG5c56q-QNNZEjHS0oKFLhn7s1de0YFCfZNhFzYdBKk-6rQpAv2GrqtRuwF3Fvta-dvLNGq6RpLIOaYJEiSCjUwrUxeQrQiXIWt2SEwNrIFNh6BNwyRbZCdaFgg-SGLCNqlHnqPEJo2mb9Om88EDOAlSVzFWQFqYW7pm8VUlR3zzRkOfrwG6bg5AkIy8L3g?authuser=0&fife=s16383]]></value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>908 S. 1st</name>
+      <address>908 S. 1st, Champaign, IL 61820, US</address>
+      <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iAV5rkIE3VKt_w9deS8V1chAYkzjDWl34cslBMO6vr5-wBE0wjN13WAPizOK_2VP2gNG1tE1Xkx_apDTuHx47qgRk0CjJr49M0R0N4u2w5dYLjrS5XNepEJhD4jJ1aCtcfrWleG8NzCuD2ijz5ZN3wtTkv-lmuTdx7IEW_RhPjeLGsyS8hsAx_bobYVWOT6mv31m0b-5UmYAdM2UqcaMw2UruCwEsGcHDOddzbnAF-Unwxq2x-k2YUMjYg?authuser=0&fife=s16383" height="200" width="auto" /><br><br>Property ID: 739084<br>Property Type: Student<br>Property Website: https://www.theacademycampustown.com/<br>Property Email: Info@theacademycampustown.com<br>Property Description Short: <br>Property Description Long: <br>Is Disabled: FALSE<br>Is Featured: FALSE<br>Parent Property Id: 739076<br>Year Built: <br>Address Street: 908 S. 1st<br>Address City: Champaign<br>Address State: IL<br>Address Zip: 61820<br>Address Country: US<br>Property Ar Post Month: 09/2024<br>Property Ap Post Month: 09/2024<br>Property Gl Post Month: 09/2024<br>Property Email Mailto: Info@theacademycampustown.com<br>Address Full: 908 S. 1st, Champaign, IL 61820, US<br>Gmaps Url: https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=908%20S.%201st,%20Champaign,%20IL%2061820,%20US<br>Gmaps Iframe: <iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=908%20S.%201st,%20Champaign,%20IL%2061820,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></description>
+      <styleUrl>#icon-1899-1A237E</styleUrl>
+      <ExtendedData>
+        <Data name="Property ID">
+          <value>739084.0</value>
+        </Data>
+        <Data name="Property Type">
+          <value>Student</value>
+        </Data>
+        <Data name="Property Website">
+          <value>https://www.theacademycampustown.com/</value>
+        </Data>
+        <Data name="Property Email">
+          <value>Info@theacademycampustown.com</value>
+        </Data>
+        <Data name="Property Description Short">
+          <value/>
+        </Data>
+        <Data name="Property Description Long">
+          <value/>
+        </Data>
+        <Data name="Is Disabled">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Is Featured">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Parent Property Id">
+          <value>739076.0</value>
+        </Data>
+        <Data name="Year Built">
+          <value/>
+        </Data>
+        <Data name="Address Street">
+          <value>908 S. 1st</value>
+        </Data>
+        <Data name="Address City">
+          <value>Champaign</value>
+        </Data>
+        <Data name="Address State">
+          <value>IL</value>
+        </Data>
+        <Data name="Address Zip">
+          <value>61820.0</value>
+        </Data>
+        <Data name="Address Country">
+          <value>US</value>
+        </Data>
+        <Data name="Property Ar Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Ap Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Gl Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Email Mailto">
+          <value>Info@theacademycampustown.com</value>
+        </Data>
+        <Data name="Address Full">
+          <value>908 S. 1st, Champaign, IL 61820, US</value>
+        </Data>
+        <Data name="Gmaps Url">
+          <value><![CDATA[https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=908%20S.%201st,%20Champaign,%20IL%2061820,%20US]]></value>
+        </Data>
+        <Data name="Gmaps Iframe">
+          <value><![CDATA[<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=908%20S.%201st,%20Champaign,%20IL%2061820,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></value>
+        </Data>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iAV5rkIE3VKt_w9deS8V1chAYkzjDWl34cslBMO6vr5-wBE0wjN13WAPizOK_2VP2gNG1tE1Xkx_apDTuHx47qgRk0CjJr49M0R0N4u2w5dYLjrS5XNepEJhD4jJ1aCtcfrWleG8NzCuD2ijz5ZN3wtTkv-lmuTdx7IEW_RhPjeLGsyS8hsAx_bobYVWOT6mv31m0b-5UmYAdM2UqcaMw2UruCwEsGcHDOddzbnAF-Unwxq2x-k2YUMjYg?authuser=0&fife=s16383]]></value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Academy 65</name>
+      <address>1325 65th St, Sacramento, CA 95819, US</address>
+      <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iCNri4zSynxBoVC4JFnrkqPn1qIcqNL_6gRFCtc61_xymV608qoM3dsaM7ipN76rTNW3sk2nQunuBxhR6Bsz0ymDb-qGdFtzw-4IUA9wqmBctP-mhiYQns-ryWE-L4wQN9rvFUm-s8pnjxL-pnMqPWxm_B8nORkFfyNFvdCDQukLL2owsW8xgVldgnxyW3Uu_qFqeHrht79YVr_OBk4GJ052xzjWIuiLjCdzqc5m6SubhyJ1H84B0U4haQ?authuser=0&fife=s16383" height="200" width="auto" /><br><br>Property ID: 641240<br>Property Type: Student<br>Property Website: https://www.academy65.com<br>Property Email: info@academy65.com<br>Property Description Short: <br>Property Description Long: <br>Is Disabled: FALSE<br>Is Featured: FALSE<br>Parent Property Id: <br>Year Built: 2018<br>Address Street: 1325 65th St<br>Address City: Sacramento<br>Address State: CA<br>Address Zip: 95819<br>Address Country: US<br>Property Ar Post Month: 09/2024<br>Property Ap Post Month: 09/2024<br>Property Gl Post Month: 09/2024<br>Property Email Mailto: info@academy65.com<br>Address Full: 1325 65th St, Sacramento, CA 95819, US<br>Gmaps Url: https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1325%2065th%20St,%20Sacramento,%20CA%2095819,%20US<br>Gmaps Iframe: <iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1325%2065th%20St,%20Sacramento,%20CA%2095819,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></description>
+      <styleUrl>#icon-1899-1A237E</styleUrl>
+      <ExtendedData>
+        <Data name="Property ID">
+          <value>641240.0</value>
+        </Data>
+        <Data name="Property Type">
+          <value>Student</value>
+        </Data>
+        <Data name="Property Website">
+          <value>https://www.academy65.com</value>
+        </Data>
+        <Data name="Property Email">
+          <value>info@academy65.com</value>
+        </Data>
+        <Data name="Property Description Short">
+          <value/>
+        </Data>
+        <Data name="Property Description Long">
+          <value/>
+        </Data>
+        <Data name="Is Disabled">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Is Featured">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Parent Property Id">
+          <value/>
+        </Data>
+        <Data name="Year Built">
+          <value>2018.0</value>
+        </Data>
+        <Data name="Address Street">
+          <value>1325 65th St</value>
+        </Data>
+        <Data name="Address City">
+          <value>Sacramento</value>
+        </Data>
+        <Data name="Address State">
+          <value>CA</value>
+        </Data>
+        <Data name="Address Zip">
+          <value>95819.0</value>
+        </Data>
+        <Data name="Address Country">
+          <value>US</value>
+        </Data>
+        <Data name="Property Ar Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Ap Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Gl Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Email Mailto">
+          <value>info@academy65.com</value>
+        </Data>
+        <Data name="Address Full">
+          <value>1325 65th St, Sacramento, CA 95819, US</value>
+        </Data>
+        <Data name="Gmaps Url">
+          <value><![CDATA[https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1325%2065th%20St,%20Sacramento,%20CA%2095819,%20US]]></value>
+        </Data>
+        <Data name="Gmaps Iframe">
+          <value><![CDATA[<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1325%2065th%20St,%20Sacramento,%20CA%2095819,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></value>
+        </Data>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iCNri4zSynxBoVC4JFnrkqPn1qIcqNL_6gRFCtc61_xymV608qoM3dsaM7ipN76rTNW3sk2nQunuBxhR6Bsz0ymDb-qGdFtzw-4IUA9wqmBctP-mhiYQns-ryWE-L4wQN9rvFUm-s8pnjxL-pnMqPWxm_B8nORkFfyNFvdCDQukLL2owsW8xgVldgnxyW3Uu_qFqeHrht79YVr_OBk4GJ052xzjWIuiLjCdzqc5m6SubhyJ1H84B0U4haQ?authuser=0&fife=s16383]]></value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Academy Lincoln</name>
+      <address>1850 P Street, Lincoln, NE 68508, US</address>
+      <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iCC9pzcpvueUoAqPSOI-D3dav3E2e2pPDy4f6b4vH4lfYqI-LuoQXscW_zePz1NL1PyMgxbCSeLfhRClfXif5h99OXu314GwD3TXE9JQRQ5a9eJ9CU4AYRQAYQDFskyn8ceKg71m-ggUSnaOD9NCMTNemxENj2plDuHH1Z_ZxlHpofCsVz8gdZULwAU8OGpn9NvQNeYUZHYwaqT2oyBjEFg7QeXTtTwo10-Grgf5NhNw0u0UWSyDXo9NMw?authuser=0&fife=s16383" height="200" width="auto" /><br><br>Property ID: 676055<br>Property Type: Student<br>Property Website: https://www.academylincoln.com/academy-lincoln-lincoln-nebraska/<br>Property Email: info@academylincoln.com<br>Property Description Short: <br>Property Description Long: <br>Is Disabled: FALSE<br>Is Featured: FALSE<br>Parent Property Id: <br>Year Built: <br>Address Street: 1850 P Street<br>Address City: Lincoln<br>Address State: NE<br>Address Zip: 68508<br>Address Country: US<br>Property Ar Post Month: 09/2024<br>Property Ap Post Month: 09/2024<br>Property Gl Post Month: 09/2024<br>Property Email Mailto: info@academylincoln.com<br>Address Full: 1850 P Street, Lincoln, NE 68508, US<br>Gmaps Url: https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1850%20P%20Street,%20Lincoln,%20NE%2068508,%20US<br>Gmaps Iframe: <iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1850%20P%20Street,%20Lincoln,%20NE%2068508,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></description>
+      <styleUrl>#icon-1899-1A237E</styleUrl>
+      <ExtendedData>
+        <Data name="Property ID">
+          <value>676055.0</value>
+        </Data>
+        <Data name="Property Type">
+          <value>Student</value>
+        </Data>
+        <Data name="Property Website">
+          <value>https://www.academylincoln.com/academy-lincoln-lincoln-nebraska/</value>
+        </Data>
+        <Data name="Property Email">
+          <value>info@academylincoln.com</value>
+        </Data>
+        <Data name="Property Description Short">
+          <value/>
+        </Data>
+        <Data name="Property Description Long">
+          <value/>
+        </Data>
+        <Data name="Is Disabled">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Is Featured">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Parent Property Id">
+          <value/>
+        </Data>
+        <Data name="Year Built">
+          <value/>
+        </Data>
+        <Data name="Address Street">
+          <value>1850 P Street</value>
+        </Data>
+        <Data name="Address City">
+          <value>Lincoln</value>
+        </Data>
+        <Data name="Address State">
+          <value>NE</value>
+        </Data>
+        <Data name="Address Zip">
+          <value>68508.0</value>
+        </Data>
+        <Data name="Address Country">
+          <value>US</value>
+        </Data>
+        <Data name="Property Ar Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Ap Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Gl Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Email Mailto">
+          <value>info@academylincoln.com</value>
+        </Data>
+        <Data name="Address Full">
+          <value>1850 P Street, Lincoln, NE 68508, US</value>
+        </Data>
+        <Data name="Gmaps Url">
+          <value><![CDATA[https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1850%20P%20Street,%20Lincoln,%20NE%2068508,%20US]]></value>
+        </Data>
+        <Data name="Gmaps Iframe">
+          <value><![CDATA[<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1850%20P%20Street,%20Lincoln,%20NE%2068508,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></value>
+        </Data>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iCC9pzcpvueUoAqPSOI-D3dav3E2e2pPDy4f6b4vH4lfYqI-LuoQXscW_zePz1NL1PyMgxbCSeLfhRClfXif5h99OXu314GwD3TXE9JQRQ5a9eJ9CU4AYRQAYQDFskyn8ceKg71m-ggUSnaOD9NCMTNemxENj2plDuHH1Z_ZxlHpofCsVz8gdZULwAU8OGpn9NvQNeYUZHYwaqT2oyBjEFg7QeXTtTwo10-Grgf5NhNw0u0UWSyDXo9NMw?authuser=0&fife=s16383]]></value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Shortbread Lofts</name>
+      <address>333 W Rosemary Street, Chapel Hill, NC 27516, US</address>
+      <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iCrV2XpOkZnnzCR5fSc-SrIjrmvBXAanoRCBL17euGU5EJuC1kpe5C4yBoVDtuML6IVekRL16BfBl8kx3Ed2iXzdlG5yfRCI-puf1L4t_S_9F05wqTriGYogXbaJR_JnBhMEATjSnOWEXVV3FMqLQTKpoHN0boZIsq2qCTxkXm6s8AoMGLHhcdosBsnEt798lYFVbfd02tI1KqejvCd4Wx469sTgllv5kLhZL3Puhr31aw0nDYsJJUuqYI?authuser=0&fife=s16383" height="200" width="auto" /><br><br>Property ID: 518044<br>Property Type: Student<br>Property Website: http://shortbreadlofts.com<br>Property Email: info@shortbreadlofts.com<br>Property Description Short: <br>Property Description Long: <br>Is Disabled: FALSE<br>Is Featured: FALSE<br>Parent Property Id: <br>Year Built: 2014<br>Address Street: 333 W Rosemary Street<br>Address City: Chapel Hill<br>Address State: NC<br>Address Zip: 27516<br>Address Country: US<br>Property Ar Post Month: 09/2024<br>Property Ap Post Month: 09/2024<br>Property Gl Post Month: 09/2024<br>Property Email Mailto: info@shortbreadlofts.com<br>Address Full: 333 W Rosemary Street, Chapel Hill, NC 27516, US<br>Gmaps Url: https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=333%20W%20Rosemary%20Street,%20Chapel%20Hill,%20NC%2027516,%20US<br>Gmaps Iframe: <iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=333%20W%20Rosemary%20Street,%20Chapel%20Hill,%20NC%2027516,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></description>
+      <styleUrl>#icon-1899-1A237E</styleUrl>
+      <ExtendedData>
+        <Data name="Property ID">
+          <value>518044.0</value>
+        </Data>
+        <Data name="Property Type">
+          <value>Student</value>
+        </Data>
+        <Data name="Property Website">
+          <value>http://shortbreadlofts.com</value>
+        </Data>
+        <Data name="Property Email">
+          <value>info@shortbreadlofts.com</value>
+        </Data>
+        <Data name="Property Description Short">
+          <value/>
+        </Data>
+        <Data name="Property Description Long">
+          <value/>
+        </Data>
+        <Data name="Is Disabled">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Is Featured">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Parent Property Id">
+          <value/>
+        </Data>
+        <Data name="Year Built">
+          <value>2014.0</value>
+        </Data>
+        <Data name="Address Street">
+          <value>333 W Rosemary Street</value>
+        </Data>
+        <Data name="Address City">
+          <value>Chapel Hill</value>
+        </Data>
+        <Data name="Address State">
+          <value>NC</value>
+        </Data>
+        <Data name="Address Zip">
+          <value>27516.0</value>
+        </Data>
+        <Data name="Address Country">
+          <value>US</value>
+        </Data>
+        <Data name="Property Ar Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Ap Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Gl Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Email Mailto">
+          <value>info@shortbreadlofts.com</value>
+        </Data>
+        <Data name="Address Full">
+          <value>333 W Rosemary Street, Chapel Hill, NC 27516, US</value>
+        </Data>
+        <Data name="Gmaps Url">
+          <value><![CDATA[https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=333%20W%20Rosemary%20Street,%20Chapel%20Hill,%20NC%2027516,%20US]]></value>
+        </Data>
+        <Data name="Gmaps Iframe">
+          <value><![CDATA[<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=333%20W%20Rosemary%20Street,%20Chapel%20Hill,%20NC%2027516,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></value>
+        </Data>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iCrV2XpOkZnnzCR5fSc-SrIjrmvBXAanoRCBL17euGU5EJuC1kpe5C4yBoVDtuML6IVekRL16BfBl8kx3Ed2iXzdlG5yfRCI-puf1L4t_S_9F05wqTriGYogXbaJR_JnBhMEATjSnOWEXVV3FMqLQTKpoHN0boZIsq2qCTxkXm6s8AoMGLHhcdosBsnEt798lYFVbfd02tI1KqejvCd4Wx469sTgllv5kLhZL3Puhr31aw0nDYsJJUuqYI?authuser=0&fife=s16383]]></value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>SOVA</name>
+      <address>3021 Hidden Forest Ct, Marietta, GA 30066, US</address>
+      <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iAU2g5Shad7fSlj7gMGdNKnagZYEq60dF9SzH_cOY5iRvA67SGf0IfhiglfSDvWlpEQcDcCqBrHiJrtfaog5i96Cl5rzUBzwGwVI1AgkapmTn7BvqKItKcji_2iRbN0IrXyTtLEWk2l1KqQ5pl1VjIwwj_i9vEmejW34DqJbKhI_l5lISUQx88lsFc-MRyBYLnCIeQjy80GvvApWQRjh1g2-Pb2W_cmiUItWZNW6Z7WTTSzJ-XnAN7Dci8?authuser=0&fife=s16383" height="200" width="auto" /><br><br>Property ID: 952515<br>Property Type: Student<br>Property Website: https://sovaksu.com/<br>Property Email: info@sovaksu.com<br>Property Description Short: <br>Property Description Long: <br>Is Disabled: FALSE<br>Is Featured: FALSE<br>Parent Property Id: <br>Year Built: 2018<br>Address Street: 3021 Hidden Forest Ct<br>Address City: Marietta<br>Address State: GA<br>Address Zip: 30066<br>Address Country: US<br>Property Ar Post Month: 09/2024<br>Property Ap Post Month: 09/2024<br>Property Gl Post Month: 09/2024<br>Property Email Mailto: info@sovaksu.com<br>Address Full: 3021 Hidden Forest Ct, Marietta, GA 30066, US<br>Gmaps Url: https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=3021%20Hidden%20Forest%20%20Ct,%20Marietta,%20GA%2030066,%20US<br>Gmaps Iframe: <iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=3021%20Hidden%20Forest%20%20Ct,%20Marietta,%20GA%2030066,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></description>
+      <styleUrl>#icon-1899-1A237E</styleUrl>
+      <ExtendedData>
+        <Data name="Property ID">
+          <value>952515.0</value>
+        </Data>
+        <Data name="Property Type">
+          <value>Student</value>
+        </Data>
+        <Data name="Property Website">
+          <value>https://sovaksu.com/</value>
+        </Data>
+        <Data name="Property Email">
+          <value>info@sovaksu.com</value>
+        </Data>
+        <Data name="Property Description Short">
+          <value/>
+        </Data>
+        <Data name="Property Description Long">
+          <value/>
+        </Data>
+        <Data name="Is Disabled">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Is Featured">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Parent Property Id">
+          <value/>
+        </Data>
+        <Data name="Year Built">
+          <value>2018.0</value>
+        </Data>
+        <Data name="Address Street">
+          <value>3021 Hidden Forest Ct</value>
+        </Data>
+        <Data name="Address City">
+          <value>Marietta</value>
+        </Data>
+        <Data name="Address State">
+          <value>GA</value>
+        </Data>
+        <Data name="Address Zip">
+          <value>30066.0</value>
+        </Data>
+        <Data name="Address Country">
+          <value>US</value>
+        </Data>
+        <Data name="Property Ar Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Ap Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Gl Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Email Mailto">
+          <value>info@sovaksu.com</value>
+        </Data>
+        <Data name="Address Full">
+          <value>3021 Hidden Forest Ct, Marietta, GA 30066, US</value>
+        </Data>
+        <Data name="Gmaps Url">
+          <value><![CDATA[https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=3021%20Hidden%20Forest%20%20Ct,%20Marietta,%20GA%2030066,%20US]]></value>
+        </Data>
+        <Data name="Gmaps Iframe">
+          <value><![CDATA[<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=3021%20Hidden%20Forest%20%20Ct,%20Marietta,%20GA%2030066,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></value>
+        </Data>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iAU2g5Shad7fSlj7gMGdNKnagZYEq60dF9SzH_cOY5iRvA67SGf0IfhiglfSDvWlpEQcDcCqBrHiJrtfaog5i96Cl5rzUBzwGwVI1AgkapmTn7BvqKItKcji_2iRbN0IrXyTtLEWk2l1KqQ5pl1VjIwwj_i9vEmejW34DqJbKhI_l5lISUQx88lsFc-MRyBYLnCIeQjy80GvvApWQRjh1g2-Pb2W_cmiUItWZNW6Z7WTTSzJ-XnAN7Dci8?authuser=0&fife=s16383]]></value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>The Academy at Frisco</name>
+      <address>413 N West Ave, Fayetteville, AR 72701, US</address>
+      <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iAhBtWni0HzgFU5uOHhoQ0KOrY-8EW8ah3GgddqRopJP8nRFxTaR-tjd5Mj_qYyBxRgATe4CdnzSil2zzu0vYlWaQ-25tjDYaSbvL3lHG3xInCRBBH9BgOXRyhI-pgUXK0pA6xCxHGqgk0IiIP5NcToL51Uusf8zJaE2K6Nt0JpMLrQPVtCCA7zB8GnbadYlblVNiJuKoTRTr4dTNMFvKHODq9jSlt_eJk3vbZvg5cd1LeJCnBet1SSk2M?authuser=0&fife=s16383" height="200" width="auto" /><br><br>Property ID: 518041<br>Property Type: Student<br>Property Website: http://www.theacademyatfrisco.com<br>Property Email: info@theacademyatfrisco.com<br>Property Description Short: <br>Property Description Long: <br>Is Disabled: FALSE<br>Is Featured: FALSE<br>Parent Property Id: <br>Year Built: 2012<br>Address Street: 413 N West Ave<br>Address City: Fayetteville<br>Address State: AR<br>Address Zip: 72701<br>Address Country: US<br>Property Ar Post Month: 09/2024<br>Property Ap Post Month: 09/2024<br>Property Gl Post Month: 09/2024<br>Property Email Mailto: info@theacademyatfrisco.com<br>Address Full: 413 N West Ave, Fayetteville, AR 72701, US<br>Gmaps Url: https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=413%20N%20West%20Ave,%20Fayetteville,%20AR%2072701,%20US<br>Gmaps Iframe: <iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=413%20N%20West%20Ave,%20Fayetteville,%20AR%2072701,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></description>
+      <styleUrl>#icon-1899-1A237E</styleUrl>
+      <ExtendedData>
+        <Data name="Property ID">
+          <value>518041.0</value>
+        </Data>
+        <Data name="Property Type">
+          <value>Student</value>
+        </Data>
+        <Data name="Property Website">
+          <value>http://www.theacademyatfrisco.com</value>
+        </Data>
+        <Data name="Property Email">
+          <value>info@theacademyatfrisco.com</value>
+        </Data>
+        <Data name="Property Description Short">
+          <value/>
+        </Data>
+        <Data name="Property Description Long">
+          <value/>
+        </Data>
+        <Data name="Is Disabled">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Is Featured">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Parent Property Id">
+          <value/>
+        </Data>
+        <Data name="Year Built">
+          <value>2012.0</value>
+        </Data>
+        <Data name="Address Street">
+          <value>413 N West Ave</value>
+        </Data>
+        <Data name="Address City">
+          <value>Fayetteville</value>
+        </Data>
+        <Data name="Address State">
+          <value>AR</value>
+        </Data>
+        <Data name="Address Zip">
+          <value>72701.0</value>
+        </Data>
+        <Data name="Address Country">
+          <value>US</value>
+        </Data>
+        <Data name="Property Ar Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Ap Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Gl Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Email Mailto">
+          <value>info@theacademyatfrisco.com</value>
+        </Data>
+        <Data name="Address Full">
+          <value>413 N West Ave, Fayetteville, AR 72701, US</value>
+        </Data>
+        <Data name="Gmaps Url">
+          <value><![CDATA[https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=413%20N%20West%20Ave,%20Fayetteville,%20AR%2072701,%20US]]></value>
+        </Data>
+        <Data name="Gmaps Iframe">
+          <value><![CDATA[<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=413%20N%20West%20Ave,%20Fayetteville,%20AR%2072701,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></value>
+        </Data>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iAhBtWni0HzgFU5uOHhoQ0KOrY-8EW8ah3GgddqRopJP8nRFxTaR-tjd5Mj_qYyBxRgATe4CdnzSil2zzu0vYlWaQ-25tjDYaSbvL3lHG3xInCRBBH9BgOXRyhI-pgUXK0pA6xCxHGqgk0IiIP5NcToL51Uusf8zJaE2K6Nt0JpMLrQPVtCCA7zB8GnbadYlblVNiJuKoTRTr4dTNMFvKHODq9jSlt_eJk3vbZvg5cd1LeJCnBet1SSk2M?authuser=0&fife=s16383]]></value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>The Academy on Charles</name>
+      <address>3700 N Charles St, Baltimore, MD 21218, US</address>
+      <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iD80q8rfVGY-Eqfij_WrNbcz2RF5_QEDdUVx5f9-8zXk1UgVPoweHkdp3gxaXPW16QChJXlDPXF3c9caNXPdr3178qWhDd7DoxjwVS5AqE1lnNyVH9Zgp9Jfiv7adKDIGRn5RajWDcw8qigHS_uaafgqvIE3gdKLdOTuHNwrV0ce-xxef9DlOAYqlQ6i2Gz0VJuipzjYtKyx150b1bx6rme-InhNxwWXyJn8BWKUIoQ9d9XQhZX86LIMwY?authuser=0&fife=s16383" height="200" width="auto" /><br><br>Property ID: 518042<br>Property Type: Student<br>Property Website: http://www.theacademyoncharles.com<br>Property Email: info@theacademyoncharles.com<br>Property Description Short: <br>Property Description Long: <br>Is Disabled: FALSE<br>Is Featured: FALSE<br>Parent Property Id: <br>Year Built: 2012<br>Address Street: 3700 N Charles St<br>Address City: Baltimore<br>Address State: MD<br>Address Zip: 21218<br>Address Country: US<br>Property Ar Post Month: 09/2024<br>Property Ap Post Month: 09/2024<br>Property Gl Post Month: 09/2024<br>Property Email Mailto: info@theacademyoncharles.com<br>Address Full: 3700 N Charles St, Baltimore, MD 21218, US<br>Gmaps Url: https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=3700%20N%20Charles%20St,%20Baltimore,%20MD%2021218,%20US<br>Gmaps Iframe: <iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=3700%20N%20Charles%20St,%20Baltimore,%20MD%2021218,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></description>
+      <styleUrl>#icon-1899-1A237E</styleUrl>
+      <ExtendedData>
+        <Data name="Property ID">
+          <value>518042.0</value>
+        </Data>
+        <Data name="Property Type">
+          <value>Student</value>
+        </Data>
+        <Data name="Property Website">
+          <value>http://www.theacademyoncharles.com</value>
+        </Data>
+        <Data name="Property Email">
+          <value>info@theacademyoncharles.com</value>
+        </Data>
+        <Data name="Property Description Short">
+          <value/>
+        </Data>
+        <Data name="Property Description Long">
+          <value/>
+        </Data>
+        <Data name="Is Disabled">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Is Featured">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Parent Property Id">
+          <value/>
+        </Data>
+        <Data name="Year Built">
+          <value>2012.0</value>
+        </Data>
+        <Data name="Address Street">
+          <value>3700 N Charles St</value>
+        </Data>
+        <Data name="Address City">
+          <value>Baltimore</value>
+        </Data>
+        <Data name="Address State">
+          <value>MD</value>
+        </Data>
+        <Data name="Address Zip">
+          <value>21218.0</value>
+        </Data>
+        <Data name="Address Country">
+          <value>US</value>
+        </Data>
+        <Data name="Property Ar Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Ap Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Gl Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Email Mailto">
+          <value>info@theacademyoncharles.com</value>
+        </Data>
+        <Data name="Address Full">
+          <value>3700 N Charles St, Baltimore, MD 21218, US</value>
+        </Data>
+        <Data name="Gmaps Url">
+          <value><![CDATA[https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=3700%20N%20Charles%20St,%20Baltimore,%20MD%2021218,%20US]]></value>
+        </Data>
+        <Data name="Gmaps Iframe">
+          <value><![CDATA[<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=3700%20N%20Charles%20St,%20Baltimore,%20MD%2021218,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></value>
+        </Data>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iD80q8rfVGY-Eqfij_WrNbcz2RF5_QEDdUVx5f9-8zXk1UgVPoweHkdp3gxaXPW16QChJXlDPXF3c9caNXPdr3178qWhDd7DoxjwVS5AqE1lnNyVH9Zgp9Jfiv7adKDIGRn5RajWDcw8qigHS_uaafgqvIE3gdKLdOTuHNwrV0ce-xxef9DlOAYqlQ6i2Gz0VJuipzjYtKyx150b1bx6rme-InhNxwWXyJn8BWKUIoQ9d9XQhZX86LIMwY?authuser=0&fife=s16383]]></value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>The Dean Campustown</name>
+      <address>708 South 6th Street, Champaign, IL 61820, US</address>
+      <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iB7SLyfk0E9UsJhyG48Z0f4qZzsnP4Zx8T01IQpc7_J0upHVl08dUsT7VAS6JUU9gyb20kUlYa6xFwn6vMIc2jLloHTNjfEk_CaKlLwUatZF8wLnn1o0xqCjoLpuzAOxrt-3zjZMpcWhKdGDEvcef10tcDJZUsFfHfI6uA_l5RGxr2c7aMrpvfcTybSLKiXJSLNlVbk3nZki9e8HIemqoqoslc9KaHXV10ZEUXNQoj4fAepVzS9prPOshE?authuser=0&fife=s16383" height="200" width="auto" /><br><br>Property ID: 833617<br>Property Type: Student<br>Property Website: https://www.thedean.com/campustown/<br>Property Email: info@thedeancampustown.com<br>Property Description Short: The Dean offers unique student apartments near UIUC you can't find anywhere else. Here, convenience and luxury culminate in the best housing amenities, including upscale apartment features. Contact us today to find out details on our 16th a<br>Property Description Long: Take your college living experience to the next level with The Dean in Champaign. Conveniently located in the center of Campustown and adjacent to the heart of campus and Greek life, our student apartments near the University of Illinois at Urbana-Champaign are comprised of everything students need and want &mdash; including spacious apartments with modern finishes and a range of luxury amenities.<br>Is Disabled: FALSE<br>Is Featured: FALSE<br>Parent Property Id: <br>Year Built: 2020<br>Address Street: 708 South 6th Street<br>Address City: Champaign<br>Address State: IL<br>Address Zip: 61820<br>Address Country: US<br>Property Ar Post Month: 09/2024<br>Property Ap Post Month: 09/2024<br>Property Gl Post Month: 09/2024<br>Property Email Mailto: info@thedeancampustown.com<br>Address Full: 708 South 6th Street, Champaign, IL 61820, US<br>Gmaps Url: https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=708%20South%206th%20Street,%20Champaign,%20IL%2061820,%20US<br>Gmaps Iframe: <iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=708%20South%206th%20Street,%20Champaign,%20IL%2061820,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></description>
+      <styleUrl>#icon-1899-1A237E</styleUrl>
+      <ExtendedData>
+        <Data name="Property ID">
+          <value>833617.0</value>
+        </Data>
+        <Data name="Property Type">
+          <value>Student</value>
+        </Data>
+        <Data name="Property Website">
+          <value>https://www.thedean.com/campustown/</value>
+        </Data>
+        <Data name="Property Email">
+          <value>info@thedeancampustown.com</value>
+        </Data>
+        <Data name="Property Description Short">
+          <value><![CDATA[The Dean offers unique student apartments near UIUC you can't find anywhere else. Here, convenience and luxury culminate in the best housing amenities, including upscale apartment features. Contact us today to find out details on our 16th a]]></value>
+        </Data>
+        <Data name="Property Description Long">
+          <value><![CDATA[Take your college living experience to the next level with The Dean in Champaign. Conveniently located in the center of Campustown and adjacent to the heart of campus and Greek life, our student apartments near the University of Illinois at Urbana-Champaign are comprised of everything students need and want &mdash; including spacious apartments with modern finishes and a range of luxury amenities.]]></value>
+        </Data>
+        <Data name="Is Disabled">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Is Featured">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Parent Property Id">
+          <value/>
+        </Data>
+        <Data name="Year Built">
+          <value>2020.0</value>
+        </Data>
+        <Data name="Address Street">
+          <value>708 South 6th Street</value>
+        </Data>
+        <Data name="Address City">
+          <value>Champaign</value>
+        </Data>
+        <Data name="Address State">
+          <value>IL</value>
+        </Data>
+        <Data name="Address Zip">
+          <value>61820.0</value>
+        </Data>
+        <Data name="Address Country">
+          <value>US</value>
+        </Data>
+        <Data name="Property Ar Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Ap Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Gl Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Email Mailto">
+          <value>info@thedeancampustown.com</value>
+        </Data>
+        <Data name="Address Full">
+          <value>708 South 6th Street, Champaign, IL 61820, US</value>
+        </Data>
+        <Data name="Gmaps Url">
+          <value><![CDATA[https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=708%20South%206th%20Street,%20Champaign,%20IL%2061820,%20US]]></value>
+        </Data>
+        <Data name="Gmaps Iframe">
+          <value><![CDATA[<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=708%20South%206th%20Street,%20Champaign,%20IL%2061820,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></value>
+        </Data>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iB7SLyfk0E9UsJhyG48Z0f4qZzsnP4Zx8T01IQpc7_J0upHVl08dUsT7VAS6JUU9gyb20kUlYa6xFwn6vMIc2jLloHTNjfEk_CaKlLwUatZF8wLnn1o0xqCjoLpuzAOxrt-3zjZMpcWhKdGDEvcef10tcDJZUsFfHfI6uA_l5RGxr2c7aMrpvfcTybSLKiXJSLNlVbk3nZki9e8HIemqoqoslc9KaHXV10ZEUXNQoj4fAepVzS9prPOshE?authuser=0&fife=s16383]]></value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>The Dean Reno</name>
+      <address>1475 N. Virginia Street, Reno, NV 89503, US</address>
+      <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iDg3EPpz1UtpheNxupLTH9n0E4OFyFeL_mjbAUsIsBCaabHpiJbjDc0LCgiOlY-R2fwfCvvnqWgyVB57uxfuAwA5PF_f5VNqMWlHjbifK-TU3MHbTffUSRw_aLhv1Qr94jfhiTWdxek3IPgBJfMvP5LifaNP04cM12iudrMqG9oJkzeOLJSdqWD2G8wasX3PABpL4FBdJrgfaH1yj9SDA6SjZF8wmlG26yqFZ45_mHECCnooJGmd1EF0SM?authuser=0&fife=s16383" height="200" width="auto" /><br><br>Property ID: 1197887<br>Property Type: Student<br>Property Website: http://thedeanreno.prospectportal.com<br>Property Email: info@thedeanreno.com<br>Property Description Short: <br>Property Description Long: <br>Is Disabled: FALSE<br>Is Featured: FALSE<br>Parent Property Id: <br>Year Built: 2023<br>Address Street: 1475 N. Virginia Street<br>Address City: Reno<br>Address State: NV<br>Address Zip: 89503<br>Address Country: US<br>Property Ar Post Month: 09/2024<br>Property Ap Post Month: 09/2024<br>Property Gl Post Month: 09/2024<br>Property Email Mailto: info@thedeanreno.com<br>Address Full: 1475 N. Virginia Street, Reno, NV 89503, US<br>Gmaps Url: https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1475%20N.%20Virginia%20Street,%20Reno,%20NV%2089503,%20US<br>Gmaps Iframe: <iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1475%20N.%20Virginia%20Street,%20Reno,%20NV%2089503,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></description>
+      <styleUrl>#icon-1899-1A237E</styleUrl>
+      <ExtendedData>
+        <Data name="Property ID">
+          <value>1197887.0</value>
+        </Data>
+        <Data name="Property Type">
+          <value>Student</value>
+        </Data>
+        <Data name="Property Website">
+          <value>http://thedeanreno.prospectportal.com</value>
+        </Data>
+        <Data name="Property Email">
+          <value>info@thedeanreno.com</value>
+        </Data>
+        <Data name="Property Description Short">
+          <value/>
+        </Data>
+        <Data name="Property Description Long">
+          <value/>
+        </Data>
+        <Data name="Is Disabled">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Is Featured">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Parent Property Id">
+          <value/>
+        </Data>
+        <Data name="Year Built">
+          <value>2023.0</value>
+        </Data>
+        <Data name="Address Street">
+          <value>1475 N. Virginia Street</value>
+        </Data>
+        <Data name="Address City">
+          <value>Reno</value>
+        </Data>
+        <Data name="Address State">
+          <value>NV</value>
+        </Data>
+        <Data name="Address Zip">
+          <value>89503.0</value>
+        </Data>
+        <Data name="Address Country">
+          <value>US</value>
+        </Data>
+        <Data name="Property Ar Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Ap Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Gl Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Email Mailto">
+          <value>info@thedeanreno.com</value>
+        </Data>
+        <Data name="Address Full">
+          <value>1475 N. Virginia Street, Reno, NV 89503, US</value>
+        </Data>
+        <Data name="Gmaps Url">
+          <value><![CDATA[https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1475%20N.%20Virginia%20Street,%20Reno,%20NV%2089503,%20US]]></value>
+        </Data>
+        <Data name="Gmaps Iframe">
+          <value><![CDATA[<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=1475%20N.%20Virginia%20Street,%20Reno,%20NV%2089503,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></value>
+        </Data>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iDg3EPpz1UtpheNxupLTH9n0E4OFyFeL_mjbAUsIsBCaabHpiJbjDc0LCgiOlY-R2fwfCvvnqWgyVB57uxfuAwA5PF_f5VNqMWlHjbifK-TU3MHbTffUSRw_aLhv1Qr94jfhiTWdxek3IPgBJfMvP5LifaNP04cM12iudrMqG9oJkzeOLJSdqWD2G8wasX3PABpL4FBdJrgfaH1yj9SDA6SjZF8wmlG26yqFZ45_mHECCnooJGmd1EF0SM?authuser=0&fife=s16383]]></value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>The Rise at Northgate</name>
+      <address>717 University Dr, College Station, TX 77840, US</address>
+      <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iA8CAEYa4aqSZmlG3YxLhIvDknJt-SYNXnCwHwnrwydJNnBrcdp88GkzsY4DH3Djzi2d2XRtyH5WJNz-VMi-K9q1c4y81R1ksQPS2u9JDiI0sykDq5-MKkDen9ld4CydeZpLIDlkZM7uJ2BYlAMAqSGPgFFFdfuz0WVHjbbvPD0YiMaQH5hqqOn5sPGeqNEq7OZEgECEN94tKsgp0I03RniVr3putYpNsPuhhBSu0EEUJFuDNMHaY_8RXw?authuser=0&fife=s16383" height="200" width="auto" /><br><br>Property ID: 518046<br>Property Type: Student<br>Property Website: http://www.riseatnorthgate.com<br>Property Email: info@riseatnorthgate.com<br>Property Description Short: <br>Property Description Long: <br>Is Disabled: FALSE<br>Is Featured: FALSE<br>Parent Property Id: <br>Year Built: 2013<br>Address Street: 717 University Dr<br>Address City: College Station<br>Address State: TX<br>Address Zip: 77840<br>Address Country: US<br>Property Ar Post Month: 09/2024<br>Property Ap Post Month: 09/2024<br>Property Gl Post Month: 09/2024<br>Property Email Mailto: info@riseatnorthgate.com<br>Address Full: 717 University Dr, College Station, TX 77840, US<br>Gmaps Url: https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=717%20University%20Dr,%20College%20Station,%20TX%2077840,%20US<br>Gmaps Iframe: <iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=717%20University%20Dr,%20College%20Station,%20TX%2077840,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></description>
+      <styleUrl>#icon-1899-1A237E</styleUrl>
+      <ExtendedData>
+        <Data name="Property ID">
+          <value>518046.0</value>
+        </Data>
+        <Data name="Property Type">
+          <value>Student</value>
+        </Data>
+        <Data name="Property Website">
+          <value>http://www.riseatnorthgate.com</value>
+        </Data>
+        <Data name="Property Email">
+          <value>info@riseatnorthgate.com</value>
+        </Data>
+        <Data name="Property Description Short">
+          <value/>
+        </Data>
+        <Data name="Property Description Long">
+          <value/>
+        </Data>
+        <Data name="Is Disabled">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Is Featured">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Parent Property Id">
+          <value/>
+        </Data>
+        <Data name="Year Built">
+          <value>2013.0</value>
+        </Data>
+        <Data name="Address Street">
+          <value>717 University Dr</value>
+        </Data>
+        <Data name="Address City">
+          <value>College Station</value>
+        </Data>
+        <Data name="Address State">
+          <value>TX</value>
+        </Data>
+        <Data name="Address Zip">
+          <value>77840.0</value>
+        </Data>
+        <Data name="Address Country">
+          <value>US</value>
+        </Data>
+        <Data name="Property Ar Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Ap Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Gl Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Email Mailto">
+          <value>info@riseatnorthgate.com</value>
+        </Data>
+        <Data name="Address Full">
+          <value>717 University Dr, College Station, TX 77840, US</value>
+        </Data>
+        <Data name="Gmaps Url">
+          <value><![CDATA[https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=717%20University%20Dr,%20College%20Station,%20TX%2077840,%20US]]></value>
+        </Data>
+        <Data name="Gmaps Iframe">
+          <value><![CDATA[<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=717%20University%20Dr,%20College%20Station,%20TX%2077840,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></value>
+        </Data>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iA8CAEYa4aqSZmlG3YxLhIvDknJt-SYNXnCwHwnrwydJNnBrcdp88GkzsY4DH3Djzi2d2XRtyH5WJNz-VMi-K9q1c4y81R1ksQPS2u9JDiI0sykDq5-MKkDen9ld4CydeZpLIDlkZM7uJ2BYlAMAqSGPgFFFdfuz0WVHjbbvPD0YiMaQH5hqqOn5sPGeqNEq7OZEgECEN94tKsgp0I03RniVr3putYpNsPuhhBSu0EEUJFuDNMHaY_8RXw?authuser=0&fife=s16383]]></value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Torre</name>
+      <address>2020 Nueces St, Austin, TX 78705, US</address>
+      <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iBF_ZMid-I06KiafmHK0FEcdNrpjz_ZVemgJe4Iixxxbo9rt8W8_nSXGu-p7UwHaMa0xsoybmVAwS4LNrB62ymxI_UhGuBenTWd6m0k1foGL9mRbLc1ySGqojyeDJ42ZdgaGwOMVUfXsDS75KHWDiVOt2RuGt2JqyG0Rl-smcB6-8GVI9-v1UJBaa2vlGEwC4_yqW7ZOxGI1ZvUEuyVdzfhyjcRyRG5KETXtgsIMsxit8dD6CX3tUsl1SE?authuser=0&fife=s16383" height="200" width="auto" /><br><br>Property ID: 1143679<br>Property Type: Student<br>Property Website: http://www.torreatx.com/<br>Property Email: info@torreatx.com<br>Property Description Short: <br>Property Description Long: <br>Is Disabled: FALSE<br>Is Featured: FALSE<br>Parent Property Id: <br>Year Built: 1969<br>Address Street: 2020 Nueces St<br>Address City: Austin<br>Address State: TX<br>Address Zip: 78705<br>Address Country: US<br>Property Ar Post Month: 09/2024<br>Property Ap Post Month: 09/2024<br>Property Gl Post Month: 09/2024<br>Property Email Mailto: info@torreatx.com<br>Address Full: 2020 Nueces St, Austin, TX 78705, US<br>Gmaps Url: https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=2020%20Nueces%20St,%20Austin,%20TX%2078705,%20US<br>Gmaps Iframe: <iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=2020%20Nueces%20St,%20Austin,%20TX%2078705,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></description>
+      <styleUrl>#icon-1899-1A237E</styleUrl>
+      <ExtendedData>
+        <Data name="Property ID">
+          <value>1143679.0</value>
+        </Data>
+        <Data name="Property Type">
+          <value>Student</value>
+        </Data>
+        <Data name="Property Website">
+          <value>http://www.torreatx.com/</value>
+        </Data>
+        <Data name="Property Email">
+          <value>info@torreatx.com</value>
+        </Data>
+        <Data name="Property Description Short">
+          <value/>
+        </Data>
+        <Data name="Property Description Long">
+          <value/>
+        </Data>
+        <Data name="Is Disabled">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Is Featured">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Parent Property Id">
+          <value/>
+        </Data>
+        <Data name="Year Built">
+          <value>1969.0</value>
+        </Data>
+        <Data name="Address Street">
+          <value>2020 Nueces St</value>
+        </Data>
+        <Data name="Address City">
+          <value>Austin</value>
+        </Data>
+        <Data name="Address State">
+          <value>TX</value>
+        </Data>
+        <Data name="Address Zip">
+          <value>78705.0</value>
+        </Data>
+        <Data name="Address Country">
+          <value>US</value>
+        </Data>
+        <Data name="Property Ar Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Ap Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Gl Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Email Mailto">
+          <value>info@torreatx.com</value>
+        </Data>
+        <Data name="Address Full">
+          <value>2020 Nueces St, Austin, TX 78705, US</value>
+        </Data>
+        <Data name="Gmaps Url">
+          <value><![CDATA[https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=2020%20Nueces%20St,%20Austin,%20TX%2078705,%20US]]></value>
+        </Data>
+        <Data name="Gmaps Iframe">
+          <value><![CDATA[<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=2020%20Nueces%20St,%20Austin,%20TX%2078705,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></value>
+        </Data>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iBF_ZMid-I06KiafmHK0FEcdNrpjz_ZVemgJe4Iixxxbo9rt8W8_nSXGu-p7UwHaMa0xsoybmVAwS4LNrB62ymxI_UhGuBenTWd6m0k1foGL9mRbLc1ySGqojyeDJ42ZdgaGwOMVUfXsDS75KHWDiVOt2RuGt2JqyG0Rl-smcB6-8GVI9-v1UJBaa2vlGEwC4_yqW7ZOxGI1ZvUEuyVdzfhyjcRyRG5KETXtgsIMsxit8dD6CX3tUsl1SE?authuser=0&fife=s16383]]></value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Venue at North Campus</name>
+      <address>13702 North 42nd St, Tampa, FL 33613, US</address>
+      <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iCgjS5drrC7tH-1dRrfkDlW_wNOd-pIsjIstaGZyV9PBaBQOF1hpELfL93Dm58eg1GG_RyPbwFC6XMblfULteQ2j0mzKra5EjPyXVXGoc1qkC6oBBiVWjtyRtoFznXmH0_TEnBw2cpuKehZvTWhLSwJY3VL_R0MUD4mZvrAxkBcoHdz6KkwMwD3jJPCszHWaKiWViSr2p5bF1EPb7-Q9lGup5PNm3ddzaF0HyD1ro4-sUtnvDnB8KrYPtY?authuser=0&fife=s16383" height="200" width="auto" /><br><br>Property ID: 1311849<br>Property Type: Student<br>Property Website: https://www.venueatnorthcampus.com/<br>Property Email: info@venueatnorthcampus.com<br>Property Description Short: The Venue at North Campus is redefining student living with our variety of modern apartments for University of South Florida students! <br>We offer studio, 2, 4, and 5 bedroom apartments and a wide range of features and amenities.<br>Property Description Long: We admit it &mdash; we're extra. At Venue at North Campus, we take student living to a new level. Located in the heart of Tampa, Florida, VNC offers off-campus student housing that provides you with extra college experiences. From stylish studios to modern townhomes, we have extra apartment options available to choose from. All apartments come fully-furnished and are ready for you to make yourself home.<br>Is Disabled: FALSE<br>Is Featured: FALSE<br>Parent Property Id: <br>Year Built: 2012<br>Address Street: 13702 North 42nd St<br>Address City: Tampa<br>Address State: FL<br>Address Zip: 33613<br>Address Country: US<br>Property Ar Post Month: 09/2024<br>Property Ap Post Month: 09/2024<br>Property Gl Post Month: 09/2024<br>Property Email Mailto: info@venueatnorthcampus.com<br>Address Full: 13702 North 42nd St, Tampa, FL 33613, US<br>Gmaps Url: https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=13702%20North%2042nd%20St,%20Tampa,%20FL%2033613,%20US<br>Gmaps Iframe: <iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=13702%20North%2042nd%20St,%20Tampa,%20FL%2033613,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></description>
+      <styleUrl>#icon-1899-1A237E</styleUrl>
+      <ExtendedData>
+        <Data name="Property ID">
+          <value>1311849.0</value>
+        </Data>
+        <Data name="Property Type">
+          <value>Student</value>
+        </Data>
+        <Data name="Property Website">
+          <value>https://www.venueatnorthcampus.com/</value>
+        </Data>
+        <Data name="Property Email">
+          <value>info@venueatnorthcampus.com</value>
+        </Data>
+        <Data name="Property Description Short">
+          <value>The Venue at North Campus is redefining student living with our variety of modern apartments for University of South Florida students! 
+We offer studio, 2, 4, and 5 bedroom apartments and a wide range of features and amenities.</value>
+        </Data>
+        <Data name="Property Description Long">
+          <value><![CDATA[We admit it &mdash; we're extra. At Venue at North Campus, we take student living to a new level. Located in the heart of Tampa, Florida, VNC offers off-campus student housing that provides you with extra college experiences. From stylish studios to modern townhomes, we have extra apartment options available to choose from. All apartments come fully-furnished and are ready for you to make yourself home.]]></value>
+        </Data>
+        <Data name="Is Disabled">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Is Featured">
+          <value>FALSE</value>
+        </Data>
+        <Data name="Parent Property Id">
+          <value/>
+        </Data>
+        <Data name="Year Built">
+          <value>2012.0</value>
+        </Data>
+        <Data name="Address Street">
+          <value>13702 North 42nd St</value>
+        </Data>
+        <Data name="Address City">
+          <value>Tampa</value>
+        </Data>
+        <Data name="Address State">
+          <value>FL</value>
+        </Data>
+        <Data name="Address Zip">
+          <value>33613.0</value>
+        </Data>
+        <Data name="Address Country">
+          <value>US</value>
+        </Data>
+        <Data name="Property Ar Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Ap Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Gl Post Month">
+          <value>09/2024</value>
+        </Data>
+        <Data name="Property Email Mailto">
+          <value>info@venueatnorthcampus.com</value>
+        </Data>
+        <Data name="Address Full">
+          <value>13702 North 42nd St, Tampa, FL 33613, US</value>
+        </Data>
+        <Data name="Gmaps Url">
+          <value><![CDATA[https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=13702%20North%2042nd%20St,%20Tampa,%20FL%2033613,%20US]]></value>
+        </Data>
+        <Data name="Gmaps Iframe">
+          <value><![CDATA[<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyA9iicnOPVX6NmifeCQNYtEhIciwdSgaOc&q=13702%20North%2042nd%20St,%20Tampa,%20FL%2033613,%20US' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>]]></value>
+        </Data>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APLA8iCgjS5drrC7tH-1dRrfkDlW_wNOd-pIsjIstaGZyV9PBaBQOF1hpELfL93Dm58eg1GG_RyPbwFC6XMblfULteQ2j0mzKra5EjPyXVXGoc1qkC6oBBiVWjtyRtoFznXmH0_TEnBw2cpuKehZvTWhLSwJY3VL_R0MUD4mZvrAxkBcoHdz6KkwMwD3jJPCszHWaKiWViSr2p5bF1EPb7-Q9lGup5PNm3ddzaF0HyD1ro4-sUtnvDnB8KrYPtY?authuser=0&fife=s16383]]></value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+  </Document>
+</kml>

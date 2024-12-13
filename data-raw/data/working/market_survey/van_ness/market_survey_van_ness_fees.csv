@@ -1,0 +1,12 @@
+fees,amount,frequency,property_id,property_name,leasing_week
+Application Fee,0,Monthly,vanness,Van Ness,2024-12-01
+Administration Fee,0,Monthly,vanness,Van Ness,2024-12-01
+Utility Set Up Fee,0,Monthly,vanness,Van Ness,2024-12-01
+Utility Deposit,0,Monthly,vanness,Van Ness,2024-12-01
+Amenity Fee,0,Monthly,vanness,Van Ness,2024-12-01
+Common Area Fee,0,Monthly,vanness,Van Ness,2024-12-01
+Smart Home Fee,0,Monthly,vanness,Van Ness,2024-12-01
+Restoration Fee,0,Monthly,vanness,Van Ness,2024-12-01
+Security Deposit,500,Monthly,vanness,Van Ness,2024-12-01
+Pet Fee,0,Monthly,vanness,Van Ness,2024-12-01
+Pet Deposit,0,Monthly,vanness,Van Ness,2024-12-01

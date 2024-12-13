@@ -1,0 +1,6 @@
+eparse
+psycopg2
+psycopg2-binary
+requests
+mitmproxy
+mitmproxy2swagger

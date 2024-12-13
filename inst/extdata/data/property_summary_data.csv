@@ -1,0 +1,5 @@
+entrata_property_id,entrata_property_name,property_name,website,address,phone_number,developer,manager,owner,property_type,property_status,product_type,property_rating,comp_status,year_built_or_renovated,date_of_most_recent_sale,distance_from_campus
+739085,1047 Commonwealth Avenue,1047 Commonwealth,https://www.1047commonwealth.com/,"1047 Commonwealth Ave, Boston, MA, 02215",(617) 500-6481,BPDA,GMH Communities,AGC + GMH Communities,Student,Operational,Mid-Rise,2,Subject Property,2017,2019-01-01,0.1
+NA,NA,1330 Boylston,https://1330boylston.com/,"1330 Boylston St, Boston, MA, 02215",(617) 267-1330,Samuels and Associates,Samuels and Associates,Samuels and Associates,Conventional,Operational,High-Rise,5,Tier 2,2008,NA,1
+NA,NA,Van Ness,https://www.thevanness.com/,"1335 Boylston St, Boston, MA, 02215",(617) 424-1335,Samuels And Associates,Samuels And Associates,Samuels And Associates,Conventional,Operational,High-Rise,4,Tier 2,2015,NA,1
+NA,NA,Bower,https://bowerboston.com/,"771 Beacon St Apartment 775, Boston, MA, 02215",(617) 341-9700,The Green Cities Company,Greystar,Greystar,Conventional,Operational,High-Rise,5,Tier 2,2020,NA,0.2

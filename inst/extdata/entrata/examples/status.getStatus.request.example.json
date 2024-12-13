@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getStatus",
+    "version": "r1"
+  }
+}

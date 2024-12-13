@@ -1,0 +1,29 @@
+property_id,property_name,leasing_week_start,floorplan_type,property_floorplan_total_beds,property_floorplan_sf_per_bed,available,property_floorplan_market_rent_per_bed,property_floorplan_market_rent_per_sf,concessions_gift_card,concessions_one_time_rent,concessions_monthly_rent,property_floorplan_effective_rent_per_bed,property_floorplan_effective_rent_per_sf,additional_monthly_expenses_furniture,additional_monthly_expenses_tv,additional_monthly_expenses_electricity_gas,additional_monthly_expenses_water,additional_monthly_expenses_cable_internet,additional_monthly_expenses_trash,additional_monthly_expenses_parking,additional_monthly_expenses_total,property_floorplan_bundled_rent_per_bed,property_floorplan_bundled_rent_per_sf
+739085,1047 Commonwealth Avenue,2024-12-01,1 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+739085,1047 Commonwealth Avenue,2024-12-01,2 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+739085,1047 Commonwealth Avenue,2024-12-01,3 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+739085,1047 Commonwealth Avenue,2024-12-01,4 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+739085,1047 Commonwealth Avenue,2024-12-01,5 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+739085,1047 Commonwealth Avenue,2024-12-01,6 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+739085,1047 Commonwealth Avenue,2024-12-01,Studio,183,347.43715846994536,TRUE,2571.562841530055,7.4234269015456595,0,0,0,2571.562841530055,7.4234269015456595,0,0,0,0,0,0,0,0,2571.562841530055,7.4234269015456595
+boylston,1330 Boylston,2024-12-01,1 Bedroom,146,856.3561643835617,TRUE,4148.068493150685,4.8943333863556475,0,0,0,4148.068493150685,4.8943333863556475,0,0,0,0,0,0,0,0,4148.068493150685,4.8943333863556475
+boylston,1330 Boylston,2024-12-01,2 Bedroom,54,1313.3333333333333,TRUE,5883.333333333333,4.498666756193761,0,0,0,5883.333333333333,4.498666756193761,0,0,0,0,0,0,0,0,5883.333333333333,4.498666756193761
+boylston,1330 Boylston,2024-12-01,3 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+boylston,1330 Boylston,2024-12-01,4 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+boylston,1330 Boylston,2024-12-01,5 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+boylston,1330 Boylston,2024-12-01,6 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+boylston,1330 Boylston,2024-12-01,Studio,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+bower,Bower,2024-12-01,1 Bedroom,23,657.1304347826087,TRUE,3458.1304347826085,5.264161959857432,0,0,0,3458.1304347826085,5.264161959857432,0,0,0,0,0,0,0,0,3458.1304347826085,5.264161959857432
+bower,Bower,2024-12-01,2 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+bower,Bower,2024-12-01,3 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+bower,Bower,2024-12-01,4 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+bower,Bower,2024-12-01,5 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+bower,Bower,2024-12-01,6 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+bower,Bower,2024-12-01,Studio,36,542.2222222222222,TRUE,3153.777777777778,5.8782207768418395,0,0,0,3153.777777777778,5.8782207768418395,0,0,0,0,0,0,0,0,3153.777777777778,5.8782207768418395
+vanness,Van Ness,2024-12-01,1 Bedroom,76,724.921052631579,TRUE,4138.789473684211,5.715067574241456,0,0,0,4138.789473684211,5.715067574241456,0,0,0,0,0,0,0,0,4138.789473684211,5.715067574241456
+vanness,Van Ness,2024-12-01,2 Bedroom,56,1061.7142857142858,TRUE,6396.821428571428,6.055270134228188,0,0,0,6396.821428571428,6.055270134228188,0,0,0,0,0,0,0,0,6396.821428571428,6.055270134228188
+vanness,Van Ness,2024-12-01,3 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vanness,Van Ness,2024-12-01,4 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vanness,Van Ness,2024-12-01,5 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vanness,Van Ness,2024-12-01,6 Bedroom,0,0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vanness,Van Ness,2024-12-01,Studio,17,536.0588235294117,TRUE,3788.294117647059,7.104946167457094,0,0,0,3788.294117647059,7.104946167457094,0,0,0,0,0,0,0,0,3788.294117647059,7.104946167457094

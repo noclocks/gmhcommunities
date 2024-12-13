@@ -1,0 +1,2141 @@
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:00[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/status[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:00[23m] [38;5;246mHeaders:
+["<REDACTED>", "application/json"][39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:00[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getStatus",
+    "version": "r1",
+    "params": [
+      {}
+    ]
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:01[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/status[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:01[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:01[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:01[23m] [38;5;246mHeaders:
+["Wed, 27 Nov 2024 02:50:08 GMT", "application/json;charset=utf-8", "chunked", "keep-alive", "Authorization", "*", "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language", "8640/day;360/hour;6/minute", "8631/day;351/hour;5/minute", "14991;591;51", "000", "DYNAMIC", "__cf_bm=nj__gbs7lmcpRK9rSL_t5zDMAF6lt0Z0OqUerRbwvK0-1732675808-1.0.1.1-fq2c84FKMKyeoNHzhvQYn9jAVPB5u4lGm03j6yX2QpWVsygmKT6E6vVv3uEL5jItioYM2tu8MyqNBC8mdFhxOA; path=/; expires=Wed, 27-Nov-24 03:20:08 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None", "cloudflare", "8e8ecf17a84cb02b-ATL", "gzip", "h3=\":443\"; ma=86400"][39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:01[23m] [38;5;246mResponse Body (1408):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "status": "Success",
+      "message": "API service is available and running."
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:38[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/status[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:38[23m] [38;5;246mHeaders:
+["<REDACTED>", "application/json"][39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:38[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getStatus",
+    "version": "r1",
+    "params": [
+      {}
+    ]
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:39[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/status[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:39[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:39[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:39[23m] [38;5;246mHeaders:
+["Wed, 27 Nov 2024 02:50:46 GMT", "application/json;charset=utf-8", "chunked", "keep-alive", "Authorization", "*", "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language", "8640/day;360/hour;6/minute", "8630/day;350/hour;4/minute", "14953;553;13", "000", "DYNAMIC", "__cf_bm=Mf4YsGBQKHuNCvmoa9gb5tsYUNzo97N9OhOfD5QPp6M-1732675846-1.0.1.1-dXrkCWI9rGjDOPBr.yE.e53dFXxrq1TVFgzcXDUu2u_GF4.vuOVg7iBY065nAOIA2ASMsIBk0Az91dYfqHrYaA; path=/; expires=Wed, 27-Nov-24 03:20:46 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None", "cloudflare", "8e8ed0059fe2b02b-ATL", "gzip", "h3=\":443\"; ma=86400"][39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:50:39[23m] [38;5;246mResponse Body (1408):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "status": "Success",
+      "message": "API service is available and running."
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:52:55[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:53:33[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/status[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:53:33[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:53:33[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getStatus",
+    "version": "r1",
+    "params": [
+      {}
+    ]
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:53:34[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/status[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:53:34[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:53:34[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:53:34[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 02:53:41 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "8640/day;360/hour;6/minute",
+  "x-ratelimit-remaining": "8629/day;349/hour;5/minute",
+  "x-ratelimit-reset": "14778;378;18",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=Ppsj3NzdYdkSxnBhveWGKxMdsqsFEPDHXmpYao4LmBo-1732676021-1.0.1.1-aXVecSQPXatEnMjktR6Vv1kEmgVearyudIcuLe3I299csI5DJxUnhmZNjYJafqxvDmqPoqUQmTvVK.40sX3nug; path=/; expires=Wed, 27-Nov-24 03:23:41 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ed44d9eb76766-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:53:34[23m] [38;5;246mResponse Body (1408):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "status": "Success",
+      "message": "API service is available and running."
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:55:35[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:55:35[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:55:35[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": ""
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:55:37[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:55:37[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:55:37[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:55:37[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 02:55:43 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14987/day;999/hour;149/minute",
+  "x-ratelimit-reset": "14656;256;16",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=cJzeSLRa3nI9x.joPKdi17oQV714WKWtUWQ1_zMd7SQ-1732676143-1.0.1.1-7G7XzClHX48d6INUEl6yFNgUJqNgKnnFaerEGCuMF8bp8WbGA4dpNGkPfyyOiJr.jYWqnnufzffDhdXBsm5rQg; path=/; expires=Wed, 27-Nov-24 03:25:43 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ed7477bd94515-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:55:37[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:40[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/status[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:40[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:40[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getStatus",
+    "version": "r1",
+    "params": [
+      {}
+    ]
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:41[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/status[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:41[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:41[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:41[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 02:59:48 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "8640/day;360/hour;6/minute",
+  "x-ratelimit-remaining": "8628/day;348/hour;5/minute",
+  "x-ratelimit-reset": "14411;11;11",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=a4QqhCWvebFrNZ2Zp8Vak._mX8ppi1JIttMEkkb3zss-1732676388-1.0.1.1-8tr5P1zwKpJ4cZqhKunCSC.n3vqj9Y7.POnzZO8v1EgJ1AWkdzSx4skdskTul.lC4L3qyyEemRhAV3.R_YEPDw; path=/; expires=Wed, 27-Nov-24 03:29:48 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8edd404970454b-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:41[23m] [38;5;246mResponse Body (1408):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "status": "Success",
+      "message": "API service is available and running."
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:41[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:41[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:41[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": ""
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:42[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:42[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:42[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:42[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 02:59:49 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14986/day;998/hour;149/minute",
+  "x-ratelimit-reset": "14410;10;10",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=jj5_VHeghM0lqU6wih5LHHLHtCGQ_g.TWsIATNSzn1s-1732676389-1.0.1.1-WCCHeSD3lzKY6X9XD7GQpgXitfpxBehHHfbU9jpwBIZje0C6SGYM_NTe6rXaW1gboreFNY_mHqMtV.g8nLgq.Q; path=/; expires=Wed, 27-Nov-24 03:29:49 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8edd463a10454b-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 21:59:42[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:08:50[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/status[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:08:50[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:08:50[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getStatus",
+    "version": "r1",
+    "params": [
+      {}
+    ]
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:08:51[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/status[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:08:51[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:08:51[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:08:51[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:08:58 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "8640/day;360/hour;6/minute",
+  "x-ratelimit-remaining": "8627/day;359/hour;5/minute",
+  "x-ratelimit-reset": "13861;3061;1",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=WjUVgJrsBMV4sNlq4rd3M65fEQlZYUtgOD_WF8tkrlc-1732676938-1.0.1.1-GPG1xI2HwzRr5PqJrAK2iaITdAkKPtrL04wpkHad7ADH6xgGGv9nMKpBvLvDql6QmdJxLuz.4IkiTbCVPUI8DA; path=/; expires=Wed, 27-Nov-24 03:38:58 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8eeab1cbe144eb-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:08:51[23m] [38;5;246mResponse Body (1408):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "status": "Success",
+      "message": "API service is available and running."
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:08:54[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:08:54[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:08:54[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": ""
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:09:57[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:09:57[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:09:57[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": 739076
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:17:47[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:17:47[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:17:47[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "739076"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:29[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/status[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:29[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:29[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getStatus",
+    "version": "r1",
+    "params": [
+      {}
+    ]
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:30[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/status[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:30[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:30[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:30[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:18:37 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "8640/day;360/hour;6/minute",
+  "x-ratelimit-remaining": "8626/day;358/hour;5/minute",
+  "x-ratelimit-reset": "13282;2482;22",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=WdBlTB4hmXMAv8br9uVCSSpJNIo76KENIZ40zsVBEq8-1732677517-1.0.1.1-a7SJ_4VYW2HcrPaKprwTYcFTpoDm.ovq_q20jJh6GDhuuuwWwkQGMELD0BgCzf8wucPKrr7iJ6cUOMiJhgV2jA; path=/; expires=Wed, 27-Nov-24 03:48:37 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef8d25e2a4529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:30[23m] [38;5;246mResponse Body (1408):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "status": "Success",
+      "message": "API service is available and running."
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:32[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:32[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:32[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": ""
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:33[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:33[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:33[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:33[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:18:40 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14985/day;999/hour;149/minute",
+  "x-ratelimit-reset": "13279;2479;19",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=Z6C.Vitf_jD0BWql3IkAWZLVTXk7Sy5Q8JCuDs_5dRY-1732677520-1.0.1.1-PE39NsvT4poWg9wj9rwHncjDRyz7ACKHWzY4ke0vyevnDHVgVQR0IzAOSQGhzQF7MdGSCXibhcSrG3zoBXCwYw; path=/; expires=Wed, 27-Nov-24 03:48:40 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef8e32bb74529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:33[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:34[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:34[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:34[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "739076"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:35[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:35[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:35[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:35[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:18:42 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14984/day;998/hour;148/minute",
+  "x-ratelimit-reset": "13277;2477;17",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=_zQwPS.03TayoJQGShB7z7wutXsVJ2N8AKsfPykCl7s-1732677522-1.0.1.1-xHi3dg53EWRpzFWkgiyoW_Ch15NCq8lovDB_tmqGuN73zV2Xn7jSgJ1alzdvVIgpbQYypRVLamL110uThGC7hw; path=/; expires=Wed, 27-Nov-24 03:48:42 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef8f01c834529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:35[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:35[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:35[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:35[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "739085"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:37[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:37[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:37[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:37[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:18:44 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14983/day;997/hour;147/minute",
+  "x-ratelimit-reset": "13276;2476;16",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=0ozIqKQOSxzJxPDf4z3wqC2i4zqcA8G92OMDpDBaN9M-1732677524-1.0.1.1-k42t6a18gEUPL3.UTudeswS1ETyzo308T2wGkGHGKxZH7NeF0Zy9Qo4PaJkzUlGoX.vrRtLbSh_hoNpyxnUZjQ; path=/; expires=Wed, 27-Nov-24 03:48:44 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef8f918d34529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:37[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:37[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:37[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:37[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "739079"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:38[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:38[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:38[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:38[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:18:45 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14982/day;996/hour;146/minute",
+  "x-ratelimit-reset": "13274;2474;14",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=M1TS7OOYsYeVtPUXFk4dSBJhY1yIW9bAACOHp6_45WE-1732677525-1.0.1.1-8541RdJ5A2jUbLQqu3cfc1fD5XYqgMI_4WB6W08Ct.Oj07L93kzIvZZyKW5YKdY12glee.upD18_OnBh5Is8AA; path=/; expires=Wed, 27-Nov-24 03:48:45 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef9029d904529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:38[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:38[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:38[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:38[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "739080"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:40[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:40[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:40[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:40[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:18:47 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14981/day;995/hour;145/minute",
+  "x-ratelimit-reset": "13273;2473;13",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=AGAZggXEZdc1s0FGKs2ZfUCK9C23cPGGInHOHN9XBaY-1732677527-1.0.1.1-3sK0OX2q3lPstMLoqT.Won6gGNWEHXTG6EBkAIq2589NPcuqI2D3VaZujKqin.rqWPIO4ixUVUy7ap0vSRF0dw; path=/; expires=Wed, 27-Nov-24 03:48:47 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef90c4a064529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:40[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:40[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:40[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:40[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "739084"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:41[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:41[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:41[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:41[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:18:48 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14980/day;994/hour;144/minute",
+  "x-ratelimit-reset": "13271;2471;11",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=938jVVsf5owQ_St7W3NNt7M72PxyHPf91fH4yLK5OD0-1732677528-1.0.1.1-GDkiLIBVwlUhH8uwypHuDjDzt63T1GiCW2qS5ztpwzAt9MSk_f6vFlFcUml7qh7zIXwjdKyehGWQBZ1BLoSgKA; path=/; expires=Wed, 27-Nov-24 03:48:48 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef916ffcc4529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:41[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:42[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:42[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:42[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "641240"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:43[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:43[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:43[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:43[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:18:50 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14979/day;993/hour;143/minute",
+  "x-ratelimit-reset": "13270;2470;10",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=zKjUQjiJQzGFJmMQ.5NfSkvJtJastRhY71nuRnLaQfI-1732677530-1.0.1.1-SLjGLecq8yndgNdsydVSHq14WecDEGwFjX9qiqF0QMiCfAIaf0Jeuaa3oyqv07gS2xMMpNj6XAOFryAvBvphjg; path=/; expires=Wed, 27-Nov-24 03:48:50 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef9200b324529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:43[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:43[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:43[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:43[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "676055"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:44[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:44[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:44[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:44[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:18:51 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14978/day;992/hour;142/minute",
+  "x-ratelimit-reset": "13268;2468;8",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=8raNxefIL5JrvJsOTeYsc9N.ejr92y4X0yf120oihF4-1732677531-1.0.1.1-J2czsXxp_Vd2aLS4GAo4N2KKwVsAuZvi0YR9KpCtB0p7Of6bKYA1YkpxA5Z4g0jmlnBSm3v9M0H7ByvzAVlYlA; path=/; expires=Wed, 27-Nov-24 03:48:51 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef9288eb24529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:44[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:44[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:44[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:44[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "1115679"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:46[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:46[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:46[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:46[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:18:53 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14977/day;991/hour;141/minute",
+  "x-ratelimit-reset": "13267;2467;7",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=gFE9fwjfiLj07neLJU9ItgayLJD5IA6Q0j_scTQ3ErQ-1732677533-1.0.1.1-yoKjvfyHA_KQMdZ0oLB6thlHrgFg747__bnnzDy9PgnCNf0MNZU1UDMvLUQAuXAFwrueQ0FVEHLhJtRJ1H.a2g; path=/; expires=Wed, 27-Nov-24 03:48:53 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef9315a204529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:46[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:46[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:46[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:46[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "1161867"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:47[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:47[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:47[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:47[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:18:54 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14976/day;990/hour;140/minute",
+  "x-ratelimit-reset": "13265;2465;5",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=aiGRyhpMFj98MKXbja7T8YV3VYuWW5jmowAkTjf4JMA-1732677534-1.0.1.1-J7_aqotDurzrUWdDlLMvjU1.48qGnT_euYFpzTA1QL4W7Jz5TwvwZ6xm0BJ3uktUR00qpbjYlTAGmcHNd61uLQ; path=/; expires=Wed, 27-Nov-24 03:48:54 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef93a6e214529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:47[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:47[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:47[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:47[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "518044"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:49[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:49[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:49[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:49[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:18:55 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14975/day;989/hour;139/minute",
+  "x-ratelimit-reset": "13264;2464;4",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=7oBmdabwddG08itlAvZwoqZpLAZuU001oxeMA3QZtiI-1732677535-1.0.1.1-cq4riuBiKcz_2XBaus7Owbl7wjMLQ9k15Hb.QcEe13HW0zV80XVR7QvAoC2obaQRO5HPQAiPutiDWSCNimT..w; path=/; expires=Wed, 27-Nov-24 03:48:55 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef94379b04529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:49[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:49[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:49[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:49[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "952515"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:50[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:50[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:50[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:50[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:18:57 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14974/day;988/hour;138/minute",
+  "x-ratelimit-reset": "13263;2463;3",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=HnsZpTlhTvQEYzhGVPf2AIYKHPakpwsrt_2TJ03iEh0-1732677537-1.0.1.1-c_cdIqfCvUBxpGxj1XMF1RtTHKgZly.2r9eJtIHbFs9VIV89gwYQKV9Ho252D.parv7bsWShIcz.FruwOEJ35A; path=/; expires=Wed, 27-Nov-24 03:48:57 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef94c4ce64529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:50[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:50[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:50[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:50[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "577897"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:51[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:51[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:51[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:51[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:18:58 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14973/day;987/hour;137/minute",
+  "x-ratelimit-reset": "13261;2461;1",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=9jn_IHj9NHupgc2W4muTRSDZnGQAVh2rv9Arthb1db0-1732677538-1.0.1.1-dNpnrpVY59BCYPJs1bUbPmXXVsZ8Wkbl0Aynfkk9HZvSojyFX9tazsg8Gjfjq16d3MFY2VN5UysdqEUKSUcCqg; path=/; expires=Wed, 27-Nov-24 03:48:58 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef9548f4d4529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:51[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:51[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:51[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:51[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "518041"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:53[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:53[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:53[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:53[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:19:00 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14972/day;986/hour;149/minute",
+  "x-ratelimit-reset": "13260;2460;60",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=2v.oWxBU2cY4chW4Tp48AN4BOKVTqmnVpOUl3zTE3VQ-1732677540-1.0.1.1-6172mQXZC6heViRS13SHdCw_VQRukO1S0wkwyJPFdmNVmUIMVIJpoP3bF588kxa4QSuZGV9dcRMhGG2LEHeteQ; path=/; expires=Wed, 27-Nov-24 03:49:00 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef95d7c284529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:53[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:53[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:53[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:53[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "518042"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:54[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:54[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:54[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:54[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:19:01 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14971/day;985/hour;149/minute",
+  "x-ratelimit-reset": "13258;2458;58",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=d4ZQ6pQ7Re.kq1Q86aB8zqyRLHIwerS1wFUHgFAgf28-1732677541-1.0.1.1-kbgImrPj_8dItM3BLjmsbpsGSYoJxg2e7Etoaoj30OpGV96qeng9K14MC8JOzfW_ETPZkkKHRo2rnvbF1g9WYQ; path=/; expires=Wed, 27-Nov-24 03:49:01 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef966982d4529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:54[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:55[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:55[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:55[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "1197886"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:56[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:56[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:56[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:56[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:19:03 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14970/day;984/hour;148/minute",
+  "x-ratelimit-reset": "13257;2457;57",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=yw_18kWsKzyx5RYtmq2PRVll8ua32Fo8PLzNL08lWhc-1732677543-1.0.1.1-0thM6athVH7yt1au5LT6b_PwbzBMXI6aj5bwIe52Gz9HJQoLvchT0JtpyJ2Onl6FI1HG8N1NgcjKabfg4K2sfw; path=/; expires=Wed, 27-Nov-24 03:49:03 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef9710f9d4529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:56[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:56[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:56[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:56[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "833617"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:57[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:57[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:57[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:57[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:19:04 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14969/day;983/hour;147/minute",
+  "x-ratelimit-reset": "13255;2455;55",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=95Tct5GW_3ERtiZtJCjCGtIlqHfGAaoK8LQZsgfTO9I-1732677544-1.0.1.1-v1Qx00Ozucp0Zz9UDze8_chSjNAc1uP1q_eFueOQtx027YoJ.gPuGDGEZa9QPw75dlzfrGmG7AKHb1ZfsA2nbg; path=/; expires=Wed, 27-Nov-24 03:49:04 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef9791ad84529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:57[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:57[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:57[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:57[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "1197887"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:59[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:59[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:59[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:59[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:19:06 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14968/day;982/hour;146/minute",
+  "x-ratelimit-reset": "13254;2454;54",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=gSTF9ou9wTsNCAVbN1h8dpavMGerXcNGm6goMZyxgWo-1732677546-1.0.1.1-03L4WvR1NUjvQPvtCfL27kL3rLl.v9qWZolPdH_OqWYvRH3ApvyI6_ubln2aXwaIH23rHseo7jQwHiBKsUF_yw; path=/; expires=Wed, 27-Nov-24 03:49:06 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef982cfd14529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:59[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:59[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:59[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:18:59[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "518046"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:00[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:00[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:00[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:00[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:19:07 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14967/day;981/hour;145/minute",
+  "x-ratelimit-reset": "13253;2453;53",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=S2s4LSWanMVQstPkzxxkkQmCSYYZhVZr0syDB1vcGlk-1732677547-1.0.1.1-cpxHkSdsm0tinxtB1.UP_xqL.LGTnSisFKvb6YVr9eMLOKxBiGL5D9pmY_BGJ2eMWyBs4BEDFC5.9uSiNl5zEQ; path=/; expires=Wed, 27-Nov-24 03:49:07 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef98b9b854529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:00[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:01[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:01[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:01[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "1143679"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:02[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:02[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:02[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:02[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:19:09 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14966/day;980/hour;144/minute",
+  "x-ratelimit-reset": "13251;2451;51",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=NEFfDNEpBfPgTJXGSQXyCbAPjqfSnfX9vzKY37KLTE8-1732677549-1.0.1.1-N0womT2vJXoH_i.MjV_zAQ1x_dv9zO1wDOrMH.5ol7bdKezVJXzkDnOgzULQgtRnYknp5E1GENtrgM8HbYkTbg; path=/; expires=Wed, 27-Nov-24 03:49:09 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef99699834529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:02[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:02[23m] [38;5;246mHTTP Request: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:02[23m] [38;5;246mHeaders:
+{
+  "Authorization": "<REDACTED>",
+  "Content-Type": "application/json"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:02[23m] [38;5;246mRequest Body:
+{
+  "auth": {
+    "type": "basic"
+  },
+  "requestId": 15,
+  "method": {
+    "name": "getProperties",
+    "version": "r1",
+    "params": {
+      "propertyId": "1311849"
+    }
+  }
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:03[23m] [38;5;246mHTTP Response: POST https://gmhcommunities.entrata.com/api/v1/properties[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:03[23m] [38;5;246mHTTP Status: 200 OK[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:03[23m] [38;5;246mContent-Type: application/json[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:03[23m] [38;5;246mHeaders:
+{
+  "Date": "Wed, 27 Nov 2024 03:19:10 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "vary": "Authorization",
+  "access-control-allow-origin": "*",
+  "access-control-expose-headers": "Link, X-Total-Count, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Content-Language",
+  "x-ratelimit-limit": "15000/day;1000/hour;150/minute",
+  "x-ratelimit-remaining": "14965/day;979/hour;143/minute",
+  "x-ratelimit-reset": "13249;2449;49",
+  "x-read-only": "000",
+  "CF-Cache-Status": "DYNAMIC",
+  "Set-Cookie": "__cf_bm=zfFXtaFCYM4Zv4mw2NqsJSdeyordror2LiXcY25JsNE-1732677550-1.0.1.1-16zvkvS5H7cgPt_4JX1F2raXe450QrZBYV0WUKwaiqCa6gsYNY6nrGz7LtePktqeyhq7z7v2eST.U8NB.TZTkw; path=/; expires=Wed, 27-Nov-24 03:49:10 GMT; domain=.entrata.com; HttpOnly; Secure; SameSite=None",
+  "Server": "cloudflare",
+  "CF-RAY": "8e8ef99f3cc74529-ATL",
+  "Content-Encoding": "gzip",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}[39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m
+[1m[0mINFO[0m[1m[23m[24m[27m[28m[29m[39m[49m[0m[0m[1m[23m[24m[27m[28m[29m[39m[49m[22m [[3m2024-11-26 22:19:03[23m] [38;5;246mResponse Body (332040):
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "PhysicalProperty": {
+        "Property": [
+          {
+            "PropertyID": 739076,
+            "MarketingName": "1008 S. 4th",
+            "Type": "Student",
+            "webSite": "https://www.theacademycampustown.com/",
+            "Address": {
+              "@attributes": {
+                "AddressType": "property"
+              },
+              "Address": "1008 S. 4th",
+              "City": "Champaign",
+              "State": "IL",
+              "PostalCode": "61820",
+              "Country": "US",
+              "Email": "info@theacademycampustown.com"
+            },
+            "Addresses": {
+              "Address": [
+                {
+                  "AddressType": "Primary",
+                  "Address": "1008 S. 4th",
+                  "City": "Champaign",
+                  "StateCode": "IL",
+                  "PostalCode": "61820",
+                  "Country": "US"
+                },
+    [39m[0m[0m[22m[23m[24m[27m[28m[29m[39m[49m

@@ -1,0 +1,26 @@
+2024-12-08T17:24:07.014Z
+TypeError: Invalid URL
+    at new URL (node:internal/url:818:25)
+    at parse (C:\Users\jimmy\.bun\install\global\node_modules\pg-connection-string\index.js:29:14)
+    at new ConnectionParameters (C:\Users\jimmy\.bun\install\global\node_modules\pg\lib\connection-parameters.js:51:43)
+    at new Client (C:\Users\jimmy\.bun\install\global\node_modules\pg\lib\client.js:18:33)
+    at getValidatedClient (C:\Users\jimmy\.bun\install\global\node_modules\@dbml\connector\dist\connectors\postgresConnector.js:8:20)
+    at fetchSchemaJson (C:\Users\jimmy\.bun\install\global\node_modules\@dbml\connector\dist\connectors\postgresConnector.js:397:26)
+    at Object.fetchSchemaJson (C:\Users\jimmy\.bun\install\global\node_modules\@dbml\connector\dist\connectors\connector.js:12:60)
+    at connectionHandler (C:\Users\jimmy\.bun\install\global\node_modules\@dbml\cli\lib\cli\connector.js:24:51)
+    at Object.db2dbml (C:\Users\jimmy\.bun\install\global\node_modules\@dbml\cli\lib\cli\index.js:62:26)
+    at Object.<anonymous> (C:\Users\jimmy\.bun\install\global\node_modules\@dbml\cli\bin\db2dbml.js:4:19)
+
+2024-12-08T17:26:20.272Z
+TypeError: Invalid URL
+    at new URL (node:internal/url:818:25)
+    at parse (X:\.library\npm\_npx\dfad5bca64460fc0\node_modules\pg-connection-string\index.js:29:14)
+    at new ConnectionParameters (X:\.library\npm\_npx\dfad5bca64460fc0\node_modules\pg\lib\connection-parameters.js:51:43)
+    at new Client (X:\.library\npm\_npx\dfad5bca64460fc0\node_modules\pg\lib\client.js:18:33)
+    at getValidatedClient (X:\.library\npm\_npx\dfad5bca64460fc0\node_modules\@dbml\connector\dist\connectors\postgresConnector.js:8:20)
+    at fetchSchemaJson (X:\.library\npm\_npx\dfad5bca64460fc0\node_modules\@dbml\connector\dist\connectors\postgresConnector.js:415:26)
+    at Object.fetchSchemaJson (X:\.library\npm\_npx\dfad5bca64460fc0\node_modules\@dbml\connector\dist\connectors\connector.js:12:60)
+    at connectionHandler (X:\.library\npm\_npx\dfad5bca64460fc0\node_modules\@dbml\cli\lib\cli\connector.js:24:51)
+    at Object.db2dbml (X:\.library\npm\_npx\dfad5bca64460fc0\node_modules\@dbml\cli\lib\cli\index.js:62:26)
+    at Object.<anonymous> (X:\.library\npm\_npx\dfad5bca64460fc0\node_modules\@dbml\cli\bin\db2dbml.js:4:19)
+

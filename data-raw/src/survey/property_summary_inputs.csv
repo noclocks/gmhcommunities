@@ -1,0 +1,16 @@
+name,id,order,label,placeholder,icon,icon_function,help,type,input_function,required,choices,default,prepopulate,prepopulate_method
+Property Name,property_name,1,Property Name,Enter Property Name,building,shiny::icon,Enter the name of the property.,text,shinyWidgets::textInputIcon,TRUE,,NA,TRUE,prior
+Property Website,property_website,2,Property Website,Enter Property Website,globe,shiny::icon,Enter the website of the property.,text,shinyWidgets::textInputIcon,FALSE,,NA,TRUE,prior
+Property Address,property_address,3,Property Address,Enter Property Address,map-marker-alt,shiny::icon,Enter the address of the property.,text,shinyWidgets::textInputIcon,TRUE,,NA,TRUE,prior
+Property Phone Number,property_phone_number,4,Property Phone Number,Enter Property Phone Number,phone,shiny::icon,Enter the phone number of the property.,text,shinyWidgets::textInputIcon,TRUE,,NA,TRUE,prior
+Property Developer,property_developer,5,Property Developer,Enter Property Developer,hard-hat,shiny::icon,Enter the developer of the property.,text,shinyWidgets::textInputIcon,FALSE,,NA,TRUE,prior
+Property Manager,property_manager,6,Property Manager,Enter Property Manager,user-tie,shiny::icon,Enter the manager of the property.,text,shinyWidgets::textInputIcon,FALSE,,GMH Communities,TRUE,prior
+Property Owner,property_owner,7,Property Owner,Enter Property Owner,user,shiny::icon,Enter the owner of the property.,text,shinyWidgets::textInputIcon,FALSE,,GMH Communities,TRUE,prior
+Property Type,property_type,8,Property Type,Enter Property Type,check,shiny::icon,Select the type of property.,mc,shinyWidgets::radioGroupButtons,TRUE,,Student,TRUE,prior
+Property Status,property_status,9,Property Status,Enter Property Status,building,shiny::icon,Select the status of the property.,mc,shinyWidgets::radioGroupButtons,TRUE,,Operational,TRUE,prior
+Product Type,product_type,10,Product Type,Enter Product Type,star,shiny::icon,Select the product type of the property.,mc,shinyWidgets::radioGroupButtons,TRUE,,Mid-Rise,TRUE,prior
+Property Rating,property_rating,11,Property Rating,Enter Property Rating,check-circle,shiny::icon,Enter the rating of the property.,numeric,shinyWidgets::noUiSliderInput,TRUE,,3,TRUE,prior
+Comp Status,comp_status,12,Comp Status,Enter Comp Status,calendar-alt,shiny::icon,Select the comp status of the property.,mc,shinyWidgets::radioGroupButtons,TRUE,,Subject Property,TRUE,prior
+Year Built/Renovated,year_built_renovated,13,Year Built/Renovated,Enter Year Built/Renovated,dollar-sign,shiny::icon,Enter the year the property was built.,date,shinyWidgets::airYearpickerInput,TRUE,,NA,TRUE,prior
+Most Recent Sale Date,most_recent_sale_date,14,Most Recent Sale Date,Enter Most Recent Sale Date,ruler-horizontal,shiny::icon,Enter the most recent sale date of the property.,date,shinyWidgets::airDatepickerInput,FALSE,,NA,FALSE,current
+Distance to Campus,distance_to_campus,15,Distance to Campus,Enter Distance to Campus,map-marker-alt,shiny::icon,Enter the distance from campus in miles.,numeric,shinyWidgets::numericInputIcon,TRUE,,NA,TRUE,prior

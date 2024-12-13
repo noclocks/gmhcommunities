@@ -1,0 +1,32 @@
+---
+include:
+  - validation/property_summary.validation.yml
+  - validation/leasing_summary.validation.yml
+options:
+  raise: errors
+---
+
+rules:
+  - name: "property_name"
+    expr: shinyvalidate::sv_required()
+
+  property_summary:
+    property_name:
+      - type: required
+        message: "Property Name is required."
+    website:
+      - type: required
+        message: "Property Website is required."
+      - type: url
+        message: "Property Website must be a valid URL."
+    email:
+      - type: required
+        message: "Email is required."
+      - type: email
+        message: "Email must be a valid email address."
+    phone_number:
+      - type: required
+        message: "Phone Number is required."
+      - type: phone
+        message: "Phone Number must be a valid phone number."
+

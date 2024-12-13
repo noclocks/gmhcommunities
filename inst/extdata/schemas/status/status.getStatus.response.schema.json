@@ -1,0 +1,78 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "#StatusResponse",
+    "type": "object",
+    "title": "StatusResponse",
+    "description": "Entrata API /status response schema",
+    "$comment": "https://www.jsonschemavalidator.net/s/oDW7V3og",
+    "required": [
+        "response"
+    ],
+    "properties": {
+        "response": {
+            "$id": "#StatusResponse/response",
+            "title": "Response",
+            "description": "Root response object",
+            "type": "object",
+            "required": [
+                "requestId",
+                "code",
+                "result"
+            ],
+            "properties": {
+                "requestId": {
+                    "$id": "#StatusResponse/response/requestId",
+                    "title": "Request ID",
+                    "description": "ID for the request",
+                    "type": "string",
+                    "pattern": "^.*$",
+                    "examples": [
+                        "15",
+                        "TEST_ID"
+                    ],
+                    "default": "15"
+                },
+                "code": {
+                    "$id": "#StatusResponse/response/code",
+                    "title": "Response code",
+                    "description": "Response code",
+                    "type": "integer",
+                    "minimum": 200,
+                    "maximum": 599,
+                    "example": 200,
+                    "default": 200
+                },
+                "result": {
+                    "$id": "#StatusResponse/response/result",
+                    "title": "Result",
+                    "description": "Result of the request",
+                    "type": "object",
+                    "required": [
+                        "status",
+                        "message"
+                    ],
+                    "properties": {
+                        "status": {
+                            "$id": "#StatusResponse/response/result/status",
+                            "title": "Status",
+                            "description": "Response Status",
+                            "type": "string",
+                            "pattern": "^.*$",
+                            "example": "Success",
+                            "default": "Success"
+                        },
+                        "message": {
+                            "$id": "#StatusResponse/response/result/message",
+                            "title": "Message",
+                            "description": "Response Message",
+                            "type": "string",
+                            "pattern": "^.*$",
+                            "example": "API service is available and running.",
+                            "default": "API service is available and running."
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

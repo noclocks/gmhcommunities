@@ -1,0 +1,96 @@
+---
+title: "Leasing Market Survey"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Leasing Market Survey}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+# library(gmhcommunities)
+```
+
+## Overview
+
+To design a leasing market survey Shiny app for GMH Communities, we'll create a comprehensive web-based solution that replicates the structure and functionality of their existing spreadsheet-based survey. The app will allow General Managers to input weekly data for their properties and competitors, store historical information, and provide analysis tools for corporate staff.
+
+## Key Components
+
+1. User Interface
+2. Market Survey Forms
+3. Data Model
+4. Analysis and Reporting
+
+### User Interface (UI)
+
+The app will be designed with a clean, modern interface that is easy to use 
+and navigate. 
+
+The main sections of the app will include a dashboard, market survey forms,
+and survey insights & analysis tools.
+
+#### R Shiny App Structure
+
+The app will be built using the R Shiny framework, leveraging a modular
+design to separate the UI and server logic into distinct components.
+
+The app will consist of the following main sections or pages each with their 
+own corresponding modules:
+
+- Dashboard: Overview of properties and survey statuses
+- Market Survey: Multi-tab interface for data entry survey form inputs
+- Survey Insights: Analysis and reporting
+
+### Market Survey Forms
+
+The actual market survey is split into several sections, mirroring the 
+original speadsheet-based survey data provided by GMH Communities.
+
+Survey Sections:
+
+- Property Summary & Image
+- Leasing Summary
+- Short Term Leases
+- Fees
+- Amenities (Property & Unit)
+- Parking
+- Utilities
+- Office Hours
+- Rents by Floor Plan
+- Rents by Unit Type
+
+plus an additional section for:
+
+- Competitor Summary
+
+Each section will be implemented as a separate Shiny module for maintainability
+and re-usability.
+
+### Data Model
+
+The app will store survey data in a relational database, allowing for
+historical data storage and analysis.
+
+The data model specific the the market survey data will have its
+own dedicated database schema: `mkt` and will consist of the following
+core tables:
+
+- `mkt.properties`: Core Property Information
+
+
+- `mkt.property_summary`: Property-level static and descriptive fields from
+  the *Property Summary* survey section.
+- `mkt.leasing_summary`: Leasing-specific metrics updated weekly for the 
+  *Leasing Summary* survey section.
+- `mkt.short_term_leases`: Short-term lease information including availability and
+  premiums for short-term leases for the *Short Term Leases* survey section.
+  - `mkt.rents_by_floorplan`: 
+

@@ -1,0 +1,114 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/GetReportList",
+    "definitions": {
+        "GetReportList": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "response": {
+                    "$ref": "#/definitions/Response"
+                }
+            },
+            "required": [],
+            "title": "GetReportList"
+        },
+        "Response": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "requestId": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "code": {
+                    "type": "integer"
+                },
+                "result": {
+                    "$ref": "#/definitions/Result"
+                }
+            },
+            "required": [],
+            "title": "Response"
+        },
+        "Result": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "reports": {
+                    "$ref": "#/definitions/Reports"
+                }
+            },
+            "required": [],
+            "title": "Result"
+        },
+        "Reports": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "report": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Report"
+                    }
+                }
+            },
+            "required": [],
+            "title": "Reports"
+        },
+        "Report": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "reportName": {
+                    "type": "string"
+                },
+                "systemName": {
+                    "type": "string"
+                },
+                "reportVersions": {
+                    "$ref": "#/definitions/ReportVersions"
+                }
+            },
+            "required": [],
+            "title": "Report"
+        },
+        "ReportVersions": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "reportVersion": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ReportVersion"
+                    }
+                }
+            },
+            "required": [],
+            "title": "ReportVersions"
+        },
+        "ReportVersion": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "version": {
+                    "type": "string"
+                },
+                "isLatest": {
+                    "type": "boolean"
+                },
+                "titleAddendum": {
+                    "type": "string"
+                },
+                "expiryDate": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "ReportVersion"
+        }
+    }
+}

@@ -1,0 +1,5 @@
+property_id,property_name,leasing_week_start,five_month_term_available,five_month_term_premium,five_month_term_quantity,ten_month_term_available,ten_month_term_premium,ten_month_term_quantity
+739085,1047 Commonwealth Avenue,2024-12-01,FALSE,0,NA,FALSE,0,NA
+boylston,1330 Boylston,2024-12-01,FALSE,0,NA,FALSE,0,NA
+bower,Bower,2024-12-01,FALSE,0,NA,FALSE,0,NA
+vanness,Van Ness,2024-12-01,FALSE,0,NA,FALSE,0,NA

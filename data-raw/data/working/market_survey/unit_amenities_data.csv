@@ -1,0 +1,5 @@
+property_id,property_name,unit_levels,private_bathrooms,walk_in_closets,washer_dryer_in_unit,smart_home_technology,smart_bedroom_locks,smart_unit_locks,energy_efficient_appliances,stainless_steel_appliances,balconies,patios,backyards,tv_included_in_rent,tv_renatable_rate,tv_bedroom,tv_common_area,furniture_included_in_rent,floor_premium,poolside_premium,top_floor_premium,view_premium,furniture_rentable_rate,other_premiums
+739085,1047 Commonwealth Avenue,1,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,0,0,0,TRUE,0,0,0,0,0,0
+boylston,1330 Boylston,1,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,0,0,0,FALSE,0,0,0,0,0,0
+bower,Bower,1,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,0,0,0,FALSE,0,0,0,0,0,0
+vanness,Van Ness,1,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,0,0,0,FALSE,0,0,0,0,0,0

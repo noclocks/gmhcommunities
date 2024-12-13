@@ -1,0 +1,109 @@
+Package: gmhcommunities
+Title: GMH Communities Data Hub Platform
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Jimmy", "Briggs", , "jimmy.briggs@jimbrig.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7489-8787")),
+    person("Patrick", "Howard", , "patrick.howard@noclocks.dev", role = c("aut", "rev")),
+    person("No Clocks, LLC", , , "team@noclocks.dev", role = c("cph", "fnd"))
+  )
+Description: Provides a suite of tools for working with the GMH
+    Communities Data Hub Platform.
+License: MIT + file LICENSE
+URL: https://github.com/noclocks/gmhdatahub
+BugReports: https://github.com/noclocks/gmhdatahub/issues
+Depends: 
+    R (>= 4.1)
+Imports: 
+    apexcharter,
+    bsicons,
+    bslib,
+    cachem,
+    cli,
+    config,
+    DBI,
+    dbplyr,
+    dbx,
+    dialr,
+    digest,
+    dint,
+    dplyr,
+    DT,
+    fontawesome,
+    fs,
+    ggmap,
+    glue,
+    googleway,
+    htmltools,
+    httr2,
+    janitor,
+    jsonlite,
+    jsonvalidate,
+    leaflet,
+    lobstr,
+    logger,
+    lubridate,
+    memoise,
+    mime,
+    openxlsx,
+    options,
+    pkgload,
+    pool,
+    purrr,
+    qs2,
+    reactable,
+    readr,
+    rhandsontable,
+    rintrojs,
+    rlang (>= 1.1.0),
+    RPostgres,
+    sass,
+    scales,
+    shiny,
+    shinycustomloader,
+    shinyjs,
+    shinyvalidate,
+    shinyWidgets,
+    snakecase,
+    stringr,
+    tibble,
+    tibblify,
+    tidyr,
+    tidyselect,
+    utils,
+    waiter,
+    withr,
+    yaml
+Suggests: 
+    knitr,
+    later,
+    promises,
+    rmarkdown,
+    shinytest2,
+    spelling,
+    testthat (>= 3.0.0)
+VignetteBuilder: 
+    knitr
+Remotes: 
+    r-lib/httr2,
+    rstudio/bslib
+Config/cmdline/needs: cli, processx, callr
+Config/coverage/needs: covr covrpage
+Config/docker/needs: dockerfiler
+Config/gcp/needs: gargle, googleCloudRunner, googleCloudStorageR,
+    googleCloudAuthR, config
+Config/npm/needs: npm
+Config/pkgdown/needs: pkgdown, testdown, gitdown, covrpage
+    Config/database/needs: DBI, pool, dplyr, dbplyr, RPostgres, config
+    Config/api/needs: httr2, jsonlite, plumber, R6, config
+    Config/shiny/needs: shiny, bslib, shinyjs, bsicons, htmltools
+Config/python/needs: reticulate
+Config/shinytest/needs: shiny, shinytest2, shinyloadtest
+    Config/httptest/needs: httptest2
+Config/tests/needs: testthat (>= 3.0.0), spelling
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
