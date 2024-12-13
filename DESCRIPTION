@@ -10,7 +10,7 @@ Authors@R: c(
 Description: Provides a suite of tools for working with the GMH
     Communities Data Hub Platform.
 License: MIT + file LICENSE
-URL: https://github.com/noclocks/gmhdatahub
+URL: https://github.com/noclocks/gmhdatahub, http://docs.noclocks.dev/gmhcommunities/
 BugReports: https://github.com/noclocks/gmhdatahub/issues
 Depends: 
     R (>= 4.1)

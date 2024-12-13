@@ -1,42 +1,29 @@
-url: https://docs.noclocks.dev/gmhcommunities
-
+url: http://docs.noclocks.dev/gmhcommunities/
 template:
   bootstrap: 5
   includes:
-    in_header:
-      <script defer data-domain="docs.noclocks.dev" src="https://plausible.io/js/plausible.js"></script>
-
+    in_header: <script defer data-domain="docs.noclocks.dev" src="https://plausible.io/js/plausible.js"></script>
 development:
   mode: auto
-
 reference:
+- title: Entrata API
+  desc: |
+    Functions to interact with the Entrata API.
+  contents: starts_with("entrata_")
+- title: Database
+  desc: |
+    Functions to interact with the backend database.
+  contents: starts_with("db_")
+- title: Shiny App
+  desc: |
+    Core Shiny App Functions
+  contents: starts_with("app_")
+- title: Shiny Modules
+  desc: |
+    Shiny Modules
+  contents: starts_with("mod_")
+- title: Utilities
+  desc: |
+    Utility Functions
+  contents: starts_with("utils_")
 
-  - title: Entrata API
-    desc: >
-      Functions to interact with the Entrata API.
-    contents:
-      - starts_with("entrata_")
-
-  - title: Database
-    desc: >
-      Functions to interact with the backend database.
-    contents:
-      - starts_with("db_")
-
-  - title: Shiny App
-    desc: >
-      Core Shiny App Functions
-    contents:
-      - starts_with("app_")
-
-  - title: Shiny Modules
-    desc: >
-      Shiny Modules
-    contents:
-      - starts_with("mod_")
-
-  - title: Utilities
-    desc: >
-      Utility Functions
-    contents:
-      - starts_with("utils_")
