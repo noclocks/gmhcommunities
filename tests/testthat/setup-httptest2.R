@@ -15,6 +15,12 @@ options(
   httptest.debug.trace = TRUE
 )
 
+# mock paths --------------------------------------------------------------
+
+root_mock_path <- testthat::test_path("mocks/gmhcommunities.entrata.com")
+
+# property ids ------------------------------------------------------------
+
 test_prop_ids <- c(
   "739084",
   "641240",

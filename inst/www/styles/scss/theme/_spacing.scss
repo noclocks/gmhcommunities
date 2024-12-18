@@ -22,13 +22,13 @@ $height: (
 
 // Helper functions for spacing
 @function get-padding($size) {
-  @return map-get($padding, $size);
+  @returns map-get($padding, $size);
 }
 
 @function get-margin($size) {
-  @return map-get($margin, $size);
+  @returns map-get($margin, $size);
 }
 
 @function get-height($size) {
-  @return map-get($height, $size);
+  @returns map-get($height, $size);
 }

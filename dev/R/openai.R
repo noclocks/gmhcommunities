@@ -11,7 +11,7 @@ openai_chat <- function(prompt, model = "gpt-4o-mini") {
 #' Gets the current time in the given time zone.
 #'
 #' @param tz The time zone to get the current time in.
-#' @return The current time in the given time zone.
+#' @returns The current time in the given time zone.
 get_current_time <- function(tz = "UTC") {
   format(Sys.time(), tz = tz, usetz = TRUE)
 }

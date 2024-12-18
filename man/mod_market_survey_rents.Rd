@@ -9,7 +9,12 @@
 \usage{
 mod_market_survey_rents_ui(id)
 
-mod_market_survey_rents_server(id)
+mod_market_survey_rents_server(
+  id,
+  pool,
+  selected_property = NULL,
+  selected_leasing_week = NULL
+)
 
 mod_market_survey_rents_demo()
 }

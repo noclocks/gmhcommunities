@@ -51,7 +51,7 @@ validate_entrata_params <- function(
 #' @param nullable Whether the value can be `NULL`. Default is `FALSE`.
 #' @inheritParams rlang::args_error_context
 #'
-#' @return `TRUE` (invisibly) if validation passes; otherwise, throws an error.
+#' @returns `TRUE` (invisibly) if validation passes; otherwise, throws an error.
 #'
 #' @export
 #'
@@ -83,7 +83,7 @@ validate_entrata_id <- function(
 #' @param value The input value to coerce.
 #' @param nullable Whether the value can be `NULL`. Default is `FALSE`.
 #'
-#' @return The coerced `Id` as a string.
+#' @returns The coerced `Id` as a string.
 #'
 #' @export
 #'
@@ -109,7 +109,7 @@ coerce_entrata_id <- function(value, nullable = FALSE) {
 #' @param value The input value to sanitize.
 #' @param nullable Whether the value can be `NULL`. Default is `FALSE`.
 #'
-#' @return The sanitized `Id` as a string.
+#' @returns The sanitized `Id` as a string.
 #'
 #' @export
 sanitize_entrata_id <- function(value, nullable = FALSE) {
@@ -126,7 +126,7 @@ sanitize_entrata_id <- function(value, nullable = FALSE) {
 #' @param nullable Whether the value can be `NULL`. Default is `FALSE`.
 #' @inheritParams rlang::args_error_context
 #'
-#' @return `TRUE` (invisibly) if validation passes; otherwise, an error is raised.
+#' @returns `TRUE` (invisibly) if validation passes; otherwise, an error is raised.
 #'
 #' @export
 #'
@@ -169,7 +169,7 @@ validate_entrata_ids <- function(
 #' @param value The input value to coerce.
 #' @param nullable Whether the value can be `NULL`. Default is `FALSE`
 #'
-#' @return A single comma-separated string of IDs.
+#' @returns A single comma-separated string of IDs.
 #'
 #' @export
 coerce_entrata_ids <- function(
@@ -194,7 +194,7 @@ coerce_entrata_ids <- function(
 #' @param value The input value to sanitize.
 #' @param nullable Whether the value can be `NULL`. Default is `FALSE`.
 #'
-#' @return A single comma-separated string of IDs.
+#' @returns A single comma-separated string of IDs.
 #'
 #' @export
 sanitize_entrata_ids <- function(value, nullable = FALSE) {
@@ -211,7 +211,7 @@ sanitize_entrata_ids <- function(value, nullable = FALSE) {
 #' @param nullable Whether the value can be `NULL`. Default is `FALSE`.
 #' @inheritParams rlang::args_error_context
 #'
-#' @return `TRUE` (invisibly) if validation passes; otherwise, throws an error.
+#' @returns `TRUE` (invisibly) if validation passes; otherwise, throws an error.
 #'
 #' @export
 #'
@@ -260,7 +260,7 @@ validate_entrata_boolean <- function(
 #' @param value The input value to coerce.
 #' @param nullable Whether the value can be `NULL`. Default is `FALSE`.
 #'
-#' @return The coerced boolean value as a string.
+#' @returns The coerced boolean value as a string.
 #'
 #' @export
 coerce_entrata_boolean <- function(value, nullable = FALSE) {
@@ -298,7 +298,7 @@ coerce_entrata_boolean <- function(value, nullable = FALSE) {
 #' @param value The input value to sanitize.
 #' @param nullable Whether the value can be `NULL`. Default is `FALSE`.
 #'
-#' @return The sanitized boolean value as a string.
+#' @returns The sanitized boolean value as a string.
 #'
 #' @export
 sanitize_entrata_boolean <- function(value, nullable = FALSE) {

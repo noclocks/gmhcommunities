@@ -52,7 +52,7 @@
 #' @seealso [parse_properties_response()] for the main parsing function.
 #' @seealso [parse_floorplans_response()] for parsing property floorplans data.
 #'
-#' @return A tibble containing the parsed property data.
+#' @returns A tibble containing the parsed property data.
 NULL
 
 #' @rdname entrata_property_parsers
@@ -628,7 +628,7 @@ parse_property_custom_keys <- function(property_tbl_init) {
 #'
 #' @param resp The Entrata API response object.
 #'
-#' @return A list containing the parsed floor plan data.
+#' @returns A list containing the parsed floor plan data.
 #'
 #' @export
 #'

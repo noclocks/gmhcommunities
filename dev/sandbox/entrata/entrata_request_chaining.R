@@ -114,8 +114,8 @@ entrata_request <- function() {
 
 check_status <- function() {
 
-  entrata_request() |>
-    req_url_path_append("status") |>
+  req <-
+
     req_perform() |>
     resp_body_json() |>
     pluck("response", "result")

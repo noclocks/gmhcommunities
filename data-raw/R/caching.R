@@ -4,7 +4,7 @@
 #'
 #' @name caching
 #' @seealso [qs::qread()] and [qs::qsave()]
-#' @return invisibly returns object passed to the function.
+#' @returns invisibly returns object passed to the function.
 #' @examples
 #' \dontrun{
 #' mydata <- mtcars
@@ -26,7 +26,7 @@ NULL
 #' @param cache_dir path to cache directory
 #' @param overwrite logical (default = TRUE)
 #'
-#' @return x
+#' @returns x
 #' @export
 #' @importFrom fs dir_exists dir_create path
 #' @importFrom qs qsave
@@ -64,7 +64,7 @@ write_cache <- function(x,
 #' @param name name of object to read in.
 #' @param cache_dir path to cache directory.
 #'
-#' @return invisibly attaches object to parent global environment
+#' @returns invisibly attaches object to parent global environment
 #' @export
 #' @importFrom fs path file_exists
 #' @importFrom qs qread

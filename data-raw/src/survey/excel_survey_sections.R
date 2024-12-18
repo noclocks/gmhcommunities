@@ -403,7 +403,7 @@ notes_data <- notes_data_leasing |>
 
 dplyr::glimpse(notes_data)
 
-office_hours_data <- commonwealth_market_survey_data$office_hours$office_hours |>
+office_hours_data <- market_survey_data_by_property$commonwealth$office_hours |>
   dplyr::bind_rows(boylston_market_survey_data$office_hours$office_hours) |>
   dplyr::bind_rows(bower_market_survey_data$office_hours$office_hours) |>
   dplyr::bind_rows(van_ness_market_survey_data$office_hours$office_hours) |>

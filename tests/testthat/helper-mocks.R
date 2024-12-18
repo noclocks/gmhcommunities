@@ -10,6 +10,19 @@
 require(jsonlite)
 
 
+# get mock file -----------------------------------------------------------
+
+# get_mock_file <- function(endpoint, method, ...) {
+#
+#   entrata_mocks_dir <- testthat::test_path("mocks/gmhcommunities.entrata.com")
+#   endpoint_mocks_dir <- fs::path(entrata_mocks_dir, endpoint)
+#
+#
+#   # return(mock_json_file)
+#
+# }
+
+
 # mock request body -------------------------------------------------------
 
 mock_req_body <- function(request_id = NULL, method_name = NULL, method_version = NULL, method_params = NULL) {

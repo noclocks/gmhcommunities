@@ -28,6 +28,32 @@ The output element with the loading spinner added.
 This function adds a loading spinner to a Shiny output element via
 \code{\link[shinycustomloader:withLoader]{shinycustomloader::withLoader()}}.
 }
+\examples{
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+library(shiny)
+
+ui <- fluidPage(
+  with_loader(
+    plotOutput("plot")
+  ),
+  plotOutput("plot") |>
+    with_loader()
+  )
+)
+
+server <- function(input, output, session) {
+
+  output$plot <- renderPlot({
+    plot(1:10)
+  })
+
+  outputOptions(output, "plot", suspendWhenHidden = FALSE)
+
+}
+
+shinyApp(ui = ui, server = server)
+\dontshow{\}) # examplesIf}
+}
 \seealso{
 \code{\link[shinycustomloader:withLoader]{shinycustomloader::withLoader()}}
 }

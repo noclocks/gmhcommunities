@@ -5,10 +5,15 @@ proxy_url <- "http://localhost:8080"
 entrata_config <- config::get("entrata")
 flow_file <- "dev/sandbox/mitmproxy/entrata.flow"
 log_file <- "dev/sandbox/mitmproxy/entrata.log"
-apispec_file <- "dev/sandbox/mitmproxy/entrata.apispec.yml"
+apispec_file <- "dev/sandbox/mitmproxy/entrata.apispec.new.yml"
 # Sys.setenv(CURL_CA_BUNDLE = "/path/to/mitmproxy-ca-cert.pem")
 
+source("dev/sandbox/mitmproxy/R/venv.R")
+source("dev/sandbox/mitmproxy/R/mitmdump.R")
+source("dev/sandbox/mitmproxy/R/entrata.R")
+source("dev/sandbox/mitmproxy/R/logger.R")
 source("dev/sandbox/mitmproxy/R/mitmweb.R")
+source("dev/sandbox/mitmproxy/R/apispec.R")
 
 mitmweb_process <- run_mitmweb(stream_file = flow_file)
 
@@ -16,18 +21,17 @@ resp_status <- entrata_req_proxy_perform("status", "getStatus", "r1", list(NULL)
 
 resp_properties <- entrata_req_proxy_perform("properties", "getProperties", "r1", list(propertyId = ""))
 
-resp_properties_data <- purrr::pluck(resp_properties, "response", "result", "PhysicalProperty", "Property") |>
-  parse_properties_response()
+resp_properties_data <- httr2::last_response() |> parse_properties_response()
 
 property_ids <- resp_properties_data$property_tbl_base$property_id
 
-resp_properties_map <- purrr::map(
+resp_properties_floorplans <- purrr::map(
   property_ids,
-  ~ entrata_req_proxy_perform("properties", "getProperties", "r1", list(propertyId = as.character(.x)))
+  ~ entrata_req_proxy_perform("properties", "getFloorPlans", "r1", list(propertyId = as.character(.x)))
 )
 
 mitmdump_to_swagger(
-  input_file = out_file,
+  input_file = flow_file,
   output_file = apispec_file,
   api_prefix = entrata_config$base_url
 )

@@ -47,11 +47,19 @@ function(resp) {
 
   # URLs --------------------------------------------------------------------
 
-  # gmh entrata
+  resp_url <- purrr::pluck(resp, "url")
+  resp_endpoint <- resp_url |> basename()
+  resp_req_id <- purrr::pluck(resp, "request", "body", "data", "requestId")
+  resp_endpoint_method <- purrr::pluck(resp, "request", "body", "data", "method", "name")
+
+  mock_dir <- glue::glue("mocks/gmhcommunities.entrata.com/{resp_endpoint}/")
+  mock_file <- glue::glue("{resp_endpoint_method}-{resp_req_id}.json")
+
+  # GMH Entrata
   resp <- httptest2::gsub_response(
     resp,
     pattern = "https://gmhcommunities.entrata.com/api/v1/",
-    replacement = "mocks/gmhcommunities.entrata.com/"
+    replacement = mock_dir
   )
 
   # noclocks auth

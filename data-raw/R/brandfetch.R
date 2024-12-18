@@ -27,7 +27,7 @@ safe_pluck <- function(x, ...) {
 #' @param brandfetch_api_key The API key for the Brandfetch API
 #' @param ... Additional arguments
 #'
-#' @return A tibble with the brand information
+#' @returns A tibble with the brand information
 #'
 #' @export
 #'

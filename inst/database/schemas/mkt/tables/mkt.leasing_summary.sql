@@ -1,8 +1,8 @@
 CREATE TABLE mkt.leasing_summary (
-    summary_id SERIAL PRIMARY KEY,
-    submission_id INT REFERENCES mkt.survey_submissions(submission_id),
     property_id TEXT REFERENCES mkt.properties(property_id),
     leasing_week_id INT REFERENCES mkt.leasing_weeks(leasing_week_id),
+    property_name TEXT NOT NULL,
+    leasing_week DATE NOT NULL,
     reporting_cycle TEXT CHECK (reporting_cycle IN ('Monday-Sunday', 'Saturday-Friday', 'Sunday-Saturday')) DEFAULT 'Monday-Sunday',
     lease_launch_date DATE,
     renewal_launch_date DATE,

@@ -20,22 +20,46 @@ mod_market_survey_demo()
 }
 \arguments{
 \item{id}{Module's namespace ID.}
+
+\item{pool}{Database connection pool.}
+
+\item{selected_property}{Selected property ID.}
+
+\item{selected_leasing_week}{Selected leasing week.}
 }
 \value{
 \itemize{
 \item \code{mod_market_survey_ui()}: UI HTML Output.
-\item \code{mod_market_survey_server()}: Reactive values returned from server logic.
+\item \code{mod_market_survey_server()}: List of reactive values.
+\item \code{mod_market_survey_demo()}: \code{NULL}, used for the side-effect of a demo app.
 }
 }
 \description{
-A Shiny Module for ...
+A Shiny Module for the GMH Communities Leasing Market Survey.
+
+The following functions are implemented:
 \itemize{
-\item \code{mod_market_survey_ui()}: User interface
-\item \code{mod_market_survey_server()}: Server logic
+\item \code{mod_market_survey_ui()}: User interface (UI) definition
+\item \code{mod_market_survey_server()}: Server logic for the UI
+\item \code{mod_market_survey_demo()}: Demo application for the module
 }
 }
 \examples{
-if (interactive()) {
-  mod_market_survey_demo()
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+mod_market_survey_demo()
+\dontshow{\}) # examplesIf}
+}
+\seealso{
+Market Survey Section Modules:
+\itemize{
+\item \code{\link[=mod_market_survey_property_summary]{mod_market_survey_property_summary()}}
+\item \code{\link[=mod_market_survey_leasing_summary]{mod_market_survey_leasing_summary()}}
+\item \code{\link[=mod_market_survey_short_term_leases]{mod_market_survey_short_term_leases()}}
+\item \code{\link[=mod_market_survey_fees]{mod_market_survey_fees()}}
+\item \code{\link[=mod_market_survey_amenities]{mod_market_survey_amenities()}}
+\item \code{\link[=mod_market_survey_parking]{mod_market_survey_parking()}}
+\item \code{\link[=mod_market_survey_utilities]{mod_market_survey_utilities()}}
+\item \code{\link[=mod_market_survey_notes]{mod_market_survey_notes()}}
+\item \code{\link[=mod_market_survey_rents]{mod_market_survey_rents()}}
 }
 }

@@ -11,7 +11,7 @@ $breakpoints: (
 
 // Helper function for accessing breakpoints
 @function breakpoint($size) {
-  @return map-get($breakpoints, $size);
+  @returns map-get($breakpoints, $size);
 }
 
 // Default Layout Settings
@@ -25,7 +25,7 @@ $layout: (
 
 // Function to get layout settings
 @function layout($property) {
-  @return map-get($layout, $property);
+  @returns map-get($layout, $property);
 }
 
 // Border and Box Shadow Settings

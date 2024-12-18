@@ -1,10 +1,10 @@
-CREATE OR REPLACE FUNCTION logs.audit_trigger_func(optional_user_id INT DEFAULT NULL)
+CREATE OR REPLACE FUNCTION logs.audit_trigger_func()
 RETURNS TRIGGER AS $$
 DECLARE
     effective_user_id INT;
 BEGIN
     -- Determine the effective user_id
-    effective_user_id := COALESCE(optional_user_id, current_setting('user_id', true)::INT, 0);
+    effective_user_id := COALESCE(effective_user_id, current_setting('user_id', true)::INT, 1);
 
     IF TG_OP = 'INSERT' THEN
         INSERT INTO logs.audit_logs (schema_name, table_name, operation, new_data, user_id)

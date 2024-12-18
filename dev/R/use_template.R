@@ -7,6 +7,15 @@ render_template <- function(template_path, data = list()) {
 }
 
 use_template <- function(template, save_as, data = list(), ignore = FALSE, open = FALSE) {
+
+  if (is.list(data) && length(data) > 0 && !is.null(data[["name"]])) {
+    name <- data[["name"]]
+    data[["title"]] <- snakecase::to_title_case(name)
+  }
+
+  data[["author"]] <- whoami::fullname()
+  data[["date"]] <- format(Sys.Date(), "%Y-%m-%d")
+
   content <- render_template(template, data)
   new <- usethis::write_over(save_as, content)
   if (ignore) {

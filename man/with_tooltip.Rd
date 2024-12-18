@@ -20,22 +20,24 @@ The input element with the tooltip added.
 This function adds a tooltip to a Shiny input element via \code{\link[bslib:tooltip]{bslib::tooltip()}}.
 }
 \examples{
-if (interactive()) {
-  library(shiny)
-  library(bslib)
-  library(bsicons)
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+library(shiny)
+library(bslib)
+library(bsicons)
 
-  ui <- fluidPage(
-    with_tooltip(
-      textInput("text", "Text Input"),
-      "This is a tooltip."
-      ),
-      # or pipe the input into the function
-      textInput("text", "Text Input") |>
-        with_tooltip("This is a tooltip.")
-  )
+ui <- fluidPage(
+  with_tooltip(
+    textInput("text", "Text Input"),
+    "This is a tooltip."
+    ),
+    # or pipe the input into the function
+    textInput("text", "Text Input") |>
+      with_tooltip("This is a tooltip.")
+)
 
-  shinyApp(ui = ui, server = function(input, output, session) {})
-
+shinyApp(ui = ui, server = function(input, output, session) {})
+\dontshow{\}) # examplesIf}
 }
+\seealso{
+\code{\link[bslib:tooltip]{bslib::tooltip()}}
 }

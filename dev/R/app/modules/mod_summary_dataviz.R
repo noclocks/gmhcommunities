@@ -58,7 +58,12 @@ mod_summary_tbl_dataviz_ui <- function(id) {
 
 }
 
-mod_summary_tbl_dataviz_server <- function(id, summary_data) {
+mod_summary_tbl_dataviz_server <- function(id, summary_data = NULL) {
+
+  if (!is.null(summary_data)) {
+    stopifnot(shiny::is.reactive(summary_data))
+  }
+
   shiny::moduleServer(id, function(input, output, session) {
 
     # filter data
@@ -103,6 +108,7 @@ mod_summary_tbl_dataviz_server <- function(id, summary_data) {
 
     # leases plot
     output$leases_plot <- apexcharter::renderApexchart({
+
       df <- filtered_data() |>
         dplyr::select(property_name, total_leases, prior_total_leases) |>
         dplyr::rename("Current" = total_leases,
@@ -184,7 +190,7 @@ mod_summary_tbl_dataviz_server <- function(id, summary_data) {
           "total_beds",
           "current_occupancy",
           "total_leases",
-          "prelease_pct",
+          "prelease_percent",
           "yoy_variance_pct"
         ) |>
         reactable::reactable(
@@ -242,14 +248,11 @@ mod_summary_tbl_dataviz_demo <- function() {
 
     # session$userData$db_pool <- db_connect()
 
-    demo_data <- qs::qread(
-      system.file(
-        "extdata/data/pre_lease_summary_data.qs",
-        package = "gmhcommunities"
-      )
+    demo_data <- readr::read_csv(
+      pkg_sys("extdata/data/pre_lease_data.csv")
     )
 
-    mod_summary_tbl_dataviz_server("demo", summary_data = reactive({demo_data}))
+    mod_summary_tbl_dataviz_server("demo", summary_data = shiny::reactive({demo_data}))
   }
 
   shiny::shinyApp(ui, server)

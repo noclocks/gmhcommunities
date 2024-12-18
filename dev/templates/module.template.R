@@ -1,29 +1,31 @@
 
 #  ------------------------------------------------------------------------
 #
-# Title : {{name}} Shiny Module
-#    By : Jimmy Briggs
-#  Date : 2024-11-27
+# Title : {{title}}
+#    By : {{author}}
+#  Date : {{date}}
 #
 #  ------------------------------------------------------------------------
 
 # topic -------------------------------------------------------------------
 
-#' {{name}} Shiny Module
+#' {{title}}
 #'
 #' @name mod_{{name}}
 #'
 #' @description
-#' A Shiny Module for ...
+#' A Shiny Module that ...
 #'
-#' - `mod_{{name}}_ui()`: User interface
-#' - `mod_{{name}}_server()`: Server logic
+#' - `mod_{{name}}_ui()`: The front-end UI for the module.
+#' - `mod_{{name}}_server()`: The server logic for the module.
+#' - `mod_{{name}}_demo()`: Function to demo the module in an isolated shiny app context.
 #'
-#' @param id Module's namespace ID.
+#' @param id The module's ID that will be namespaced.
 #'
 #' @return
 #' - `mod_{{name}}_ui()`: UI HTML Output.
-#' - `mod_{{name}}_server()`: Reactive values returned from server logic.
+#' - `mod_{{name}}_server()`: List of reactive values returned from server logic.
+#' - `mod_{{name}}_demo()`: `NULL` (runs a shiny app).
 #'
 #' @examples
 #' if (interactive()) {
@@ -38,12 +40,15 @@ NULL
 #' @export
 #' @importFrom shiny NS
 #' @importFrom htmltools tagList tags
+#' @importFrom bslib card
 mod_{{name}}_ui <- function(id) {
 
   ns <- shiny::NS(id)
 
   htmltools::tagList(
+    bslib::card(
 
+    )
   )
 }
 
@@ -52,9 +57,13 @@ mod_{{name}}_ui <- function(id) {
 
 #' @rdname mod_{{name}}
 #' @export
-#' @importFrom shiny moduleServer
+#' @importFrom shiny moduleServer reactive
 #' @importFrom cli cat_rule
-mod_{{name}}_server <- function(id) {
+mod_{{name}}_server <- function(id, pool = NULL, ...) {
+
+  if (!is.null(pool)) check_db_conn(pool)
+
+  cli::cat_rule("[Module]: mod_{{name}}_server()")
 
   shiny::moduleServer(
     id,
@@ -62,11 +71,9 @@ mod_{{name}}_server <- function(id) {
 
       ns <- session$ns
 
-      cli::cat_rule("mod_{{name}}_server")
-
       return(
         list(
-
+          # x = shiny::reactive({ ... }),
         )
       )
 
@@ -80,17 +87,25 @@ mod_{{name}}_server <- function(id) {
 #' @rdname mod_{{name}}
 #' @export
 #' @importFrom pkgload load_all
-#' @importFrom bslib page_fluid bs_theme
+#' @importFrom bslib page_navbar nav_panel
+#' @importFrom bsicons bs_icon
 #' @importFrom shiny shinyApp
 mod_{{name}}_demo <- function() {
 
   pkgload::load_all()
 
-  ui <- bslib::page_fluid(
-    title = "Demo",
-    theme = bslib::bs_theme(version = 5),
+  ui <- bslib::page_navbar(
+    title = "Demo: {{title}}",
+    window_title = "Demo: {{title}}",
+    theme = app_theme(),
     lang = "en",
-    mod_{{name}}_ui("demo")
+    bslib::nav_spacer(),
+    bslib::nav_panel(
+      title = "{{title}}",
+      value = "{{name}}",
+      icon = bsicons::bs_icon("house"),
+      mod_{{name}}_ui("demo")
+    )
   )
 
   server <- function(input, output, session) {

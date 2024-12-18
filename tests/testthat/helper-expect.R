@@ -35,18 +35,37 @@ expect_httr2_resp_headers <- function(resp) {
 }
 
 
+# entrata -----------------------------------------------------------------
+
+expect_entrata_api_response <- function(resp) {
+  check_response(resp)
+  expect_httr2_response(resp)
+  resp_json <- resp |> entrata_resp_body()
+  resp_content <- purrr::pluck(resp_json, "response")
+  resp_content_result <- purrr::pluck(resp_content, "result")
+  testthat::expect_identical(resp$method, "POST")
+  testthat::expect_named(resp_json, c("response"))
+  testthat::expect_named(resp_content, c("requestId", "code", "result"))
+  testthat::expect_named(resp_content_result, c("status", "message"))
+}
+
+
 # database connections ----------------------------------------------------
 
-expect_conn <- function(x) {
+expect_conn <- function(conn) {
   testthat::expect_s3_class(x, "PqConnection")
 }
 
-expect_pool <- function(x) {
-  testthat::expect_s3_class(x, "Pool")
+expect_pool <- function(conn) {
+  testthat::expect_s3_class(conn, "Pool")
 }
 
-expect_rstudio_conn <- function(x) {
-  testthat::expect_s3_class(x, "connConnection")
+expect_rstudio_conn <- function(conn) {
+  testthat::expect_s3_class(conn, "connConnection")
+}
+
+expect_db_conn <- function(conn) {
+  expect_conn(conn) || expect_pool(conn) || expect_rstudio_conn(conn)
 }
 
 # data related ------------------------------------------------------------

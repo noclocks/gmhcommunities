@@ -12,7 +12,7 @@
 #' `dbname`, `user`, `password`).
 #' @param user_id Optional integer user ID. Defaults to Shiny session user ID or 0.
 #'
-#' @return A `pool` object for database connections.
+#' @returns A `pool` object for database connections.
 #'
 #' @export
 db_connect <- function(db_config = get_db_config(), user_id = NULL) {

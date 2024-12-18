@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{brand_name}} Brand Assets</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="brand-container">
+    <div class="brand-header">
+      <div class="logo-header">
+        <img loading="lazy" decoding="async" data-nimg="fill" src="{{icon_url}}"
+          style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"
+          alt="{{brand_name}} icon" class="brand-logo">
+      </div>
+      <h1 class="brand-name">{{brand_name}}</h1>
+      <div class="brand-industry">
+        <span class="badge">{{brand_industry_emoji}} {{brand_industry}}</span>
+      </div>
+      <div class="brand-tagline">
+        <span class="tagline">{{brand_tagline}}</span>
+      </div>
+      <div class="brand-description">
+        <p>{{brand_description}}</p>
+      </div>
+      <div class="social-links">
+        <a href="{{brand_website}}" target="_blank" class="social-icon">
+          <img src="icons/brandfetch.svg" alt="brandfetch icon" class='social-icon'>
+        </a>
+        <a class="instagram-link" href='{{instagram_link}}' target='_blank'>
+          <img src='icons/instagram.svg' alt='instagram Icon' class='social-icon'>
+        </a>
+        <a class="linkedin-link" href='{{linkedin_link}}' target='_blank'>
+          <img src='icons/linkedin.svg' alt='linkedin Icon' class='social-icon'>
+        </a>
+        <a class="facebook-link" href='{{facebook_link}}' target='_blank'>
+          <img src='icons/facebook.svg' alt='facebook Icon' class='social-icon'>
+        </a>
+        <a class="youtube-link" href='{{youtube_link}}' target='_blank'>
+          <img src='icons/youtube.svg' alt='youtube Icon' class='social-icon'>
+        </a>
+      </div>
+    </div>
+    <div class="brand-section">
+      <h2>Logos</h2>
+      <div class="logo-grid">
+        <div class="logo-item">
+          <a href="{{logo_url}}" target="_blank">
+            <div class="logo-container">
+              <img src="{{logo_url}}" alt="logo" class="logo">
+            </div>
+          </a>
+        </div>
+        <div class="logo-item">
+          <a href="{{icon_logo_url}}" target="_blank">
+            <div class="logo-container">
+              <img src="{{icon_logo_url}}" alt="icon" class="logo">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="brand-section">
+      <h2>Colors</h2>
+      <div class="color-palette">
+        <div class="color-item">
+          <div class="color-swatch" style="background-color: {{primary_color}};"></div>
+          <div class="color-info">
+            <p><strong>{{primary_color_name}}</strong></p>
+            <p>Hex: {{primary_color}}</p>
+            <p>RGB: {{primary_color_rgb}}</p>
+          </div>
+        </div>
+        <div class="color-item">
+          <div class="color-swatch" style="background-color: {{secondary_color}};"></div>
+          <div class="color-info">
+            <p><strong>{{secondary_color_name}}</strong></p>
+            <p>Hex: {{secondary_color}}</p>
+            <p>RGB: {{secondary_color_rgb}}</p>
+          </div>
+        </div>
+        <div class="color-item">
+          <div class="color-swatch" style="background-color: {{accent_color}};"></div>
+          <div class="color-info">
+            <p><strong>{{accent_color_name}}</strong></p>
+            <p>Hex: {{accent_color}}</p>
+            <p>RGB: {{accent_color_rgb}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="brand-section">
+      <h2>Fonts</h2>
+      <div class="font-list">
+        <div class="font-item">
+          <a href="https://fonts.google.com/specimen/{{title_font}}" target="_blank" style="text-decoration: none;">
+            <div class="font-info" style="font-family: '{{title_font}}';">
+              <p>{{title_font}} - Heading Font</p>
+            </div>
+          </a>
+        </div>
+        <div class="font-item">
+          <a href="https://fonts.google.com/specimen/{{body_font}}" target="_blank" style="text-decoration: none;">
+            <div class="font-info" style="font-family: '{{body_font}}';">
+              <p>{{body_font}} - Body Font</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&mdash; <a href="{{brand_website}}">{{brand_name}}</a> &mdash; All Rights Reserved</p>
+    </div>
+  </div>
+</body>
+
+</html>

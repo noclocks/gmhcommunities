@@ -205,7 +205,7 @@ read_xl_global_summary_tbl <- function(xl_file, ...) {
 #' @param start_offset `integer` offset to start the range from.
 #' @param stop_col `integer` or `character` column to stop the range at.
 #'
-#' @return `data.frame` of ranges for each sheet.
+#' @returns `data.frame` of ranges for each sheet.
 #' @export
 #'
 #' @importFrom dplyr group_by slice ungroup mutate select filter

@@ -1,0 +1,407 @@
+Record ID#,Property Name,Floorplan Name,Unit Beds,Unit Baths,Unit Type,Unit Square Footage,Total Units,Total Beds,Excluded Beds,Total Beds Accounted For,"# of Signed New Leases, Current Term","# of Signed Renewals, Current Term","# of Signed Leases, Current Term",Beds Remaining,Budget Installment Amount,Total Budgeted Premiums,Add Pricing Tier
+265,1047 Commonwealth Avenue,Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=265&z=9tz
+15,1047 Commonwealth Avenue,S1,0,1,0 x 1,,25,25,0,,14,12,26,-1,"$1,850",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=15&z=9tz
+16,1047 Commonwealth Avenue,S10,0,1,0 x 1,,4,4,0,,,2,2,2,"$3,200",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=16&z=9tz
+17,1047 Commonwealth Avenue,S11,0,1,0 x 1,,24,24,0,,8,13,21,3,"$1,012",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=17&z=9tz
+18,1047 Commonwealth Avenue,S2,0,1,0 x 1,,11,12,0,,6,6,12,0,"$1,950",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=18&z=9tz
+19,1047 Commonwealth Avenue,S3,0,1,0 x 1,,51,51,0,,17,17,34,17,"$2,000",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=19&z=9tz
+20,1047 Commonwealth Avenue,S4,0,1,0 x 1,,9,8,0,,4,5,9,-1,"$2,050",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=20&z=9tz
+21,1047 Commonwealth Avenue,S5,0,1,0 x 1,,10,10,0,,6,4,10,0,"$2,100",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=21&z=9tz
+22,1047 Commonwealth Avenue,S6,0,1,0 x 1,,28,29,0,,22,11,33,-4,"$2,300",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=22&z=9tz
+23,1047 Commonwealth Avenue,S7,0,1,0 x 1,,5,4,0,,2,2,4,0,"$2,300",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=23&z=9tz
+24,1047 Commonwealth Avenue,S8,0,1,0 x 1,,11,11,0,,1,4,5,6,"$2,650",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=24&z=9tz
+25,1047 Commonwealth Avenue,S9,0,1,0 x 1,,5,5,0,,4,,4,1,"$2,950",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=25&z=9tz
+46,Academy 65,A1,1,1,1 x 1,,10,10,0,,5,9,14,-4,"$1,665",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=46&z=9tz
+47,Academy 65,B1,2,2,2 x 2,,15,21,0,,13,8,21,0,$900,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=47&z=9tz
+341,Academy 65,B1 Semi-Shared,,,0 x 0,,,21,,,15,5,20,1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=341&z=9tz
+343,Academy 65,C1 Study,,,0 x 0,,,3,,,4,,4,-1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=343&z=9tz
+342,Academy 65,D1 Balcony,,,0 x 0,,,40,,,17,7,24,16,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=342&z=9tz
+51,Academy 65,D2,4,4,4 x 4,,16,64,0,,27,29,56,8,$950,$960,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=51&z=9tz
+52,Academy 65,D3,4,4,4 x 4,,28,20,0,,9,11,20,0,$830,$840,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=52&z=9tz
+344,Academy 65,D3 Semi-Shared,,,0 x 0,,,120,,,27,65,92,28,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=344&z=9tz
+269,Academy 65,Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=269&z=9tz
+53,Academy 65,S1,0,1,0 x 1,,5,5,0,,2,5,7,-2,"$1,415",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=53&z=9tz
+54,Academy 65,S2,0,1,0 x 1,,5,5,0,,2,5,7,-2,"$1,435",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=54&z=9tz
+48,Academy 65,xOLD - B2,2,2,2 x 2,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=48&z=9tz
+49,Academy 65,xOLD - C1,3,2.5,3 x 2.5,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=49&z=9tz
+50,Academy 65,xOLD - D1,4,2,4 x 2,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=50&z=9tz
+55,Academy Lincoln,B1,2,2,2 x 2,,15,30,0,,17,15,32,-2,$805,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=55&z=9tz
+56,Academy Lincoln,B2,2,2,2 x 2,,19,38,0,,21,19,40,-2,$830,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=56&z=9tz
+57,Academy Lincoln,B3 Townhome,2,2,2 x 2,,7,14,0,,5,9,14,0,$880,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=57&z=9tz
+58,Academy Lincoln,C1,3,3,3 x 3,,9,42,0,,33,7,40,2,$735,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=58&z=9tz
+60,Academy Lincoln,D1,4,4,4 x 4,,92,472,0,,303,186,489,-17,$655,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=60&z=9tz
+62,Academy Lincoln,D2,4,4,4 x 4,,9,36,0,,23,13,36,0,$755,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=62&z=9tz
+270,Academy Lincoln,Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=270&z=9tz
+59,Academy Lincoln,xOLD - C1 Balcony,3,3,3 x 3,,,,0,,,,,0,$785,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=59&z=9tz
+61,Academy Lincoln,xOLD - D1 Balcony,4,4,4 x 4,,,,0,,,,,0,$675,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=61&z=9tz
+345,ANOVA uCity Square,A1,,,0 x 0,,,6,,,3,2,5,1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=345&z=9tz
+346,ANOVA uCity Square,A2,,,0 x 0,,,17,,,13,4,17,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=346&z=9tz
+347,ANOVA uCity Square,A3,,,0 x 0,,,10,,,6,3,9,1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=347&z=9tz
+348,ANOVA uCity Square,A4,,,0 x 0,,,20,,,12,8,20,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=348&z=9tz
+349,ANOVA uCity Square,A5,,,0 x 0,,,6,,,2,2,4,2,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=349&z=9tz
+350,ANOVA uCity Square,A6,,,0 x 0,,,5,,,4,1,5,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=350&z=9tz
+351,ANOVA uCity Square,A7,,,0 x 0,,,5,,,3,2,5,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=351&z=9tz
+352,ANOVA uCity Square,A8,,,0 x 0,,,186,,,95,73,168,18,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=352&z=9tz
+353,ANOVA uCity Square,B1,,,0 x 0,,,11,,,9,3,12,-1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=353&z=9tz
+354,ANOVA uCity Square,B2,,,0 x 0,,,22,,,12,10,22,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=354&z=9tz
+355,ANOVA uCity Square,C1,,,0 x 0,,,5,,,4,1,5,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=355&z=9tz
+356,ANOVA uCity Square,Not Selected,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=356&z=9tz
+357,ANOVA uCity Square,S1,,,0 x 0,,,168,,,110,50,160,8,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=357&z=9tz
+1,Campustown 1008 S. 4th,B1,2,1,2 x 1,,4,8,0,,5,3,8,0,$905,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=1&z=9tz
+2,Campustown 1008 S. 4th,B2,2,1,2 x 1,,4,8,0,,4,5,9,-1,$945,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=2&z=9tz
+3,Campustown 1008 S. 4th,B3,2,2,2 x 2,,5,10,0,,6,4,10,0,"$1,010",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=3&z=9tz
+4,Campustown 1008 S. 4th,B4,2,2,2 x 2,,1,2,0,,1,2,3,-1,"$1,040",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=4&z=9tz
+5,Campustown 1008 S. 4th,B5,2,2,2 x 2,,1,2,0,,2,,2,0,"$1,050",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=5&z=9tz
+6,Campustown 1008 S. 4th,C1,3,3,3 x 3,,4,12,0,,9,3,12,0,$835,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=6&z=9tz
+7,Campustown 1008 S. 4th,D1,4,2,4 x 2,,4,16,0,,7,9,16,0,$785,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=7&z=9tz
+8,Campustown 1008 S. 4th,D1 Balcony,4,2,4 x 2,,4,16,0,,12,4,16,0,$805,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=8&z=9tz
+9,Campustown 1008 S. 4th,D2,4,4,4 x 4,,12,48,0,,32,16,48,0,$825,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=9&z=9tz
+10,Campustown 1008 S. 4th,D3 Balcony,4,4,4 x 4,,3,12,0,,11,2,13,-1,$925,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=10&z=9tz
+11,Campustown 1008 S. 4th,M1 Murphy,0,1,0 x 1,,4,4,0,,3,3,6,-2,"$1,075",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=11&z=9tz
+12,Campustown 1008 S. 4th,M1 Murphy Balcony,0,1,0 x 1,,12,12,0,,11,2,13,-1,"$1,095",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=12&z=9tz
+264,Campustown 1008 S. 4th,Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=264&z=9tz
+13,Campustown 1008 S. 4th,S1,0,1,0 x 1,,4,4,0,,3,1,4,0,"$1,110",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=13&z=9tz
+14,Campustown 1008 S. 4th,S2,0,1,0 x 1,,4,4,0,,2,2,4,0,"$1,165",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=14&z=9tz
+26,Campustown 307 E. Daniel,D1,4,4,4 x 4,,10,40,0,,23,16,39,1,$825,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=26&z=9tz
+266,Campustown 307 E. Daniel,xOLD - Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=266&z=9tz
+27,Campustown 501 S. 6th,B1,2,2,2 x 2,,1,2,0,,,2,2,0,$950,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=27&z=9tz
+28,Campustown 501 S. 6th,B2,2,2,2 x 2,,1,2,0,,,2,2,0,$990,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=28&z=9tz
+29,Campustown 501 S. 6th,C1,3,2,3 x 2,,4,12,0,,12,,12,0,$820,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=29&z=9tz
+30,Campustown 501 S. 6th,C2,3,2,3 x 2,,4,12,0,,9,3,12,0,$800,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=30&z=9tz
+31,Campustown 501 S. 6th,D1,4,2,4 x 2,,4,16,0,,3,13,16,0,$795,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=31&z=9tz
+32,Campustown 501 S. 6th,D2,4,2,4 x 2,,4,16,0,,8,9,17,-1,$785,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=32&z=9tz
+33,Campustown 501 S. 6th,D3 Townhome,4,3,4 x 3,,1,4,0,,4,,4,0,$910,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=33&z=9tz
+34,Campustown 501 S. 6th,E1 Townhome,5,4,5 x 4,,4,20,0,,9,13,22,-2,$855,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=34&z=9tz
+35,Campustown 501 S. 6th,E2 Townhome,5,4,5 x 4,,4,20,0,,6,15,21,-1,$895,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=35&z=9tz
+267,Campustown 501 S. 6th,xOLD - Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=267&z=9tz
+36,Campustown 908 S. 1st,A1,1,1,1 x 1,,16,16,0,,13,4,17,-1,"$1,295",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=36&z=9tz
+38,Campustown 908 S. 1st,B1,2,1,2 x 1,,4,8,0,,6,2,8,0,$775,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=38&z=9tz
+39,Campustown 908 S. 1st,B2,2,1,2 x 1,,8,16,0,,10,6,16,0,$795,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=39&z=9tz
+40,Campustown 908 S. 1st,B3,2,2,2 x 2,,4,8,0,,6,2,8,0,$915,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=40&z=9tz
+41,Campustown 908 S. 1st,D1,4,4,4 x 4,,4,16,0,,6,10,16,0,$750,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=41&z=9tz
+43,Campustown 908 S. 1st,M1 Murphy,,,0 x 0,,,12,0,,8,5,13,-1,$975,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=43&z=9tz
+44,Campustown 908 S. 1st,M1 Murphy Balcony,,,0 x 0,,,16,0,,12,5,17,-1,"$1,025",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=44&z=9tz
+45,Campustown 908 S. 1st,M2 Murphy,,,0 x 0,,,4,0,,4,,4,0,"$1,045",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=45&z=9tz
+37,Campustown 908 S. 1st,xOLD - A2,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=37&z=9tz
+42,Campustown 908 S. 1st,xOLD - M1 Balcony,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=42&z=9tz
+268,Campustown 908 S. 1st,xOLD - Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=268&z=9tz
+63,Everly on The Loop,A1,1,1,1 x 1,,55,,0,,,,,0,"$1,650","$1,850",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=63&z=9tz
+64,Everly on The Loop,B1,2,2,2 x 2,,85,,0,,,,,0,"$1,175","$5,920",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=64&z=9tz
+65,Everly on The Loop,C1,3,,3 x 0,,24,,0,,,,,0,"$1,115","$2,220",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=65&z=9tz
+66,Everly on The Loop,C2,3,,3 x 0,,33,,0,,,,,0,"$1,095","$3,330",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=66&z=9tz
+67,Everly on The Loop,C3,3,,3 x 0,,10,,0,,,,,0,"$1,025","$1,110",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=67&z=9tz
+271,Everly on The Loop,Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=271&z=9tz
+68,Everly on The Loop,Studio,0,1,0 x 1,,2,,0,,,,,0,"$1,625",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=68&z=9tz
+387,Life Tower,A1,,,0 x 0,,,,,,,,,0,"$1,594",$310,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=387&z=9tz
+391,Life Tower,A2,,,0 x 0,,,,,,,,,0,"$1,689",$0,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=391&z=9tz
+392,Life Tower,A3,,,0 x 0,,,,,,,,,0,"$1,680",$50,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=392&z=9tz
+388,Life Tower,B1,,,0 x 0,,,,,,,,,0,"$1,108","$1,010",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=388&z=9tz
+393,Life Tower,B2,,,0 x 0,,,,,,,,,0,"$1,151",$60,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=393&z=9tz
+390,Life Tower,B3,,,0 x 0,,,,,,,,,0,"$1,151",$210,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=390&z=9tz
+394,Life Tower,D1,,,0 x 0,,,,,,,,,0,"$1,006",$260,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=394&z=9tz
+395,Life Tower,D2,,,0 x 0,,,,,,,,,0,"$1,004",$30,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=395&z=9tz
+396,Life Tower,D3,,,0 x 0,,,,,,,,,0,"$1,004",$240,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=396&z=9tz
+397,Life Tower,Not Selected,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=397&z=9tz
+389,Life Tower,S1,,,0 x 0,,,,,,,,,0,"$1,318",$790,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=389&z=9tz
+398,Life Tower,S2,,,0 x 0,,,,,,,,,0,"$1,320",$40,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=398&z=9tz
+399,Life Tower,S3,,,0 x 0,,,,,,,,,0,"$1,414",$10,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=399&z=9tz
+182,River House,A1 Aerial,,,0 x 0,,,,0,,,,,0,"$2,310",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=182&z=9tz
+183,River House,A1 Terrace,,,0 x 0,,,,0,,,,,0,"$2,260",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=183&z=9tz
+184,River House,B1 Aerial,,,0 x 0,,,,0,,,,,0,"$1,535",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=184&z=9tz
+185,River House,"B1 Terrace, River View",,,0 x 0,,,,0,,,,,0,"$1,510",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=185&z=9tz
+186,River House,B2 Aerial,,,0 x 0,,,,0,,,,,0,"$1,535",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=186&z=9tz
+187,River House,B2 Terrace,,,0 x 0,,,,0,,,,,0,"$1,485",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=187&z=9tz
+188,River House,B3 Aerial,,,0 x 0,,,,0,,,,,0,"$1,550",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=188&z=9tz
+189,River House,"B3 Aerial, River View",,,0 x 0,,,,0,,,,,0,"$1,575",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=189&z=9tz
+190,River House,B3 Terrace,,,0 x 0,,,,0,,,,,0,"$1,500",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=190&z=9tz
+191,River House,"B3 Terrace, River View",,,0 x 0,,,,0,,,,,0,"$1,525",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=191&z=9tz
+192,River House,B4 Aerial,,,0 x 0,,,,0,,,,,0,"$1,705",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=192&z=9tz
+193,River House,"B4 Aerial, River View",,,0 x 0,,,,0,,,,,0,"$1,730",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=193&z=9tz
+194,River House,B4 Terrace,,,0 x 0,,,,0,,,,,0,"$1,655",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=194&z=9tz
+195,River House,"B4 Terrace, River View",,,0 x 0,,,,0,,,,,0,"$1,680",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=195&z=9tz
+196,River House,"B5 Terrace, River View",,,0 x 0,,,,0,,,,,0,"$1,940",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=196&z=9tz
+272,River House,Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=272&z=9tz
+197,River House,S1 Aerial,,,0 x 0,,,,0,,,,,0,"$1,745",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=197&z=9tz
+198,River House,S1 Terrace,,,0 x 0,,,,0,,,,,0,"$1,695",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=198&z=9tz
+69,River House,xOLD - A1,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=69&z=9tz
+70,River House,xOLD - B1,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=70&z=9tz
+71,River House,xOLD - B2,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=71&z=9tz
+72,River House,xOLD - B3,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=72&z=9tz
+73,River House,xOLD - B4,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=73&z=9tz
+74,River House,xOLD - B5,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=74&z=9tz
+75,River House,xOLD - S1,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=75&z=9tz
+240,River House,xOLD - S1 1F ADA River View,0,1,0 x 1,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=240&z=9tz
+372,Shortbread Lofts,B1 (Not Selected),,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=372&z=9tz
+201,Shortbread Lofts,B1 (Private),2,2,2 x 2,,13,,0,,10,6,16,-16,"$1,200",$80,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=201&z=9tz
+202,Shortbread Lofts,B1 (Shared),2,2,2 x 2,,,40,0,,22,2,24,16,$885,$45,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=202&z=9tz
+373,Shortbread Lofts,B2 (Not Selected),,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=373&z=9tz
+203,Shortbread Lofts,B2 (Private),2,2,2 x 2,,5,,0,,9,1,10,-10,"$1,190",$40,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=203&z=9tz
+204,Shortbread Lofts,B2 (Shared),2,2,2 x 2,,,10,0,,,,,10,$865,$10,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=204&z=9tz
+374,Shortbread Lofts,B3 (Not Selected),,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=374&z=9tz
+205,Shortbread Lofts,B3 (Private),2,2,2 x 2,,1,2,0,,,2,2,0,"$1,205",$10,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=205&z=9tz
+375,Shortbread Lofts,B4 (Not Selected),,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=375&z=9tz
+206,Shortbread Lofts,B4 (Private),2,2,2 x 2,,1,2,0,,1,1,2,0,"$1,205",$20,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=206&z=9tz
+376,Shortbread Lofts,C1 (Not Selected),,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=376&z=9tz
+207,Shortbread Lofts,C1 (Private),3,3,3 x 3,,16,56,0,,37,5,42,14,"$1,120",$140,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=207&z=9tz
+208,Shortbread Lofts,C1 (Shared),3,3,3 x 3,,,,0,,15,1,16,-16,$805,$120,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=208&z=9tz
+377,Shortbread Lofts,C2 (Not Selected),,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=377&z=9tz
+209,Shortbread Lofts,C2 (Shared),3,3,3 x 3,,1,6,0,,6,,6,0,$805,$20,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=209&z=9tz
+378,Shortbread Lofts,C3 (Not Selected),,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=378&z=9tz
+210,Shortbread Lofts,C3 (Private),3,3,3 x 3,,5,20,0,,10,,10,10,"$1,150",$20,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=210&z=9tz
+211,Shortbread Lofts,C3 (Shared),3,3,3 x 3,,,,0,,10,,10,-10,$845,$60,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=211&z=9tz
+379,Shortbread Lofts,C4 (Not Selected),,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=379&z=9tz
+212,Shortbread Lofts,C4 (Private),3,3,3 x 3,,5,24,0,,4,2,6,18,"$1,150",$30,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=212&z=9tz
+213,Shortbread Lofts,C4 (Shared),3,3,3 x 3,,,,0,,18,,18,-18,$845,$100,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=213&z=9tz
+380,Shortbread Lofts,D1 (Not Selected),,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=380&z=9tz
+214,Shortbread Lofts,D1 (Private),4,4,4 x 4,,35,205,0,,68,5,73,132,"$1,070",$480,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=214&z=9tz
+215,Shortbread Lofts,D1 (Shared),4,4,4 x 4,,,,0,,127,,127,-127,$765,$420,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=215&z=9tz
+381,Shortbread Lofts,D2 (Not Selected),,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=381&z=9tz
+216,Shortbread Lofts,D2 (Private),4,4,4 x 4,,2,9,0,,5,4,9,0,"$1,080",$100,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=216&z=9tz
+217,Shortbread Lofts,D2 (Shared),4,4,4 x 4,,,,0,,2,,2,-2,$765,$40,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=217&z=9tz
+382,Shortbread Lofts,Not Selected,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=382&z=9tz
+76,Shortbread Lofts,xOLD - B1,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=76&z=9tz
+77,Shortbread Lofts,xOLD - B2,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=77&z=9tz
+78,Shortbread Lofts,xOLD - B3,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=78&z=9tz
+79,Shortbread Lofts,xOLD - B4,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=79&z=9tz
+80,Shortbread Lofts,xOLD - C1,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=80&z=9tz
+81,Shortbread Lofts,xOLD - C2,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=81&z=9tz
+82,Shortbread Lofts,xOLD - C3,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=82&z=9tz
+83,Shortbread Lofts,xOLD - C4,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=83&z=9tz
+84,Shortbread Lofts,xOLD - D1,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=84&z=9tz
+85,Shortbread Lofts,xOLD - D2,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=85&z=9tz
+86,SOVA,A1,1,1,1 x 1,,20,20,0,,8,22,30,-10,"$1,115",$50,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=86&z=9tz
+87,SOVA,B1,2,2,2 x 2,,32,64,0,,49,33,82,-18,$915,$280,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=87&z=9tz
+88,SOVA,B1 ALT,2,2,2 x 2,,15,30,0,,13,28,41,-11,$925,$360,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=88&z=9tz
+89,SOVA,C1,3,3,3 x 3,,22,66,0,,38,47,85,-19,$815,$560,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=89&z=9tz
+90,SOVA,D1,4,4,4 x 4,,77,308,0,,195,151,346,-38,$780,"$1,940",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=90&z=9tz
+91,SOVA,D1 ALT,,,0 x 0,,,,0,,,,,0,$780,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=91&z=9tz
+92,SOVA,D1 ALT 2,,,0 x 0,,,,0,,,,,0,$780,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=92&z=9tz
+93,SOVA,D2,4,4,4 x 4,,22,88,0,,55,51,106,-18,$795,$160,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=93&z=9tz
+94,SOVA,D3,4,4,4 x 4,,60,240,0,,133,130,263,-23,$805,"$3,620",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=94&z=9tz
+273,SOVA,Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=273&z=9tz
+95,Station Nine,A1,,,0 x 0,,,105,0,,70,30,100,5,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=95&z=9tz
+96,Station Nine,A1 Loft,,,0 x 0,,,26,0,,13,6,19,7,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=96&z=9tz
+97,Station Nine,A2,,,0 x 0,,,4,0,,2,1,3,1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=97&z=9tz
+98,Station Nine,A3,,,0 x 0,,,36,0,,25,5,30,6,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=98&z=9tz
+99,Station Nine,A3 Loft,,,0 x 0,,,5,0,,3,2,5,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=99&z=9tz
+100,Station Nine,A4,,,0 x 0,,,8,0,,3,1,4,4,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=100&z=9tz
+101,Station Nine,A5,,,0 x 0,,,4,0,,3,,3,1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=101&z=9tz
+102,Station Nine,A6,,,0 x 0,,,1,0,,1,,1,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=102&z=9tz
+103,Station Nine,B1,,,0 x 0,,,53,0,,38,13,51,2,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=103&z=9tz
+104,Station Nine,B1 Loft,,,0 x 0,,,16,0,,6,5,11,5,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=104&z=9tz
+105,Station Nine,B2,,,0 x 0,,,21,0,,17,4,21,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=105&z=9tz
+106,Station Nine,B2 Loft,,,0 x 0,,,7,0,,2,2,4,3,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=106&z=9tz
+107,Station Nine,B3,,,0 x 0,,,27,0,,17,10,27,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=107&z=9tz
+108,Station Nine,B4,,,0 x 0,,,4,0,,2,1,3,1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=108&z=9tz
+109,Station Nine,B5,,,0 x 0,,,6,0,,3,2,5,1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=109&z=9tz
+274,Station Nine,Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=274&z=9tz
+199,Station Nine,One Bedroom Waitlist,,,0 x 0,,,,0,,11,,11,-11,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=199&z=9tz
+200,Station Nine,Two Bedroom Waitlist,,,0 x 0,,,,0,,4,,4,-4,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=200&z=9tz
+110,The Academy at Frisco,A1,1,1,1 x 1,,30,31,0,,19,16,35,-4,$975,$705,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=110&z=9tz
+111,The Academy at Frisco,A2,1,1,1 x 1,,3,3,0,,1,2,3,0,$975,$50,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=111&z=9tz
+112,The Academy at Frisco,B1,2,2,2 x 2,,24,48,0,,15,34,49,-1,$750,"$1,300",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=112&z=9tz
+113,The Academy at Frisco,B2,2,2,2 x 2,,5,10,0,,8,3,11,-1,$750,$270,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=113&z=9tz
+275,The Academy at Frisco,B2 XL,2,2,2 x 2,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=275&z=9tz
+114,The Academy at Frisco,B3,2,2,2 x 2,,5,10,0,,9,5,14,-4,$760,$100,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=114&z=9tz
+115,The Academy at Frisco,C1,3,3,3 x 3,,6,18,0,,10,8,18,0,$725,$450,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=115&z=9tz
+116,The Academy at Frisco,D1,4,4,4 x 4,,57,228,0,,139,107,246,-18,$550,"$5,500",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=116&z=9tz
+117,The Academy at Frisco,D2,4,4,4 x 4,,35,140,0,,53,91,144,-4,$550,"$4,100",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=117&z=9tz
+118,The Academy at Frisco,D3,4,4,4 x 4,,4,16,0,,7,9,16,0,$540,$260,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=118&z=9tz
+119,The Academy at Frisco,D4,4,4,4 x 4,,10,40,0,,18,25,43,-3,$565,$620,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=119&z=9tz
+120,The Academy at Frisco,D5,4,4,4 x 4,,19,76,0,,49,32,81,-5,$560,"$1,010",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=120&z=9tz
+276,The Academy at Frisco,Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=276&z=9tz
+122,The Academy at Frisco,Studio,0,1,0 x 1,,20,20,0,,15,9,24,-4,$825,$310,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=122&z=9tz
+123,The Academy Chorro,D1,4,2,4 x 2,,11,,0,,39,6,45,-45,"$1,295",$880,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=123&z=9tz
+124,The Academy Chorro,D2,4,2,4 x 2,,4,,0,,9,7,16,-16,"$1,310",$660,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=124&z=9tz
+125,The Academy Chorro,D3,4,2,4 x 2,,6,,0,,17,8,25,-25,"$1,375",$120,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=125&z=9tz
+181,The Academy Chorro,D4,4,2,4 x 2,,2,,0,,8,,8,-8,"$1,430",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=181&z=9tz
+277,The Academy Chorro,Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=277&z=9tz
+126,The Academy Chorro,S1,0,1,0 x 1,,4,,0,,2,2,4,-4,$766,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=126&z=9tz
+127,The Academy on Charles,A1,1,1,1 x 1,,1,1,0,,,1,1,0,"$1,855",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=127&z=9tz
+128,The Academy on Charles,A2,1,1,1 x 1,,1,1,0,,,1,1,0,"$1,955",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=128&z=9tz
+129,The Academy on Charles,B1,2,2,2 x 2,,5,10,0,,7,3,10,0,"$1,445",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=129&z=9tz
+130,The Academy on Charles,B2,2,2,2 x 2,,4,8,0,,,8,8,0,"$1,435",$40,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=130&z=9tz
+131,The Academy on Charles,B3,2,2,2 x 2,,3,6,0,,6,,6,0,"$1,425",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=131&z=9tz
+132,The Academy on Charles,B4,2,2,2 x 2,,4,8,0,,3,5,8,0,"$1,395",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=132&z=9tz
+133,The Academy on Charles,B5,2,2,2 x 2,,4,8,0,,6,2,8,0,"$1,395",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=133&z=9tz
+134,The Academy on Charles,B6,2,2,2 x 2,,5,10,0,,8,2,10,0,"$1,455",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=134&z=9tz
+135,The Academy on Charles,C1,3,3,3 x 3,,4,12,0,,7,6,13,-1,"$1,320",$60,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=135&z=9tz
+136,The Academy on Charles,C2,3,3,3 x 3,,12,36,0,,21,15,36,0,"$1,290",$600,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=136&z=9tz
+137,The Academy on Charles,C3,3,3,3 x 3,,8,24,0,,12,12,24,0,"$1,220",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=137&z=9tz
+138,The Academy on Charles,C4,3,3,3 x 3,,1,3,0,,1,3,4,-1,"$1,320",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=138&z=9tz
+139,The Academy on Charles,D1,4,4,4 x 4,,20,104,0,,74,32,106,-2,"$1,140",$480,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=139&z=9tz
+140,The Academy on Charles,D2,4,4,4 x 4,,16,40,0,,27,14,41,-1,"$1,170",$520,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=140&z=9tz
+141,The Academy on Charles,D3,4,4,4 x 4,,5,20,0,,15,7,22,-2,"$1,190",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=141&z=9tz
+142,The Academy on Charles,D4,4,4,4 x 4,,8,32,0,,21,11,32,0,"$1,130",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=142&z=9tz
+278,The Academy on Charles,Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=278&z=9tz
+143,The Academy on Charles,S1,0,1,0 x 1,,4,4,0,,,4,4,0,"$1,845",$20,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=143&z=9tz
+144,The Academy on Charles,S2,0,1,0 x 1,,1,1,0,,,1,1,0,"$2,245",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=144&z=9tz
+145,The Academy Palomar,D1,4,2,4 x 2,,15,,0,,50,18,68,-68,"$1,310","$1,200",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=145&z=9tz
+146,The Academy Palomar,E1,5,2,5 x 2,,8,,0,,24,16,40,-40,"$1,300",$480,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=146&z=9tz
+147,The Academy Palomar,E2,5,2,5 x 2,,4,,0,,18,2,20,-20,"$1,320",$240,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=147&z=9tz
+279,The Academy Palomar,Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=279&z=9tz
+148,The Academy Palomar,S1,0,1,0 x 1,,1,,0,,1,,1,-1,"$2,010",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=148&z=9tz
+149,The Academy Palomar,S2,0,1,0 x 1,,4,,0,,,2,2,-2,$766,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=149&z=9tz
+411,The Caswell at Runnymeade,A1.1,1,1,1 x 1,849,3,,0,,3,,3,-3,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=411&z=9tz
+412,The Caswell at Runnymeade,A1.2,1,1,1 x 1,881,2,,0,,1,,1,-1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=412&z=9tz
+413,The Caswell at Runnymeade,A2,1,1,1 x 1,1052,4,,0,,1,1,2,-2,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=413&z=9tz
+414,The Caswell at Runnymeade,A3,1,1,1 x 1,805,16,,0,,9,3,12,-12,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=414&z=9tz
+415,The Caswell at Runnymeade,A4,1,1,1 x 1,858,16,,0,,13,1,14,-14,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=415&z=9tz
+416,The Caswell at Runnymeade,A5.1,1,1,1 x 1,1059,6,,0,,4,2,6,-6,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=416&z=9tz
+417,The Caswell at Runnymeade,A5.2,1,1,1 x 1,1071,6,,0,,5,1,6,-6,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=417&z=9tz
+418,The Caswell at Runnymeade,A6,1,1,1 x 1,1048,4,,0,,4,,4,-4,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=418&z=9tz
+419,The Caswell at Runnymeade,A7,1,1,1 x 1,1192,8,,0,,7,1,8,-8,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=419&z=9tz
+420,The Caswell at Runnymeade,B1,2,2,2 x 2,1278,85,,2,,51,5,56,-56,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=420&z=9tz
+421,The Caswell at Runnymeade,B1.2,2,2,2 x 2,1289,7,,0,,6,1,7,-7,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=421&z=9tz
+422,The Caswell at Runnymeade,B2,2,2,2 x 2,1365,38,,0,,22,1,23,-23,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=422&z=9tz
+423,The Caswell at Runnymeade,B3.1,2,2,2 x 2,1260,4,,0,,2,,2,-2,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=423&z=9tz
+424,The Caswell at Runnymeade,B3.3,2,2,2 x 2,1307,2,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=424&z=9tz
+425,The Caswell at Runnymeade,C1,3,2,3 x 2,1660,16,,0,,11,,11,-11,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=425&z=9tz
+426,The Caswell at Runnymeade,C2,3,2,3 x 2,1595,32,,0,,25,2,27,-27,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=426&z=9tz
+427,The Caswell at Runnymeade,Not Selected,0,0,0 x 0,0,0,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=427&z=9tz
+165,The Dean Campustown,A1,1,1,1 x 1,,14,14,0,,5,9,14,0,"$1,675",$175,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=165&z=9tz
+261,The Dean Campustown,A2 Deluxe,1,1,1 x 1,,,28,0,,16,12,28,0,$750,$350,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=261&z=9tz
+168,The Dean Campustown,B1,2,2,2 x 2,,14,28,0,,17,11,28,0,"$1,115",$350,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=168&z=9tz
+167,The Dean Campustown,B2,2,1,2 x 1,,14,28,0,,17,12,29,-1,"$1,015",$350,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=167&z=9tz
+263,The Dean Campustown,B3 XL,4,4,4 x 4,,,56,0,,40,16,56,0,$600,$700,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=263&z=9tz
+281,The Dean Campustown,B4 XL,4,4,4 x 4,,,56,,,16,40,56,0,$625,$700,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=281&z=9tz
+172,The Dean Campustown,D1,4,2,4 x 2,,14,56,0,,31,13,44,12,$825,$700,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=172&z=9tz
+173,The Dean Campustown,D2,4,2,4 x 2,,14,56,0,,50,7,57,-1,$840,$700,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=173&z=9tz
+174,The Dean Campustown,D3,4,4,4 x 4,,14,56,0,,32,25,57,-1,$850,$700,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=174&z=9tz
+175,The Dean Campustown,D4,4,4,4 x 4,,14,56,0,,42,17,59,-3,$860,$700,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=175&z=9tz
+176,The Dean Campustown,D5,4,4,4 x 4,,19,56,0,,38,25,63,-7,$890,$700,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=176&z=9tz
+177,The Dean Campustown,M1,0,1,0 x 1,,84,84,0,,51,39,90,-6,"$1,215","$1,050",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=177&z=9tz
+280,The Dean Campustown,Not Selected,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=280&z=9tz
+178,The Dean Campustown,S1,0,1,0 x 1,,42,42,0,,22,23,45,-3,"$1,425",$525,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=178&z=9tz
+179,The Dean Campustown,S2,0,1,0 x 1,,28,28,0,,17,12,29,-1,"$1,435",$350,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=179&z=9tz
+262,The Dean Campustown,S3 XL,1,1,1 x 1,,,28,0,,8,20,28,0,$725,$350,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=262&z=9tz
+166,The Dean Campustown,xOLD - B1 Murphy,2,1,2 x 1,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=166&z=9tz
+169,The Dean Campustown,xOLD - B4 Shared,2,2,2 x 2,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=169&z=9tz
+170,The Dean Campustown,xOLD - B5 Shared,2,2,2 x 2,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=170&z=9tz
+171,The Dean Campustown,xOLD - B6 XL,4,4,4 x 4,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=171&z=9tz
+180,The Dean Campustown,xOLD - S3 Shared,0,1,0 x 1,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=180&z=9tz
+360,The Dean Reno,A1,1,1,1 x 1,575,1,1,,,1,,1,0,"$1,695",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=360&z=9tz
+361,The Dean Reno,B1,2,2,2 x 2,750,18,36,,,20,15,35,1,"$1,224",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=361&z=9tz
+359,The Dean Reno,B2,2,2,2 x 2,860,17,34,,,20,20,40,-6,"$1,278",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=359&z=9tz
+362,The Dean Reno,C1,3,3,3 x 3,1097,1,3,,,,2,2,1,"$1,140",,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=362&z=9tz
+363,The Dean Reno,D1,4,4,4 x 4,1252,45,180,,,103,61,164,16,$967,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=363&z=9tz
+364,The Dean Reno,D2,4,4,4 x 4,1247,35,140,,,82,38,120,20,$992,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=364&z=9tz
+365,The Dean Reno,D3,4,4,4 x 4,1257,16,64,,,33,17,50,14,$994,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=365&z=9tz
+366,The Dean Reno,D4,5,4,5 x 4,1063,9,45,,,21,7,28,17,$884,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=366&z=9tz
+367,The Dean Reno,D5,4,3,4 x 3,,9,36,,,8,19,27,9,$903,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=367&z=9tz
+368,The Dean Reno,E1,5,3,5 x 3,,27,90,,,49,25,74,16,$820,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=368&z=9tz
+403,The Dean Reno,E1 Alt,5,3,5 x 3,,9,45,,,24,13,37,8,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=403&z=9tz
+358,The Dean Reno,E2,6,3,6 x 3,1512,9,54,,,25,21,46,8,$742,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=358&z=9tz
+369,The Dean Reno,E3,5,3,5 x 3,1369,9,45,,,33,7,40,5,$810,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=369&z=9tz
+370,The Dean Reno,Not Selected,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=370&z=9tz
+221,The Rise at Northgate,A1,1,1,1 x 1,,25,36,0,,3,21,24,12,"$1,350",$175,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=221&z=9tz
+222,The Rise at Northgate,A1 Aerial,1,1,1 x 1,,12,,0,,5,7,12,-12,"$1,400",$75,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=222&z=9tz
+223,The Rise at Northgate,A2,1,1,1 x 1,,3,4,0,,3,1,4,0,"$1,300",$0,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=223&z=9tz
+224,The Rise at Northgate,A3 Penthouse,1,1.5,1 x 1.5,,1,1,0,,1,,1,0,"$2,000",$0,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=224&z=9tz
+225,The Rise at Northgate,B1,2,2,2 x 2,,14,42,0,,8,20,28,14,$900,$0,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=225&z=9tz
+226,The Rise at Northgate,B1 Aerial,2,2,2 x 2,,6,,0,,6,6,12,-12,$975,$0,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=226&z=9tz
+227,The Rise at Northgate,B1 Penthouse,2,2,2 x 2,,1,,0,,1,1,2,-2,"$1,150",$0,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=227&z=9tz
+383,The Rise at Northgate,B2,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=383&z=9tz
+228,The Rise at Northgate,B2 Penthouse,2,2.5,2 x 2.5,,2,4,0,,2,2,4,0,"$1,175",$50,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=228&z=9tz
+229,The Rise at Northgate,B3 Penthouse,2,2.5,2 x 2.5,,1,2,0,,,2,2,0,"$1,200",$25,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=229&z=9tz
+230,The Rise at Northgate,C1 Penthouse,3,3.5,3 x 3.5,,1,3,0,,,3,3,0,"$1,150",$25,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=230&z=9tz
+231,The Rise at Northgate,D1,4,4,4 x 4,,45,252,0,,82,100,182,70,$675,"$4,350",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=231&z=9tz
+232,The Rise at Northgate,D1 Aerial,4,4,4 x 4,,18,,0,,38,35,73,-73,$700,"$1,800",https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=232&z=9tz
+233,The Rise at Northgate,D2,4,4,4 x 4,,1,4,0,,2,2,4,0,$825,$50,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=233&z=9tz
+234,The Rise at Northgate,D3,4,4,4 x 4,,7,40,0,,11,19,30,10,$725,$350,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=234&z=9tz
+235,The Rise at Northgate,D3 Aerial,4,4,4 x 4,,3,,0,,8,5,13,-13,$750,$150,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=235&z=9tz
+384,The Rise at Northgate,E1,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=384&z=9tz
+236,The Rise at Northgate,E1 Penthouse,5,5,5 x 5,,3,15,0,,7,9,16,-1,$675,$300,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=236&z=9tz
+385,The Rise at Northgate,E2,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=385&z=9tz
+237,The Rise at Northgate,E2 Penthouse,5,5,5 x 5,,6,30,0,,10,22,32,-2,$675,$600,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=237&z=9tz
+386,The Rise at Northgate,E3,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=386&z=9tz
+238,The Rise at Northgate,E3 Penthouse,5,5,5 x 5,,1,5,0,,1,4,5,0,$675,$75,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=238&z=9tz
+239,The Rise at Northgate,F1 Penthouse,6,6,6 x 6,,1,6,0,,2,4,6,0,$625,$100,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=239&z=9tz
+371,The Rise at Northgate,Not Selected,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=371&z=9tz
+218,The Rise at Northgate,S1,0,1,0 x 1,,14,21,0,,10,6,16,5,"$1,250",$0,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=218&z=9tz
+219,The Rise at Northgate,S1 Aerial,0,1,0 x 1,,,,0,,2,4,6,-6,"$1,300",$0,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=219&z=9tz
+220,The Rise at Northgate,S1 Penthouse,0,1,0 x 1,,,,0,,1,,1,-1,"$1,325",$0,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=220&z=9tz
+150,The Rise at Northgate,xOLD - A1,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=150&z=9tz
+151,The Rise at Northgate,xOLD - A2,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=151&z=9tz
+152,The Rise at Northgate,xOLD - A3,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=152&z=9tz
+153,The Rise at Northgate,xOLD - B1,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=153&z=9tz
+154,The Rise at Northgate,xOLD - B2,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=154&z=9tz
+155,The Rise at Northgate,xOLD - B3,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=155&z=9tz
+156,The Rise at Northgate,xOLD - C1,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=156&z=9tz
+157,The Rise at Northgate,xOLD - D1,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=157&z=9tz
+158,The Rise at Northgate,xOLD - D2,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=158&z=9tz
+159,The Rise at Northgate,xOLD - D3,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=159&z=9tz
+160,The Rise at Northgate,xOLD - E1,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=160&z=9tz
+161,The Rise at Northgate,xOLD - E2,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=161&z=9tz
+162,The Rise at Northgate,xOLD - E3,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=162&z=9tz
+163,The Rise at Northgate,xOLD - F1,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=163&z=9tz
+164,The Rise at Northgate,xOLD - S1,,,0 x 0,,,,0,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=164&z=9tz
+404,The Venue at North Campus,A,1,1,1 x 1,,,6,,,3,5,8,-2,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=404&z=9tz
+405,The Venue at North Campus,B,2,2,2 x 2,,,96,,,54,51,105,-9,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=405&z=9tz
+406,The Venue at North Campus,D1,4,4,4 x 4,,,256,,,106,115,221,35,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=406&z=9tz
+407,The Venue at North Campus,D2,4,4,4 x 4,,,64,,,34,30,64,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=407&z=9tz
+408,The Venue at North Campus,D3,4,4,4 x 4,,,192,,,61,101,162,30,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=408&z=9tz
+409,The Venue at North Campus,E,5,5,5 x 5,,,120,,,82,51,133,-13,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=409&z=9tz
+410,The Venue at North Campus,Not Selected,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=410&z=9tz
+282,Torre,A1,,,0 x 0,,,3,,,2,1,3,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=282&z=9tz
+283,Torre,A2,,,0 x 0,,,1,,,,1,1,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=283&z=9tz
+284,Torre,B1,,,0 x 0,,,2,,,2,,2,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=284&z=9tz
+285,Torre,B2,,,0 x 0,,,10,,,10,1,11,-1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=285&z=9tz
+286,Torre,B2 TYPE A,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=286&z=9tz
+287,Torre,B2.1,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=287&z=9tz
+288,Torre,B3,,,0 x 0,,,4,,,3,2,5,-1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=288&z=9tz
+289,Torre,B4,,,0 x 0,,,2,,,1,1,2,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=289&z=9tz
+290,Torre,B5 - SHARED,,,0 x 0,,,44,,,35,11,46,-2,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=290&z=9tz
+291,Torre,B5.1 - SHARED,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=291&z=9tz
+292,Torre,B5.2 - SHARED,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=292&z=9tz
+401,Torre,B5.2 DELUXE,,,0 x 0,,,12,,,,3,3,9,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=401&z=9tz
+293,Torre,B5.3 - SHARED,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=293&z=9tz
+294,Torre,B6 - SHARED,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=294&z=9tz
+400,Torre,B6 DELUXE,,,0 x 0,,,36,,,18,16,34,2,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=400&z=9tz
+295,Torre,B6.1 - SHARED,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=295&z=9tz
+296,Torre,B6.2 - SHARED,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=296&z=9tz
+297,Torre,B7 - SEMI-SHARED,,,0 x 0,,,12,,,8,,8,4,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=297&z=9tz
+298,Torre,B8 - SHARED,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=298&z=9tz
+402,Torre,B8 DELUXE,,,0 x 0,,,28,,,12,6,18,10,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=402&z=9tz
+299,Torre,B8.1 - SHARED,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=299&z=9tz
+300,Torre,B8.2 - SHARED,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=300&z=9tz
+301,Torre,B9 -  SHARED,,,0 x 0,,,24,,,19,6,25,-1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=301&z=9tz
+302,Torre,C1,,,0 x 0,,,3,,,2,1,3,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=302&z=9tz
+303,Torre,C2 - SEMI-SHARED,,,0 x 0,,,16,,,7,3,10,6,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=303&z=9tz
+304,Torre,C3,,,0 x 0,,,21,,,13,9,22,-1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=304&z=9tz
+305,Torre,C3 TYPE A,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=305&z=9tz
+306,Torre,D1,,,0 x 0,,,28,,,20,4,24,4,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=306&z=9tz
+307,Torre,D1.1,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=307&z=9tz
+308,Torre,D2 - SEMI-SHARED,,,0 x 0,,,5,,,4,,4,1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=308&z=9tz
+309,Torre,D3 - SEMI-SHARED,,,0 x 0,,,12,,,8,2,10,2,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=309&z=9tz
+310,Torre,D4 - SEMI-SHARED,,,0 x 0,,,12,,,4,3,7,5,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=310&z=9tz
+311,Torre,D4 - SEMI-SHARED TYPE A,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=311&z=9tz
+312,Torre,Not Selected,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=312&z=9tz
+313,Torre,S1,,,0 x 0,,,1,,,,1,1,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=313&z=9tz
+314,Torre,S2,,,0 x 0,,,14,,,6,8,14,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=314&z=9tz
+315,Torre,S2 TYPE A,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=315&z=9tz
+316,Torre,TH - C1,,,0 x 0,,,6,,,,6,6,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=316&z=9tz
+317,Torre,TH - C1.1,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=317&z=9tz
+318,Torre,TH - C2,,,0 x 0,,,6,,,3,4,7,-1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=318&z=9tz
+319,Torre,TH - C3,,,0 x 0,,,3,,,3,,3,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=319&z=9tz
+320,Torre,TH - C3.1,,,0 x 0,,,3,,,1,2,3,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=320&z=9tz
+321,Torre,TH - C4,,,0 x 0,,,12,,,10,2,12,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=321&z=9tz
+322,Torre,TH - C4.1,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=322&z=9tz
+323,Torre,TH - D1,,,0 x 0,,,56,,,50,11,61,-5,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=323&z=9tz
+324,Torre,TH - D1.1,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=324&z=9tz
+325,Torre,TH - D1.2,,,0 x 0,,,32,,,23,11,34,-2,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=325&z=9tz
+326,Torre,TH - D2,,,0 x 0,,,8,,,3,6,9,-1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=326&z=9tz
+327,Torre,TH - D2.1,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=327&z=9tz
+328,Torre,TH - D3,,,0 x 0,,,4,,,,4,4,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=328&z=9tz
+329,Torre,TH - D4 - SEMI-SHARED,,,0 x 0,,,10,,,10,,10,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=329&z=9tz
+330,Torre,TH - D5,,,0 x 0,,,16,,,7,10,17,-1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=330&z=9tz
+331,Torre,TH - D6 - SEMI-SHARED,,,0 x 0,,,15,,,4,8,12,3,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=331&z=9tz
+332,Torre,TH - D7,,,0 x 0,,,,,,,,,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=332&z=9tz
+333,Torre,TH - D8 - SEMI-SHARED,,,0 x 0,,,6,,,1,5,6,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=333&z=9tz
+334,Torre,TH - D9,,,0 x 0,,,15,,,11,4,15,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=334&z=9tz
+335,Torre,TH - E1,,,0 x 0,,,10,,,10,,10,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=335&z=9tz
+336,Torre,TH - F1,,,0 x 0,,,18,,,13,6,19,-1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=336&z=9tz
+337,Torre,TH - F2,,,0 x 0,,,6,,,6,,6,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=337&z=9tz
+338,Torre,TH - F3,,,0 x 0,,,6,,,5,,5,1,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=338&z=9tz
+339,Torre,TH - F4,,,0 x 0,,,18,,,15,1,16,2,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=339&z=9tz
+340,Torre,TH - F5,,,0 x 0,,,18,,,11,7,18,0,,,https://gmh.quickbase.com/db/bq5hz7i6c?a=API_GenAddRecordForm&_fid_7=340&z=9tz

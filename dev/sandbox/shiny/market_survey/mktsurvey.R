@@ -33,9 +33,8 @@ db_data <- data.frame(
 
 ui <- page_fluid(
   theme = bs_theme(version = 5),
-
   navset_card_tab(
-    id = ns("")
+    id = "id",
     title = "GMH Communities Market Survey",
     nav_panel(
       "Property Summary",

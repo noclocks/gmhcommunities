@@ -4,8 +4,6 @@
 \alias{mod_sidebar}
 \alias{mod_sidebar_ui}
 \alias{mod_sidebar_server}
-\alias{mod_sidebar_user_profile_ui}
-\alias{mod_sidebar_user_profile_server}
 \alias{mod_sidebar_filters_ui}
 \alias{mod_sidebar_filters_server}
 \alias{mod_sidebar_demo}
@@ -13,11 +11,7 @@
 \usage{
 mod_sidebar_ui(id)
 
-mod_sidebar_server(id, pool = get_db_pool())
-
-mod_sidebar_user_profile_ui(id)
-
-mod_sidebar_user_profile_server(id)
+mod_sidebar_server(id)
 
 mod_sidebar_filters_ui(id)
 

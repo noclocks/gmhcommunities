@@ -17,25 +17,26 @@ source("dev/R/use_template.R")
 use_module("title")
 use_module("sidebar")
 use_module("footer")
+use_module("user_profile")
+use_module("dashboard")
 
 # utility modules ---------------------------------------------------------
 
 use_module("excel_report")
 
+# leasing & pre-lease -----------------------------------------------------
+
+use_module("pre_lease")
+use_module("pre_lease_summary")
+use_module("pre_lease_details")
 
 # entrata entities --------------------------------------------------------
 
-use_module("entrata")
-use_module("entrata_properties")
-use_module("entrata_property_units")
-use_module("entrata_leases")
-use_module("entrata_lease_terms")
-use_module("entrata_lease_renewals")
-
-# leasing & pre-lease -----------------------------------------------------
-
-use_module("leasing")
-use_module("prelease")
+use_module("properties")
+use_module("property_units")
+use_module("leases")
+use_module("lease_terms")
+use_module("lease_renewals")
 
 # market survey modules ---------------------------------------------------
 

@@ -17,6 +17,7 @@ provider Entrata.
 Useful links:
 \itemize{
   \item \url{https://github.com/noclocks/gmhdatahub}
+  \item \url{http://docs.noclocks.dev/gmhcommunities/}
   \item Report bugs at \url{https://github.com/noclocks/gmhdatahub/issues}
 }
 

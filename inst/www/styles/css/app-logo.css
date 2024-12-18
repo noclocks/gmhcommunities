@@ -1,0 +1,3 @@
+/* App Logo Styling */
+
+@media (max-width:992px) {#app-logo { position: fixed; right: 10%; top: 0.5%; }}

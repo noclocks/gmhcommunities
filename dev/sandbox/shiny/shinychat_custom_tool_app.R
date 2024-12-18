@@ -85,7 +85,7 @@ server <- function(input, output, session) {
 #' @param value Numeric value to be converted
 #' @param from_unit Character string specifying the unit to convert from
 #' @param to_unit Character string specifying the unit to convert to
-#' @return Numeric value after conversion
+#' @returns Numeric value after conversion
 #' @details Allowable units: meters, kilometers, miles, feet, inches
 #' @examples
 #' convert_length(5, "meters", "feet")
@@ -124,7 +124,7 @@ convert_length <- function(value, from_unit, to_unit) {
 #' @param value Numeric value to be converted
 #' @param from_unit Character string specifying the unit to convert from
 #' @param to_unit Character string specifying the unit to convert to
-#' @return Numeric value after conversion
+#' @returns Numeric value after conversion
 #' @details Allowable units: grams, kilograms, pounds, ounces
 #' @examples
 #' convert_mass(1000, "grams", "kilograms")

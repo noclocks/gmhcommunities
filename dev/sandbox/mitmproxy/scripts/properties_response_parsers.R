@@ -82,7 +82,7 @@ parse_properties_response <- function(res_data) {
 #'
 #' @seealso [parse_properties_response()] for the main parsing function.
 #'
-#' @return A tibble containing the parsed property data.
+#' @returns A tibble containing the parsed property data.
 NULL
 
 #' @rdname entrata_property_parsers

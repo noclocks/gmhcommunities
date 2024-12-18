@@ -135,23 +135,31 @@ server <- function(input, output, session) {
   library(RPostgres)
 
   # Database Connection
-  con <- DBI::dbConnect(
-    drv = RPostgres::Postgres(),
-    dbname = db_config$dbname,
-    host = db_config$host,
-    port = db_config$port,
-    user = db_config$user,
-    password = db_config$password
-  )
-
-  onStop(function() {
-    dbDisconnect(con)
-  })
+  conn <- db_connect()
 
   prop_summary_tbl <- shiny::reactive({
 
-    tbl <- dplyr::tbl(con, I("mkt.properties")) |>
-      dplyr::filter(property_id == 1) |>
+    property_tbl <- dplyr::tbl(conn, I("mkt.properties")) |>
+      dplyr::filter(property_id == "739085") |>
+      dplyr::select(
+        -c("created_at", "updated_at")
+      )
+
+    property_summary_tbl <- dplyr::tbl(conn, I("mkt.property_summary")) |>
+      dplyr::filter(property_id == "739085") |>
+      dplyr::select(
+        -c("property_name", "created_at", "updated_at")
+      )
+
+    property_locations_tbl <- dplyr::tbl(conn, I("mkt.property_locations")) |>
+      dplyr::filter(property_id == "739085") |>
+      dplyr::select(
+        -c("address", "location_id", "coordinates")
+      )
+
+    property_tbl |>
+      dplyr::left_join(property_summary_tbl, by = "property_id") |>
+      dplyr::left_join(property_locations_tbl, by = "property_id") |>
       dplyr::select(
         property_id,
         property_name,

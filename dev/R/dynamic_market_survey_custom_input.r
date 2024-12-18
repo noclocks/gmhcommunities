@@ -48,6 +48,7 @@ x <- shinyWidgets::textInputIcon(
 )
 
 y <- market_survey_input("property_name")
+z <- market_survey_input("property_rating")
 
 all.equal(y, x) # TRUE
 waldo::compare(x, y) # TRUE
