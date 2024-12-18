@@ -44,13 +44,16 @@ mod_sidebar_ui <- function(id) {
 
   bslib::sidebar(
     id = ns("sidebar"),
-    width = 250,
+    width = 350,
     position = "left",
     open = TRUE,
     title = "GMH DataHub",
-    mod_sidebar_user_profile_ui(ns("user_profile")),
-    mod_sidebar_filters_ui(ns("filters")),
-    mod_sidebar_footer_ui(ns("footer"))
+    bslib::input_task_button(
+      ns("entrata_refresh"),
+      label = "Refresh Data",
+      icon = shiny::icon("refresh")
+    ),
+    mod_sidebar_filters_ui(ns("filters"))
   )
 
 }
@@ -60,7 +63,7 @@ mod_sidebar_ui <- function(id) {
 #' @rdname mod_sidebar
 #' @export
 #' @importFrom shiny moduleServer reactive req
-mod_sidebar_server <- function(id, pool = get_db_pool()) {
+mod_sidebar_server <- function(id) {
   shiny::moduleServer(
     id,
     function(input, output, session) {
@@ -70,11 +73,10 @@ mod_sidebar_server <- function(id, pool = get_db_pool()) {
       cli::cli_alert_info("mod_sidebar_server: Initializing...")
 
       # modules
-      user_data <- mod_sidebar_user_profile_server("user_profile", pool = pool)
-      filters <- mod_sidebar_filters_server("filters", pool = pool)
+      filters <- mod_sidebar_filters_server("filters")
 
       # return
-      return(list(user_data = user_data, filters = filters))
+      return(list(filters = filters))
 
     }
   )
@@ -83,68 +85,6 @@ mod_sidebar_server <- function(id, pool = get_db_pool()) {
 
 # sidebar_user_profile ----------------------------------------------------
 
-#' @rdname mod_sidebar
-#' @export
-#' @importFrom bsicons bs_icon
-#' @importFrom bslib accordion accordion_panel
-#' @importFrom htmltools tags
-#' @importFrom shiny NS textOutput
-mod_sidebar_user_profile_ui <- function(id) {
-
-  ns <- shiny::NS(id)
-
-  bslib::accordion(
-    id = ns("accordion"),
-    open = FALSE,
-    bslib::accordion_panel(
-      title = "User Profile",
-      value = ns("user_profile"),
-      icon = bsicons::bs_icon("person-circle"),
-      htmltools::tags$div(
-        class = "text-center",
-        bsicons::bs_icon("person-circle", size = "2rem"),
-        htmltools::tags$h5(
-          shiny::textOutput(ns("user_full_name"), inline = TRUE)
-        ),
-        htmltools::tags$p(
-          shiny::textOutput(ns("user_email"), inline = TRUE)
-        ),
-        htmltools::tags$p(
-          shiny::textOutput(ns("user_role"), inline = TRUE)
-        )
-      )
-    )
-  )
-
-}
-
-#' @rdname mod_sidebar
-#' @export
-#' @importFrom shiny moduleServer reactive renderText
-mod_sidebar_user_profile_server <- function(id) {
-  shiny::moduleServer(
-    id,
-    function(input, output, session) {
-      data <- shiny::reactive({
-        list(
-          user_full_name = "John Doe",
-          user_email = "john.doe@gmhcommunities.com",
-          user_role = "Administrator"
-        )
-      })
-      output$user_full_name <- shiny::renderText({
-        data()$user_full_name
-      })
-      output$user_email <- shiny::renderText({
-        data()$user_email
-      })
-      output$user_role <- shiny::renderText({
-        data()$user_role
-      })
-      return(data)
-    }
-  )
-}
 
 
 # filters -----------------------------------------------------------------
@@ -206,7 +146,7 @@ mod_sidebar_filters_ui <- function(id) {
   bslib::accordion(
     bslib::accordion_panel(
       "Filters",
-      icon = bsicons::bs_icon("funnel"),
+      icon = bsicons::bs_icon("filter"),
       !!!filters
     )
   )

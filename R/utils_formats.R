@@ -14,7 +14,7 @@
 #'
 #' @param input_string A string containing a phone number
 #'
-#' @return A string formatted for a "tel://" href
+#' @returns A string formatted for a "tel://" href
 #'
 #' @export
 extract_phone_number <- function(input_string) {
@@ -30,7 +30,7 @@ extract_phone_number <- function(input_string) {
 #'
 #' @param phone Phone number to format
 #'
-#' @return String of formatted phone number
+#' @returns String of formatted phone number
 #'
 #' @export
 format_phone_number <- function(phone) {
@@ -85,6 +85,10 @@ format_unix_time <- function(time, tz = "UTC") {
   as.integer(as.POSIXct(time, tz = tz))
 }
 
+format_last_updated_at <- function(timestamp) {
+  format(timestamp, "%A %B %d, %Y at %I:%M:%S %p")
+}
+
 short_date_formatter <- scales::label_date(
   format = "%b %d"
 )
@@ -94,6 +98,19 @@ time_formatter <- scales::label_time(
   tz = "UTC"
 )
 
+integer_formatter <- scales::label_number(
+  accuracy = 1,
+  prefix = "",
+  big.mark = ",",
+  decimal.mark = ".",
+  trim = TRUE,
+  style_negative = "parens"
+)
+
+format_integer <- function(x, ...) {
+  integer_formatter(x)
+}
+
 number_formatter <- scales::label_number(
   accuracy = 0.01,
   prefix = "",
@@ -102,6 +119,10 @@ number_formatter <- scales::label_number(
   trim = TRUE,
   style_negative = "parens"
 )
+
+format_number <- function(x, ...) {
+  number_formatter(x)
+}
 
 percent_formatter <- scales::label_percent(
   accuracy = 0.01,
@@ -113,6 +134,31 @@ percent_formatter <- scales::label_percent(
   style_negative = "parens"
 )
 
+format_percent <- function(x, ...) {
+  percent_formatter(x)
+}
+
+percent_incr_decr_formatter <- function(x) {
+
+  p <- icon_text(
+    ifelse(x > 0, "arrow-up", "arrow-down"),
+    format_percent(x)
+  )
+
+  formattable::formatter(
+    "span",
+    style = x ~ formattable::style(
+      font.weight = "bold",
+      color = ifelse(x > 0, "lightgreen", ifelse(x < 0, "red", "black"))
+    ),
+    p
+  )
+}
+
+format_percent_incr_decr <- function(x, ...) {
+  percent_incr_decr_formatter(x)(x)
+}
+
 currency_formatter <- scales::label_currency(
   accuracy = 0.01,
   prefix = "$",
@@ -122,11 +168,19 @@ currency_formatter <- scales::label_currency(
   style_negative = "parens"
 )
 
+format_currency <- function(x, ...) {
+  currency_formatter(x)
+}
+
 bytes_formatter <- scales::label_bytes(
   accuracy = 0.01,
   big.mark = ",",
   decimal.mark = ".",
   trim = TRUE
 )
+
+format_bytes <- function(x, ...) {
+  bytes_formatter(x)
+}
 
 

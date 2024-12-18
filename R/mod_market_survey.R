@@ -14,21 +14,39 @@
 #' @name mod_market_survey
 #'
 #' @description
-#' A Shiny Module for ...
+#' A Shiny Module for the GMH Communities Leasing Market Survey.
 #'
-#' - `mod_market_survey_ui()`: User interface
-#' - `mod_market_survey_server()`: Server logic
+#' The following functions are implemented:
+#'
+#' - `mod_market_survey_ui()`: User interface (UI) definition
+#' - `mod_market_survey_server()`: Server logic for the UI
+#' - `mod_market_survey_demo()`: Demo application for the module
 #'
 #' @param id Module's namespace ID.
+#' @param pool Database connection pool.
+#' @param selected_property Selected property ID.
+#' @param selected_leasing_week Selected leasing week.
 #'
-#' @return
+#' @returns
 #' - `mod_market_survey_ui()`: UI HTML Output.
-#' - `mod_market_survey_server()`: Reactive values returned from server logic.
+#' - `mod_market_survey_server()`: List of reactive values.
+#' - `mod_market_survey_demo()`: `NULL`, used for the side-effect of a demo app.
 #'
-#' @examples
-#' if (interactive()) {
-#'   mod_market_survey_demo()
-#' }
+#' @seealso
+#' Market Survey Section Modules:
+#'
+#' - [mod_market_survey_property_summary()]
+#' - [mod_market_survey_leasing_summary()]
+#' - [mod_market_survey_short_term_leases()]
+#' - [mod_market_survey_fees()]
+#' - [mod_market_survey_amenities()]
+#' - [mod_market_survey_parking()]
+#' - [mod_market_survey_utilities()]
+#' - [mod_market_survey_notes()]
+#' - [mod_market_survey_rents()]
+#'
+#' @examplesIf interactive()
+#' mod_market_survey_demo()
 NULL
 
 
@@ -43,45 +61,47 @@ mod_market_survey_ui <- function(id) {
   ns <- shiny::NS(id)
 
   htmltools::tagList(
-    bslib::layout_column_wrap(
-      width = 1/3,
+    # Value Boxes -------------------------------------------------------------
+    bslib::layout_columns(
       bslib::value_box(
+        id = ns("properties_value_box"),
         title = "Properties",
-        value = shiny::textOutput(ns("valbox_properties")),
+        value = shiny::textOutput(ns("properties_count")),
         showcase = bsicons::bs_icon("building")
       ),
       bslib::value_box(
+        id = ns("competitors_value_box"),
         title = "Competitors",
-        value = shiny::textOutput(ns("valbox_competitors")),
+        value = shiny::textOutput("competitor_count"),
         showcase = bsicons::bs_icon("graph-up")
       ),
       bslib::value_box(
+        id = ns("surveys_value_box"),
         title = "Survey Responses",
-        value = shiny::textOutput(ns("valbox_responses")),
+        value = shiny::textOutput("response_count"),
         showcase = bsicons::bs_icon("clipboard-data")
       )
     ),
-    bslib::layout_column_wrap(
-      width = 1,
-      bslib::card(
-        bslib::card_header(icon_text("percent", "Progress")),
-        bslib::card_body(
-          shinyWidgets::progressBar(
-            ns("total_progress"),
-            value = 0,
-            total = 100,
-            display_pct = TRUE,
-            striped = TRUE,
-            title = "Total Progress"
-          ),
-          shinyWidgets::progressBar(
-            ns("section_progress"),
-            value = 0,
-            total = 100,
-            display_pct = TRUE,
-            striped = TRUE,
-            title = "Section Progress"
-          )
+
+    # progress ----------------------------------------------------------------
+    bslib::card(
+      bslib::card_header(icon_text("percent", "Progress")),
+      bslib::card_body(
+        shinyWidgets::progressBar(
+          ns("total_progress"),
+          value = 0,
+          total = 100,
+          display_pct = TRUE,
+          striped = TRUE,
+          title = "Total Progress"
+        ),
+        shinyWidgets::progressBar(
+          ns("section_progress"),
+          value = 0,
+          total = 100,
+          display_pct = TRUE,
+          striped = TRUE,
+          title = "Section Progress"
         )
       )
     ),
@@ -142,6 +162,11 @@ mod_market_survey_ui <- function(id) {
         title = "Notes",
         value = ns("notes"),
         mod_market_survey_notes_ui(ns("notes"))
+      ),
+      bslib::nav_panel(
+        title = "Rents",
+        value = ns("rents"),
+        mod_market_survey_rents_ui(ns("rents"))
       )
     )
   )
@@ -154,7 +179,50 @@ mod_market_survey_ui <- function(id) {
 #' @export
 #' @importFrom shiny moduleServer
 #' @importFrom cli cat_rule
-mod_market_survey_server <- function(id, pool = NULL, selected_property = NULL, selected_leasing_week = NULL) {
+mod_market_survey_server <- function(
+  id,
+  pool,
+  selected_property = NULL,
+  selected_leasing_week = NULL
+) {
+
+  # check database connection
+  check_db_conn(pool)
+
+  # validation of reactives
+  if (!is.null(selected_property)) {
+    stopifnot(shiny::is.reactive(selected_property))
+  }
+
+  if (!is.null(selected_leasing_week)) {
+    stopifnot(shiny::is.reactive(selected_leasing_week))
+  }
+
+  # default property (commonwealth)
+  if (is.null(selected_property)) {
+    selected_property <- shiny::reactive({"739085"})
+  }
+
+  # default leasing week (current week)
+  if (is.null(selected_leasing_week)) {
+    selected_leasing_week <- shiny::reactive({ get_weekly_period_start_date() })
+  } else {
+    selected_leasing_week <- shiny::reactive({ get_weekly_period_start_date(selected_leasing_week()) })
+  }
+
+  # selected leasing week ---------------------------------------------------
+  if (is.null(selected_leasing_week)) {
+    selected_leasing_week <- shiny::reactive({
+      get_weekly_period_start_date()
+    })
+  } else {
+    selected_leasing_week <- shiny::reactive({
+      get_weekly_period_start_date(selected_leasing_week())
+    })
+  }
+
+
+
 
   shiny::moduleServer(
     id,
@@ -163,11 +231,6 @@ mod_market_survey_server <- function(id, pool = NULL, selected_property = NULL, 
       ns <- session$ns
       cli::cat_rule("[Module]: mod_market_survey_server()")
 
-      # selected property -------------------------------------------------------
-      if (is.null(selected_property)) {
-        selected_property <- shiny::reactive({"739085"})
-      }
-
       shiny::observe({
         prop <- selected_property()
         cli::cli_alert_info(
@@ -175,22 +238,29 @@ mod_market_survey_server <- function(id, pool = NULL, selected_property = NULL, 
         )
       })
 
-      # selected leasing week ---------------------------------------------------
-      if (is.null(selected_leasing_week)) {
-        selected_leasing_week <- shiny::reactive({
-          get_weekly_period_start_date()
-        })
-      } else {
-        selected_leasing_week <- shiny::reactive({
-          get_weekly_period_start_date(selected_leasing_week())
-        })
-      }
+
 
       # reactive values ---------------------------------------------------------
-      db_data <- shiny::reactiveVal(NULL)
-      app_data <- shiny::reactiveVal(NULL)
-      changes <- shiny::reactiveVal(NULL)
-      trigger_refresh <- shiny::reactiveVal(FALSE)
+      db_metrics <- shiny::reactivePoll(
+        intervalMillis = 30000,
+        session = session,
+        checkFunc = function() { Sys.time() },
+        valueFunc = function() { get_survey_metrics(pool) }
+      )
+
+      # value boxes -------------------------------------------------------------
+
+      output$properties_count <- shiny::renderText({
+        db_metrics()$total_properties
+      })
+
+      output$competitor_count <- shiny::renderText({
+        db_metrics()$total_competitors
+      })
+
+      output$response_count <- shiny::renderText({
+        db_metrics()$total_responses
+      })
 
       survey_section_data <- shiny::reactive({
 
@@ -239,3 +309,97 @@ mod_market_survey_demo <- function() {
 
   shiny::shinyApp(ui, server)
 }
+
+
+# utilities ---------------------------------------------------------------
+
+get_survey_metrics <- function(conn) {
+
+  if (inherits("Pool", conn)) {
+    conn <- pool::poolCheckout(conn)
+    on.exit(pool::poolReturn(conn), add = TRUE)
+  }
+
+  tryCatch({
+
+    total_properties_qry <- glue::glue_sql(
+      "SELECT COUNT(*) AS count FROM {`schema`}.{`tbl`}",
+      schema = "mkt",
+      tbl = "properties",
+      .con = conn
+    )
+
+    total_competitors_qry <- glue::glue_sql(
+      "SELECT COUNT(*) AS count FROM {`schema`}.{`tbl`}",
+      schema = "mkt",
+      tbl = "competitors",
+      .con = conn
+    )
+
+    total_surveys_qry <- glue::glue_sql(
+      "SELECT COUNT(*) AS count FROM {`schema`}.{`tbl`}",
+      schema = "mkt",
+      tbl = "surveys",
+      .con = conn
+    )
+
+    total_responses_qry <- glue::glue_sql(
+      "SELECT COUNT(*) AS count FROM {`schema`}.{`tbl`}",
+      schema = "mkt",
+      tbl = "responses",
+      .con = conn
+    )
+
+    total_properties <- DBI::dbGetQuery(conn, total_properties_qry) |>
+      dplyr::pull("count") |>
+      purrr::pluck(1) |>
+      as.integer()
+
+    total_competitors <- DBI::dbGetQuery(conn, total_competitors_qry) |>
+      dplyr::pull("count") |>
+      purrr::pluck(1) |>
+      as.integer()
+
+    total_surveys <- DBI::dbGetQuery(conn, total_surveys_qry) |>
+      dplyr::pull("count") |>
+      purrr::pluck(1) |>
+      as.integer()
+
+    total_responses <- DBI::dbGetQuery(conn, total_responses_qry) |>
+      dplyr::pull("count") |>
+      purrr::pluck(1) |>
+      as.integer()
+
+    cli::cli_alert_success("Successfully retrieved survey metrics from database.")
+
+    return(
+      list(
+        total_properties = total_properties,
+        total_competitors = total_competitors,
+        total_surveys = total_surveys,
+        total_responses = total_responses
+      )
+    )
+
+  }, error = function(e) {
+
+    cli::cli_alert_danger(
+      c(
+        "Failed to retrieve survey metrics from database.\n",
+        "Error: {.error {conditionMessage(e)}}"
+      )
+    )
+
+    return(
+      list(
+        total_properties = 0,
+        total_competitors = 0,
+        total_surveys = 0,
+        total_responses = 0
+      )
+    )
+
+  })
+
+}
+

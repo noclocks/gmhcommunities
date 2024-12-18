@@ -7,52 +7,92 @@
 #
 #  ------------------------------------------------------------------------
 
+# pre_lease_report_request_parameter_specs <- list(
+#   property_ids = mem_get_entrata_property_ids() |> unname() |> unlist(),
+#   summarize_by = c("unit_type", "floorplan_name", "property", "do_not_summarize"),
+#   group_by = c("unit_type", "floorplan_name", "lease_term", "do_not_group"),
+#   consider_pre_leased_on = c("32", "33", "34", "41", "42", "43", "44"),
+#   charge_code_detail = c("0", "1"),
+#   space_options = c("show_preferred", "show_actual", "do_not_show"),
+#   additional_units_shown = c("available", "excluded"),
+#   combine_unit_spaces_with_same_lease = c(0, 1),
+#   consolidate_by = c("no_consolidation", "consolidate_all_properties", "consolidate_by_property_groups"),
+#   arrange_by_property = c(0, 1),
+#   subtotals = c("summary", "details"),
+#   yoy = c(0, 1)
+# )
+#
+# validate_pre_lease_report_param <- function(param_name, param_value, call = rlang::caller_env()) {
+#
+#   allowed_values <- pre_lease_report_request_parameter_specs |> purrr::pluck(param_name)
+#
+#   param_arg <- rlang::caller_arg(param_name)
+#
+#   if (!is.null(allowed_values) && !param_value %in% allowed_values) {
+#     cli::cli_abort(
+#       c(
+#         "Invalid value ({.field {param_value}}) for the {.field {param_arg}} argument.",
+#         "Allowed values are: {.field {allowed_values}}."
+#       ),
+#       call = call
+#     )
+#   }
+#
+#   return(invisible(NULL))
+#
+# }
+
+# if current date is before 9/1, set report date to current year,
+# otherwise next year
+
+
+
+
 entrata_reports_pre_lease <- function(
-    entrata_config = get_entrata_config(),
     property_ids = NULL,
-    leasing_period_start_date = NULL,
-    leasing_period_type = c("date", "today"),
-    summarize_by = c("property", "unit_type", "floorplan_name", "do_not_summarize"),
-    group_by = c("do_not_group", "unit_type", "floorplan_name", "lease_term"),
-    consider_pre_leased_on = c("33", "32", "34", "41", "42", "43", "44"),
-    charge_code_detail = c("0", "1"),
-    space_options = c("do_not_show", "show_preferred", "show_actual"),
-    additional_units_shown = c("available", "excluded"),
-    combine_unit_spaces_with_same_lease = c("0", "1"),
-    consolidate_by = c("no_consolidation", "consolidate_all_properties", "consolidate_by_property_groups"),
-    arrange_by_property = c("0", "1"),
+    summarize_by = "property",
+    group_by = "do_not_group",
+    consider_pre_leased_on = 32,
+    charge_code_detail = 1,
+    space_options = "do_not_show",
+    additional_units_shown = "available",
+    combine_unit_spaces_with_same_lease = 0,
+    consolidate_by = "no_consolidation",
+    arrange_by_property = 0,
     subtotals = c("summary", "details"),
-    yoy = c("1", "0"),
+    yoy = 1,
     request_id = NULL,
-    report_version = "3.2"
+    report_version = "3.2",
+    entrata_config = get_entrata_config()
 ) {
 
   if (is.null(property_ids)) {
     property_ids <- mem_get_entrata_property_ids() |> unname() |> unlist()
   }
 
-  if (is.null(leasing_period_start_date)) {
-    leasing_period_start_date <- get_leasing_period_start_date()
-  }
-
-  leasing_period_type <- rlang::arg_match(leasing_period_type, multiple = FALSE)
+  leasing_period_start_date <- get_next_pre_lease_period_start_date()
+  period_type <- "date"
 
   period <- list(
     date = leasing_period_start_date,
-    period_type = leasing_period_type
+    period_type = period_type
   )
 
-  summarize_by <- rlang::arg_match(summarize_by, multiple = FALSE)
-  group_by <- rlang::arg_match(group_by, multiple = FALSE)
-  consider_pre_leased_on <- rlang::arg_match(consider_pre_leased_on, multiple = FALSE)
-  charge_code_detail <- rlang::arg_match(charge_code_detail, multiple = FALSE)
-  space_options <- rlang::arg_match(space_options, multiple = FALSE)
-  additional_units_shown <- rlang::arg_match(additional_units_shown, multiple = FALSE)
-  combine_unit_spaces_with_same_lease <- rlang::arg_match(combine_unit_spaces_with_same_lease, multiple = FALSE)
-  consolidate_by <- rlang::arg_match(consolidate_by, multiple = FALSE)
-  arrange_by_property <- rlang::arg_match(arrange_by_property, multiple = FALSE)
-  yoy <- rlang::arg_match(yoy, multiple = FALSE)
-  subtotals <- rlang::arg_match(subtotals, multiple = TRUE)
+  # summarize_by <- rlang::arg_match(summarize_by, multiple = FALSE)
+  # group_by <- rlang::arg_match(group_by, multiple = FALSE)
+  # consider_pre_leased_on <- rlang::arg_match(consider_pre_leased_on, multiple = FALSE)
+  # charge_code_detail <- rlang::arg_match(charge_code_detail, multiple = FALSE)
+  # space_options <- rlang::arg_match(space_options, multiple = FALSE)
+  # additional_units_shown <- rlang::arg_match(additional_units_shown, multiple = FALSE)
+  # combine_unit_spaces_with_same_lease <- rlang::arg_match(combine_unit_spaces_with_same_lease, multiple = FALSE)
+  # consolidate_by <- rlang::arg_match(consolidate_by, multiple = FALSE)
+  # arrange_by_property <- rlang::arg_match(arrange_by_property, multiple = FALSE)
+  # yoy <- rlang::arg_match(yoy, multiple = FALSE)
+  # subtotals <- rlang::arg_match(subtotals, multiple = TRUE)
+
+  if (is.null(request_id)) {
+    request_id <- as.integer(Sys.time())
+  }
 
   req_method_params <- list(
     reportName = "pre_lease",
@@ -83,31 +123,11 @@ entrata_reports_pre_lease <- function(
     httr2::req_body_json(
       list(
         auth = list(type = 'basic'),
+        request_id = request_id,
         method = list(
           name = "getReportData",
           version = "r3",
-          params = list(
-            reportName = 'pre_lease',
-            reportVersion = '3.2',
-            filters = list(
-              property_group_ids = as.list(as.character(property_ids)),
-              period = list(
-                date = leasing_period_start_date,
-                period_type = 'date'
-              ),
-              summarize_by = "unit_type",
-              group_by = "unit_type",
-              consider_pre_leased_on = 32,
-              charge_code_detail = 0,
-              space_options = 'do_not_show',
-              additional_units_shown = 'available',
-              combine_unit_spaces_with_same_lease = 0,
-              consolidate_by = 'no_consolidation',
-              arrange_by_property = 0,
-              subtotals = list("summary", "details"),
-              yoy = 1
-            )
-          )
+          params = req_method_params
         )
       )
     )
@@ -132,6 +152,7 @@ entrata_reports_pre_lease <- function(
     httr2::req_body_json(
       list(
         auth = list(type = 'basic'),
+        request_id = request_id,
         method = list(
           name = "getResponse",
           version = "r1",
@@ -148,50 +169,8 @@ entrata_reports_pre_lease <- function(
   queue_resp_data <- queue_resp |> httr2::resp_body_json() |>
     purrr::pluck("response", "result", "reportData")
 
-  report_summary_data <- queue_resp_data |>
-    purrr::pluck("summary") |>
-    dplyr::bind_rows()
-
-
-  req <- entrata_request(entrata_config = entrata_config) |>
-    entrata_req_endpoint("reports") |>
-    entrata_req_body(
-      id = request_id,
-      method = "getReportData",
-      version = get_default_method_version("reports", "getReportData"),
-      params = req_method_params
-    )
-
-  resp <- httr2::req_perform(req)
-
-  queue_id <- entrata_resp_body(resp) |> purrr::pluck("response", "result", "queueId")
-
-  cli::cli_alert_success(
-    c(
-      "Pre-Lease Report Request Submitted\n",
-      "Queue ID: {.field {queue_id}}"
-    )
-  )
-
-  req_queue <- entrata_request(entrata_config = entrata_config) |>
-    entrata_req_endpoint("queue") |>
-    entrata_req_body(
-      id = 15L,
-      method = "getResponse",
-      version = get_default_method_version("queue", "getResponse"),
-      params = list(
-        queueId = queue_id,
-        serviceName = "getReportData"
-      )
-    )
-
-  resp_queue <- httr2::req_perform(req_queue)
-
-  resp_content <- entrata_resp_body(resp_queue) |>
-    purrr::pluck("response", "result", "reportData")
-
-  resp_summary <- resp_content$summary |> dplyr::bind_rows()
-  resp_details <- resp_content$details |> dplyr::bind_rows()
+  resp_summary <- purrr::pluck(queue_resp_data, "summary") |> dplyr::bind_rows()
+  resp_details <- purrr::pluck(queue_resp_data, "details") |> dplyr::bind_rows()
 
   list(
     summary = resp_summary,
@@ -199,6 +178,37 @@ entrata_reports_pre_lease <- function(
   )
 
 }
+
+
+# list(
+#   auth = list(type = "basic"),
+#   method = list(
+#     name = "getReportData",
+#     version = "r3",
+#     params = list(
+#       reportName = "pre_lease",
+#       reportVersion = "3.2",
+#       filters = list(
+#         property_group_ids = as.list(as.character(property_ids)),
+#         period = list(
+#           date = leasing_period_start_date,
+#           period_type = "date"
+#         ),
+#         summarize_by = "unit_type",
+#         group_by = "unit_type",
+#         consider_pre_leased_on = 32,
+#         charge_code_detail = 0,
+#         space_options = 'do_not_show',
+#         additional_units_shown = 'available',
+#         combine_unit_spaces_with_same_lease = 0,
+#         consolidate_by = "no_consolidation",
+#         arrange_by_property = 0,
+#         subtotals = list("summary", "details"),
+#         yoy = 1
+#       )
+#     )
+#   )
+# )
 
 # process_pre_lease_report_data <- function(pre_lease_data) {
 #

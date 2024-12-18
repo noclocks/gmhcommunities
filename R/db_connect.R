@@ -26,10 +26,18 @@
 #'   user id from the shiny session object. If the function is not running
 #'   inside a shiny app, the default user id of `0` will be used.
 #'
-#' @return A `pool` object representing the connection pool to the GMH
+#' @returns A `pool` object representing the connection pool to the GMH
 #'   PostgreSQL database.
 #'
 #' @export
+#'
+#' @importFrom cli cli_alert_danger cli_alert_warning cli_abort cli_alert_info
+#' @importFrom DBI SQL
+#' @importFrom glue glue
+#' @importFrom pool dbPool dbExecute poolClose
+#' @importFrom purrr pluck
+#' @importFrom RPostgres Postgres
+#' @importFrom shiny getDefaultReactiveDomain onStop
 db_connect <- function(db_config = get_db_config(), user_id = NULL) {
 
   validate_db_config(db_config)
@@ -41,13 +49,14 @@ db_connect <- function(db_config = get_db_config(), user_id = NULL) {
       # try and retrieve user id from session$userData$user_id
       user_id <- purrr::pluck(session, "userData", "user_id")
       if (is.null(user_id)) {
-        cli::cli_alert_danger("No user id found in session.")
+        cli::cli_alert_warning("No user id found in session. Using default user id.")
+        user_id <- 1
       } else {
         user_id <- as.integer(user_id)
       }
     } else {
       cli::cli_alert_warning("Not inside a shiny app. Using default user id.")
-      user_id <- 0
+      user_id <- 1
     }
   } else {
     if (!is.integer(as.integer(user_id)) || user_id < 0) {
@@ -108,6 +117,23 @@ db_connect <- function(db_config = get_db_config(), user_id = NULL) {
 
 # check -------------------------------------------------------------------
 
+#' Check Database Connection
+#'
+#' @description
+#' This function checks if the provided connection is a valid database
+#' connection. The function will throw an error if the connection is not
+#' a valid DBI or pool connection.
+#'
+#' @param conn A database connection object.
+#' @inheritParams rlang::args_error_context
+#'
+#' @returns The provided connection object invisibly if it is valid.
+#'
+#' @export
+#'
+#' @importFrom cli cli_abort
+#' @importFrom DBI dbIsValid
+#' @importFrom pool dbIsValid
 check_db_conn <- function(
     conn,
     arg = rlang::caller_arg(conn),
@@ -159,3 +185,10 @@ check_db_conn <- function(
   return(invisible(conn))
 
 }
+
+# get ---------------------------------------------------------------------
+
+get_db_conn <- function() {
+  shiny::getDefaultReactiveDomain()$userData$db_conn
+}
+

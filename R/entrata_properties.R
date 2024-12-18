@@ -31,7 +31,7 @@
 #' @param progress (Optional) Logical indicating if a progress indicator should be
 #'   displayed. Defaults to `FALSE`.
 #'
-#' @return A parsed response containing property related data depending on which
+#' @returns A parsed response containing property related data depending on which
 #'   endpoint method is used.
 #'
 #' @export
@@ -81,7 +81,6 @@ entrata_properties <- function(
 
 }
 
-
 # getProperties -----------------------------------------------------------
 
 #' Entrata Properties: Get Properties
@@ -103,7 +102,7 @@ entrata_properties <- function(
 #' @param entrata_config (Optional) An Entrata Configuration list. Defaults to
 #'   `get_entrata_config()`. See [get_entrata_config()] for more information.
 #'
-#' @return A parsed response containing property related datasets.
+#' @returns A parsed response containing property related datasets.
 #'
 #' @export
 #'
@@ -166,7 +165,7 @@ entrata_properties_getProperties <- function(
 #' @param entrata_config (Optional) An Entrata Configuration list. Defaults to
 #'   `get_entrata_config()`. See [get_entrata_config()] for more information.
 #'
-#' @return A parsed response containing floor plan data for the specified property.
+#' @returns A parsed response containing floor plan data for the specified property.
 #'
 #' @export
 #'
@@ -183,7 +182,7 @@ entrata_properties_getFloorPlans <- function(
 
   validate_entrata_config(entrata_config)
 
-  req_id <- req_id %||% as.integer(Sys.time())
+  req_id <- request_id %||% as.integer(Sys.time())
 
   req <- entrata_request(entrata_config) |>
     entrata_req_endpoint("properties") |>

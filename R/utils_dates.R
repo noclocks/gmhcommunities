@@ -142,12 +142,59 @@ get_weekly_period_end_date <- function(as_of_date = lubridate::today()) {
 
 # leasing periods ---------------------------------------------------------
 
+get_next_pre_lease_period_start_date <- function(as_of_date = Sys.Date()) {
+
+  curr_month <- lubridate::month(as_of_date)
+  curr_year <- lubridate::year(as_of_date)
+
+  if (curr_month < 9) {
+    report_year <- curr_year
+  } else {
+    report_year <- curr_year + 1
+  }
+
+  report_date <- lubridate::mdy(paste("09/01", report_year))
+
+  return(report_date)
+
+}
+
+get_pre_lease_season_end_date <- function(as_of_date = Sys.Date()) {
+
+  dplyr::if_else(
+    lubridate::month(as_of_date) < 9,
+    lubridate::ymd(paste0(lubridate::year(as_of_date), "08/01")),
+    lubridate::ymd(paste0(lubridate::year(as_of_date) + 1, "08/01"))
+  )
+
+}
+
+get_weeks_left_to_lease <- function(as_of_date = Sys.Date()) {
+  floor(as.numeric(get_pre_lease_season_end_date() - as_of_date) / 7)
+}
+
+#' #' @rdname utils_dates
+#' #' @export
+#' #' @importFrom cli cli_abort
+#' #' @importFrom lubridate is.Date today mdy today
+#' get_weeks_left_to_lease <- function(as_of_date = lubridate::today()) {
+#'
+#'   period_end_date <- get_leasing_period_end_date(as_of_date)
+#'
+#'   period_end_date %--% lubridate::today() |>
+#'     lubridate::as.duration() |>
+#'     as.numeric("weeks") |>
+#'     floor() * -1
+#'
+#' }
+
+
 #' @rdname utils_dates
 #' @export
 get_leasing_period <- function(as_of_date = lubridate::today()) {
 
-  start <- get_leasing_period_start_date(as_of_date, format = "%Y-%m-%d")
-  end <- get_leasing_period_end_date(as_of_date, format = "%Y-%m-%d")
+  start <- get_leasing_period_start_date(as_of_date)
+  end <- get_leasing_period_end_date(as_of_date)
 
   c(start, end)
 
@@ -157,37 +204,13 @@ get_leasing_period <- function(as_of_date = lubridate::today()) {
 #' @export
 #' @importFrom cli cli_abort
 #' @importFrom lubridate is.Date today month make_date year
-get_leasing_period_start_date <- function(
-    as_of_date = lubridate::today(),
-    format = "%m/%d/%Y"
-) {
-
-  if (!lubridate::is.Date(as_of_date)) {
-    cli::cli_abort(
-      "The 'date' argument must be a Date."
-    )
-  }
-
-  if (as_of_date > lubridate::today()) {
-    cli::cli_abort(
-      "The 'date' argument must be a date in the past."
-    )
-  }
-
-  if (!is.character(format)) {
-    cli::cli_abort(
-      "The 'format' argument must be a character string."
-    )
-  }
+get_leasing_period_start_date <- function(as_of_date = lubridate::today()) {
 
   if (lubridate::month(as_of_date) >= 9) {
-    out <- lubridate::make_date(lubridate::year(as_of_date) + 1, 9, 1)
+    lubridate::make_date(lubridate::year(as_of_date) + 1, 9, 1)
   } else {
-    out <- lubridate::make_date(lubridate::year(as_of_date), 9, 1)
+    lubridate::make_date(lubridate::year(as_of_date), 9, 1)
   }
-
-  format(out, format) |>
-    as.character()
 
 }
 
@@ -195,64 +218,19 @@ get_leasing_period_start_date <- function(
 #' @export
 #' @importFrom cli cli_abort
 #' @importFrom lubridate is.Date today month make_date year
-get_leasing_period_end_date <- function(
-    as_of_date = lubridate::today(),
-    format = "%m/%d/%Y"
-) {
+get_leasing_period_end_date <- function(as_of_date = lubridate::today()) {
 
-  if (!lubridate::is.Date(as_of_date)) {
-    cli::cli_abort(
-      "The 'date' argument must be a Date."
-    )
-  }
-
-  if (as_of_date > lubridate::today()) {
-    cli::cli_abort(
-      "The 'date' argument must be a date in the past."
-    )
-  }
-
-  if (!is.character(format)) {
-    cli::cli_abort(
-      "The 'format' argument must be a character string."
-    )
-  }
-
-  if (lubridate::month(as_of_date) >= 9) {
-    out <- lubridate::make_date(lubridate::year(as_of_date) + 2, 8, 31)
-  } else {
-    out <- lubridate::make_date(lubridate::year(as_of_date) + 1, 8, 31)
-  }
-
-  format(out, format) |>
-    as.character()
+  dplyr::case_when(
+    lubridate::month(as_of_date) >= 9 ~ lubridate::make_date(lubridate::year(as_of_date) + 1, 8, 1),
+    lubridate::month(as_of_date) < 9 ~ lubridate::make_date(lubridate::year(as_of_date), 8, 1)
+  )
 
 }
 
-#' @rdname utils_dates
-#' @export
-#' @importFrom cli cli_abort
-#' @importFrom lubridate is.Date today mdy today
-get_weeks_left_to_lease <- function(as_of_date = lubridate::today()) {
-
-  if (!lubridate::is.Date(as_of_date)) {
-    cli::cli_abort(
-      "The 'date' argument must be a Date."
-    )
-  }
-
-  if (as_of_date > lubridate::today()) {
-    cli::cli_abort(
-      "The 'date' argument must be a date in the past."
-    )
-  }
-
-  period_end_date <- get_leasing_period_end_date(as_of_date) |>
-    lubridate::mdy()
-
-  floor(as.numeric(period_end_date - as_of_date) / 7)
-
+format_date_for_entrata <- function(date, format = "%m/%d/%Y") {
+  format(date, format) |> as.character()
 }
+
 
 get_year <- function() {
   as.numeric(format(Sys.Date(), "%Y"))
@@ -262,7 +240,7 @@ get_year <- function() {
 #'
 #' @param as_of_date The date to use as the reference date. Default is today.
 #'
-#' @return The date of the last day of the month for the specified `as_of_date`.
+#' @returns The date of the last day of the month for the specified `as_of_date`.
 #'
 #' @export
 #'
@@ -276,7 +254,7 @@ end_of_month <- function(as_of_date) {
 #'
 #' @param as_of_date The date to use as the reference date. Default is today.
 #'
-#' @return The date of the first day of the month for the specified `as_of_date`.
+#' @returns The date of the first day of the month for the specified `as_of_date`.
 #'
 #' @export
 #'
@@ -290,7 +268,7 @@ start_of_month <- function(as_of_date) {
 #'
 #' @param string The string to extract the date from.
 #'
-#' @return The extracted date.
+#' @returns The extracted date.
 #'
 #' @export
 #'
@@ -327,7 +305,7 @@ parse_http_date <- function(str) {
 #' @param start_date Date representing the start of a period.
 #' @param end_date Date representing the end of a period.
 #'
-#' @return The number of months elapsed between the two dates.
+#' @returns The number of months elapsed between the two dates.
 #'
 #' @export
 elapsed_months <- function(start_date, end_date) {

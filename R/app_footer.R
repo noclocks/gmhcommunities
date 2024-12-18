@@ -1,7 +1,7 @@
 
 #  ------------------------------------------------------------------------
 #
-# Title : Shiny App Footer Module
+# Title : Shiny App Footer
 #    By : Jimmy Briggs
 #  Date : 2024-11-08
 #
@@ -9,9 +9,9 @@
 
 # topic -------------------------------------------------------------------
 
-#' Footer Module
+#' Shiny App Footer
 #'
-#' @name mod_footer
+#' @name app_footer
 #'
 #' @description
 #' A Shiny module for creating the footer of the GMH Data Hub's Leasing Dashboard.
@@ -89,7 +89,7 @@ NULL
 #' @importFrom bslib card_footer layout_columns
 #' @importFrom shiny icon NS includeCSS
 #' @importFrom fontawesome fa
-mod_footer_ui <- function(
+app_footer_ui <- function(
     id = NULL,
     align = "center",
     class = "footer",
@@ -128,8 +128,10 @@ mod_footer_ui <- function(
   entrata_info <- gmhcommunities:::entrata_info
   entrata_info$logo <- validate_image(entrata_info$logo)
 
+  # ensure footer is bottom of page
   bslib::card_footer(
     class = class,
+    style = "position: absolute; bottom: 0; width: 100%;",
     htmltools::tags$footer(
       style = paste0("text-align: ", align, ";"),
       htmltools::tags$hr(),

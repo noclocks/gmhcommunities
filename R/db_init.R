@@ -65,7 +65,7 @@ db_create_tbl <- function(conn, tbl, schema, df, ...) {
 #' It is assumed that the `tbl_name` mirrors both the basename of the CSV file
 #' and the SQL file (excluding extensions).
 #'
-#' @return the created database table returned as an R [data.frame()].
+#' @returns the created database table returned as an R [data.frame()].
 #'
 #' @export
 #'

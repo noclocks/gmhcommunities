@@ -20,16 +20,15 @@
 #'
 #' @param req (Internal) The initial HTTP request object.
 #'
-#' @return [htmltools::tagList()] containing the core user interface elements.
+#' @returns [htmltools::tagList()] containing the core user interface elements.
 #'
 #' @seealso [app_server()]
 #'
 #' @export
 #'
 #' @importFrom bsicons bs_icon
-#' @importFrom bslib page_navbar bs_theme nav_spacer nav_panel nav_menu nav_item
+#' @importFrom bslib page_fluid bs_theme page_navbar nav_spacer nav_panel nav_menu nav_item
 #' @importFrom htmltools tagList tags
-#' @importFrom rlang pkg_env
 #' @importFrom shiny icon textOutput actionLink
 app_ui <- function(req) {
 
@@ -37,92 +36,87 @@ app_ui <- function(req) {
 
   htmltools::tagList(
     add_external_resources(),
-    bslib::page_fluid(
-      # theme
-      theme = bslib::bs_theme(version = 5),
-      bslib::page_navbar(
-        id = "nav",
-        lang = "en",
-        window_title = "GMH DataHub",
-        position = "fixed-top",
-        # header
-        # header = htmltools::tagList(),
-        # layout modules
-        title = mod_title_ui("app"),
-        footer = mod_footer_ui("app"),
-        sidebar = mod_sidebar_ui("app"),
-        # navigation - page modules
-        bslib::nav_spacer(),
-        # dashboard
+    bslib::page_navbar(
+      id = "nav",
+      lang = "en",
+      window_title = "GMH DataHub",
+      position = "fixed-top",
+      theme = app_theme(),
+      title = app_title_ui(),
+      # footer = app_footer_ui(),
+      # sidebar = mod_sidebar_ui("app"),
+      # navigation - page modules
+      bslib::nav_spacer(),
+      # home page
+      bslib::nav_panel(
+        title = "Home",
+        value = "home",
+        icon = bsicons::bs_icon("house"),
+        mod_home_ui("home")
+      ),
+      # dashboard
+      # bslib::nav_panel(
+      #   title = "Dashboard",
+      #   value = "dashboard",
+      #   icon = bsicons::bs_icon("speedometer2"),
+      #   mod_dashboard_ui("app")
+      # ),
+      # data (menu)
+      bslib::nav_menu(
+        title = "Data",
+        value = "data",
+        icon = bsicons::bs_icon("database"),
+        # pre_lease
         bslib::nav_panel(
-          title = "Dashboard",
-          value = "dashboard",
-          icon = bsicons::bs_icon("speedometer"),
-          # mod_dashboard_ui("app")
-          bslib::card(
-            "DASHBOARD"
-          )
+          title = "Pre Lease",
+          value = "pre_lease",
+          icon = bsicons::bs_icon("file-check"),
+          mod_pre_lease_ui("app")
         ),
-        # data (menu)
-        bslib::nav_menu(
-          title = "Data",
-          value = "data",
-          icon = bsicons::bs_icon("database"),
-          # properties
-          bslib::nav_panel(
-            title = "Properties",
-            value = "properties",
-            icon = bsicons::bs_icon("building")#,
-            # mod_properties_ui("app")
-          ),
-          bslib::nav_panel(
-            title = "Leasing",
-            value = "leasing",
-            icon = bsicons::bs_icon("file-check")#,
-            # mod_leasing_ui("app")
-          )
-        ),
-        # market survey
+        # properties
         bslib::nav_panel(
-          title = "Market Survey",
-          value = "market_survey",
-          icon = bsicons::bs_icon("file-earmark-bar-graph")#,
-          # mod_market_survey_ui("app")
-        ),
-        # survey insights
+          title = "Properties",
+          value = "properties",
+          icon = bsicons::bs_icon("building"),
+          mod_properties_ui("app")
+        )
+      ),
+      # market survey
+      bslib::nav_panel(
+        title = "Market Survey",
+        value = "market_survey",
+        icon = bsicons::bs_icon("file-earmark-bar-graph"),
+        mod_market_survey_ui("app")
+      ),
+      # survey insights
+      bslib::nav_panel(
+        title = "Survey Insights",
+        value = "survey_insights",
+        icon = bsicons::bs_icon("lightbulb"),
+        mod_survey_insights_ui("app")
+      ),
+      bslib::nav_spacer(),
+      bslib::nav_menu(
+        title = "Admin",
+        align = "right",
         bslib::nav_panel(
-          title = "Survey Insights",
-          value = "survey_insights",
-          icon = bsicons::bs_icon("lightbulb")#,
-          # mod_survey_insights_ui("app")
+          title = "Settings",
+          value = "settings",
+          icon = shiny::icon("cogs")#,
+          # mod_settings_ui("app")
         ),
-        bslib::nav_spacer(),
-        bslib::nav_menu(
-          title = "Admin",
-          align = "right",
-          bslib::nav_panel(
-            title = "Settings",
-            value = "settings",
-            icon = shiny::icon("cogs")#,
-            # mod_settings_ui("app")
-          ),
-          bslib::nav_panel(
-            title = "Logs",
-            value = "logs",
-            icon = shiny::icon("clipboard-list")#,
-            # mod_logs_ui("app")
-          )
-        ),
-        bslib::nav_menu(
-          title = "Links",
-          align = "right",
-          bslib::nav_item(
-            htmltools::tags$a(
-              shiny::icon("github"), "GitHub",
-              href = app_info$repo_url,
-              target = "_blank"
-            )
-          ),
+        bslib::nav_panel(
+          title = "Logs",
+          value = "logs",
+          icon = shiny::icon("clipboard-list")#,
+          # mod_logs_ui("app")
+        )
+      ),
+      bslib::nav_menu(
+        title = "Links",
+        align = "right",
+        icon = bsicons::bs_icon("link-45deg"),
+        bslib::nav_item(
           bslib::nav_item(
             htmltools::tags$a(
               shiny::icon("book"), "Documentation",
@@ -130,26 +124,43 @@ app_ui <- function(req) {
               target = "_blank"
             )
           ),
-          bslib::nav_item(
-            htmltools::tags$a(
-              shiny::icon("envelope"), "Contact",
-              href = "#",
-              target = "_blank"
-            )
+          htmltools::tags$a(
+            shiny::icon("github"), "GitHub",
+            href = app_info$repo_url,
+            target = "_blank"
+          )
+        )
+      ),
+      bslib::nav_menu(
+        title = "Contact",
+        align = "right",
+        icon = bsicons::bs_icon("envelope"),
+        bslib::nav_item(
+          htmltools::tags$a(
+            shiny::icon("envelope"),
+            "Email Support",
+            href = "mailto:support@noclocks.dev",
+            target = "_blank"
+          )
+        )
+      ),
+      bslib::nav_menu(
+        title = "User",
+        align = "right",
+        icon = bsicons::bs_icon("person-circle"),
+        bslib::nav_item(
+          htmltools::tags$a(
+            shiny::icon("user"),
+            shiny::textOutput("signed_in_as"),
+            href = "#"
           )
         ),
-        bslib::nav_menu(
-          title = "Logout",
-          align = "right",
-          icon = bsicons::bs_icon("box-arrow-right"),
-          shiny::textOutput("signed_in_as"),
-          bslib::nav_item(
-            shiny::actionLink(
-              inputId = "auth_logout",
-              label = "Logout",
-              icon = shiny::icon("sign-out-alt"),
-              style = "display: inline-flex; align-items: center; padding: 2.5px 50px; width: -webkit-fill-available;"
-            )
+        bslib::nav_item(
+          shiny::actionLink(
+            inputId = "auth_logout",
+            label = "Logout",
+            icon = shiny::icon("sign-out-alt"),
+            style = "display: inline-flex; align-items: center; padding: 2.5px 50px; width: -webkit-fill-available;"
           )
         )
       )
@@ -160,15 +171,12 @@ app_ui <- function(req) {
 
 # demo --------------------------------------------------------------------
 
+#' @importFrom shiny shinyApp
 app_ui_demo <- function() {
 
   shiny::shinyApp(
     ui = app_ui,
-    server = function(input, output, session) {
-
-    }
+    server = app_server
   )
 
 }
-
-

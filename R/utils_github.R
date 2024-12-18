@@ -18,7 +18,7 @@
 #' @param repo A character string of the GitHub repository in the format 'user/repo'.
 #' @param format A character string specifying the format of the date to return.
 #'
-#' @return A character string of the last modified date of the GitHub repository.
+#' @returns A character string of the last modified date of the GitHub repository.
 #'
 #' @importFrom cli cli_abort
 #'

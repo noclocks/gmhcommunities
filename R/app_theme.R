@@ -16,7 +16,7 @@
 #' This function defines a custom Bootstrap theme for the Shiny app
 #' using [bslib::bs_theme()].
 #'
-#' @return A Bootstrap theme object.
+#' @returns A Bootstrap theme object.
 #'
 #' @export
 #'
@@ -25,8 +25,13 @@ app_theme <- function() {
 
   bslib::bs_theme(
     version = 5,
+    # preset = "zephyr",
     primary = "#0e2b4c",
-    "navbar-bg" = "#ffffff"
+    "navbar-bg" = "#ffffff",
+    # base_font = bslib::font_google("Roboto"),
+    font_scale = NULL,
+    `enable-gradients` = TRUE
   )
 
 }
+

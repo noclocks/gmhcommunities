@@ -12,7 +12,7 @@
 #' @param ui Shiny App UI
 #' @param server Shiny App Server
 #'
-#' @return [shiny::shinyApp()]
+#' @returns [shiny::shinyApp()]
 #'
 #' @export
 #'

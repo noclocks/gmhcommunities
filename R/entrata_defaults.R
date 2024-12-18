@@ -16,7 +16,7 @@ get_default_method <- function(endpoint) {
 #' @param endpoint The Entrata endpoint
 #' @param method The Entrata method
 #'
-#' @return The default version of the Entrata method
+#' @returns The default version of the Entrata method
 #'
 #' @export
 #'

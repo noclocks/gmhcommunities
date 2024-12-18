@@ -38,7 +38,7 @@ validate_entrata_property <- function(property_id = NULL, property_name = NULL) 
 #' @param req A request object.
 #' @param ... Additional arguments passed to methods.
 #'
-#' @return The request object.
+#' @returns The request object.
 #'
 #' @export
 #'

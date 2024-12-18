@@ -50,10 +50,10 @@ mod_market_survey_property_summary_ui <- function(id) {
 
   htmltools::tagList(
     htmltools::tags$head(
-      shinyjs::useShinyjs(),
-      waiter::use_waiter(),
-      shinyWidgets::useSweetAlert(),
-      waiter::waiterShowOnLoad(waiter::spin_fading_circles()),
+      # shinyjs::useShinyjs(),
+      # waiter::use_waiter(),
+      # shinyWidgets::useSweetAlert(),
+      # waiter::waiterShowOnLoad(waiter::spin_fading_circles()),
       htmltools::HTML('<div data-fillout-id="rB4usRFt4Rus" data-fillout-embed-type="popup" data-fillout-button-text="Launch Survey Form" data-fillout-dynamic-resize data-fillout-button-size="medium" data-fillout-button-float="bottom-right" data-fillout-inherit-parameters data-fillout-popup-size="large"></div><script src="https://server.fillout.com/embed/v1/"></script>'
       )
     ),

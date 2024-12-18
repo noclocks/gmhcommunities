@@ -10,7 +10,7 @@
 #' @param config A character string representing the configuration to use from the
 #'   configuration file.
 #'
-#' @return A list, or vector (if `key` is specified), corresponding to the
+#' @returns A list, or vector (if `key` is specified), corresponding to the
 #'   contents of the `db` configuration key's values (i.e. `dbname`, `host`,
 #'   `port`, `username`, and `password`).
 #'
@@ -68,6 +68,24 @@ get_db_config <- function(
 }
 
 validate_db_config <- function(cfg) {
+
+  if (!is.list(cfg)) {
+    cli::cli_abort("Invalid {.arg cfg}: Must be a list.")
+  }
+
+  required_keys <- c("dbname", "host", "port", "user", "password")
+  missing_keys <- required_keys[!required_keys %in% names(cfg)]
+
+  if (length(missing_keys) > 0) {
+    cli::cli_abort(
+      c(
+        "Missing required configuration keys: ",
+        paste0(missing_keys, collapse = ", ")
+      )
+    )
+  }
+
+  return(invisible(NULL))
 
 
 }

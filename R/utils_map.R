@@ -6,6 +6,18 @@
 #
 #  ------------------------------------------------------------------------
 
+gmaps_properties_map_embed_iframe <- function(width = "100%", height = "500px") {
+
+  url <- "https://www.google.com/maps/d/embed?mid=19tP5Bf66khGcrNnqTBsk879W2fS-u7U&ehbc=2E312F"
+
+  htmltools::tags$iframe(
+    src = url,
+    width = width,
+    height = height
+  )
+
+}
+
 # GIS utilities -----------------------------------------------------------
 
 # get coordinates from address:
@@ -20,7 +32,7 @@
 #'   If not provided, the function will attempt to retrieve the key via
 #'   [get_gmaps_api_key()].
 #'
-#' @return A data frame containing the geocoded address information.
+#' @returns A data frame containing the geocoded address information.
 #'
 #' @export
 #'

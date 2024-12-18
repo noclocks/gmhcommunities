@@ -18,7 +18,7 @@
 #'   (Base URL, Username and Password, etc.). By default will call
 #'   [get_entrata_config()] to retrieve the configuration.
 #'
-#' @return An [httr2::request()] object with Entrata-specific configurations.
+#' @returns An [httr2::request()] object with Entrata-specific configurations.
 #'
 #' @export
 #'
@@ -89,7 +89,7 @@ NULL
 #' @param username A character string representing the username for the Entrata API
 #' @param password A character string representing the password for the Entrata API
 #'
-#' @return The modified request object with authentication headers.
+#' @returns The modified request object with authentication headers.
 #'
 #' @export
 #'
@@ -134,7 +134,7 @@ entrata_req_auth <- function(
 #'
 #' This function will overwrite any existing endpoint path set on the request.
 #'
-#' @return Modified request object with the endpoint URL path appended
+#' @returns Modified request object with the endpoint URL path appended
 #'
 #' @export
 #'
@@ -183,7 +183,7 @@ get_request_endpoint <- function(req) {
 #' @param version Request Endpoint Method Version
 #' @param params Request Endpoint Method Parameters
 #'
-#' @return The modified request object with the new request body options
+#' @returns The modified request object with the new request body options
 #'
 #' @export
 #'
@@ -266,7 +266,7 @@ entrata_req_body <- function(
 #'
 #' @param req An [httr2::request()] object.
 #'
-#' @return A character string representing the hash key for the request.
+#' @returns A character string representing the hash key for the request.
 #'
 #' @export
 #'
@@ -292,7 +292,7 @@ entrata_req_hash <- function(req) {
 #'   object. If not provided, will use the default user agent set in the Entrata
 #'   configuration or the package version and URL.
 #'
-#' @return The modified request object with the new user agent string
+#' @returns The modified request object with the new user agent string
 #'
 #' @export
 #'
@@ -327,7 +327,7 @@ entrata_req_user_agent <- function(req, string) {
 #' @param req An [httr2::request()] object.
 #' @param headers A named list of headers to set on the request object.
 #'
-#' @return The modified request object with the new headers set.
+#' @returns The modified request object with the new headers set.
 #'
 #' @export
 entrata_req_headers <- function(req, headers) {
@@ -351,7 +351,7 @@ entrata_req_headers <- function(req, headers) {
 #'   the response. Default is `FALSE`. Alters the request's headers by injecting
 #'   the `X-Send-Pagination-Links` header.
 #'
-#' @return The modified request object with pagination headers and query parameters.
+#' @returns The modified request object with pagination headers and query parameters.
 #'
 #' @export
 #'
@@ -405,7 +405,7 @@ entrata_req_pagination <- function(
 #' @param req An [httr2::request()] object.
 #' @inheritParams httr2::req_retry
 #'
-#' @return Modified [httr2::request()] with retry policy configured.
+#' @returns Modified [httr2::request()] with retry policy configured.
 #'
 #' @export
 #'
@@ -414,8 +414,8 @@ entrata_req_pagination <- function(
 #' @seealso [httr2::req_retry()], [entrata_resp_is_transient()], [entrata_resp_retry_after()]
 entrata_req_retry <- function(
   req,
-  max_tries = 5,
-  max_seconds = 30,
+  max_tries = 10,
+  max_seconds = 60,
   retry_on_failure = TRUE,
   is_transient = entrata_resp_is_transient,
   backoff = .exponential_backoff,

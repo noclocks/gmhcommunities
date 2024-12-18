@@ -50,7 +50,7 @@
 #' @param request_id The ID of the request.
 #' @param ... Additional parameters passed to the API endpoint.
 #'
-#' @return API response
+#' @returns API response
 #'
 #' @export
 #'
@@ -442,7 +442,7 @@ entrata_resp_parse_lease_activities <- function(resp_parsed) {
 #'
 #' @param lease_data The lease data to summarize.
 #'
-#' @return A summarized tibble.
+#' @returns A summarized tibble.
 #'
 #' @export
 #'

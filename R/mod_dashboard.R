@@ -44,17 +44,19 @@ mod_dashboard_ui <- function(id) {
 
   ns <- shiny::NS(id)
 
+
+
   htmltools::tagList(
     bslib::layout_columns(
       col_widths = c(4, 4, 4),
       fill = FALSE,
       bslib::value_box(
         title = "Occupancy Rate",
-        value = shiny::textOutput("occupancy", inline = TRUE),
+        value = shiny::uiOutput(ns("occupancy")),
         showcase = bsicons::bs_icon("house-check-fill"),
         theme = "primary",
         full_screen = TRUE,
-        htmltools::tags$p("2% increase from last month", class = "small text-muted")
+
       ),
       bslib::value_box(
         title = "New Leases",
@@ -127,7 +129,11 @@ mod_dashboard_server <- function(id) {
 
       pre_lease_summary_data <- qs::qread(pkg_sys("extdata/data/pre_lease_summary_data.qs"))
 
-      output$occupancy <- shiny::renderText("95%")
+      output$occupancy <- shiny::renderUI({
+        pct <- sum(pre_lease_summary_data$occupied_count) / sum(pre_lease_summary_data$available_count)
+        format_percent_increase_decrease(pct)
+      })
+
       output$leases <- shiny::renderText("23")
       output$revenue <- shiny::renderText("$127,500")
 

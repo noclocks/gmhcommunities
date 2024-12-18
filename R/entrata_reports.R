@@ -99,7 +99,7 @@
 #' @param progress (Optional) Logical indicating if a progress indicator should be
 #'   displayed. Defaults to `FALSE`.
 #'
-#' @return A parsed response containing report related data depending on which
+#' @returns A parsed response containing report related data depending on which
 #'   endpoint method is used.
 #'
 #' @export
@@ -166,7 +166,7 @@ entrata_reports <- function(
 #' @param latest_only Logical. If `TRUE`, only the latest version of each report
 #'   will be returned. Defaults to `TRUE`.
 #'
-#' @return A tibble containing the list of available reports.
+#' @returns A tibble containing the list of available reports.
 #'
 #' @export
 entrata_reports_list <- function(
@@ -293,7 +293,7 @@ entrata_reports_info <- function(
 #'
 #' @param report The report name. Must be a valid report name.
 #'
-#' @return The latest version of the specified report.
+#' @returns The latest version of the specified report.
 #'
 #' @export
 #'

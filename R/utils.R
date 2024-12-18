@@ -35,7 +35,7 @@
 #'
 #' @param old,new lists
 #'
-#' @return updated list
+#' @returns updated list
 #'
 #' @seealso [utils::modifyList()]
 #'
@@ -56,7 +56,7 @@ modify_list <- function(old, new) {
 #'
 #' @param ... Path to file.
 #'
-#' @return Path to file.
+#' @returns Path to file.
 #'
 #' @seealso [base::system.file()]
 #'

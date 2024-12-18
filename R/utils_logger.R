@@ -23,7 +23,7 @@
 #' @param log_file The name of the log file to write to. Default is `"entrata.log"`.
 #' @param ... Additional arguments to pass to the logger. Currently not in use.
 #'
-#' @return NULL
+#' @returns NULL
 #'
 #' @export
 #'
@@ -59,7 +59,7 @@ entrata_logger_init <- function(
 #'
 #' @param req The `httr2::request()` object.
 #'
-#' @return NULL
+#' @returns NULL
 #'
 #' @export
 #'
@@ -101,7 +101,7 @@ entrata_req_log <- function(req) {
 #'
 #' @param resp The `httr2::response()` object.
 #'
-#' @return NULL
+#' @returns NULL
 #'
 #' @export
 #'

@@ -43,12 +43,12 @@ mod_market_survey_leasing_summary_ui <- function(id) {
   ns <- shiny::NS(id)
 
   htmltools::tagList(
-    htmltools::tags$head(
-      shinyjs::useShinyjs(),
-      waiter::use_waiter(),
-      shinyWidgets::useSweetAlert(),
-      waiter::waiterShowOnLoad(waiter::spin_fading_circles())
-    ),
+    # htmltools::tags$head(
+    #   shinyjs::useShinyjs(),
+    #   waiter::use_waiter(),
+    #   shinyWidgets::useSweetAlert(),
+    #   waiter::waiterShowOnLoad(waiter::spin_fading_circles())
+    # ),
     bslib::card(
       bslib::card_header(
         htmltools::tags$span(
@@ -348,14 +348,14 @@ mod_market_survey_leasing_summary_server <- function(
         if (!is.null(app_state$db_data)) {
 
           # Lease Launch Date
-          shinyWidgets::updateAirDatepickerInput(
+          shinyWidgets::updateAirDateInput(
             session = session,
             inputId = "lease_launch_date",
             value = app_state$db_data$lease_launch_date
           )
 
           # Renewal Launch Date
-          shinyWidgets::updateAirDatepickerInput(
+          shinyWidgets::updateAirDateInput(
             session = session,
             inputId = "renewal_launch_date",
             value = app_state$db_data$renewal_launch_date
@@ -488,16 +488,37 @@ mod_market_survey_leasing_summary_demo <- function() {
 
   pkgload::load_all()
 
+  pool <- db_connect(user_id = 1)
+
   ui <- bslib::page_fluid(
     title = "Demo",
-    theme = bslib::bs_theme(version = 5),
+    theme = app_theme(),
     lang = "en",
     mod_market_survey_leasing_summary_ui("demo")
   )
 
   server <- function(input, output, session) {
-    mod_market_survey_leasing_summary_server("demo")
+
+    session$userData$user <- shiny::reactive({
+      user_id <- 1
+      user_email <- "jimmy.briggs@noclocks.dev"
+      user_role <- "admin"
+      list(
+        user_id = user_id,
+        email = user_email,
+        role = user_role
+      )
+    })
+
+    mod_market_survey_leasing_summary_server(
+      "demo",
+      selected_property = shiny::reactive({ "739085" }),
+      pool = pool
+    )
+
   }
 
-  shiny::shinyApp(ui, server)
+  bslib::run_with_themer(shinyApp(ui, server))
 }
+
+

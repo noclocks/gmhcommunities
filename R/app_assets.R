@@ -33,7 +33,7 @@
 #' @param css_path Path to the CSS file. Defaults to `"www/styles/css/styles.min.css"`.
 #' @param minify Logical. Should the CSS be minified? Defaults to `TRUE`.
 #'
-#' @return
+#' @returns
 #' - `app_styles()`: HTML `<head>` tag with a link to the CSS file.
 #' - `compile_styles()`: Compiled CSS file.
 #' - `app_favicon()`: HTML `<head>` tag with a link to the favicon.
@@ -123,6 +123,21 @@ app_js <- function(
   )
 
 }
+
+
+# logo --------------------------------------------------------------------
+
+app_logo <- function(
+  path = "www/images/gmh/logos/gmh-logo.svg"
+) {
+  htmltools::tags$head(
+    htmltools::tags$script(
+
+    )
+  )
+}
+
+
 
 # favicon -----------------------------------------------------------
 

@@ -14,7 +14,7 @@
 #'
 #' @param resp `httr2::response` object.
 #'
-#' @return `list` with the response body.
+#' @returns `list` with the response body.
 #'
 #' @export
 #'
@@ -47,7 +47,7 @@ entrata_resp_body_parse <- function(resp) {
 #'
 #' @param resp `httr2::response` object.
 #'
-#' @return the response body.
+#' @returns the response body.
 #'
 #' @export
 #'
@@ -67,7 +67,7 @@ entrata_resp_body_success <- function(resp) {
 #'
 #' @param resp `httr2::response` object.
 #'
-#' @return the response error body.
+#' @returns the response error body.
 #'
 #' @export
 #'
@@ -104,7 +104,7 @@ entrata_resp_body_error <- function(resp) {
 #'
 #' @param resp `httr2::response` object.
 #'
-#' @return `logical` indicating if the response is transient.
+#' @returns `logical` indicating if the response is transient.
 #'
 #' @export
 #'
@@ -112,11 +112,21 @@ entrata_resp_body_error <- function(resp) {
 entrata_resp_is_transient <- function(resp) {
 
   check_response(resp)
+
+  # check for response error
+  if (entrata_resp_is_error(resp)) {
+    return(TRUE)
+  }
+
+  # check for transient status codes
   transient_status_codes <- c(429, 500, 502, 503, 504)
   status_code_transient <- httr2::resp_status(resp) %in% transient_status_codes
+
+  # check for rate limit headers
   rate_limit_info <- entrata_resp_parse_rate_limit_headers(resp)
   rate_limit_transient <- all(sapply(rate_limit_info$remaining, function(x) x == 0))
 
+  # return if any of the conditions are met
   return(
     any(status_code_transient, rate_limit_transient)
   )
@@ -129,7 +139,7 @@ entrata_resp_is_transient <- function(resp) {
 #'
 #' @param resp `httr2::response` object.
 #'
-#' @return `numeric` indicating the time to wait before retrying,
+#' @returns `numeric` indicating the time to wait before retrying,
 #'   or `NULL` if not found.
 #'
 #' @export
@@ -154,7 +164,7 @@ entrata_resp_retry_after <- function(resp) {
 entrata_resp_parse_retry_after_header <- function(resp) {
 
   if (!httr2::resp_header_exists(resp, "Retry-After")) {
-    return(NULL)
+    return(NA)
   }
 
   header <- httr2::resp_header(resp, header = "Retry-After")

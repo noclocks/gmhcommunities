@@ -40,6 +40,30 @@ card_title <- function(title, icon = NULL, ...) {
 #' @export
 #'
 #' @importFrom shinycustomloader withLoader
+#'
+#' @examplesIf interactive()
+#' library(shiny)
+#'
+#' ui <- fluidPage(
+#'   with_loader(
+#'     plotOutput("plot")
+#'   ),
+#'   plotOutput("plot") |>
+#'     with_loader()
+#'   )
+#' )
+#'
+#' server <- function(input, output, session) {
+#'
+#'   output$plot <- renderPlot({
+#'     plot(1:10)
+#'   })
+#'
+#'   outputOptions(output, "plot", suspendWhenHidden = FALSE)
+#'
+#' }
+#'
+#' shinyApp(ui = ui, server = server)
 with_loader <- function(
   output,
   ...
@@ -65,31 +89,30 @@ with_loader <- function(
 #'
 #' @return The input element with the tooltip added.
 #'
+#' @seealso [bslib::tooltip()]
+#'
 #' @export
 #'
 #' @importFrom bslib tooltip
 #' @importFrom bsicons bs_icon
 #' @importFrom htmltools tags
 #'
-#' @examples
-#' if (interactive()) {
-#'   library(shiny)
-#'   library(bslib)
-#'   library(bsicons)
+#' @examplesIf interactive()
+#' library(shiny)
+#' library(bslib)
+#' library(bsicons)
 #'
-#'   ui <- fluidPage(
-#'     with_tooltip(
-#'       textInput("text", "Text Input"),
-#'       "This is a tooltip."
-#'       ),
-#'       # or pipe the input into the function
-#'       textInput("text", "Text Input") |>
-#'         with_tooltip("This is a tooltip.")
-#'   )
+#' ui <- fluidPage(
+#'   with_tooltip(
+#'     textInput("text", "Text Input"),
+#'     "This is a tooltip."
+#'     ),
+#'     # or pipe the input into the function
+#'     textInput("text", "Text Input") |>
+#'       with_tooltip("This is a tooltip.")
+#' )
 #'
-#'   shinyApp(ui = ui, server = function(input, output, session) {})
-#'
-#' }
+#' shinyApp(ui = ui, server = function(input, output, session) {})
 with_tooltip <- function(input, tooltip_text, placement = "right") {
 
   current_label <- input$children[[1]]$children[[1]]
