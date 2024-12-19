@@ -38,12 +38,12 @@
 #'
 #' @importFrom httr2 req_verbose req_progress req_perform
 entrata_properties <- function(
-    request_id = NULL,
-    entrata_config = get_entrata_config(),
-    method_name = "getProperties",
-    method_params = list(propertyIds = NULL),
-    verbose = FALSE,
-    progress = FALSE
+  method_name = c("getProperties", "getFloorPlans", "getWebsites"),
+  method_params = list(propertyIds = NULL),
+  request_id = NULL,
+  entrata_config = get_entrata_config(),
+  verbose = FALSE,
+  progress = FALSE
 ) {
 
   validate_entrata_method(endpoint = "properties", method = method_name)

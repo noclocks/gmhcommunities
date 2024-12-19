@@ -1,7 +1,7 @@
 
 entrata_config <- get_entrata_config()
 property_ids <- mem_get_entrata_property_ids() |> unname() |> unlist()
-leasing_period_start_date <- get_next_pre_lease_period_start_date()
+leasing_period_start_date <- get_next_pre_lease_period_start_date() |> format_date_for_entrata()
 leasing_period_type <- "date"
 weeks_left_to_lease <- get_weeks_left_to_lease()
 
@@ -13,7 +13,7 @@ period <- list(
 summarize_by <- "property" # "unit_type", "floorplan_name", "do_not_summarize"
 group_by <- "do_not_group" # "do_not_group", "unit_type", "floorplan_name", "lease_term"),
 consider_pre_leased_on <- "33" # "33", "32", "34", "41", "42", "43", "44"
-charge_code_detail <- "0"
+charge_code_detail <- "1"
 space_options <- "do_not_show" # "do_not_show", "show_preferred", "show_actual"
 additional_units_shown <- "available" # "available", "excluded"
 combine_unit_spaces_with_same_lease <- "0"
@@ -41,21 +41,18 @@ reports_req <- httr2::request(base_url = entrata_config$base_url) |>
           reportVersion = "3.2",
           filters = list(
             property_group_ids = as.list(as.character(property_ids)),
-            period = list(
-              date = leasing_period_start_date,
-              period_type = "date"
-            ),
-            summarize_by = "unit_type",
-            group_by = "unit_type",
-            consider_pre_leased_on = 32,
-            charge_code_detail = 0,
-            space_options = 'do_not_show',
-            additional_units_shown = 'available',
-            combine_unit_spaces_with_same_lease = 0,
-            consolidate_by = "no_consolidation",
-            arrange_by_property = 0,
+            period = period,
+            summarize_by = summarize_by,
+            group_by = group_by,
+            consider_pre_leased_on = consider_pre_leased_on,
+            charge_code_detail = charge_code_detail,
+            space_options = space_options,
+            additional_units_shown = additional_units_shown,
+            combine_unit_spaces_with_same_lease = combine_unit_spaces_with_same_lease,
+            consolidate_by = consolidate_by,
+            arrange_by_property = arrange_by_property,
             subtotals = list("summary", "details"),
-            yoy = 1
+            yoy = yoy
           )
         )
       )
@@ -92,12 +89,11 @@ queue_req <- httr2::request(base_url = entrata_config$base_url) |>
       )
     )
   ) |>
-  entrata_req_retry(max_tries = 10)
+  entrata_req_retry(max_tries = 10, max_seconds = 120)
 
 httptest2::capture_requests({
   queue_resp <- httr2::req_perform(queue_req)
 })
-
 
 queue_resp_data <- queue_resp |> httr2::resp_body_json() |>
   purrr::pluck("response", "result", "reportData")
@@ -113,8 +109,649 @@ report_details_data <- queue_resp_data |>
 dplyr::glimpse(report_summary_data)
 dplyr::glimpse(report_details_data)
 
-readr::write_csv(report_summary_data, "data-raw/data/working/2024-12-17-entrata_pre_lease_report_summary.csv")
-readr::write_csv(report_details_data, "data-raw/data/working/2024-12-17-entrata_pre_lease_report_details.csv")
+report_date <- lubridate::today()
+
+report_summary_data_for_db <- report_summary_data |>
+  dplyr::mutate(
+    report_date = report_date,
+    property_id = as.integer(property_id)
+  ) |>
+  dplyr::select(
+    report_date,
+    property_id,
+    property_name,
+    avg_sqft,
+    avg_advertised_rate,
+    units,
+    excluded_unit_count,
+    rentable_unit_count,
+    avg_scheduled_rent,
+    occupied_count,
+    tidyselect::starts_with("started"),
+    tidyselect::starts_with("partially_completed"),
+    tidyselect::starts_with("completed"),
+    tidyselect::starts_with("approved"),
+    tidyselect::starts_with("preleased"),
+    variance,
+    available_count,
+    scheduled_rent_total
+  )
+
+report_details_data_for_db <- report_details_data |>
+  dplyr::mutate(
+    report_date = report_date,
+    property_id = as.integer(property_id),
+    lease_start = lubridate::mdy(lease_start),
+    lease_end = lubridate::mdy(lease_end),
+    lease_started_on = lubridate::mdy(lease_started_on),
+    lease_partially_completed_on = lubridate::mdy(lease_partially_completed_on),
+    lease_completed_on = lubridate::mdy(lease_completed_on),
+    lease_approved_on = lubridate::mdy(lease_approved_on),
+    move_in_date = lubridate::mdy(move_in_date)
+  ) |>
+  dplyr::select(
+    report_date,
+    property_id,
+    property_name,
+    bldg_unit,
+    unit_type,
+    sqft,
+    resident_name = resident,
+    resident_id,
+    lease_id = lease_id_display,
+    resident_email = email,
+    resident_phone_number = phone_number,
+    resident_gender = gender,
+    lease_status,
+    lease_sub_status,
+    lease_occupancy_type,
+    lease_term_name,
+    lease_term,
+    space_option_preferred,
+    space_option,
+    lease_start,
+    lease_end,
+    lease_started_on,
+    lease_partially_completed_on,
+    lease_completed_on,
+    lease_approved_on,
+    move_in_date,
+    deposit_charged,
+    deposit_held,
+    market_rent,
+    budgeted_rent,
+    advertised_rate,
+    ledger_name,
+    charge_code,
+    scheduled_rent,
+    actual_charges,
+    scheduled_rent_total,
+    leasing_agent
+  )
+
+readr::write_csv(report_summary_data_for_db, "data-raw/data/working/2024-12-18-entrata_pre_lease_report_summary.csv")
+readr::write_csv(report_details_data_for_db, "data-raw/data/working/2024-12-18-entrata_pre_lease_report_details.csv")
+
+# database
+
+check_db_conn(conn)
+
+DBI::dbExecute(
+  conn,
+  "DROP TABLE IF EXISTS \"entrata\".\"pre_lease_summary\";"
+)
+
+DBI::dbExecute(
+  conn,
+  "CREATE TABLE IF NOT EXISTS \"entrata\".\"pre_lease_summary\" (
+    report_date DATE NOT NULL DEFAULT CURRENT_DATE,
+    property_id INTEGER NOT NULL REFERENCES entrata.properties(property_id),
+    property_name VARCHAR(255) NOT NULL,
+    avg_sqft DECIMAL(10,2),
+    avg_advertised_rate DECIMAL(10,2),
+    units INTEGER,
+    excluded_unit_count INT,
+    rentable_unit_count INT,
+    avg_scheduled_rent DECIMAL(10,2),
+    occupied_count INT,
+    started_new_count_prior INT,
+    started_new_count INT,
+    started_renewal_count_prior INT,
+    started_renewal_count INT,
+    started_count_prior INT,
+    started_count INT,
+    started_percent DECIMAL(5,2),
+    partially_completed_new_count_prior INT,
+    partially_completed_new_count INT,
+    partially_completed_renewal_count_prior INT,
+    partially_completed_renewal_count INT,
+    partially_completed_count_prior INT,
+    partially_completed_count INT,
+    partially_completed_percent DECIMAL(5,2),
+    completed_new_count_prior INT,
+    completed_new_count INT,
+    completed_renewal_count_prior INT,
+    completed_renewal_count INT,
+    completed_count_prior INT,
+    completed_count INT,
+    completed_percent DECIMAL(5,2),
+    approved_new_count_prior INT,
+    approved_new_count INT,
+    approved_renewal_count_prior INT,
+    approved_renewal_count INT,
+    approved_count_prior INT,
+    approved_count INT,
+    approved_percent DECIMAL(5,2),
+    preleased_new_count_prior INT,
+    preleased_new_count INT,
+    preleased_renewal_count_prior INT,
+    preleased_renewal_count INT,
+    preleased_count_prior INT,
+    preleased_count INT,
+    preleased_percent_prior DECIMAL(5,2),
+    preleased_percent DECIMAL(5,2),
+    variance DECIMAL(10,2),
+    available_count INT,
+    scheduled_rent_total DECIMAL(12,2),
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (report_date, property_id)
+  )"
+)
+
+DBI::dbWriteTable(
+  conn = conn,
+  name = DBI::SQL("entrata.pre_lease_summary"),
+  value = report_summary_data_for_db,
+  append = TRUE
+)
+
+DBI::dbExecute(
+  conn,
+  "DROP TABLE IF EXISTS \"entrata\".\"pre_lease_details\";"
+)
+
+DBI::dbExecute(
+  conn,
+  "CREATE TABLE IF NOT EXISTS \"entrata\".\"pre_lease_details\" (
+    report_date DATE NOT NULL DEFAULT CURRENT_DATE,
+    property_id INTEGER NOT NULL REFERENCES entrata.properties(property_id),
+    property_name TEXT NOT NULL,
+    bldg_unit TEXT,
+    unit_type TEXT,
+    sqft DECIMAL(10,2),
+    resident_name TEXT,
+    resident_id INTEGER,
+    lease_id TEXT NOT NULL,
+    resident_email TEXT,
+    resident_phone_number TEXT,
+    resident_gender TEXT,
+    lease_status TEXT,
+    lease_sub_status TEXT,
+    lease_occupancy_type TEXT,
+    lease_term_name TEXT,
+    lease_term INTEGER,
+    space_option_preferred TEXT,
+    space_option TEXT,
+    lease_start DATE,
+    lease_end DATE,
+    lease_started_on DATE,
+    lease_partially_completed_on DATE,
+    lease_completed_on DATE,
+    lease_approved_on DATE,
+    move_in_date DATE,
+    deposit_charged DECIMAL(10,2),
+    deposit_held DECIMAL(10,2),
+    market_rent DECIMAL(10,2),
+    budgeted_rent DECIMAL(10,2),
+    advertised_rate DECIMAL(10,2),
+    ledger_name TEXT,
+    charge_code TEXT,
+    scheduled_rent DECIMAL(10,2),
+    actual_charges DECIMAL(10,2),
+    scheduled_rent_total DECIMAL(12,2),
+    leasing_agent TEXT,
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
+  )"
+)
+
+
+DBI::dbWriteTable(
+  conn = conn,
+  name = DBI::SQL("entrata.pre_lease_details"),
+  value = report_details_data_for_db,
+  append = TRUE
+)
+
+
+weekly_pre_lease_data <- public_summary_report_from_db |>
+  dplyr::select(
+    property_name,
+    seven_new,
+    seven_renewal,
+    seven_total,
+    seven_percent_gained
+  ) |>
+  dplyr::right_join(
+    dplyr::select(
+      report_summary_data_for_db,
+      property_id,
+      property_name
+    ),
+    by = "property_name"
+  ) |>
+  dplyr::select(
+    property_id,
+    weekly_new = seven_new,
+    weekly_renewal = seven_renewal
+  )
+
+DBI::dbExecute(
+  conn,
+  "DROP TABLE IF EXISTS \"entrata\".\"pre_lease_weekly\";"
+)
+
+DBI::dbExecute(
+  conn,
+  "CREATE TABLE IF NOT EXISTS \"entrata\".\"pre_lease_weekly\" (
+    report_date DATE NOT NULL DEFAULT CURRENT_DATE,
+    property_id INTEGER NOT NULL REFERENCES entrata.properties(property_id),
+    weekly_new INTEGER,
+    weekly_renewal INTEGER,
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (report_date, property_id)
+  )"
+)
+
+
+DBI::dbWriteTable(
+  conn = conn,
+  name = DBI::SQL("entrata.pre_lease_weekly"),
+  value = weekly_pre_lease_data,
+  append = TRUE
+)
+
+summary_tbl_db <- dplyr::tbl(conn, I("entrata.pre_lease_summary")) |>
+  dplyr::left_join(
+    dplyr::tbl(conn, I("gmh.model_beds")) |>
+      dplyr::select(
+        entrata_property_id,
+        gmh_property_id,
+        model_beds
+      ),
+    by = c("property_id" = "entrata_property_id")
+  ) |>
+  dplyr::left_join(
+    dplyr::tbl(conn, I("gmh.investment_partner_assignments")) |>
+      dplyr::select(
+        entrata_property_id,
+        partner_name
+      ),
+    by = c("property_id" = "entrata_property_id")
+  ) |>
+  dplyr::left_join(
+    dplyr::tbl(conn, I("entrata.pre_lease_weekly")) |>
+      dplyr::select(
+        property_id,
+        weekly_new,
+        weekly_renewal
+      ),
+    by = c("property_id")
+  ) |>
+  dplyr::transmute(
+    report_date = report_date,
+    entrata_property_id = property_id,
+    gmh_property_id = gmh_property_id,
+    property_name = property_name,
+    total_beds = units,
+    model_beds = model_beds,
+    current_occupied = occupied_count,
+    current_occupancy = occupied_count / total_beds,
+    current_total_new = approved_new_count + partially_completed_new_count + completed_new_count,
+    current_total_renewals = approved_renewal_count + partially_completed_renewal_count + completed_renewal_count,
+    current_total_leases = current_total_new + current_total_renewals,
+    current_preleased_percent = current_total_leases / total_beds,
+    prior_total_new = approved_new_count_prior + partially_completed_new_count_prior + completed_new_count_prior,
+    prior_total_renewals = approved_renewal_count_prior + partially_completed_renewal_count_prior + completed_renewal_count_prior,
+    prior_total_leases = approved_count_prior + partially_completed_count_prior + completed_count_prior,
+    prior_preleased_percent = prior_total_leases / total_beds,
+    yoy_variance_count = current_total_leases - prior_total_leases,
+    yoy_variance_percent = current_preleased_percent - prior_preleased_percent,
+    weekly_new = weekly_new,
+    weekly_renewal = weekly_renewal,
+    weekly_total = weekly_new + weekly_renewal,
+    weekly_percent_gained = weekly_total / total_beds,
+    beds_left = total_beds - current_total_leases,
+    vel_90 = beds_left * .9 / weeks_left_to_lease,
+    vel_95 = beds_left * .95 / weeks_left_to_lease,
+    vel_100 = beds_left * 1 / weeks_left_to_lease
+  ) |>
+  dplyr::show_query() |>
+  clipr::write_clip()
+
+DBI::dbExecute(
+  conn,
+  "DROP VIEW IF EXISTS \"entrata\".\"pre_lease_summary_tbl_view\";"
+)
+
+DBI::dbExecute(
+  conn,
+  'CREATE OR REPLACE VIEW "entrata"."pre_lease_summary_tbl_view" AS
+SELECT
+  "report_date"::DATE,
+  "entrata_property_id"::INTEGER,
+  "gmh_property_id"::INTEGER,
+  "property_name",
+  "total_beds"::INTEGER,
+  "model_beds"::INTEGER,
+  "current_occupied"::INTEGER,
+  CAST("current_occupancy" AS DECIMAL(5,4)) AS "current_occupancy",
+  "current_total_new"::INTEGER,
+  "current_total_renewals"::INTEGER,
+  "current_total_leases"::INTEGER,
+  CAST("current_preleased_percent" AS DECIMAL(5,4)) AS "current_preleased_percent",
+  "prior_total_new"::INTEGER,
+  "prior_total_renewals"::INTEGER,
+  "prior_total_leases"::INTEGER,
+  CAST("prior_preleased_percent" AS DECIMAL(5,4)) AS "prior_preleased_percent",
+  "yoy_variance_count"::INTEGER,
+  CAST("yoy_variance_percent" AS DECIMAL(5,4)) AS "yoy_variance_percent",
+  "weekly_new"::INTEGER,
+  "weekly_renewal"::INTEGER,
+  "weekly_total"::INTEGER,
+  CAST("weekly_percent_gained" AS DECIMAL(5,4)) AS "weekly_percent_gained",
+  "beds_left"::INTEGER,
+  CAST("beds_left" * 0.9 / NULLIF(
+    EXTRACT(DAY FROM (DATE_TRUNC(\'YEAR\', "report_date") + INTERVAL \'8 MONTHS\' - "report_date")) / 7, 0
+  ) AS DECIMAL(10,2)) AS "vel_90",
+  CAST("beds_left" * 0.95 / NULLIF(
+    EXTRACT(DAY FROM (DATE_TRUNC(\'YEAR\', "report_date") + INTERVAL \'8 MONTHS\' - "report_date")) / 7, 0
+  ) AS DECIMAL(10,2)) AS "vel_95",
+  CAST("beds_left" * 1.0 / NULLIF(
+    EXTRACT(DAY FROM (DATE_TRUNC(\'YEAR\', "report_date") + INTERVAL \'8 MONTHS\' - "report_date")) / 7, 0
+  ) AS DECIMAL(10,2)) AS "vel_100"
+FROM (
+  SELECT
+    *,
+    CAST("weekly_total"::DECIMAL / NULLIF("total_beds", 0) AS DECIMAL(5,4)) AS "weekly_percent_gained",
+    "total_beds" - "current_total_leases" AS "beds_left"
+  FROM (
+    SELECT *, "weekly_new" + "weekly_renewal" AS "weekly_total"
+    FROM (
+      SELECT
+        *,
+        CAST("current_preleased_percent" - "prior_preleased_percent" AS DECIMAL(5,4)) AS "yoy_variance_percent"
+      FROM (
+        SELECT
+          *,
+          CAST("prior_total_leases"::DECIMAL / NULLIF("total_beds", 0) AS DECIMAL(5,4)) AS "prior_preleased_percent",
+          "current_total_leases" - "prior_total_leases" AS "yoy_variance_count"
+        FROM (
+          SELECT
+            *,
+            CAST("current_total_leases"::DECIMAL / NULLIF("total_beds", 0) AS DECIMAL(5,4)) AS "current_preleased_percent",
+            ("approved_new_count_prior" + "partially_completed_new_count_prior") + "completed_new_count_prior" AS "prior_total_new",
+            ("approved_renewal_count_prior" + "partially_completed_renewal_count_prior") + "completed_renewal_count_prior" AS "prior_total_renewals",
+            ("approved_count_prior" + "partially_completed_count_prior") + "completed_count_prior" AS "prior_total_leases"
+          FROM (
+            SELECT
+              *,
+              "current_total_new" + "current_total_renewals" AS "current_total_leases"
+            FROM (
+              SELECT
+                *,
+                CAST("occupied_count"::DECIMAL / NULLIF("total_beds", 0) AS DECIMAL(5,4)) AS "current_occupancy",
+                ("approved_new_count" + "partially_completed_new_count") + "completed_new_count" AS "current_total_new",
+                ("approved_renewal_count" + "partially_completed_renewal_count") + "completed_renewal_count" AS "current_total_renewals"
+              FROM (
+                SELECT
+                  "pre_lease_summary"."report_date"::DATE AS "report_date",
+                  "pre_lease_summary"."property_id"::INTEGER AS "entrata_property_id",
+                  "model_beds"."gmh_property_id"::INTEGER AS "gmh_property_id",
+                  "pre_lease_summary"."property_name",
+                  "pre_lease_summary"."units"::INTEGER AS "total_beds",
+                  "model_beds"."model_beds"::INTEGER AS "model_beds",
+                  "pre_lease_summary"."occupied_count"::INTEGER AS "occupied_count",
+                  "pre_lease_summary"."occupied_count"::INTEGER AS "current_occupied",
+                  "pre_lease_summary"."avg_sqft"::DECIMAL(10,2),
+                  "pre_lease_summary"."avg_advertised_rate"::DECIMAL(10,2),
+                  "pre_lease_summary"."excluded_unit_count"::INTEGER,
+                  "pre_lease_summary"."rentable_unit_count"::INTEGER,
+                  "pre_lease_summary"."avg_scheduled_rent"::DECIMAL(10,2),
+                  "pre_lease_summary"."started_new_count_prior"::INTEGER,
+                  "pre_lease_summary"."started_new_count"::INTEGER,
+                  "pre_lease_summary"."started_renewal_count_prior"::INTEGER,
+                  "pre_lease_summary"."started_renewal_count"::INTEGER,
+                  "pre_lease_summary"."started_count_prior"::INTEGER,
+                  "pre_lease_summary"."started_count"::INTEGER,
+                  "pre_lease_summary"."started_percent"::DECIMAL(5,4),
+                  "pre_lease_summary"."partially_completed_new_count_prior"::INTEGER,
+                  "pre_lease_summary"."partially_completed_new_count"::INTEGER,
+                  "pre_lease_summary"."partially_completed_renewal_count_prior"::INTEGER,
+                  "pre_lease_summary"."partially_completed_renewal_count"::INTEGER,
+                  "pre_lease_summary"."partially_completed_count_prior"::INTEGER,
+                  "pre_lease_summary"."partially_completed_count"::INTEGER,
+                  "pre_lease_summary"."partially_completed_percent"::DECIMAL(5,4),
+                  "pre_lease_summary"."completed_new_count_prior"::INTEGER,
+                  "pre_lease_summary"."completed_new_count"::INTEGER,
+                  "pre_lease_summary"."completed_renewal_count_prior"::INTEGER,
+                  "pre_lease_summary"."completed_renewal_count"::INTEGER,
+                  "pre_lease_summary"."completed_count_prior"::INTEGER,
+                  "pre_lease_summary"."completed_count"::INTEGER,
+                  "pre_lease_summary"."completed_percent"::DECIMAL(5,4),
+                  "pre_lease_summary"."approved_new_count_prior"::INTEGER,
+                  "pre_lease_summary"."approved_new_count"::INTEGER,
+                  "pre_lease_summary"."approved_renewal_count_prior"::INTEGER,
+                  "pre_lease_summary"."approved_renewal_count"::INTEGER,
+                  "pre_lease_summary"."approved_count_prior"::INTEGER,
+                  "pre_lease_summary"."approved_count"::INTEGER,
+                  "pre_lease_summary"."approved_percent"::DECIMAL(5,4),
+                  "pre_lease_summary"."preleased_new_count_prior"::INTEGER,
+                  "pre_lease_summary"."preleased_new_count"::INTEGER,
+                  "pre_lease_summary"."preleased_renewal_count_prior"::INTEGER,
+                  "pre_lease_summary"."preleased_renewal_count"::INTEGER,
+                  "pre_lease_summary"."preleased_count_prior"::INTEGER,
+                  "pre_lease_summary"."preleased_count"::INTEGER,
+                  "pre_lease_summary"."preleased_percent_prior"::DECIMAL(5,4),
+                  "pre_lease_summary"."preleased_percent"::DECIMAL(5,4),
+                  "pre_lease_summary"."variance"::DECIMAL(10,2),
+                  "pre_lease_summary"."available_count"::INTEGER,
+                  "pre_lease_summary"."scheduled_rent_total"::DECIMAL(10,2),
+                  "pre_lease_summary"."created_at"::TIMESTAMP,
+                  "investment_partner_assignments"."partner_name",
+                  "pre_lease_weekly"."weekly_new"::INTEGER,
+                  "pre_lease_weekly"."weekly_renewal"::INTEGER
+                FROM "entrata"."pre_lease_summary"
+                LEFT JOIN "gmh"."model_beds"
+                  ON ("pre_lease_summary"."property_id" = "model_beds"."entrata_property_id")
+                LEFT JOIN "gmh"."investment_partner_assignments"
+                  ON ("pre_lease_summary"."property_id" = "investment_partner_assignments"."entrata_property_id")
+                LEFT JOIN "entrata"."pre_lease_weekly"
+                  ON ("pre_lease_summary"."property_id" = "pre_lease_weekly"."property_id")
+              ) AS "q01"
+            ) AS "q01"
+          ) AS "q01"
+        ) AS "q01"
+      ) AS "q01"
+    ) AS "q01"
+  ) AS "q01"
+) AS "q01";'
+)
+
+DBI::dbExecute(
+  conn,
+  'CREATE OR REPLACE VIEW "entrata"."pre_lease_summary_tbl_view" AS
+SELECT
+  "report_date"::DATE,
+  "entrata_property_id"::INTEGER,
+  "gmh_property_id"::INTEGER,
+  "property_name",
+  "total_beds"::INTEGER,
+  "model_beds"::INTEGER,
+  "current_occupied"::INTEGER,
+  CAST("current_occupancy" AS DECIMAL(5,4)) AS "current_occupancy",
+  "current_total_new"::INTEGER,
+  "current_total_renewals"::INTEGER,
+  "current_total_leases"::INTEGER,
+  CAST("current_preleased_percent" AS DECIMAL(5,4)) AS "current_preleased_percent",
+  "prior_total_new"::INTEGER,
+  "prior_total_renewals"::INTEGER,
+  "prior_total_leases"::INTEGER,
+  CAST("prior_preleased_percent" AS DECIMAL(5,4)) AS "prior_preleased_percent",
+  "yoy_variance_count"::INTEGER,
+  CAST("yoy_variance_percent" AS DECIMAL(5,4)) AS "yoy_variance_percent",
+  "weekly_new"::INTEGER,
+  "weekly_renewal"::INTEGER,
+  "weekly_total"::INTEGER,
+  CAST("weekly_percent_gained" AS DECIMAL(5,4)) AS "weekly_percent_gained",
+  "beds_left"::INTEGER,
+  CASE
+  WHEN EXTRACT(MONTH FROM "report_date") < 9 THEN
+    CEIL(EXTRACT(EPOCH FROM (DATE_TRUNC(\'YEAR\', "report_date") + INTERVAL \'8 MONTHS\' - "report_date")) / (60 * 60 * 24 * 7))
+  ELSE
+    CEIL(EXTRACT(EPOCH FROM (DATE_TRUNC(\'YEAR\', "report_date") + INTERVAL \'1 YEAR 8 MONTHS\' - "report_date")) / (60 * 60 * 24 * 7))
+END AS "weeks_left_to_lease",
+CAST("beds_left" * 0.9 / NULLIF("weeks_left_to_lease", 0) AS DECIMAL(10,2)) AS "vel_90",
+CAST("beds_left" * 0.95 / NULLIF("weeks_left_to_lease", 0) AS DECIMAL(10,2)) AS "vel_95",
+CAST("beds_left" * 1.0 / NULLIF("weeks_left_to_lease", 0) AS DECIMAL(10,2)) AS "vel_100"
+FROM (
+SELECT
+    *,
+    CAST("weekly_total"::DECIMAL / NULLIF("total_beds", 0) AS DECIMAL(5,4)) AS "weekly_percent_gained",
+    "total_beds" - "current_total_leases" AS "beds_left"
+  FROM (
+    SELECT *, "weekly_new" + "weekly_renewal" AS "weekly_total"
+    FROM (
+      SELECT
+        *,
+        CAST("current_preleased_percent" - "prior_preleased_percent" AS DECIMAL(5,4)) AS "yoy_variance_percent"
+      FROM (
+        SELECT
+          *,
+          CAST("prior_total_leases"::DECIMAL / NULLIF("total_beds", 0) AS DECIMAL(5,4)) AS "prior_preleased_percent",
+          "current_total_leases" - "prior_total_leases" AS "yoy_variance_count"
+        FROM (
+          SELECT
+            *,
+            CAST("current_total_leases"::DECIMAL / NULLIF("total_beds", 0) AS DECIMAL(5,4)) AS "current_preleased_percent",
+            ("approved_new_count_prior" + "partially_completed_new_count_prior") + "completed_new_count_prior" AS "prior_total_new",
+            ("approved_renewal_count_prior" + "partially_completed_renewal_count_prior") + "completed_renewal_count_prior" AS "prior_total_renewals",
+            ("approved_count_prior" + "partially_completed_count_prior") + "completed_count_prior" AS "prior_total_leases"
+          FROM (
+            SELECT
+              *,
+              "current_total_new" + "current_total_renewals" AS "current_total_leases"
+            FROM (
+              SELECT
+                *,
+                CAST("occupied_count"::DECIMAL / NULLIF("total_beds", 0) AS DECIMAL(5,4)) AS "current_occupancy",
+                ("approved_new_count" + "partially_completed_new_count") + "completed_new_count" AS "current_total_new",
+                ("approved_renewal_count" + "partially_completed_renewal_count") + "completed_renewal_count" AS "current_total_renewals"
+              FROM (
+                SELECT
+                  "pre_lease_summary"."report_date"::DATE AS "report_date",
+                  "pre_lease_summary"."property_id"::INTEGER AS "entrata_property_id",
+                  "model_beds"."gmh_property_id"::INTEGER AS "gmh_property_id",
+                  "pre_lease_summary"."property_name",
+                  "pre_lease_summary"."units"::INTEGER AS "total_beds",
+                  "model_beds"."model_beds"::INTEGER AS "model_beds",
+                  "pre_lease_summary"."occupied_count"::INTEGER AS "occupied_count",
+                  "pre_lease_summary"."occupied_count"::INTEGER AS "current_occupied",
+                  "pre_lease_summary"."avg_sqft"::DECIMAL(10,2),
+                  "pre_lease_summary"."avg_advertised_rate"::DECIMAL(10,2),
+                  "pre_lease_summary"."excluded_unit_count"::INTEGER,
+                  "pre_lease_summary"."rentable_unit_count"::INTEGER,
+                  "pre_lease_summary"."avg_scheduled_rent"::DECIMAL(10,2),
+                  "pre_lease_summary"."started_new_count_prior"::INTEGER,
+                  "pre_lease_summary"."started_new_count"::INTEGER,
+                  "pre_lease_summary"."started_renewal_count_prior"::INTEGER,
+                  "pre_lease_summary"."started_renewal_count"::INTEGER,
+                  "pre_lease_summary"."started_count_prior"::INTEGER,
+                  "pre_lease_summary"."started_count"::INTEGER,
+                  "pre_lease_summary"."started_percent"::DECIMAL(5,4),
+                  "pre_lease_summary"."partially_completed_new_count_prior"::INTEGER,
+                  "pre_lease_summary"."partially_completed_new_count"::INTEGER,
+                  "pre_lease_summary"."partially_completed_renewal_count_prior"::INTEGER,
+                  "pre_lease_summary"."partially_completed_renewal_count"::INTEGER,
+                  "pre_lease_summary"."partially_completed_count_prior"::INTEGER,
+                  "pre_lease_summary"."partially_completed_count"::INTEGER,
+                  "pre_lease_summary"."partially_completed_percent"::DECIMAL(5,4),
+                  "pre_lease_summary"."completed_new_count_prior"::INTEGER,
+                  "pre_lease_summary"."completed_new_count"::INTEGER,
+                  "pre_lease_summary"."completed_renewal_count_prior"::INTEGER,
+                  "pre_lease_summary"."completed_renewal_count"::INTEGER,
+                  "pre_lease_summary"."completed_count_prior"::INTEGER,
+                  "pre_lease_summary"."completed_count"::INTEGER,
+                  "pre_lease_summary"."completed_percent"::DECIMAL(5,4),
+                  "pre_lease_summary"."approved_new_count_prior"::INTEGER,
+                  "pre_lease_summary"."approved_new_count"::INTEGER,
+                  "pre_lease_summary"."approved_renewal_count_prior"::INTEGER,
+                  "pre_lease_summary"."approved_renewal_count"::INTEGER,
+                  "pre_lease_summary"."approved_count_prior"::INTEGER,
+                  "pre_lease_summary"."approved_count"::INTEGER,
+                  "pre_lease_summary"."approved_percent"::DECIMAL(5,4),
+                  "pre_lease_summary"."preleased_new_count_prior"::INTEGER,
+                  "pre_lease_summary"."preleased_new_count"::INTEGER,
+                  "pre_lease_summary"."preleased_renewal_count_prior"::INTEGER,
+                  "pre_lease_summary"."preleased_renewal_count"::INTEGER,
+                  "pre_lease_summary"."preleased_count_prior"::INTEGER,
+                  "pre_lease_summary"."preleased_count"::INTEGER,
+                  "pre_lease_summary"."preleased_percent_prior"::DECIMAL(5,4),
+                  "pre_lease_summary"."preleased_percent"::DECIMAL(5,4),
+                  "pre_lease_summary"."variance"::DECIMAL(10,2),
+                  "pre_lease_summary"."available_count"::INTEGER,
+                  "pre_lease_summary"."scheduled_rent_total"::DECIMAL(10,2),
+                  "pre_lease_summary"."created_at"::TIMESTAMP,
+                  "investment_partner_assignments"."partner_name",
+                  "pre_lease_weekly"."weekly_new"::INTEGER,
+                  "pre_lease_weekly"."weekly_renewal"::INTEGER
+                FROM "entrata"."pre_lease_summary"
+                LEFT JOIN "gmh"."model_beds"
+                  ON ("pre_lease_summary"."property_id" = "model_beds"."entrata_property_id")
+                LEFT JOIN "gmh"."investment_partner_assignments"
+                  ON ("pre_lease_summary"."property_id" = "investment_partner_assignments"."entrata_property_id")
+                LEFT JOIN "entrata"."pre_lease_weekly"
+                  ON ("pre_lease_summary"."property_id" = "pre_lease_weekly"."property_id")
+              ) AS "q01"
+            ) AS "q01"
+          ) AS "q01"
+        ) AS "q01"
+      ) AS "q01"
+    ) AS "q01"
+  ) AS "q01"
+) AS "q01";'
+)
+
+pre_lease_summary_view_db <- dplyr::tbl(conn, I("entrata.pre_lease_summary_tbl_view")) |>
+  dplyr::collect()
+
+
+dplyr::transmute(
+  property_id = property_id,
+  property_name = property_name,
+  total_beds = units,
+  model_beds = 0,
+  current_occupied = occupied_count,
+  current_occupancy = occupied_count / total_beds,
+  current_total_new = approved_new_count + partially_completed_new_count + completed_new_count,
+  current_total_renewals = approved_renewal_count + partially_completed_renewal_count + completed_renewal_count,
+  current_total_leases = current_total_new + current_total_renewals,
+  current_preleased_percent = current_total_leases / total_beds,
+  current_preleased_percent_original = preleased_percent,
+  prior_total_new = approved_new_count_prior + partially_completed_new_count_prior + completed_new_count_prior,
+  prior_total_renewals = approved_renewal_count_prior + partially_completed_renewal_count_prior + completed_renewal_count_prior,
+  prior_total_leases = approved_count_prior + partially_completed_count_prior + completed_count_prior,
+  prior_preleased_percent = prior_total_leases / total_beds,
+  yoy_variance_count = current_total_leases - prior_total_leases,
+  yoy_variance_percent = current_preleased_percent - prior_preleased_percent,
+  weekly_new = 0,
+  weekly_renewal = 0,
+  weekly_total = 0,
+  weekly_percent_gained = 0,
+  beds_left = total_beds - current_total_leases,
+  vel_90 = beds_left * .9 / weeks_left_to_lease,
+  vel_95 = beds_left * .95 / weeks_left_to_lease,
+  vel_100 = beds_left * 1 / weeks_left_to_lease
+)
 
 #######################
 

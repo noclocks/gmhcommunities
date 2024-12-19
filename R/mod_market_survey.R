@@ -231,15 +231,6 @@ mod_market_survey_server <- function(
       ns <- session$ns
       cli::cat_rule("[Module]: mod_market_survey_server()")
 
-      shiny::observe({
-        prop <- selected_property()
-        cli::cli_alert_info(
-          "Selected Property: {.field {prop}}"
-        )
-      })
-
-
-
       # reactive values ---------------------------------------------------------
       db_metrics <- shiny::reactivePoll(
         intervalMillis = 30000,

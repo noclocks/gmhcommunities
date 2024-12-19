@@ -15,7 +15,6 @@
 #'   `port`, `username`, and `password`).
 #'
 #' @export
-#'
 #' @importFrom cli cli_abort
 #' @importFrom config get
 #' @importFrom rlang arg_match
@@ -67,6 +66,15 @@ get_db_config <- function(
 
 }
 
+#' @rdname db_config
+#'
+#' @param cfg
+#'
+#' @returns
+#' @export
+#'
+#' @examples
+#' @importFrom cli cli_abort
 validate_db_config <- function(cfg) {
 
   if (!is.list(cfg)) {

@@ -28,6 +28,10 @@ entrata_resp_body <- function(resp) {
 
 }
 
+entrata_resp_check <- function(resp) {
+  httr2::resp_check_status(resp)
+}
+
 entrata_resp_body_parse <- function(resp) {
 
   check_response(resp)
