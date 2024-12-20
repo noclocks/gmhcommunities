@@ -28,21 +28,27 @@
 #'
 #' @importFrom htmltools tags
 #' @importFrom bsicons bs_icon
-app_title_ui <- function() {
+app_title_ui <- function(title = "GMH Data Hub Platform") {
 
   htmltools::tags$div(
+    class = "app-header-title",
     style = "display: flex; align-items: center;",
-    htmltools::tags$img(
-      src = "www/images/gmh/logos/gmh-logo.svg",
-      height = "40px",
-      style = "margin-right: 15px;"
-    ),
-    htmltools::tags$div(
-      style = "display: flex; align-items: center;",
-      bsicons::bs_icon("building", size = "1.5rem"),
-      htmltools::tags$span(
-        style = "margin-left: 10px; font-size: 1.2rem;",
-        "GMH Data Hub Platform"
+    htmltools::tags$a(
+      href = "https://gmhcommunities.com",
+      htmltools::tags$img(
+        src = "www/images/gmh/logos/gmh-logo.svg",
+        alt = "GMH Communities",
+        width = "200px",
+        height = "auto",
+        style = "margin-top: 5px; margin-bottom: 5px; margin-right: 15px;"
+      ),
+      htmltools::tags$div(
+        style = "display: flex; align-items: center;",
+        bsicons::bs_icon("building", size = "1.5rem"),
+        htmltools::tags$span(
+          style = "margin-left: 10px; font-size: 1.2rem;",
+          title
+        )
       )
     )
   )
