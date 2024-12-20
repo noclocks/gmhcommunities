@@ -22,7 +22,7 @@ Imports:
     cli,
     config,
     DBI,
-    dbplyr,
+    dbplyr (>= 2.0.0),
     dbx,
     dialr,
     digest,
