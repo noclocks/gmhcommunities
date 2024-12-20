@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "response": {
+      "type": "object",
+      "properties": {
+        "requestId": {
+          "type": "string"
+        },
+        "code": {
+          "type": "number"
+        },
+        "result": {
+          "type": "object",
+          "properties": {
+            "amenities": {
+              "type": "object",
+              "properties": {
+                "amenity": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "reservedByDay": {
+                        "type": "number"
+                      },
+                      "blockHoursByDay": {
+                        "type": "number"
+                      },
+                      "blockDays": {
+                        "type": "object",
+                        "properties": {
+                          "blockDay": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "day": {
+                                  "type": "string"
+                                },
+                                "blockHours": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "day",
+                                "blockHours"
+                              ]
+                            }
+                          }
+                        },
+                        "required": [
+                          "blockDay"
+                        ]
+                      },
+                      "maxReservationDays": {
+                        "type": "number"
+                      },
+                      "maxHours": {
+                        "type": "number"
+                      },
+                      "isApprovalRequired": {
+                        "type": "number"
+                      },
+                      "isResidentVisible": {
+                        "type": "number"
+                      },
+                      "isAllowFutureResident": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "name",
+                      "description",
+                      "reservedByDay",
+                      "blockHoursByDay",
+                      "blockDays",
+                      "maxReservationDays",
+                      "maxHours",
+                      "isApprovalRequired",
+                      "isResidentVisible",
+                      "isAllowFutureResident"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "amenity"
+              ]
+            }
+          },
+          "required": [
+            "amenities"
+          ]
+        }
+      },
+      "required": [
+        "requestId",
+        "code",
+        "result"
+      ]
+    }
+  },
+  "required": [
+    "response"
+  ]
+}

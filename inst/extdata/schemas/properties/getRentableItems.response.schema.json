@@ -1,0 +1,243 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "response": {
+      "type": "object",
+      "properties": {
+        "requestId": {
+          "type": "string"
+        },
+        "code": {
+          "type": "number"
+        },
+        "result": {
+          "type": "object",
+          "properties": {
+            "RentableItemTypes": {
+              "type": "object",
+              "properties": {
+                "RentableItemType": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "@attributes": {
+                        "type": "object",
+                        "properties": {
+                          "Id": {
+                            "type": "number"
+                          },
+                          "Name": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "Id",
+                          "Name"
+                        ]
+                      },
+                      "Description": {
+                        "type": "string"
+                      },
+                      "RentableItemOptions": {
+                        "type": "object",
+                        "properties": {
+                          "RentableItemOption": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "@attributes": {
+                                  "type": "object",
+                                  "properties": {
+                                    "Id": {
+                                      "type": "number"
+                                    },
+                                    "Name": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "Id",
+                                    "Name"
+                                  ]
+                                },
+                                "Description": {
+                                  "type": "string"
+                                },
+                                "AllowFlexibleReservationDates": {
+                                  "type": "number"
+                                },
+                                "HasInventory": {
+                                  "type": "number"
+                                },
+                                "RentableItems": {
+                                  "type": "object",
+                                  "properties": {
+                                    "RentableItem": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "object",
+                                        "properties": {
+                                          "@attributes": {
+                                            "type": "object",
+                                            "properties": {
+                                              "Id": {
+                                                "type": "number"
+                                              },
+                                              "Name": {
+                                                "type": "string"
+                                              }
+                                            },
+                                            "required": [
+                                              "Id",
+                                              "Name"
+                                            ]
+                                          },
+                                          "Availability": {
+                                            "type": "string"
+                                          },
+                                          "AvailableOn": {
+                                            "type": "string"
+                                          },
+                                          "WebsiteAvailibility": {
+                                            "type": "number"
+                                          },
+                                          "Rent": {
+                                            "type": "object",
+                                            "properties": {
+                                              "@attributes": {
+                                                "type": "object",
+                                                "properties": {
+                                                  "Type": {
+                                                    "type": "string"
+                                                  },
+                                                  "ChargeCode": {
+                                                    "type": "string"
+                                                  },
+                                                  "Amount": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "Type",
+                                                  "ChargeCode",
+                                                  "Amount"
+                                                ]
+                                              }
+                                            },
+                                            "required": [
+                                              "@attributes"
+                                            ]
+                                          },
+                                          "Resident": {
+                                            "type": "object",
+                                            "properties": {
+                                              "firstName": {
+                                                "type": "string"
+                                              },
+                                              "lastName": {
+                                                "type": "string"
+                                              },
+                                              "leaseStatus": {
+                                                "type": "string"
+                                              }
+                                            },
+                                            "required": [
+                                              "firstName",
+                                              "lastName",
+                                              "leaseStatus"
+                                            ]
+                                          },
+                                          "ReservationStartDate": {
+                                            "type": "string"
+                                          },
+                                          "ReservationEndDate": {
+                                            "type": "string"
+                                          }
+                                        },
+                                        "required": [
+                                          "@attributes",
+                                          "Availability",
+                                          "WebsiteAvailibility",
+                                          "Rent"
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  "required": [
+                                    "RentableItem"
+                                  ]
+                                },
+                                "Rent": {
+                                  "type": "object",
+                                  "properties": {
+                                    "@attributes": {
+                                      "type": "object",
+                                      "properties": {
+                                        "Type": {
+                                          "type": "string"
+                                        },
+                                        "ChargeCode": {
+                                          "type": "string"
+                                        },
+                                        "Amount": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "Type",
+                                        "ChargeCode",
+                                        "Amount"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "@attributes"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "@attributes",
+                                "AllowFlexibleReservationDates",
+                                "HasInventory"
+                              ]
+                            }
+                          }
+                        },
+                        "required": [
+                          "RentableItemOption"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "@attributes",
+                      "Description",
+                      "RentableItemOptions"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "RentableItemType"
+              ]
+            }
+          },
+          "required": [
+            "RentableItemTypes"
+          ]
+        }
+      },
+      "required": [
+        "requestId",
+        "code",
+        "result"
+      ]
+    }
+  },
+  "required": [
+    "response"
+  ]
+}
