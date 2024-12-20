@@ -39,13 +39,14 @@
 #' @importFrom httr2 req_verbose req_progress req_perform
 entrata_properties <- function(
   method_name = c("getProperties", "getFloorPlans", "getWebsites"),
-  method_params = list(propertyIds = NULL),
+  method_params = list(),
   request_id = NULL,
   entrata_config = get_entrata_config(),
   verbose = FALSE,
   progress = FALSE
 ) {
 
+  method_name <- rlang::arg_match(method_name, c("getProperties", "getFloorPlans", "getWebsites"))
   validate_entrata_method(endpoint = "properties", method = method_name)
   method_version <- get_default_method_version("properties", method_name)
   validate_entrata_method_params(endpoint = "properties", method = method_name, params = method_params)
@@ -75,6 +76,7 @@ entrata_properties <- function(
     "getProperties" = parse_properties_response,
     "getFloorPlans" = parse_floorplans_response,
     "getWebsites" = parse_websites_response,
+    stop("Method not supported.")
   )
 
   parser(resp)
@@ -120,7 +122,7 @@ entrata_properties_getProperties <- function(
 
   validate_entrata_config(entrata_config)
 
-  req_id <- req_id %||% as.integer(Sys.time())
+  req_id <- request_id %||% as.integer(Sys.time())
 
   req <- entrata_request(entrata_config) |>
     entrata_req_endpoint("properties") |>
@@ -200,6 +202,200 @@ entrata_properties_getFloorPlans <- function(
   resp <- httr2::req_perform(req)
 
   parse_floorplans_response(resp)
+
+}
+
+
+# getWebsites -------------------------------------------------------------
+
+
+#' Entrata Properties: Get Websites
+#'
+#' @description
+#' Calls the `getWebsites` method from the `/properties` endpoint of the Entrata API.
+#'
+#' @param property_ids (Required) Vector of Entrata Property IDs.
+#' @param request_id (Optional) A unique identifier for the request. If left as `NULL`,
+#'   (the default), will set a request ID via `as.integer(Sys.time())`.
+#' @param entrata_config (Optional) An Entrata Configuration list. Defaults to
+#'   `get_entrata_config()`. See [get_entrata_config()] for more information.
+#'
+#' @returns
+#' A parsed response containing website data for the specified properties.
+#'
+#' @export
+#'
+#' @importFrom httr2 req_perform
+#' @importFrom rlang %||%
+#' @importFrom dplyr select mutate
+#' @importFrom janitor clean_names
+entrata_properties_getWebsites <- function(
+  property_ids,
+  request_id = NULL,
+  entrata_config = get_entrata_config()
+) {
+
+  validate_entrata_config(entrata_config)
+
+  property_ids <- stringr::str_c(property_ids, collapse = ",")
+  req_id <- request_id %||% as.integer(Sys.time())
+
+  req <- entrata_request(entrata_config) |>
+    entrata_req_endpoint("properties") |>
+    entrata_req_body(
+      id = req_id,
+      method = "getWebsites",
+      version = get_default_method_version("properties", "getWebsites"),
+      params = list(
+        propertyIds = property_ids
+      )
+    ) |>
+    entrata_req_error()
+
+  resp <- httr2::req_perform(req)
+
+  parse_websites_response(resp)
+
+}
+
+parse_websites_response <- function(resp) {
+
+  check_response(resp)
+
+  resp_json <- entrata_resp_body(resp)
+
+  resp_json |>
+    jsonlite::toJSON(auto_unbox = TRUE, pretty = TRUE) |>
+    jsonlite::fromJSON(flatten = TRUE) |>
+    purrr::pluck("response", "result", "websites", "website") |>
+    tidyr::unnest(cols = c("websiteProperties.websiteProperty")) |>
+    janitor::clean_names() |>
+    dplyr::mutate(
+      property_id = as.integer(property_id)
+    ) |>
+    dplyr::select(
+      property_id = property_id,
+      website_id = id,
+      property_name = property_name,
+      website_name = name,
+      website_subdomain = subdomain
+    )
+
+}
+
+entrata_properties_getPropertyAddOns <- function(
+  property_id,
+  request_id = NULL,
+  entrata_config = get_entrata_config()
+) {
+
+  validate_entrata_config(entrata_config)
+
+  req_id <- request_id %||% as.integer(Sys.time())
+
+  req <- entrata_request(entrata_config) |>
+    entrata_req_endpoint("properties") |>
+    entrata_req_body(
+      id = req_id,
+      method = "getPropertyAddOns",
+      version = get_default_method_version("properties", "getPropertyAddOns"),
+      params = list(
+        propertyId = property_id
+      )
+    )
+
+  resp <- httr2::req_perform(req)
+
+  parse_property_addons_response(resp)
+
+}
+
+parse_property_addons_response <- function(resp) {
+
+  check_response(resp)
+
+  # get property id from request
+  req_property_id <- purrr::pluck(resp, "request", "body", "data", "method", "params", "propertyId")
+
+  resp_json <- entrata_resp_body(resp)
+
+  resp_data <- resp_json |>
+    purrr::pluck("response", "result", "addOns", "addon") |>
+    dplyr::bind_rows() |>
+    janitor::clean_names()
+
+  addons_rates <- resp_data$rates |>
+    purrr::map2_dfr(
+      resp_data$id,
+      function(rate, addon_id) {
+        rate |>
+          purrr::pluck(1) |>
+          tibble::as_tibble() |>
+          janitor::clean_names() |>
+          dplyr::mutate(
+            addon_id = .env$addon_id
+          )
+      }
+    ) |>
+    dplyr::mutate(
+      amount = as.numeric(amount)
+    ) |>
+    dplyr::select(
+      addon_id,
+      charge_code_id,
+      charge_timing_id,
+      amount
+    )
+
+  resp_data |>
+    dplyr::transmute(
+      property_id = as.integer(req_property_id),
+      addon_id = as.integer(id),
+      addon_name = name,
+      addon_type_id = as.integer(add_on_type_id),
+      addon_category_id = as.integer(add_on_category_id),
+      addon_group_id = as.integer(add_on_group_id),
+      availablility = availability,
+      available_on = lubridate::mdy(add_on_available_on),
+      is_inventory = as.logical(is_inventory),
+      is_visible_on_website = as.logical(is_web_visible),
+      reservation_start_date = lubridate::mdy(reservation_start_date),
+      reservation_end_date = lubridate::mdy(reservation_end_date)
+    ) |>
+    dplyr::left_join(
+      addons_rates,
+      by = "addon_id"
+    ) |>
+    dplyr::select(
+      property_id,
+      addon_id,
+      addon_type_id,
+      addon_category_id,
+      addon_group_id,
+      addon_name,
+      addon_availablility = availablility,
+      available_on,
+      is_inventory,
+      is_visible_on_website,
+      reservation_start_date,
+      reservation_end_date,
+      addon_rate_charge_code_id = charge_code_id,
+      addon_rate_charge_timing_id = charge_timing_id,
+      addon_rate_amount = amount
+    )
+
+}
+
+get_entrata_property_id <- function(property_name, entrata_config = get_entrata_config()) {
+
+  prop_ids <- get_entrata_property_ids(entrata_config)
+  prop_id <- prop_ids[property_name]
+
+  if (is.null(prop_id)) {
+    cli::cli_abort("Property Name not found in Entrata properties.")
+  }
+
+  return(prop_id)
 
 }
 
