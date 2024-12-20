@@ -50,8 +50,9 @@ entrata_pre_lease_report <- function(
     report_date = NULL,
     summarize_by = "property",
     group_by = "do_not_group",
-    consider_pre_leased_on = 32,
+    consider_pre_leased_on = "332",
     ...,
+    report_version = "3.2",
     request_id = NULL,
     max_retries = 10,
     entrata_config = NULL
@@ -65,8 +66,8 @@ entrata_pre_lease_report <- function(
   # validation
   group_by <- rlang::arg_match0(group_by, c("do_not_group", "unit_type", "floorplan_name", "lease_term"))
   summarize_by <- rlang::arg_match0(summarize_by, c("property", "unit_type", "floorplan_name", "do_not_summarize"))
-  consider_pre_leased_on <- as.character(consider_pre_leased_on)
-  consider_pre_leased_on <- rlang::arg_match0(consider_pre_leased_on, as.character(c(32, 33, 34, 41, 42, 43, 44)))
+  # consider_pre_leased_on <- as.character(consider_pre_leased_on)
+  # consider_pre_leased_on <- rlang::arg_match0(consider_pre_leased_on, as.character(c(32, 33, 34, 41, 42, 43, 44)))
 
   # additional params
   additional_params <- list(...)
@@ -219,12 +220,37 @@ get_entrata_pre_lease_summary <- function(
 
   weeks_left_to_lease <- get_weeks_left_to_lease()
 
-  report_summary_data |>
+  model_beds <- dplyr::tbl(pool, I("gmh.model_beds")) |>
+    dplyr::select(-gmh_property_id, -updated_at) |>
+    dplyr::rename(property_id = entrata_property_id) |>
+    dplyr::mutate(
+      property_id = as.character(property_id)
+    ) |>
+    dplyr::select(-property_name) |>
+    dplyr::collect()
+
+  weekly_pre_lease <- entrata_lease_execution_report() |>
+    dplyr::select(
+      property_id,
+      weekly_new,
+      weekly_renewal,
+      weekly_total
+    )
+
+  out <- report_summary_data |>
+    dplyr::left_join(
+      model_beds,
+      by = "property_id"
+    ) |>
+    dplyr::left_join(
+      weekly_pre_lease,
+      by = "property_id"
+    ) |>
     dplyr::transmute(
       property_id = property_id,
       property_name = property_name,
-      total_beds = units,
-      model_beds = 0,
+      total_beds = available_count, # units
+      model_beds = model_beds,
       current_occupied = occupied_count,
       current_occupancy = occupied_count / total_beds,
       current_total_new = approved_new_count + partially_completed_new_count + completed_new_count,
@@ -238,10 +264,10 @@ get_entrata_pre_lease_summary <- function(
       prior_preleased_percent = prior_total_leases / total_beds,
       yoy_variance_count = current_total_leases - prior_total_leases,
       yoy_variance_percent = current_preleased_percent - prior_preleased_percent,
-      weekly_new = 0,
-      weekly_renewal = 0,
-      weekly_total = 0,
-      weekly_percent_gained = 0,
+      weekly_new = weekly_new,
+      weekly_renewal = weekly_renewal,
+      weekly_total = weekly_total,
+      weekly_percent_gained = weekly_total / total_beds,
       beds_left = total_beds - current_total_leases,
       vel_90 = beds_left * .9 / weeks_left_to_lease,
       vel_95 = beds_left * .95 / weeks_left_to_lease,
