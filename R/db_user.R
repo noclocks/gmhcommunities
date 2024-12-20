@@ -11,10 +11,11 @@ db_set_user_id <- function(conn, user_id) {
 
   check_db_conn(conn)
 
+  qry <- glue::glue_sql("SELECT `public`.`set_user_id`({`user_id`})", .con = conn, user_id = user_id)
+
   DBI::dbExecute(
     conn,
-    "SET SESSION gmhdatahub.user_id = ?",
-    user_id
+
   )
 
 }

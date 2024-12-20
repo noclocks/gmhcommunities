@@ -137,17 +137,19 @@ entrata_reports <- function(
     req <- httr2::req_progress(req)
   }
 
-  resp <- httr2::req_perform(req)
+  return(req)
 
-  parser <- switch(
-    method_name,
-    "getReportList" = parse_reports_list_response,
-    "getReportInfo" = parse_report_info_response,
-    "getReportData" = parse_report_data_response,
-    "getDependentFilter" = parse_dependent_filter_response
-  )
-
-  parser(resp)
+  # resp <- httr2::req_perform(req)
+  #
+  # parser <- switch(
+  #   method_name,
+  #   "getReportList" = parse_reports_list_response,
+  #   "getReportInfo" = parse_report_info_response,
+  #   "getReportData" = parse_report_data_response,
+  #   "getDependentFilter" = parse_dependent_filter_response
+  # )
+  #
+  # parser(resp)
 
 }
 
@@ -299,15 +301,15 @@ entrata_reports_info <- function(
 #'
 #' @importFrom dplyr filter pull
 #' @importFrom rlang .data .env
-get_latest_report_version <- function(report) {
+get_latest_report_version <- function(report_name) {
 
-  validate_entrata_report(report)
+  validate_entrata_report(report_name)
 
-  entrata_reports_tbl |>
+  entrata_reports_list(latest_only = TRUE) |>
     dplyr::filter(
-      .data$report == .env$report
+      .data$report_name == {{ report_name }}
     ) |>
-    dplyr::pull("version")
+    dplyr::pull("report_version")
 
 }
 
