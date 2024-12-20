@@ -1,0 +1,2182 @@
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "RentableItemTypes": {
+        "RentableItemType": [
+          {
+            "@attributes": {
+              "Id": 308,
+              "Name": "Garage"
+            },
+            "Description": "Garage",
+            "RentableItemOptions": {
+              "RentableItemOption": [
+                {
+                  "@attributes": {
+                    "Id": 4488,
+                    "Name": "Academy 65  Garage Parking"
+                  },
+                  "Description": "Academy 65  Garage Parking",
+                  "AllowFlexibleReservationDates": 1,
+                  "HasInventory": 1,
+                  "RentableItems": {
+                    "RentableItem": [
+                      {
+                        "@attributes": {
+                          "Id": 260321,
+                          "Name": "1"
+                        },
+                        "Resident": {
+                          "firstName": "Sophia",
+                          "lastName": "Robles",
+                          "leaseStatus": "Future"
+                        },
+                        "Availability": "Notice Rented",
+                        "ReservationStartDate": "08/15/2025",
+                        "ReservationEndDate": "07/31/2026",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260322,
+                          "Name": "2"
+                        },
+                        "Resident": {
+                          "firstName": "Kai",
+                          "lastName": "Levato",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Vacant Rented Ready",
+                        "AvailableOn": "08/01/2023",
+                        "ReservationStartDate": "08/01/2025",
+                        "ReservationEndDate": "07/31/2026",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260323,
+                          "Name": "3"
+                        },
+                        "Resident": {
+                          "firstName": "Jarnail",
+                          "lastName": "Singh",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Rented",
+                        "AvailableOn": "08/01/2025",
+                        "ReservationStartDate": "11/01/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260324,
+                          "Name": "4"
+                        },
+                        "Resident": {
+                          "firstName": "Danielle",
+                          "lastName": "Kitaoka",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Rented",
+                        "AvailableOn": "08/01/2025",
+                        "ReservationStartDate": "08/16/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260325,
+                          "Name": "5"
+                        },
+                        "Resident": {
+                          "firstName": "Gavin",
+                          "lastName": "Nelson",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Vacant Rented Ready",
+                        "AvailableOn": "08/01/2024",
+                        "ReservationStartDate": "08/01/2025",
+                        "ReservationEndDate": "07/31/2026",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260326,
+                          "Name": "6"
+                        },
+                        "Resident": {
+                          "firstName": "Cameryn",
+                          "lastName": "Walker",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Vacant Rented Ready",
+                        "AvailableOn": "08/01/2024",
+                        "ReservationStartDate": "08/01/2025",
+                        "ReservationEndDate": "07/31/2026",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260327,
+                          "Name": "7"
+                        },
+                        "Resident": {
+                          "firstName": "Claire",
+                          "lastName": "Simon",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Rented",
+                        "ReservationStartDate": "08/01/2025",
+                        "ReservationEndDate": "07/31/2026",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260328,
+                          "Name": "8"
+                        },
+                        "Resident": {
+                          "firstName": "Nathaniel",
+                          "lastName": "Moussa",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Occupied No Notice",
+                        "ReservationStartDate": "08/01/2025",
+                        "ReservationEndDate": "07/31/2026",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260329,
+                          "Name": "9"
+                        },
+                        "Resident": {
+                          "firstName": "Katy",
+                          "lastName": "Hu",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Rented",
+                        "AvailableOn": "08/01/2025",
+                        "ReservationStartDate": "08/01/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260330,
+                          "Name": "10"
+                        },
+                        "Resident": {
+                          "firstName": "Darren",
+                          "lastName": "Davis",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Vacant Rented Ready",
+                        "AvailableOn": "06/01/2022",
+                        "ReservationStartDate": "01/01/2025",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260331,
+                          "Name": "11"
+                        },
+                        "Resident": {
+                          "firstName": "Joel",
+                          "lastName": "Vidal",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Occupied No Notice",
+                        "ReservationStartDate": "08/16/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260332,
+                          "Name": "12"
+                        },
+                        "Resident": {
+                          "firstName": "Zafina",
+                          "lastName": "Ameen",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Vacant Rented Ready",
+                        "ReservationStartDate": "08/01/2025",
+                        "ReservationEndDate": "07/31/2026",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260333,
+                          "Name": "13"
+                        },
+                        "Resident": {
+                          "firstName": "Anayansi",
+                          "lastName": "Hernandez",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Rented",
+                        "AvailableOn": "08/01/2025",
+                        "ReservationStartDate": "08/16/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260334,
+                          "Name": "14"
+                        },
+                        "Resident": {
+                          "firstName": "Johana",
+                          "lastName": "Castellanos",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Rented",
+                        "AvailableOn": "08/01/2025",
+                        "ReservationStartDate": "08/16/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260335,
+                          "Name": "15"
+                        },
+                        "Resident": {
+                          "firstName": "Asshaly",
+                          "lastName": "Silva Aceytuno",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Rented",
+                        "ReservationStartDate": "08/01/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260336,
+                          "Name": "16"
+                        },
+                        "Resident": {
+                          "firstName": "Yoselin",
+                          "lastName": "Rebollo",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Occupied No Notice",
+                        "AvailableOn": "12/02/2024",
+                        "ReservationStartDate": "12/09/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260337,
+                          "Name": "17"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260338,
+                          "Name": "18"
+                        },
+                        "Resident": {
+                          "firstName": "Ciana-Chey",
+                          "lastName": "Rea",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Rented",
+                        "AvailableOn": "08/01/2025",
+                        "ReservationStartDate": "08/01/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260339,
+                          "Name": "19"
+                        },
+                        "Resident": {
+                          "firstName": "Francis",
+                          "lastName": "Mcguire",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Vacant Rented Ready",
+                        "AvailableOn": "08/01/2024",
+                        "ReservationStartDate": "08/01/2025",
+                        "ReservationEndDate": "07/31/2026",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260340,
+                          "Name": "20"
+                        },
+                        "Resident": {
+                          "firstName": "Makiyah",
+                          "lastName": "Williams",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Rented",
+                        "AvailableOn": "08/01/2025",
+                        "ReservationStartDate": "08/16/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260341,
+                          "Name": "21"
+                        },
+                        "Resident": {
+                          "firstName": "Abdulrahman",
+                          "lastName": "Almehbash",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Unrented",
+                        "AvailableOn": "08/01/2025",
+                        "ReservationStartDate": "08/01/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260342,
+                          "Name": "22"
+                        },
+                        "Resident": {
+                          "firstName": "Jailen",
+                          "lastName": "Lewis",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Rented",
+                        "AvailableOn": "08/01/2025",
+                        "ReservationStartDate": "08/16/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260343,
+                          "Name": "23"
+                        },
+                        "Resident": {
+                          "firstName": "Anessa",
+                          "lastName": "Silva",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Occupied No Notice",
+                        "ReservationStartDate": "08/01/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260344,
+                          "Name": "24"
+                        },
+                        "Resident": {
+                          "firstName": "Jacquiem",
+                          "lastName": "James",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Occupied No Notice",
+                        "ReservationStartDate": "08/01/2025",
+                        "ReservationEndDate": "07/31/2026",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260345,
+                          "Name": "25"
+                        },
+                        "Resident": {
+                          "firstName": "Lisa",
+                          "lastName": "Lopez",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Vacant Rented Ready",
+                        "AvailableOn": "03/01/2022",
+                        "ReservationStartDate": "01/01/2025",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260346,
+                          "Name": "26"
+                        },
+                        "Resident": {
+                          "firstName": "Liliana",
+                          "lastName": "Koptke",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Rented",
+                        "AvailableOn": "08/01/2025",
+                        "ReservationStartDate": "08/01/2025",
+                        "ReservationEndDate": "07/31/2026",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260347,
+                          "Name": "27"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2023",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260348,
+                          "Name": "28"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2022",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260349,
+                          "Name": "29"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "06/01/2022",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260350,
+                          "Name": "30"
+                        },
+                        "Resident": {
+                          "firstName": "Laila",
+                          "lastName": "Atchison",
+                          "leaseStatus": "Future"
+                        },
+                        "Availability": "Notice Rented",
+                        "AvailableOn": "08/01/2025",
+                        "ReservationStartDate": "08/15/2025",
+                        "ReservationEndDate": "07/31/2026",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260351,
+                          "Name": "31"
+                        },
+                        "Resident": {
+                          "firstName": "Andres",
+                          "lastName": "Ramos-Jordan",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Occupied No Notice",
+                        "ReservationStartDate": "08/01/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260352,
+                          "Name": "32"
+                        },
+                        "Resident": {
+                          "firstName": "Gabriella",
+                          "lastName": "Montoya",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Rented",
+                        "AvailableOn": "08/01/2025",
+                        "ReservationStartDate": "08/16/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260353,
+                          "Name": "33"
+                        },
+                        "Resident": {
+                          "firstName": "Juan",
+                          "lastName": "Aveytia",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Rented",
+                        "AvailableOn": "08/01/2025",
+                        "ReservationStartDate": "08/16/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260354,
+                          "Name": "34"
+                        },
+                        "Resident": {
+                          "firstName": "Jamal",
+                          "lastName": "Nasrawin",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Rented",
+                        "AvailableOn": "08/01/2025",
+                        "ReservationStartDate": "08/01/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260355,
+                          "Name": "35"
+                        },
+                        "Resident": {
+                          "firstName": "Christopher",
+                          "lastName": "Perez",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Occupied No Notice",
+                        "ReservationStartDate": "08/01/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260356,
+                          "Name": "36"
+                        },
+                        "Resident": {
+                          "firstName": "Kevin",
+                          "lastName": "Torrecampo",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Occupied No Notice",
+                        "ReservationStartDate": "08/01/2025",
+                        "ReservationEndDate": "07/31/2026",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260357,
+                          "Name": "37"
+                        },
+                        "Resident": {
+                          "firstName": "Brandon",
+                          "lastName": "Lowe",
+                          "leaseStatus": "Current"
+                        },
+                        "Availability": "Notice Rented",
+                        "ReservationStartDate": "08/16/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260358,
+                          "Name": "38"
+                        },
+                        "Resident": {
+                          "firstName": "Sophia",
+                          "lastName": "Templin",
+                          "leaseStatus": "Notice"
+                        },
+                        "Availability": "Occupied No Notice",
+                        "ReservationStartDate": "08/16/2024",
+                        "ReservationEndDate": "07/31/2025",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260359,
+                          "Name": "39"
+                        },
+                        "Resident": {
+                          "firstName": "Mason",
+                          "lastName": "Syme",
+                          "leaseStatus": "Future"
+                        },
+                        "Availability": "Vacant Rented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "ReservationStartDate": "08/01/2025",
+                        "ReservationEndDate": "07/31/2026",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260360,
+                          "Name": "40"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2022",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260361,
+                          "Name": "41"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260362,
+                          "Name": "42"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260363,
+                          "Name": "43"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260364,
+                          "Name": "44"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260365,
+                          "Name": "45"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260366,
+                          "Name": "46"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260367,
+                          "Name": "47"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260368,
+                          "Name": "48"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260369,
+                          "Name": "49"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260370,
+                          "Name": "50"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260371,
+                          "Name": "51"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260372,
+                          "Name": "52"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260373,
+                          "Name": "53"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260374,
+                          "Name": "54"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260375,
+                          "Name": "55"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260376,
+                          "Name": "56"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260377,
+                          "Name": "57"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260378,
+                          "Name": "58"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 260379,
+                          "Name": "59"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$195.00"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "@attributes": {
+                    "Id": 5089,
+                    "Name": "Garage Parking"
+                  },
+                  "AllowFlexibleReservationDates": 0,
+                  "HasInventory": 0,
+                  "Rent": {
+                    "@attributes": {
+                      "Type": "RIO",
+                      "ChargeCode": "Garage Parking",
+                      "Amount": "$195.00"
+                    }
+                  }
+                },
+                {
+                  "@attributes": {
+                    "Id": 4694,
+                    "Name": "OLD Garage Parking"
+                  },
+                  "Description": "OLD Garage Parking",
+                  "AllowFlexibleReservationDates": 0,
+                  "HasInventory": 1,
+                  "RentableItems": {
+                    "RentableItem": [
+                      {
+                        "@attributes": {
+                          "Id": 294899,
+                          "Name": "1"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294910,
+                          "Name": "2"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294921,
+                          "Name": "3"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "02/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294932,
+                          "Name": "4"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294943,
+                          "Name": "5"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294954,
+                          "Name": "6"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294955,
+                          "Name": "7"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294956,
+                          "Name": "8"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294957,
+                          "Name": "9"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294900,
+                          "Name": "10"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294901,
+                          "Name": "11"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "09/02/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294902,
+                          "Name": "12"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2022",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294903,
+                          "Name": "13"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "11/06/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294904,
+                          "Name": "14"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "03/02/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294905,
+                          "Name": "15"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2022",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294906,
+                          "Name": "16"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "05/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294907,
+                          "Name": "17"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294908,
+                          "Name": "18"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294909,
+                          "Name": "19"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "02/11/2022",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294911,
+                          "Name": "20"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294912,
+                          "Name": "21"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2022",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294913,
+                          "Name": "22"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "06/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294914,
+                          "Name": "23"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294915,
+                          "Name": "24"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294916,
+                          "Name": "25"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294917,
+                          "Name": "26"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294918,
+                          "Name": "27"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "09/11/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294919,
+                          "Name": "28"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294920,
+                          "Name": "29"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294922,
+                          "Name": "30"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294923,
+                          "Name": "31"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294924,
+                          "Name": "32"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294925,
+                          "Name": "33"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294926,
+                          "Name": "34"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294927,
+                          "Name": "35"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2023",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294928,
+                          "Name": "36"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294929,
+                          "Name": "37"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294930,
+                          "Name": "38"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294931,
+                          "Name": "39"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294933,
+                          "Name": "40"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294934,
+                          "Name": "41"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294935,
+                          "Name": "42"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294936,
+                          "Name": "43"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294937,
+                          "Name": "44"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294938,
+                          "Name": "45"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294939,
+                          "Name": "46"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "08/01/2021",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294940,
+                          "Name": "47"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294941,
+                          "Name": "48"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294942,
+                          "Name": "49"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294944,
+                          "Name": "50"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294945,
+                          "Name": "51"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294946,
+                          "Name": "52"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294947,
+                          "Name": "53"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294948,
+                          "Name": "54"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294949,
+                          "Name": "55"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294950,
+                          "Name": "56"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294951,
+                          "Name": "57"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294952,
+                          "Name": "58"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      },
+                      {
+                        "@attributes": {
+                          "Id": 294953,
+                          "Name": "59"
+                        },
+                        "Availability": "Vacant Unrented Ready",
+                        "AvailableOn": "07/01/2020",
+                        "WebsiteAvailibility": 0,
+                        "Rent": {
+                          "@attributes": {
+                            "Type": "RI",
+                            "ChargeCode": "Garage Parking",
+                            "Amount": "$125.00"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "response": {
+    "requestId": "15",
+    "code": 200,
+    "result": {
+      "amenities": {
+        "amenity": [
+          {
+            "id": "1142268",
+            "name": "Gym",
+            "description": "Type Working Out",
+            "reservedByDay": 0,
+            "blockHoursByDay": 1,
+            "blockDays": {
+              "blockDay": [
+                {
+                  "day": "Sunday",
+                  "blockHours": "No Block HRS"
+                },
+                {
+                  "day": "Monday",
+                  "blockHours": "12am,1am,2am,3am,4am,5am,6am,7am,8am,6pm,7pm,8pm,9pm,10pm,11pm"
+                },
+                {
+                  "day": "Tuesday",
+                  "blockHours": "12am,1am,2am,3am,4am,5am,6am,7am,8am,6pm,7pm,8pm,9pm,10pm,11pm"
+                },
+                {
+                  "day": "Wednesday",
+                  "blockHours": "12am,1am,2am,3am,4am,5am,6am,7am,8am,6pm,7pm,8pm,9pm,10pm,11pm"
+                },
+                {
+                  "day": "Thursday",
+                  "blockHours": "12am,1am,2am,3am,4am,5am,6am,7am,8am,6pm,7pm,8pm,9pm,10pm,11pm"
+                },
+                {
+                  "day": "Friday",
+                  "blockHours": "12am,1am,2am,3am,4am,5am,6am,7am,8am,6pm,7pm,8pm,9pm,10pm,11pm"
+                },
+                {
+                  "day": "Saturday",
+                  "blockHours": "12am,1am,2am,3am,4am,5am,6am,7am,8am,9am,4pm,5pm,6pm,7pm,8pm,9pm,10pm,11pm"
+                }
+              ]
+            },
+            "maxReservationDays": 30,
+            "maxHours": 1,
+            "isApprovalRequired": 0,
+            "isResidentVisible": 1,
+            "isAllowFutureResident": 0
+          }
+        ]
+      }
+    }
+  }
+}
