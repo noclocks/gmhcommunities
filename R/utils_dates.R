@@ -102,9 +102,18 @@ get_weeks_of_year <- function(
 
 }
 
+get_weekly_period_start_date <- function(as_of_date = lubridate::today()) {
+  as_of_date - lubridate::days(7)
+}
+
+get_weekly_period <- function(as_of_date = lubridate::today()) {
+  c(get_weekly_period_start_date(as_of_date), as_of_date)
+}
+
+
 #' @rdname utils_dates
 #' @export
-get_weekly_period <- function(as_of_date = lubridate::today()) {
+get_leasing_week_period <- function(as_of_date = lubridate::today()) {
 
   if (is.null(as_of_date)) {
     as_of_date <- lubridate::today()
@@ -120,23 +129,27 @@ get_weekly_period <- function(as_of_date = lubridate::today()) {
 #' @rdname utils_dates
 #' @export
 #' @importFrom lubridate floor_date today
-get_weekly_period_start_date <- function(as_of_date = lubridate::today(), week_start = c("Monday", "Sunday")) {
+get_leasing_week_period_start_date <- function(
+  as_of_date = lubridate::today(),
+  week_start = c("Monday", "Sunday")
+) {
+
   week_start <- rlang::arg_match(week_start, c("Monday", "Sunday"))
   hold <- lubridate::floor_date(as_of_date, "week")
+
   if (week_start == "Monday") {
-    return(
-      hold + lubridate::days(1)
-    )
+    return(hold + lubridate::days(1))
   } else {
     return(hold)
   }
+
 }
 
 #' @rdname utils_dates
 #' @export
 #' @importFrom lubridate ceiling_date today
-get_weekly_period_end_date <- function(as_of_date = lubridate::today()) {
-  get_weekly_period_start_date(as_of_date) + lubridate::days(6)
+get_leasing_week_period_end_date <- function(as_of_date = lubridate::today()) {
+  get_leasing_week_period_start_date(as_of_date) + lubridate::days(6)
 }
 
 
