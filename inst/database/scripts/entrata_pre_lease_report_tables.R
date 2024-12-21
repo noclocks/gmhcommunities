@@ -190,7 +190,7 @@ report_details_data_for_db <- report_details_data |>
     leasing_agent
   )
 
-readr::write_csv(report_summary_data_for_db, "data-raw/data/working/2024-12-19-entrata_pre_lease_report_summary.csv")
+readr::write_csv(report_summary_data_for_db, "data-raw/data/working/2024-12-20-entrata_pre_lease_report_summary.csv")
 readr::write_csv(report_details_data_for_db, "data-raw/data/working/2024-12-19-entrata_pre_lease_report_details.csv")
 
 # database
@@ -387,9 +387,6 @@ prior_weekly_data <- dplyr::tbl(conn, I("entrata.pre_lease_weekly")) |>
   )
 
 current_weekly_data <- entrata_lease_execution_report() |>
-  dplyr::mutate(
-    property_id = as.integer(property_id)
-  ) |>
   dplyr::select(
     "report_date",
     "property_id",
