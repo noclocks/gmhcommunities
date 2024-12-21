@@ -38,6 +38,7 @@ app_server <- function(input, output, session) {
 
   # modules
   mod_home_data <- mod_home_server("home", pool = pool)
+  mod_dashboard_data <- mod_dashboard_server("dashboard", pool = pool)
 
 }
 

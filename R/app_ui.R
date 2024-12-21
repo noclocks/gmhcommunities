@@ -55,12 +55,12 @@ app_ui <- function(req) {
         mod_home_ui("home")
       ),
       # dashboard
-      # bslib::nav_panel(
-      #   title = "Dashboard",
-      #   value = "dashboard",
-      #   icon = bsicons::bs_icon("speedometer2"),
-      #   mod_dashboard_ui("app")
-      # ),
+      bslib::nav_panel(
+        title = "Dashboard",
+        value = "dashboard",
+        icon = bsicons::bs_icon("speedometer2"),
+        mod_dashboard_ui("app")
+      ),
       # data (menu)
       bslib::nav_menu(
         title = "Data",

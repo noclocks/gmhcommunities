@@ -22,51 +22,35 @@ mod_home_ui <- function(id) {
       )
     ),
     htmltools::tags$hr(),
-
     # value boxes -------------------------------------------------------------
     bslib::layout_column_wrap(
       width = 1/3,
-      fill = FALSE,
       bslib::value_box(
-        title = icon_text(
-          "buildings",
-          "Total Managed Properties",
-          .function = bsicons::bs_icon
-        ),
+        title = icon_text("buildings", "Total Managed Properties", .function = bsicons::bs_icon),
         value = shiny::textOutput(ns("total_properties"), inline = TRUE),
-        theme = "dark",
-        showcase = random_plotly_plot(type = "line", color = "white"),
-        showcase_layout = "bottom",
-        full_screen = TRUE
+        showcase = bsicons::bs_icon("building", size = "3rem"),
+        full_screen = TRUE,
+        theme = "primary"
       ),
       bslib::value_box(
-        title = icon_text(
-          "percent",
-          "Total Occupancy (%)",
-          .function = bsicons::bs_icon
-        ),
+        title = icon_text("percent", "Total Occupancy (%)", .function = bsicons::bs_icon),
         value = shiny::uiOutput(ns("occupancy")),
-        theme = "dark",
-        showcase = random_plotly_plot(type = "line", color = "white"),
-        showcase_layout = "bottom",
-        full_screen = TRUE
-      ),
-      bslib::value_box(
-        title = icon_text(
-          "currency-dollar",
-          "Average Scheduled Rent ($)",
-          .function = bsicons::bs_icon
-        ),
-        value = shiny::textOutput(ns("avg_scheduled_rent"), inline = TRUE),
-        theme = "dark",
-        showcase = random_plotly_plot(type = "line", color = "white"),
+        showcase = random_plotly_plot(type = "line"),
         showcase_layout = "bottom",
         full_screen = TRUE,
-        fill = TRUE
+        theme = "dark"
+      ),
+      bslib::value_box(
+        title = icon_text("currency-dollar", "Average Scheduled Rent ($)", .function = bsicons::bs_icon),
+        value = shiny::textOutput(ns("avg_scheduled_rent"), inline = TRUE),
+        showcase = random_plotly_plot(type = "line"),
+        showcase_layout = "bottom",
+        full_screen = TRUE,
+        theme = "dark"
       )
     ),
-    bslib::layout_columns(
-      col_widths = c(7, 5),
+    # recent activity & map ----------------------------------------------
+    bslib::layout_column_wrap(
       bslib::card(
         bslib::card_header(
           class = "bg-dark text-white",
@@ -117,69 +101,83 @@ mod_home_ui <- function(id) {
 #' @importFrom qs qread
 #' @importFrom reactable renderReactable reactable colDef
 #' @importFrom shiny moduleServer reactive renderText renderUI req
-mod_home_server <- function(id, pool) {
+mod_home_server <- function(
+  id,
+  pool = NULL,
+  selected_properties = NULL,
+  report_date = NULL
+) {
+
+  # database connection
+  if (is.null(pool)) { pool <- shiny::getDefaultReactiveDomain()$userData$pool }
+  if (is.null(pool)) { pool <- db_connect() }
+  check_db_conn(pool)
+
+  # validate reactives
+  if (is.null(selected_properties)) selected_properties <- shiny::reactive({ mem_get_entrata_property_ids() })
+  if (is.null(report_date)) report_date <- shiny::reactive({ Sys.Date() })
+  stopifnot(shiny::is.reactive(selected_properties), shiny::is.reactive(report_date))
+
+  # module
   shiny::moduleServer(id, function(input, output, session) {
 
-    pre_lease_summary_data <- qs::qread(pkg_sys("extdata/data/pre_lease_summary_data.qs"))
+    ns <- session$ns
+    cli::cli_rule("[Module]: Home")
 
-    occupancy_data <- shiny::reactive({
-
-      current <- mean(pre_lease_summary_data$occupied_count / pre_lease_summary_data$rentable_unit_count, na.rm = TRUE) * 100
-      prior <- mean(pre_lease_summary_data$preleased_count_prior / pre_lease_summary_data$rentable_unit_count, na.rm = TRUE) * 100
-      pct_change <- (current - prior) / prior * 100
-
-      list(
-        current = current,
-        pct_change = round(pct_change, 2),
-        icon = if (pct_change >= 0) bsicons::bs_icon("arrow-up") else bsicons::bs_icon("arrow-down"),
-        color = if (pct_change >= 0) "lightgreen" else "red"
-      )
-
-
+    # get database metrics for value boxes
+    summary_metrics <- shiny::reactive({
+      shiny::req(report_date(), selected_properties())
+      rept_date <- report_date()
+      prop_ids <- selected_properties()
+      db_get_home_metrics(pool, report_date = rept_date, properties = prop_ids)
     })
 
-    output$total_properties <- shiny::renderText({
-      num_props <- nrow(pre_lease_summary_data) |>
-        format_integer()
-      paste0(num_props, " Properties")
-    })
-
+    # occupancy value box
     output$occupancy <- shiny::renderUI({
-      occ <- occupancy_data()
+      shiny::req(summary_metrics())
+      metrics <- summary_metrics()
+      current <- metrics$occupancy_current |> format_percent()
+      prior <- metrics$occupancy_prior |> format_percent()
+      pct_change <- metrics$occupancy_pct_change
+      icon <- if (pct_change >= 0) bsicons::bs_icon("arrow-up") else bsicons::bs_icon("arrow-down") |>
+        as.character()
+      color <- if (pct_change >= 0) "lightgreen" else "red"
+      pct_change <- pct_change |> format_percent()
       htmltools::HTML(
-        sprintf(
-          '<span style="color: %s;">%s %.2f%% (%.2f%%)</span>',
-          occ$color,
-          as.character(occ$icon),
-          occ$current,
-          occ$pct_change
-        )
+        glue::glue("<span style='color: {color};'>{icon} {current} ({pct_change})</span>")
       )
     })
 
-    output$avg_scheduled_rent <- shiny::renderText({
-      val <- mean(pre_lease_summary_data$avg_scheduled_rent)
-      format_currency(val)
+    # total properties value box
+    output$total_properties <- shiny::renderText({
+      shiny::req(summary_metrics())
+      metrics <- summary_metrics()
+      metrics$total_properties |> paste0(" Properties")
     })
 
+    # average scheduled rent value box
+    output$avg_scheduled_rent <- shiny::renderUI({
+      shiny::req(summary_metrics())
+      metrics <- summary_metrics()
+      avg <- metrics$scheduled_rent_avg |> format_currency()
+      tot <- metrics$scheduled_rent_total |> format_currency()
+    })
+
+    # recent activity data
     logs_data <- shiny::reactive({
-      dplyr::tbl(pool, I("logs.recent_activity")) |>
-        dplyr::arrange(dplyr::desc(created_at))
+      db_get_recent_activity_logs(pool)
     })
 
+    # recent activity last updated at
     output$recent_activity_last_updated <- shiny::renderText({
       shiny::req(logs_data())
-
       logs_data() |>
         dplyr::pull("created_at") |>
         max(na.rm = TRUE) |>
         format_last_updated_at()
     })
 
-    output$properties_map_last_updated <- shiny::renderText({
-      "Not Available"
-    })
-
+    # recent activity table
     output$recent_activity <- reactable::renderReactable({
 
       data <- logs_data() |> dplyr::collect()
@@ -226,6 +224,17 @@ mod_home_server <- function(id, pool) {
       )
     })
 
+    # properties map last updated at
+    output$properties_map_last_updated <- shiny::renderText({
+      "Not Available"
+    })
+
+    return(
+      list(
+        summary_metrics = summary_metrics,
+        logs_data = logs_data
+      )
+    )
 
   })
 }
@@ -255,9 +264,123 @@ mod_home_demo <- function() {
   )
 
   server <- function(input, output, session) {
-    mod_home_server("demo", pool)
+    report_date <- shiny::reactive({ Sys.Date() })
+    selected_properties <- shiny::reactive({ mem_get_entrata_property_ids() })
+    home_data <- mod_home_server("demo", pool)
+    shiny::observe({
+      print(
+        list(
+          "summary_metrics" = home_data$summary_metrics(),
+          "logs_data" = dplyr::glimpse(home_data$logs_data())
+        )
+      )
+    })
   }
 
   shiny::shinyApp(ui, server)
 }
 
+welcome_banner_ui <- function() {
+  bslib::layout_columns(
+    col_widths = c(12),
+    bslib::card(
+      class = "my-3",
+      bslib::card_header(
+        class = "bg-primary",
+        htmltools::tags$h2(
+          "Welcome to GMH Communities Data Hub",
+          class = "mb-0"
+        )
+      ),
+      bslib::card_body(
+        htmltools::tags$p(
+          class = "lead",
+          "Your centralized platform for student housing portfolio analytics and insights"
+        )
+      )
+    )
+  )
+}
+
+db_get_home_metrics <- function(conn, report_date = NULL, properties = NULL) {
+
+  check_db_conn(conn)
+
+  tbl <- dplyr::tbl(conn, I("entrata.pre_lease_summary"))
+  tbl_report_date <- max(dplyr::pull(tbl, "report_date"), na.rm = TRUE)
+
+  if (is.null(report_date)) {
+    report_date <- tbl_report_date
+  }
+
+  tbl_filt <- dplyr::filter(tbl, .data$report_date == .env$report_date)
+
+  total_properties <- length(dplyr::pull(tbl_filt, "property_id"))
+
+  if (total_properties == 0) {
+    cli::cli_alert_warning("No data found for the specified report date: {.field {report_date}}.")
+    report_date <- tbl_report_date
+    tbl_filt <- dplyr::filter(tbl, .data$report_date == .env$report_date)
+    total_properties <- length(dplyr::pull(tbl_filt, "property_id"))
+    cli::cli_alert_info("Using the latest report date instead: {.field {report_date}}.")
+  }
+
+  last_updated_at <- max(dplyr::pull(tbl_filt, "created_at"), na.rm = TRUE)
+  occupancy_current <- mean(
+    dplyr::pull(tbl_filt, "occupied_count") / dplyr::pull(tbl_filt, "rentable_unit_count"),
+    na.rm = TRUE
+  )
+  occupancy_prior <- mean(
+    dplyr::pull(tbl_filt, "preleased_count_prior") / dplyr::pull(tbl_filt, "rentable_unit_count"),
+    na.rm = TRUE
+  )
+  occupancy_pct_change <- occupancy_current - occupancy_prior
+  scheduled_rent_total <- sum(
+    dplyr::pull(tbl, "scheduled_rent_total"),
+    na.rm = TRUE
+  )
+  scheduled_rent_avg <- mean(
+    dplyr::pull(tbl_filt, "avg_scheduled_rent"),
+    na.rm = TRUE
+  )
+  variance_total <- sum(
+    dplyr::pull(tbl_filt, "variance"),
+    na.rm = TRUE
+  )
+  variance_avg <- variance_total / total_properties
+  prelease_pct_current <- mean(
+    dplyr::pull(tbl_filt, "preleased_percent"),
+    na.rm = TRUE
+  )
+  prelease_pct_prior <- mean(
+    dplyr::pull(tbl_filt, "preleased_percent_prior"),
+    na.rm = TRUE
+  )
+  prelease_pct_change <- prelease_pct_current - prelease_pct_prior
+
+  list(
+    report_date = report_date,
+    last_updated_at = last_updated_at,
+    total_properties = total_properties,
+    occupancy_current = occupancy_current,
+    occupancy_prior = occupancy_prior,
+    occupancy_pct_change = occupancy_pct_change,
+    scheduled_rent_total = scheduled_rent_total,
+    scheduled_rent_avg = scheduled_rent_avg,
+    variance_total = variance_total,
+    variance_avg = variance_avg,
+    prelease_pct_current = prelease_pct_current,
+    prelease_pct_prior = prelease_pct_prior,
+    prelease_pct_change = prelease_pct_change
+  )
+
+}
+
+db_get_recent_activity_logs <- function(pool, ...) {
+
+  check_db_conn(pool)
+
+  dplyr::tbl(pool, I("logs.recent_activity")) |>
+    dplyr::arrange(dplyr::desc(created_at))
+
+}
