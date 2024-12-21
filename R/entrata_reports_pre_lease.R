@@ -77,7 +77,7 @@ entrata_pre_lease_report <- function(
   combine_unit_spaces_with_same_lease <- purrr::pluck(additional_params, "combine_unit_spaces_with_same_lease") %||% 0
   consolidate_by <- purrr::pluck(additional_params, "consolidate_by") %||% "no_consolidation"
   arrange_by_property <- purrr::pluck(additional_params, "arrange_by_property") %||% 0
-  subtotals <- purrr::pluck(additional_params, "subtotals") %||% c("summary", "details")
+  subtotals <- purrr::pluck(additional_params, "subtotals") %||% list("summary", "details")
   yoy <- purrr::pluck(additional_params, "yoy") %||% 1
 
   # determine the correct "period" date for the report to use
@@ -97,14 +97,14 @@ entrata_pre_lease_report <- function(
     summarize_by = summarize_by,
     group_by = group_by,
     consider_pre_leased_on = as.character(consider_pre_leased_on),
-    charge_code_detail = as.character(charge_code_detail),
+    charge_code_detail = charge_code_detail,
     space_options = space_options,
     additional_units_shown = additional_units_shown,
-    combine_unit_spaces_with_same_lease = as.character(combine_unit_spaces_with_same_lease),
+    combine_unit_spaces_with_same_lease = combine_unit_spaces_with_same_lease,
     consolidate_by = consolidate_by,
-    arrange_by_property = as.character(arrange_by_property),
+    arrange_by_property = arrange_by_property,
     subtotals = subtotals,
-    yoy = as.character(yoy)
+    yoy = yoy
   )
 
   # create the report request body
@@ -189,44 +189,130 @@ entrata_pre_lease_report <- function(
   summary_data <- report_data |>
     pluck("summary") |>
     dplyr::bind_rows() |>
-    tibble::as_tibble()
+    tibble::as_tibble() |>
+    dplyr::mutate(
+      report_date = as.Date(.env$report_date),
+      property_id = as.integer(.data$property_id),
+      avg_sqft = as.numeric(avg_sqft),
+      avg_advertised_rate = as.numeric(avg_advertised_rate),
+      units = as.integer(units),
+      excluded_unit_count = as.integer(excluded_unit_count),
+      rentable_unit_count = as.integer(rentable_unit_count),
+      avg_scheduled_rent = as.numeric(avg_scheduled_rent),
+      occupied_count = as.integer(occupied_count),
+      variance = as.numeric(variance),
+      available_count = as.integer(available_count),
+      scheduled_rent_total = as.numeric(scheduled_rent_total)
+    ) |>
+    dplyr::select(
+      report_date,
+      property_id,
+      property_name,
+      avg_sqft,
+      avg_advertised_rate,
+      units,
+      excluded_unit_count,
+      rentable_unit_count,
+      avg_scheduled_rent,
+      occupied_count,
+      tidyselect::starts_with("started"),
+      tidyselect::starts_with("partially_completed"),
+      tidyselect::starts_with("completed"),
+      tidyselect::starts_with("approved"),
+      tidyselect::starts_with("preleased"),
+      variance,
+      available_count,
+      scheduled_rent_total
+    )
 
   details_data <- report_data |>
     pluck("details") |>
     dplyr::bind_rows() |>
-    tibble::as_tibble()
+    tibble::as_tibble() |>
+    dplyr::mutate(
+      report_date = as.Date(.env$report_date),
+      property_id = as.integer(property_id),
+      lease_start = lubridate::mdy(lease_start),
+      lease_end = lubridate::mdy(lease_end),
+      lease_started_on = lubridate::mdy(lease_started_on),
+      lease_partially_completed_on = lubridate::mdy(lease_partially_completed_on),
+      lease_completed_on = lubridate::mdy(lease_completed_on),
+      lease_approved_on = lubridate::mdy(lease_approved_on),
+      move_in_date = lubridate::mdy(move_in_date),
+      charge_code = ifelse(is.na(charge_code), "Missing", charge_code),
+    ) |>
+    dplyr::select(
+      report_date,
+      property_id,
+      property_name,
+      bldg_unit,
+      unit_type,
+      sqft,
+      resident_name = resident,
+      resident_id,
+      lease_id = lease_id_display,
+      resident_email = email,
+      resident_phone_number = phone_number,
+      resident_gender = gender,
+      lease_status,
+      lease_sub_status,
+      lease_occupancy_type,
+      lease_term_name,
+      lease_term,
+      space_option_preferred,
+      space_option,
+      lease_start,
+      lease_end,
+      lease_started_on,
+      lease_partially_completed_on,
+      lease_completed_on,
+      lease_approved_on,
+      move_in_date,
+      deposit_charged,
+      deposit_held,
+      market_rent,
+      budgeted_rent,
+      advertised_rate,
+      ledger_name,
+      charge_code,
+      scheduled_rent,
+      actual_charges,
+      scheduled_rent_total,
+      leasing_agent
+    )
 
   return(
     list(
       summary = summary_data,
       details = details_data,
-      parameters = report_filter_params
+      parameters = list(
+        report_filter_params = report_filter_params,
+        request_id = request_id,
+        queue_id = queue_id,
+        report_date = report_date
+      )
     )
   )
 
 }
 
-get_entrata_pre_lease_summary <- function(
-  property_ids = NULL,
-  report_date = NULL,
-  request_id = NULL,
-  entrata_config = NULL,
-  ...
-) {
+get_entrata_pre_lease_summary <- function() {
 
   report_data <- entrata_pre_lease_report()
+  report_date <- report_data$parameters$report_date
 
   report_summary_data <- purrr::pluck(report_data, "summary")
 
-  weeks_left_to_lease <- get_weeks_left_to_lease()
+  weeks_left_to_lease <- get_weeks_left_to_lease(report_date)
 
   model_beds <- dplyr::tbl(pool, I("gmh.model_beds")) |>
     dplyr::select(-gmh_property_id, -updated_at) |>
     dplyr::rename(property_id = entrata_property_id) |>
-    dplyr::mutate(
-      property_id = as.character(property_id)
-    ) |>
     dplyr::select(-property_name) |>
+    dplyr::collect()
+
+  inv_partners <- dplyr::tbl(pool, I("gmh.investment_partner_assignments")) |>
+    dplyr::select(property_id = entrata_property_id, investment_partner = partner_name) |>
     dplyr::collect()
 
   weekly_pre_lease <- entrata_lease_execution_report() |>
@@ -237,7 +323,7 @@ get_entrata_pre_lease_summary <- function(
       weekly_total
     )
 
-  out <- report_summary_data |>
+  report_summary_data |>
     dplyr::left_join(
       model_beds,
       by = "property_id"
@@ -246,39 +332,97 @@ get_entrata_pre_lease_summary <- function(
       weekly_pre_lease,
       by = "property_id"
     ) |>
+    dplyr::left_join(
+      inv_partners,
+      by = "property_id"
+    ) |>
     dplyr::transmute(
-      property_id = property_id,
-      property_name = property_name,
-      total_beds = available_count, # units
-      model_beds = model_beds,
-      current_occupied = occupied_count,
-      current_occupancy = occupied_count / total_beds,
-      current_total_new = approved_new_count + partially_completed_new_count + completed_new_count,
-      current_total_renewals = approved_renewal_count + partially_completed_renewal_count + completed_renewal_count,
-      current_total_leases = current_total_new + current_total_renewals,
-      current_preleased_percent = current_total_leases / total_beds,
-      current_preleased_percent_original = preleased_percent,
-      prior_total_new = approved_new_count_prior + partially_completed_new_count_prior + completed_new_count_prior,
-      prior_total_renewals = approved_renewal_count_prior + partially_completed_renewal_count_prior + completed_renewal_count_prior,
-      prior_total_leases = approved_count_prior + partially_completed_count_prior + completed_count_prior,
-      prior_preleased_percent = prior_total_leases / total_beds,
-      yoy_variance_count = current_total_leases - prior_total_leases,
-      yoy_variance_percent = current_preleased_percent - prior_preleased_percent,
-      weekly_new = weekly_new,
-      weekly_renewal = weekly_renewal,
-      weekly_total = weekly_total,
-      weekly_percent_gained = weekly_total / total_beds,
-      beds_left = total_beds - current_total_leases,
-      vel_90 = beds_left * .9 / weeks_left_to_lease,
-      vel_95 = beds_left * .95 / weeks_left_to_lease,
-      vel_100 = beds_left * 1 / weeks_left_to_lease
+      report_date = .env$report_date,
+      property_id = .data$property_id,
+      property_name = .data$property_name,
+      investment_partner = .data$investment_partner,
+      total_beds = .data$available_count, # units
+      model_beds = .data$model_beds,
+      current_occupied = .data$occupied_count,
+      current_occupancy = .data$occupied_count / .data$total_beds,
+      current_total_new = .data$approved_new_count + .data$partially_completed_new_count + .data$completed_new_count,
+      current_total_renewals = .data$approved_renewal_count + .data$partially_completed_renewal_count + .data$completed_renewal_count,
+      current_total_leases = .data$current_total_new + .data$current_total_renewals,
+      current_preleased_percent = .data$current_total_leases / .data$total_beds,
+      prior_total_new = .data$approved_new_count_prior + .data$partially_completed_new_count_prior + .data$completed_new_count_prior,
+      prior_total_renewals = .data$approved_renewal_count_prior + .data$partially_completed_renewal_count_prior + .data$completed_renewal_count_prior,
+      prior_total_leases = .data$approved_count_prior + .data$partially_completed_count_prior + .data$completed_count_prior,
+      prior_preleased_percent = .data$prior_total_leases / .data$total_beds,
+      yoy_variance_count = .data$current_total_leases - .data$prior_total_leases,
+      yoy_variance_percent = .data$current_preleased_percent - .data$prior_preleased_percent,
+      weekly_new = .data$weekly_new,
+      weekly_renewal = .data$weekly_renewal,
+      weekly_total = .data$weekly_total,
+      weekly_percent_gained = .data$weekly_total / .data$total_beds,
+      beds_left = .data$total_beds - .data$current_total_leases,
+      vel_90 = .data$beds_left * .9 / .env$weeks_left_to_lease,
+      vel_95 = .data$beds_left * .95 / .env$weeks_left_to_lease,
+      vel_100 = .data$beds_left * 1 / .env$weeks_left_to_lease
     )
 
 }
 
 
 
+merge_pre_lease_summary_data <- function(
+    report_date,
+    pre_lease_summary,
+    pre_lease_weekly,
+    model_beds,
+    investment_partners
+) {
 
+  weeks_left_to_lease <- get_weeks_left_to_lease(report_date)
+
+  pre_lease_summary |>
+    dplyr::left_join(
+      model_beds,
+      by = "property_id"
+    ) |>
+    dplyr::left_join(
+      pre_lease_weekly,
+      by = "property_id"
+    ) |>
+    dplyr::left_join(
+      investment_partners,
+      by = "property_id"
+    ) |>
+    dplyr::transmute(
+      report_date = .env$report_date,
+      property_id = .data$property_id,
+      property_name = .data$property_name,
+      investment_partner = .data$investment_partner,
+      total_beds = .data$available_count, # units
+      model_beds = .data$model_beds,
+      current_occupied = .data$occupied_count,
+      current_occupancy = .data$occupied_count / .data$total_beds,
+      current_total_new = .data$approved_new_count + .data$partially_completed_new_count + .data$completed_new_count,
+      current_total_renewals = .data$approved_renewal_count + .data$partially_completed_renewal_count + .data$completed_renewal_count,
+      current_total_leases = .data$current_total_new + .data$current_total_renewals,
+      current_preleased_percent = .data$current_total_leases / .data$total_beds,
+      current_preleased_percent_original = .data$preleased_percent,
+      prior_total_new = .data$approved_new_count_prior + .data$partially_completed_new_count_prior + .data$completed_new_count_prior,
+      prior_total_renewals = .data$approved_renewal_count_prior + .data$partially_completed_renewal_count_prior + .data$completed_renewal_count_prior,
+      prior_total_leases = .data$approved_count_prior + .data$partially_completed_count_prior + .data$completed_count_prior,
+      prior_preleased_percent = .data$prior_total_leases / .data$total_beds,
+      yoy_variance_count = .data$current_total_leases - .data$prior_total_leases,
+      yoy_variance_percent = .data$current_preleased_percent - .data$prior_preleased_percent,
+      weekly_new = .data$weekly_new,
+      weekly_renewal = .data$weekly_renewal,
+      weekly_total = .data$weekly_total,
+      weekly_percent_gained = .data$weekly_total / .data$total_beds,
+      beds_left = .data$total_beds - .data$current_total_leases,
+      vel_90 = .data$beds_left * .9 / .env$weeks_left_to_lease,
+      vel_95 = .data$beds_left * .95 / .env$weeks_left_to_lease,
+      vel_100 = .data$beds_left * 1 / .env$weeks_left_to_lease
+    )
+
+}
 
 
 

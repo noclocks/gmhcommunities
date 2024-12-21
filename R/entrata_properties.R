@@ -122,7 +122,7 @@ entrata_properties_getProperties <- function(
 
   validate_entrata_config(entrata_config)
 
-  req_id <- request_id %||% as.integer(Sys.time())
+  request_id <- request_id %||% as.integer(Sys.time())
 
   req <- entrata_request(entrata_config) |>
     entrata_req_endpoint("properties") |>

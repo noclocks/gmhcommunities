@@ -195,6 +195,7 @@ entrata_lease_execution_report <- function(
     dplyr::mutate(
       # get property id from named vector (names = property names)
       property_id = purrr::map_chr(property_name, ~ purrr::pluck(property_ids, .x)),
+      property_id = as.integer(property_id),
       report_date = report_date,
       weekly_total = weekly_new + weekly_renewal
     ) |>
@@ -206,5 +207,4 @@ entrata_lease_execution_report <- function(
       weekly_renewal,
       weekly_total
     )
-
 }
